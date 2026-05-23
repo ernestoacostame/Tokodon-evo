@@ -1,0 +1,6713 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the tokodon package.
+# SPDX-FileCopyrightText: 2021 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Frank Steinmetzger <dev-kde@felsenfleischer.de>
+# SPDX-FileCopyrightText: 2025 Alois Spitzbart <spitz234@hotmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: tokodon\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-05-10 00:43+0000\n"
+"PO-Revision-Date: 2025-05-18 19:45+0200\n"
+"Last-Translator: Frank Steinmetzger <dev-kde@felsenfleischer.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.1\n"
+
+#: account/abstractaccount.cpp:33
+#, kde-format
+msgid ""
+"All supported formats (*.jpg *.jpeg *.png *.gif *.webp *.heic *.heif *.avif "
+"*.webm *.mp4 *.m4v *.mov)"
+msgstr ""
+"Alle unterstützten Formate (*.jpg *.jpeg *.png *.gif *.webp *.heic *.heif *."
+"avif *.webm *.mp4 *.m4v *.mov)"
+
+#: account/abstractaccount.cpp:34
+#, kde-format
+msgid "JPEG image (*.jpg *.jpeg)"
+msgstr "JPEG-Bild (*.jpg *.jpeg)"
+
+#: account/abstractaccount.cpp:35
+#, kde-format
+msgid "PNG image (*.png)"
+msgstr "PNG-Bild (*.png)"
+
+#: account/abstractaccount.cpp:36
+#, kde-format
+msgid "GIF image (*.gif)"
+msgstr "GIF-Bild (*.gif)"
+
+#: account/abstractaccount.cpp:37
+#, kde-format
+msgid "WebP image (*.webp)"
+msgstr "WebP-Bild (*.webp)"
+
+#: account/abstractaccount.cpp:38
+#, kde-format
+msgid "HEIC image(*.heic)"
+msgstr "HEIC-Bild (*.heic)"
+
+#: account/abstractaccount.cpp:39
+#, kde-format
+msgid "HEIF image (*.heif)"
+msgstr "HEIF-Bild (*.heif)"
+
+#: account/abstractaccount.cpp:40
+#, kde-format
+msgid "AVIF image (*.avif)"
+msgstr "AVIF-Bild (*.avif)"
+
+#: account/abstractaccount.cpp:41
+#, kde-format
+msgid "WebM video (*.webm)"
+msgstr "WebM-Video (*.webm)"
+
+#: account/abstractaccount.cpp:42
+#, kde-format
+msgid "MPEG-4 video (*.mp4)"
+msgstr "MPEG-4-Video (*.mp4)"
+
+#: account/abstractaccount.cpp:43
+#, kde-format
+msgid "M4V video (*.m4v)"
+msgstr "M4V-Video (*.m4v)"
+
+#: account/abstractaccount.cpp:44
+#, kde-format
+msgid "QuickTime video (*.mov)"
+msgstr "QuickTime-Video (*.mov)"
+
+#: account/abstractaccount.cpp:45 account/abstractaccount.cpp:527
+#, kde-format
+msgid "All files (*)"
+msgstr "Alle Dateien (*)"
+
+#: account/abstractaccount.cpp:526
+#, kde-format
+msgid "All supported formats (%1)"
+msgstr "Alle unterstützten Formate (%1)"
+
+#: account/abstractaccount.cpp:682
+#, kde-format
+msgid "Could not follow account"
+msgstr "Konnte dem Konto nicht folgen"
+
+#: account/abstractaccount.cpp:683
+#, kde-format
+msgid "Could not unfollow account"
+msgstr "Konnte das Folgen des Kontos nicht beenden"
+
+#: account/abstractaccount.cpp:684
+#, kde-format
+msgid "Could not remove account as your follower"
+msgstr "Konnte das Konto nicht als Ihren Follower entfernen"
+
+#: account/abstractaccount.cpp:685
+#, kde-format
+msgid "Could not block account"
+msgstr "Konnte das Konto nicht blockieren"
+
+#: account/abstractaccount.cpp:686
+#, kde-format
+msgid "Could not unblock account"
+msgstr "Konnte das Blockieren des Kontos nicht aufheben"
+
+#: account/abstractaccount.cpp:687
+#, kde-format
+msgid "Could not mute account"
+msgstr "Konnte das Konto nicht stumm schalten"
+
+#: account/abstractaccount.cpp:688
+#, kde-format
+msgid "Could not unmute account"
+msgstr "Konnte die Stummschaltung des Kontos nicht aufheben"
+
+#: account/abstractaccount.cpp:689
+#, kde-format
+msgid "Could not feature account"
+msgstr "Konnte das Konto nicht empfehlen"
+
+#: account/abstractaccount.cpp:690
+#, kde-format
+msgid "Could not unfeature account"
+msgstr "Konnte die Empfehlung des Kontos nicht entfernen"
+
+#: account/abstractaccount.cpp:691
+#, kde-format
+msgid "Could not edit note about an account"
+msgstr "Konnte die Notiz über das Konto nicht bearbeiten"
+
+#: account/account.cpp:323
+#, kde-format
+msgctxt "@info:label Error message"
+msgid "Network request was interrupted"
+msgstr ""
+
+#: account/account.cpp:332 account/account.cpp:339
+#, kde-format
+msgctxt "@info:label Error message"
+msgid "Failed to parse credentials"
+msgstr ""
+
+#: account/notificationhandler.cpp:35 account/notificationhandler.cpp:36
+#, kde-format
+msgid "View Post"
+msgstr "Beitrag anzeigen"
+
+#: account/notificationhandler.cpp:56 account/notificationhandler.cpp:57
+#, kde-format
+msgid "View Profile"
+msgstr "Profil anzeigen"
+
+#: account/notificationhandler.cpp:79
+#: qml/Notifications/UserInteractionLabel.qml:84
+#, kde-format
+msgid "%1 mentioned you"
+msgstr "%1 hat Sie erwähnt"
+
+#: account/notificationhandler.cpp:87
+#: qml/Notifications/UserInteractionLabel.qml:92
+#, kde-format
+msgid "%1 wrote a new post"
+msgstr "%1 hat einen neuen Beitrag geschrieben"
+
+#: account/notificationhandler.cpp:95
+#: qml/Notifications/UserInteractionLabel.qml:82
+#, kde-format
+msgid "%1 boosted your post"
+msgstr "%1 teilte Ihren Beitrag"
+
+#: account/notificationhandler.cpp:103 qml/Notifications/FollowDelegate.qml:82
+#, kde-format
+msgid "%1 followed you"
+msgstr "%1 folgt Ihnen"
+
+#: account/notificationhandler.cpp:111 qml/Notifications/FollowDelegate.qml:80
+#, kde-format
+msgid "%1 requested to follow you"
+msgstr "%1 möchte Ihnen folgen"
+
+#: account/notificationhandler.cpp:119
+#: qml/Notifications/UserInteractionLabel.qml:86
+#, kde-format
+msgid "%1 favorited your post"
+msgstr "%1 favorisierte Ihren Beitrag"
+
+#: account/notificationhandler.cpp:127
+#, kde-format
+msgid "Poll by %1 has ended"
+msgstr "Die Umfrage von %1 ist abgelaufen"
+
+#: account/notificationhandler.cpp:135
+#, kde-format
+msgid "%1 edited a post"
+msgstr "%1 bearbeitete einen Betrag"
+
+#: account/notificationhandler.cpp:146
+#, kde-format
+msgctxt ""
+"@title this is used for notifications, when an annual report is available. "
+"It's similar to spotify wrapped, it shows profile stats / it's a recap of "
+"the year. The variable is the current year e.g. 2024. Please don't translate "
+"the hashtag."
+msgid "Your %1 #FediWrapped awaits!"
+msgstr "Ihr #FediWrapped für %1 erwartet Sie!"
+
+#: account/notificationhandler.cpp:148
+#, kde-format
+msgid "Unveil your year's highlights and memorable moments on Mastodon!"
+msgstr ""
+"Lüften Sie Ihre Highlights des Jahres und unvergesslichen Momente auf "
+"Mastodon!"
+
+#: account/notificationhandler.cpp:155
+#: qml/Notifications/UserInteractionLabel.qml:94
+#, fuzzy, kde-format
+#| msgid "%1 boosted your post"
+msgid "%1 quoted your post"
+msgstr "%1 teilte Ihren Beitrag"
+
+#: account/notificationhandler.cpp:160
+#, kde-format
+msgctxt "@title"
+msgid "New Notification"
+msgstr "Neue Benachrichtigung"
+
+#: account/notificationhandler.cpp:161
+#, kde-format
+msgid "You received a new notification."
+msgstr "Sie haben eine Benachrichtigung erhalten."
+
+#: account/notificationhandler.cpp:174
+#, kde-kuit-format
+msgid "<b>Content Notice</b>: %1"
+msgstr "<b>Inhaltswarnung</b>: %1"
+
+#: account/notificationhandler.cpp:178
+#, kde-format
+msgid "This post has no text."
+msgstr "Dieser Beitrag hat keinen Text."
+
+#: account/notificationhandler.cpp:185
+#, kde-format
+msgid ""
+"The moderators of your server has limited this user, view this in Tokodon to "
+"see their profile."
+msgstr ""
+
+#: account/notificationhandler.cpp:189
+#, kde-format
+msgid "This user doesn't have a description."
+msgstr "Dieser Benutzer hat keine Beschreibung."
+
+#: account/profileeditor.cpp:188
+#, kde-format
+msgid "Image is too big"
+msgstr "Bild ist zu groß"
+
+#: account/profileeditor.cpp:201
+#, kde-format
+msgid "Unsupported image file. Only jpeg, png and gif are supported."
+msgstr ""
+"Nicht unterstützte Bilddatei. Nur jpeg, png und gif werden unterstützt."
+
+#: account/profileeditor.cpp:345
+#, kde-format
+msgid "Account details saved"
+msgstr "Details zu Konto gespeichert"
+
+#: account/rulesmodel.cpp:104 account/rulesmodel.cpp:119
+#, kde-format
+msgid ""
+"This server provided no rules. Please see their website for more information."
+msgstr ""
+"Der Server hat keine Regeln bereitgestellt. Besuchen Sie deren Webseite für "
+"mehr Informationen."
+
+#: account/scheduledstatusesmodel.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Draft Posts"
+msgstr "Beitragsentwürfe"
+
+#: account/scheduledstatusesmodel.cpp:72
+#, kde-format
+msgctxt "@title:window"
+msgid "Scheduled Posts"
+msgstr "Geplante Beiträge"
+
+#: account/socialgraphmodel.cpp:32
+#, kde-format
+msgctxt "@title"
+msgid "Follow Requests"
+msgstr "Follower-Anfragen"
+
+#: account/socialgraphmodel.cpp:34
+#, kde-format
+msgctxt "@title"
+msgid "Followers"
+msgstr "Follower"
+
+#: account/socialgraphmodel.cpp:36
+#, kde-format
+msgctxt "@title"
+msgid "Following"
+msgstr "Folgt"
+
+#: account/socialgraphmodel.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Muted Users"
+msgstr "Stummgeschaltete Benutzer"
+
+#: account/socialgraphmodel.cpp:40
+#, kde-format
+msgctxt "@title"
+msgid "Blocked Users"
+msgstr "Blockierte Benutzer"
+
+#: account/socialgraphmodel.cpp:42
+#, kde-format
+msgctxt "@title"
+msgid "Featured Users"
+msgstr "Empfohlene Benutzer"
+
+#: account/socialgraphmodel.cpp:44
+#, kde-format
+msgctxt "@title"
+msgid "%1 favorite"
+msgid_plural "%1 favorites"
+msgstr[0] "%1 Favorit"
+msgstr[1] "%1 Favoriten"
+
+#: account/socialgraphmodel.cpp:46
+#, kde-format
+msgctxt "@title"
+msgid "%1 boost"
+msgid_plural "%1 boosts"
+msgstr[0] "%1 Mal geteilt"
+msgstr[1] "%1 Mal geteilt"
+
+#: account/socialgraphmodel.cpp:48
+#, kde-format
+msgctxt "@title"
+msgid "Familiar Followers"
+msgstr "Bekannte Follower"
+
+#: account/socialgraphmodel.cpp:50
+#, kde-format
+msgctxt "@title"
+msgid "Manage List Users"
+msgstr "Listenbenutzer verwalten"
+
+#: account/socialgraphmodel.cpp:58
+#, kde-format
+msgid "No Follow Requests"
+msgstr "Keine Follower-Anfragen"
+
+#: account/socialgraphmodel.cpp:60
+#, kde-format
+msgid "No Followers"
+msgstr "Keine Follower"
+
+#: account/socialgraphmodel.cpp:62
+#, kde-format
+msgid "No Followed Users"
+msgstr "Keine gefolgten Benutzer"
+
+#: account/socialgraphmodel.cpp:64
+#, kde-format
+msgid "No Muted Users"
+msgstr "Keine stummgeschalteten Benutzer"
+
+#: account/socialgraphmodel.cpp:66
+#, kde-format
+msgid "No Blocked Users"
+msgstr "Keine blockierten Benutzer"
+
+#: account/socialgraphmodel.cpp:68
+#, kde-format
+msgid "No Featured Users"
+msgstr "Keine empfohlenen Benutzer"
+
+#: account/socialgraphmodel.cpp:70
+#, kde-format
+msgid "No Users Favorited This Post"
+msgstr "Kein Benutzer hat diese Beitrag favorisiert"
+
+#: account/socialgraphmodel.cpp:72
+#, kde-format
+msgid "No Users Boosted This Post"
+msgstr "Kein Benutzer hat diese Beitrag geteilt"
+
+#: account/socialgraphmodel.cpp:74
+#, kde-format
+msgid "No Familiar Followers"
+msgstr "Keine bekannten Follower"
+
+#: account/socialgraphmodel.cpp:76
+#, kde-format
+msgid "No Users"
+msgstr "Keine Benutzer"
+
+#: account/socialgraphmodel.cpp:84
+#, kde-format
+msgid ""
+"Some users need to be manually approved before they can follow you, and will "
+"show up here."
+msgstr ""
+"Einige Benutzer müssen erst von Hand freigegeben werden bevor Sie Ihnen "
+"folgen dürfen. Diese werden hier aufgelistet."
+
+#: account/socialgraphmodel.cpp:86
+#, kde-format
+msgctxt "@info:placeholder"
+msgid ""
+"No one is following this user, or they have chosen to hide this information."
+msgstr ""
+
+#: account/socialgraphmodel.cpp:88
+#, kde-format
+msgctxt "@info:placeholder"
+msgid ""
+"This user isn't following anyone, or has chosen to hide this information."
+msgstr ""
+
+#: account/socialgraphmodel.cpp:90
+#, kde-format
+msgid "Mute users to stop them from showing up in your notifications."
+msgstr ""
+"Benutzer stummschalten, damit sie nicht mehr in Ihren Benachrichtigungen "
+"auftauchen."
+
+#: account/socialgraphmodel.cpp:92
+#, kde-format
+msgid "Block users to hide the user from your timeline entirely."
+msgstr ""
+"Benutzer blockieren, damit sie überhaupt nicht mehr in Ihrer Zeitleiste "
+"auftauchen."
+
+#: account/socialgraphmodel.cpp:94
+#, kde-format
+msgid "Users you like can be featured and shown on your profile."
+msgstr "Benutzer, die Sie mögen, können in Ihrem Profil empfohlen werden."
+
+#: account/socialgraphmodel.cpp:96
+#, kde-format
+msgid "No one has favorited this post yet. Maybe you'll be the first?"
+msgstr ""
+"Dieser Beitrag wurde noch von niemandem favorisiert. Vielleicht sind Sie der "
+"erste?"
+
+#: account/socialgraphmodel.cpp:98
+#, kde-format
+msgid ""
+"No one has boosted this post yet. You should boost it to expand its reach!"
+msgstr ""
+"Dieser Beitrag wurde noch von niemandem geteilt. Teilen Sie ihn, um seine "
+"Reichweite zu erhöhen."
+
+#: account/socialgraphmodel.cpp:102
+#, kde-format
+msgid "There is no one in this list yet."
+msgstr "Es ist noch niemand auf dieser Liste."
+
+#: account/suggestionsmodel.cpp:51
+#, kde-format
+msgctxt "@title:window"
+msgid "Suggested Users"
+msgstr "Vorgeschlagene Benutzer"
+
+#: admin/accounttoolmodel.cpp:298
+#, kde-format
+msgid "Could not accept account"
+msgstr "Konto wird nicht akzeptiert"
+
+#: admin/accounttoolmodel.cpp:299
+#, kde-format
+msgid "Could not reject account"
+msgstr "Konto wird nicht zurückgewiesen"
+
+#: admin/accounttoolmodel.cpp:300
+#, kde-format
+msgid "Could not take action against the account"
+msgstr "Gegen dieses Konto konnte keine Maßnahme durchgeführt werden"
+
+#: admin/accounttoolmodel.cpp:301
+#, kde-format
+msgid "Could not enable the disabled account"
+msgstr "Das deaktivierte Konto konnte nicht aktiviert werden"
+
+#: admin/accounttoolmodel.cpp:302
+#, kde-format
+msgid "Could not unsilence the account"
+msgstr "Stummschaltung des Kontos konnte nicht aufgehoben werden"
+
+#: admin/accounttoolmodel.cpp:303
+#, kde-format
+msgid "Could not unsuspend the account"
+msgstr "Sperre des Kontos konnte nicht aufgehoben werden"
+
+#: admin/accounttoolmodel.cpp:304
+#, kde-format
+msgid "Could not mark the account as not sensitive"
+msgstr "Inhaltswarnung konnte vom Konto nicht entfernt werden"
+
+#: admin/adminaccountinfo.cpp:24
+#, kde-format
+msgctxt "login status"
+msgid "Suspended"
+msgstr "Angehalten"
+
+#: admin/adminaccountinfo.cpp:26
+#, kde-format
+msgctxt "login status"
+msgid "Limited"
+msgstr "Begrenzt"
+
+#: admin/adminaccountinfo.cpp:28
+#, kde-format
+msgctxt "login status"
+msgid "Sensitized"
+msgstr "Sensibilisiert"
+
+#: admin/adminaccountinfo.cpp:30
+#, kde-format
+msgctxt "login status"
+msgid "Frozen"
+msgstr "Eingefroren"
+
+#: admin/adminaccountinfo.cpp:32
+#, kde-format
+msgctxt "login status"
+msgid "Email Not confirmed"
+msgstr "E-Mail nicht bestätigt"
+
+#: admin/adminaccountinfo.cpp:34
+#, kde-format
+msgctxt "login status"
+msgid "Not Approved"
+msgstr "Nicht freigegeben"
+
+#: admin/adminaccountinfo.cpp:36
+#, kde-format
+msgctxt "login status"
+msgid "No Limits Imposed"
+msgstr "Keine Beschränkungen gesetzt"
+
+#: admin/federationtoolmodel.cpp:164 admin/iprulestoolmodel.cpp:127
+#, kde-format
+msgid "Error occurred when making a PUT request to update the domain block."
+msgstr ""
+"Beim Absetzen des PUT-Requests zur Aktualisierung der Domain-Sperre ist ein "
+"Fehler aufgetreten."
+
+#: admin/reporttoolmodel.cpp:198
+#, kde-format
+msgid "Could not resolve report"
+msgstr "Meldung kann nicht als geklärt markiert werden"
+
+#: admin/reporttoolmodel.cpp:199
+#, kde-format
+msgid "Could not unresolve report"
+msgstr "Meldung kann nicht als ungeklärt markiert werden"
+
+#: admin/reporttoolmodel.cpp:200
+#, kde-format
+msgid "Could not assign report"
+msgstr "Meldung kann nicht zugewiesen werden"
+
+#: admin/reporttoolmodel.cpp:201
+#, kde-format
+msgid "Could not unassign report"
+msgstr "Zuweisung der Meldung kann nicht aufgehoben werden"
+
+#: conversation/conversationmodel.cpp:61
+#, kde-format
+msgid "Empty conversation"
+msgstr "Leere Unterhaltung"
+
+#: conversation/conversationmodel.cpp:65
+#, kde-format
+msgid "%1 and %2"
+msgstr "%1 und %2"
+
+#: conversation/conversationmodel.cpp:67
+#, kde-format
+msgid "%2 and one other"
+msgid_plural "%2 and %1 others"
+msgstr[0] "%2 und ein weiterer"
+msgstr[1] "%2 und %1 weitere"
+
+#: editor/languagemodel.cpp:37
+#, kde-format
+msgctxt ""
+"@info:label %1 is the native language name, and %2 is the localized name. "
+"For example, 'dansk (Danish)'"
+msgid "%1 (%2)"
+msgstr ""
+
+#: editor/listeditorbackend.cpp:121
+#, kde-format
+msgid "No one"
+msgstr "Niemanden"
+
+#: editor/listeditorbackend.cpp:121
+#, kde-format
+msgid "Members of the list"
+msgstr "Mitglieder der Liste"
+
+#: editor/listeditorbackend.cpp:121
+#, kde-format
+msgid "Any followed users"
+msgstr "Jedweder gefolgte Benutzer"
+
+#: editor/polltimemodel.cpp:14
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "5 minutes"
+msgstr "5 Minuten"
+
+#: editor/polltimemodel.cpp:15
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "30 minutes"
+msgstr "30 Minuten"
+
+#: editor/polltimemodel.cpp:16
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "1 hour"
+msgstr "1 Stunde"
+
+#: editor/polltimemodel.cpp:17
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "6 hours"
+msgstr "6 Stunden"
+
+#: editor/polltimemodel.cpp:18
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "12 hours"
+msgstr "12 Stunden"
+
+#: editor/polltimemodel.cpp:19
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "1 day"
+msgstr "1 Tag"
+
+#: editor/polltimemodel.cpp:20
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "3 days"
+msgstr "3 Tage"
+
+#: editor/polltimemodel.cpp:21
+#, kde-format
+msgctxt "@item:inlistbox Poll expire times"
+msgid "7 days"
+msgstr "7 Tage"
+
+#: editor/posteditorbackend.cpp:289
+#, kde-format
+msgid "An unknown error occurred."
+msgstr "Es ist ein unbekannter Fehler aufgetreten."
+
+#: main.cpp:77
+#, kde-format
+msgid "Tokodon"
+msgstr "Tokodon"
+
+#: main.cpp:79 main.cpp:100
+#, kde-format
+msgid "Browse the Fediverse"
+msgstr "Im Fediverse browsen"
+
+#: main.cpp:81
+#, kde-format
+msgid "© 2021-2025 KDE Community"
+msgstr "© 2021-2024 KDE-Gemeinschaft"
+
+#: main.cpp:82
+#, kde-format
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: main.cpp:83 main.cpp:88
+#, kde-format
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: main.cpp:87
+#, kde-format
+msgid "Joshua Goins"
+msgstr "Joshua Goins"
+
+#: main.cpp:92
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Deutsches KDE-Übersetzungsteam"
+
+#: main.cpp:92
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-i18n-de@kde.org"
+
+#: main.cpp:101
+#, fuzzy, kde-format
+#| msgid "Supports https, tokodon and web+ap url scheme"
+msgid "Supports https, and web+ap url schemes."
+msgstr "Unterstützt https-, Tokodon- und Web+ap-URL-Schemata"
+
+#: network/networkcontroller.cpp:307
+#, kde-format
+msgid "Receiving push notifications"
+msgstr ""
+
+#: notification/notificationmodel.cpp:185
+#, kde-format
+msgid "Error occurred when fetching the latest notification."
+msgstr "Beim Abrufen der letzten Benachrichtigung ist ein Fehler aufgetreten."
+
+#: qml/AccountHeader.qml:55
+#, kde-format
+msgctxt "@info %1 is a display name"
+msgid "%1 has moved to a new account:"
+msgstr "%1 ist zu einem neuen Konto umgezogen:"
+
+#: qml/AccountHeader.qml:91
+#, kde-format
+msgctxt "@action:button"
+msgid "Go to Profile"
+msgstr "Zu Profil gehen"
+
+#: qml/AccountHeader.qml:159
+#, kde-format
+msgctxt ""
+"'Mutual' is the common English word used in social media platforms describe "
+"people who follow you back. This the same meaning as 'mutual friends', for "
+"example."
+msgid "Mutual"
+msgstr "Gegenseitig"
+
+#: qml/AccountHeader.qml:159
+#, kde-format
+msgid "Follows you"
+msgstr "Folgt Ihnen"
+
+#: qml/AccountHeader.qml:180
+#, kde-format
+msgid "Bot"
+msgstr "Bot"
+
+#: qml/AccountHeader.qml:291
+#, kde-format
+msgid "Follow Requested"
+msgstr "Folgen angefragt"
+
+#: qml/AccountHeader.qml:294
+#, kde-format
+msgid "Unfollow"
+msgstr "Entfolgen"
+
+#: qml/AccountHeader.qml:296
+#, kde-format
+msgid "Follow"
+msgstr "Folgen"
+
+#: qml/AccountHeader.qml:321
+#, kde-format
+msgid "Stop notifying me when %1 posts."
+msgstr "Keine Benachrichtigungen, wenn %1 einen Beitrag erstellt."
+
+#: qml/AccountHeader.qml:323
+#, kde-format
+msgid "Notify me when %1 posts."
+msgstr "Benachrichtigen, wenn %1 einen Beitrag erstellt."
+
+#: qml/AccountHeader.qml:338
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show a QR code for this account"
+msgstr "QR-Code für dieses Konto anzeigen"
+
+#: qml/AccountHeader.qml:351
+#, kde-format
+msgid "Mention…"
+msgstr "Erwähnen …"
+
+#: qml/AccountHeader.qml:357
+#, kde-format
+msgid "Start a Conversation…"
+msgstr "Eine Unterhaltung beginnen …"
+
+#: qml/AccountHeader.qml:366
+#, kde-format
+msgid "Hide Boosts from %1"
+msgstr "Geteilte Beiträge von %1 ausblenden"
+
+#: qml/AccountHeader.qml:368
+#, kde-format
+msgid "Show Boosts from %1"
+msgstr "Geteilte Beiträge von %1 anzeigen"
+
+#: qml/AccountHeader.qml:384
+#, kde-format
+msgid "Stop Featuring This Profile"
+msgstr "Profil nicht mehr empfehlen"
+
+#: qml/AccountHeader.qml:386
+#, kde-format
+msgid "Feature This Profile"
+msgstr "Profil empfehlen"
+
+#: qml/AccountHeader.qml:402
+#, kde-format
+msgid "Unmute"
+msgstr "Stummschaltung aufheben"
+
+#: qml/AccountHeader.qml:404
+#, kde-format
+msgid "Mute"
+msgstr "Stummschalten"
+
+#: qml/AccountHeader.qml:420
+#, kde-format
+msgid "Unblock"
+msgstr "Blockierung aufheben"
+
+#: qml/AccountHeader.qml:422
+#, kde-format
+msgid "Block"
+msgstr "Blockieren"
+
+#: qml/AccountHeader.qml:436 qml/PostDelegate/PostMenu.qml:192
+#, kde-format
+msgctxt "@action:inmenu Report this post"
+msgid "Report…"
+msgstr "Melden …"
+
+#: qml/AccountHeader.qml:442
+#, kde-format
+msgid "Edit Profile"
+msgstr "Profil bearbeiten"
+
+#: qml/AccountHeader.qml:446
+#, kde-format
+msgid "Account editor"
+msgstr "Kontoeditor"
+
+#: qml/AccountHeader.qml:456
+#, kde-format
+msgid "Featured Users"
+msgstr "Empfohlene Benutzer"
+
+#: qml/AccountHeader.qml:463
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Scheduled Posts"
+msgstr "Geplante Beiträge"
+
+#: qml/AccountHeader.qml:477
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Draft Posts"
+msgstr "Beitragsentwürfe"
+
+#: qml/AccountHeader.qml:490 qml/PostDelegate/LinkMenu.qml:25
+#: qml/PostDelegate/PostMenu.qml:53
+#, kde-format
+msgctxt "@action:inmenu 'Browser' being a web browser"
+msgid "Open in Browser"
+msgstr "Im Browser öffnen"
+
+#: qml/AccountHeader.qml:495
+#, kde-format
+msgid "Copy Link"
+msgstr "Verknüpfung kopieren"
+
+#: qml/AccountHeader.qml:498
+#, kde-format
+msgid "Profile link copied."
+msgstr "Profil-Verknüpfung kopiert."
+
+#: qml/AccountHeader.qml:570
+#, kde-format
+msgctxt "@info:label Joined at"
+msgid "Joined"
+msgstr "Beigetreten"
+
+#: qml/AccountHeader.qml:610
+#, kde-format
+msgid "Ownership of this link was checked on %1"
+msgstr ""
+
+#: qml/AccountHeader.qml:693
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Private Note:"
+msgstr "Private Notiz:"
+
+#: qml/AccountHeader.qml:701
+#, kde-format
+msgid "Saved"
+msgstr "Gespeichert"
+
+#: qml/AccountHeader.qml:716
+#, kde-format
+msgid ""
+"Write down something about this user, this isn't visible to anyone but you."
+msgstr ""
+"Schreiben Sie etwas über diesen Benutzer auf. Dies ist für niemanden außer "
+"Ihnen sichtbar."
+
+#: qml/AccountHeader.qml:778
+#, kde-format
+msgid "Also followed by:"
+msgstr "Wird auch gefolgt von:"
+
+#: qml/AccountHeader.qml:808
+#, kde-format
+msgctxt "@action:button See all familiar followers"
+msgid "View %1 More"
+msgstr "%1 weitere anzeigen"
+
+#: qml/AccountHeader.qml:808
+#, kde-format
+msgctxt "@action:button See all familiar followers"
+msgid "View All"
+msgstr "Alle anzeigen"
+
+#: qml/AccountHeader.qml:848
+#, kde-format
+msgctxt "@label User's number of statuses"
+msgid "<b>%1</b> post"
+msgid_plural "<b>%1</b> posts"
+msgstr[0] "<b>%1</b> Beitrag"
+msgstr[1] "<b>%1</b> Beiträge"
+
+#: qml/AccountHeader.qml:861
+#, kde-format
+msgctxt "@label User's number of followed accounts"
+msgid "<b>%1</b> follows"
+msgid_plural "<b>%1</b> following"
+msgstr[0] "<b>%1</b> folge ich"
+msgstr[1] "<b>%1</b> folge ich"
+
+#: qml/AccountHeader.qml:874
+#, kde-format
+msgctxt "@label User's number of followers"
+msgid "<b>%1</b> follower"
+msgid_plural "<b>%1</b> followers"
+msgstr[0] "<b>%1</b> Follower"
+msgstr[1] "<b>%1</b> Follower"
+
+#: qml/AccountHeader.qml:901
+#, kde-format
+msgctxt "@item:inmenu Profile Post Filter"
+msgid "Posts"
+msgstr "Beiträge"
+
+#: qml/AccountHeader.qml:905
+#, kde-format
+msgctxt "@item:inmenu Profile Post Filter"
+msgid "Posts && Replies"
+msgstr "Beträge && Antworten"
+
+#: qml/AccountHeader.qml:909
+#, kde-format
+msgctxt "@item:inmenu Profile Post Filter"
+msgid "Media"
+msgstr "Medien"
+
+#: qml/AccountHeader.qml:941
+#, kde-format
+msgctxt "@option:check"
+msgid "Hide boosts"
+msgstr "Geteilte Beiträge ausblenden"
+
+#: qml/AccountHeader.qml:961
+#, kde-format
+msgctxt "@action:button Show all of a profile's posts"
+msgid "All"
+msgstr "Alle"
+
+#: qml/AccountInfo.qml:31 qml/AccountInfo.qml:40
+#, kde-format
+msgctxt "@title:window"
+msgid "Profile"
+msgstr "Profil"
+
+#: qml/AccountInfo.qml:131 qml/FollowingPage.qml:161
+#, kde-format
+msgctxt "@label"
+msgid "No Posts"
+msgstr "Keine Beiträge"
+
+#: qml/AccountInfo.qml:132 qml/FollowingPage.qml:162
+#, kde-format
+msgid "This user hasn't posted anything yet."
+msgstr "Dieser Benutzer hat noch nichts gepostet."
+
+#: qml/AccountInfo.qml:261
+#, kde-format
+msgctxt "@label"
+msgid "No Media"
+msgstr "Keine Medien"
+
+#: qml/AccountInfo.qml:262
+#, kde-format
+msgid "This user hasn't posted any media yet."
+msgstr "Dieser Benutzer hat noch keine Medien gepostet."
+
+#: qml/AccountSwitchDialog.qml:29
+#, fuzzy, kde-format
+#| msgid "Switch Account"
+msgctxt "@title: dialog to switch between logged in accounts"
+msgid "Switch Account"
+msgstr "Konto wechseln"
+
+#: qml/AccountSwitchDialog.qml:56
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Add Account"
+msgctxt "@button: login to or register a new account."
+msgid "Add Account"
+msgstr "Zugang hinzufügen"
+
+#: qml/AccountSwitchDialog.qml:59
+#, kde-format
+msgid "Log in or create a new account"
+msgstr "Anmelden oder neues Konto anlegen"
+
+#: qml/AccountSwitchDialog.qml:157 qml/Settings/AccountsPage.qml:81
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"This account has an issue and can't login, switch to it for more details."
+msgstr ""
+
+#: qml/Android/ShareAction.qml:15 qml/ShareAction.qml:20
+#, kde-format
+msgid "Share"
+msgstr "Teilen"
+
+#: qml/Android/ShareAction.qml:16 qml/ShareAction.qml:21
+#, kde-format
+msgid "Share the selected media"
+msgstr "Ausgewählte Medien teilen"
+
+#: qml/AnnouncementsPage.qml:20
+#, kde-format
+msgctxt "@title Server-wide announcements set by admins."
+msgid "Announcements"
+msgstr "Ankündigungen"
+
+#: qml/AnnouncementsPage.qml:46
+#, kde-format
+msgctxt "@label An announcement was published on a date"
+msgid "Announcement on %1"
+msgstr "Ankündigung vom %1"
+
+#: qml/AnnouncementsPage.qml:137
+#, kde-format
+msgctxt "@label"
+msgid "No Announcements"
+msgstr "Keine Ankündigungen"
+
+#: qml/AnnouncementsPage.qml:138
+#, kde-format
+msgid "Your server has not made any announcements yet."
+msgstr "Ihr Server hat noch keine Ankündigungen gemacht."
+
+#: qml/Components/BoostConfirmationDialog.qml:19
+#, kde-format
+msgctxt "@title"
+msgid "Confirm Boost"
+msgstr "Teilen bestätigen"
+
+#: qml/Components/BoostConfirmationDialog.qml:23
+#, kde-format
+msgctxt "@action:button Boost this post"
+msgid "Boost"
+msgstr "Teilen"
+
+#: qml/Components/ClickableIdentityInfo.qml:43
+#: qml/Notifications/UserInteractionLabel.qml:71
+#: qml/PostDelegate/QuotePost.qml:60
+#, kde-format
+msgid "View profile"
+msgstr "Profil anzeigen"
+
+#: qml/Components/Emoji/EmojiGrid.qml:78
+#, kde-format
+msgid "No emojis"
+msgstr "Keine Emoji"
+
+#: qml/Components/ServerInformationCard.qml:28
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Embed Information"
+msgctxt "@info:placeholder"
+msgid "No Information"
+msgstr "Informationen einbetten"
+
+#: qml/Components/ServerInformationCard.qml:33
+#, kde-format
+msgctxt "@info Last updated: relative date and time (e.g. 2 years ago)"
+msgid "Last updated: %1"
+msgstr "Zuletzt aktualisiert: %1"
+
+#: qml/Components/TimelineView.qml:84
+#, fuzzy, kde-format
+#| msgid "Create List"
+msgctxt "@action:button"
+msgid "Create Post"
+msgstr "Liste erstellen"
+
+#: qml/Components/TimelineView.qml:92
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Return to Top"
+msgstr "Zum Anfang zurückkehren"
+
+#: qml/Components/TimelineView.qml:176
+#, kde-format
+msgctxt "@info:status"
+msgid "Some replies are not available"
+msgstr "Einige Antworten sind nicht verfügbar"
+
+#: qml/Components/TimelineView.qml:177
+#, kde-format
+msgid "To view all replies, open the post on the original server."
+msgstr ""
+"Um alle Antworten anzuzeigen, öffnen Sie den Beitrag auf dem originalen "
+"Server."
+
+#: qml/Components/TimelineView.qml:180
+#, kde-format
+msgctxt "@action:button 'Browser' being a web browser"
+msgid "Open in Browser"
+msgstr "Im Browser öffnen"
+
+#: qml/Components/TimelineView.qml:189
+#, fuzzy, kde-format
+#| msgid "No Posts"
+msgctxt "@info:status No more posts to read"
+msgid "No More Posts"
+msgstr "Keine Beiträge"
+
+#: qml/ConversationPage.qml:15
+#, kde-format
+msgid "Conversations"
+msgstr "Unterhaltungen"
+
+#: qml/ConversationPage.qml:20
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "New Conversation…"
+msgstr "Neue Unterhaltung …"
+
+#: qml/ConversationPage.qml:31
+#, kde-format
+msgctxt "@title"
+msgid "Search Users"
+msgstr "Benutzer suchen"
+
+#: qml/ConversationPage.qml:103
+#, kde-format
+msgid "Search for user…"
+msgstr "Nach Benutzer suchen …"
+
+#: qml/ConversationPage.qml:142
+#, kde-format
+msgid "No Conversations"
+msgstr "Keine Unterhaltungen"
+
+#: qml/ConversationPage.qml:143
+#, kde-format
+msgid ""
+"Direct messages to other users will show up here. Do not share any sensitive "
+"information over a conversation."
+msgstr ""
+"Direktnachrichten an andere Benutzer erscheinen hier. Teilen Sie keine "
+"sensiblen Daten in einer Unterhaltung."
+
+#: qml/Debug/DebugPage.qml:19
+#, kde-format
+msgctxt "@action:button"
+msgid "Increase follow request count"
+msgstr "Anzahl Folge-Anfragen erhöhen"
+
+#: qml/Debug/DebugPage.qml:23
+#, kde-format
+msgctxt "@action:button"
+msgid "Decrease follow request count"
+msgstr "Anzahl Folge-Anfragen verringern"
+
+#: qml/EditListPage.qml:30
+#, kde-format
+msgctxt "@title:window"
+msgid "Create List"
+msgstr "Liste erstellen"
+
+#: qml/EditListPage.qml:30
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit List"
+msgstr "Liste bearbeiten"
+
+#: qml/EditListPage.qml:66
+#, kde-format
+msgctxt "@label:textbox List title"
+msgid "Title"
+msgstr "Titel"
+
+#: qml/EditListPage.qml:74
+#, kde-format
+msgctxt "@label"
+msgid "Show replies for"
+msgstr "Antworten anzeigen für"
+
+#: qml/EditListPage.qml:86
+#, kde-format
+msgctxt "@label If the list is exclusive"
+msgid "Exclusive"
+msgstr "Exklusiv"
+
+#: qml/EditListPage.qml:87
+#, kde-format
+msgid "Posts in an exclusive list are excluded from the Home timeline."
+msgstr ""
+"Beiträge in einer exklusiven Liste werden nicht in der Startseiten-"
+"Zeitleiste angezeigt."
+
+#: qml/EditListPage.qml:97
+#, kde-format
+msgctxt "@label If the list is favorited"
+msgid "Favorite"
+msgstr "Favorit"
+
+#: qml/EditListPage.qml:98
+#, kde-format
+msgid "This list will show up in the sidebar."
+msgstr "Diese Liste erscheint in der Seitenleiste."
+
+#: qml/EditListPage.qml:106
+#, kde-format
+msgctxt "@action:button Delete the list"
+msgid "Manage Users"
+msgstr "Benutzer verwalten"
+
+#: qml/EditListPage.qml:123
+#, kde-format
+msgctxt "@action:intoolbar Add users to list"
+msgid "Add Users"
+msgstr "Benutzer hinzufügen"
+
+#: qml/EditListPage.qml:134
+#, kde-format
+msgctxt "@title"
+msgid "Add Users to List…"
+msgstr "Benutzer zur Liste hinzufügen …"
+
+#: qml/EditListPage.qml:172
+#, kde-format
+msgctxt "@action:button Add user to this list"
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: qml/EditListPage.qml:219
+#, kde-format
+msgid "Search among users you follow…"
+msgstr "Unter von Ihnen gefolgten Benutzern suchen …"
+
+#: qml/EditListPage.qml:253
+#, kde-format
+msgctxt "@action:button Create the list"
+msgid "Create"
+msgstr "Erstellen"
+
+#: qml/EditListPage.qml:255
+#, fuzzy, kde-format
+#| msgctxt "@action:Button Save an edited a post"
+#| msgid "Save"
+msgctxt "@action:button Save the edited list"
+msgid "Save"
+msgstr "Speichern"
+
+#: qml/EditListPage.qml:268
+#, kde-format
+msgctxt "@action:button Delete the list"
+msgid "Delete"
+msgstr "Löschen"
+
+#: qml/EditListPage.qml:275
+#, kde-format
+msgctxt "@title"
+msgid "Deleting List"
+msgstr "Liste löschen"
+
+#: qml/EditListPage.qml:276
+#, kde-format
+msgctxt "@label"
+msgid "Are you sure you want to delete this list?"
+msgstr "Sind Sie sicher, dass Sie diese Liste löschen wollen?"
+
+#: qml/ExplorePage.qml:18
+#, kde-format
+msgid "Explore"
+msgstr "Entdecken"
+
+#: qml/ExplorePage.qml:34 search/searchmodel.cpp:155
+#, kde-format
+msgid "Posts"
+msgstr "Beiträge"
+
+#: qml/ExplorePage.qml:40 search/searchmodel.cpp:153
+#, kde-format
+msgid "Hashtags"
+msgstr "Hashtags"
+
+#: qml/ExplorePage.qml:46
+#, kde-format
+msgid "News"
+msgstr "Neuigkeiten"
+
+#: qml/ExplorePage.qml:52 search/searchmodel.cpp:151
+#, kde-format
+msgid "Users"
+msgstr "Benutzer"
+
+#: qml/ExplorePage.qml:103
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Posts"
+msgstr "Keine Beiträge"
+
+#: qml/ExplorePage.qml:130
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Tags"
+msgstr "Keine Tags"
+
+#: qml/ExplorePage.qml:162
+#, kde-format
+msgid "%1 person is talking"
+msgid_plural "%1 people are talking"
+msgstr[0] "Eine Person schreibt"
+msgstr[1] "%1 Personen schreiben"
+
+#: qml/ExplorePage.qml:247
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu 'Browser' being a web browser"
+#| msgid "Open in Browser"
+msgctxt "@action:intoolbar"
+msgid "Open in Browser"
+msgstr "Im Browser öffnen"
+
+#: qml/ExplorePage.qml:305
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No News"
+msgstr "Keine Neuigkeiten"
+
+#: qml/ExplorePage.qml:342
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Users"
+msgstr "Keine Benutzer"
+
+#: qml/FollowingPage.qml:20
+#, kde-format
+msgctxt "@title 'Following' as in the users you're following on Mastodon."
+msgid "Following"
+msgstr "Folge"
+
+#: qml/FollowingPage.qml:41 qml/Settings/SafetyPage.qml:26
+#: qml/TimelinePage.qml:110
+#, kde-format
+msgctxt "@action:button"
+msgid "Filters"
+msgstr "Filter"
+
+#: qml/FollowingPage.qml:46
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Show Boosts"
+msgstr "Geteilte Beiträge anzeigen"
+
+#: qml/FollowingPage.qml:54
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Show Replies"
+msgstr "Antworten anzeigen"
+
+#: qml/FollowingPage.qml:65 qml/TimelinePage.qml:139
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Configure Filters…"
+msgstr "Filter einrichten …"
+
+#: qml/FollowingPage.qml:66 qml/TimelinePage.qml:140
+#, kde-format
+msgctxt "@title:window"
+msgid "Filters"
+msgstr "Filter"
+
+#: qml/FollowingPage.qml:155
+#, kde-format
+msgid "No User Selected"
+msgstr "Kein Benutzer ausgewählt"
+
+#: qml/FollowingPage.qml:156
+#, kde-format
+msgid ""
+"With the Following view, easily check on each user you're following and only "
+"their posts - sorted by recent activity."
+msgstr ""
+"In dieser Ansicht können Sie nach den Benutzern, denen Sie folgen, sowie "
+"ausschließlich deren Beiträgen sehen, sortiert nach Aktivität."
+
+#: qml/FullScreenImage.qml:33
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Open Post"
+msgstr "Beitrag öffnen"
+
+#: qml/GenericServerInformationPage.qml:17
+#, fuzzy, kde-format
+#| msgid "Custom Server"
+msgctxt "@title:window"
+msgid "About Server"
+msgstr "Benutzerdefinierter Server"
+
+#: qml/InitialSetup/SetupNotifications.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: qml/InitialSetup/SetupNotifications.qml:22
+#: qml/InitialSetup/SetupPassword.qml:20
+#, kde-format
+msgid "Setup Required"
+msgstr "Einrichtung erforderlich"
+
+#: qml/InitialSetup/SetupNotifications.qml:28
+#, kde-format
+msgid ""
+"Tokodon can show notifications for activity such as users boosting or "
+"replying to your posts.\n"
+"\n"
+"The types of notifications shown can be fine tuned when logged in."
+msgstr ""
+"Tokodon kann Benachrichtigungen für Ereignisse wie Teilen oder Antworten auf "
+"Ihre Beiträge anzeigen.\n"
+"\n"
+"Die Arten der angezeigten Benachrichtigungen können angepasst werden, wenn "
+"Sie angemeldet sind."
+
+#: qml/InitialSetup/SetupNotifications.qml:35
+#, kde-format
+msgid "Allow Notifications"
+msgstr "Benachrichtigungen erlauben"
+
+#: qml/InitialSetup/SetupNotifications.qml:49
+#: qml/InitialSetup/SetupWelcome.qml:42 qml/LoginFlow/CodeAuthorization.qml:32
+#, kde-format
+msgid "Continue"
+msgstr "Fortfahren"
+
+#: qml/InitialSetup/SetupPassword.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Password Service"
+msgstr "Passwortdienst"
+
+#: qml/InitialSetup/SetupPassword.qml:25
+#, kde-format
+msgid ""
+"Tokodon requires a password service to be running to save personally "
+"sensitive information.\n"
+"\n"
+"Tokodon can use KWallet, GNOME Keyring or any libsecret-compatible service.\n"
+"\n"
+"After you installed the service, make sure it's running and restart Tokodon."
+msgstr ""
+"Tokodon benötigt einen laufenden Passwortdienst, um Ihre persönlichen Daten "
+"zu speichern.\n"
+"\n"
+"Tokodon kann mit KWallet (Passwortverwaltung), GNOME-Schlüsselbund und jedem "
+"anderen libsecret-kompatiblen Dienst umgehen.\n"
+"\n"
+"Nachdem Sie den Dienst installiert haben, stellen Sie sicher, dass er läuft "
+"und starten dann Tokodon neu."
+
+#: qml/InitialSetup/SetupPassword.qml:32
+#, kde-format
+msgid "Quit Tokodon"
+msgstr "Tokodon beenden"
+
+#: qml/InitialSetup/SetupWelcome.qml:17 qml/LoginFlow/WelcomePage.qml:18
+#, kde-format
+msgctxt "@title:window"
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: qml/InitialSetup/SetupWelcome.qml:30
+#, kde-format
+msgid "Welcome to Tokodon"
+msgstr "Willkommen bei Tokodon"
+
+#: qml/InitialSetup/SetupWelcome.qml:35
+#, kde-format
+msgid "Some initial setup is required before you can use Tokodon."
+msgstr ""
+"Bevor Sie Tokodon nutzen können, ist eine erstmalige Einrichtung nötig."
+
+#: qml/LanguageSelector.qml:25
+#, kde-format
+msgctxt "@title"
+msgid "Select Language"
+msgstr "Sprache auswählen"
+
+#: qml/LanguageSelector.qml:50
+#, kde-format
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Schließen"
+
+#: qml/ListsPage.qml:23
+#, kde-format
+msgctxt "@title"
+msgid "Lists"
+msgstr "Listen"
+
+#: qml/ListsPage.qml:36
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Create Rule"
+msgctxt "@action:button Create new list"
+msgid "Create New…"
+msgstr "Regel erstellen"
+
+#: qml/ListsPage.qml:77
+#, kde-format
+msgid "No Lists"
+msgstr "Keine Listen"
+
+#: qml/ListsPage.qml:78
+#, kde-format
+msgid "Lists allow you to categorize who you're following."
+msgstr "Listen ermöglichen es Ihnen, zu kategorisieren, wem Sie folgen."
+
+#: qml/ListTimelinePage.qml:18 qml/Main.qml:282 qml/Main.qml:318
+#: qml/Main.qml:333
+#, kde-format
+msgid "No Posts"
+msgstr "Keine Beiträge"
+
+#: qml/ListTimelinePage.qml:19
+#, kde-format
+msgid ""
+"There are no posts from the users in your list. Only new posts will appear "
+"in a list."
+msgstr ""
+"Es gibt keine Beiträge von den Benutzern in Ihrer Liste. In einer Liste "
+"erscheinen nur neue Beiträge."
+
+#: qml/ListTimelinePage.qml:24
+#, fuzzy, kde-format
+#| msgid "Edit"
+msgctxt "@action:button Edit current list"
+msgid "Edit…"
+msgstr "Bearbeiten"
+
+#: qml/LoginFlow/BaseAuthorization.qml:26
+#, kde-format
+msgctxt "@title:window"
+msgid "Authorization"
+msgstr "Autorisierung"
+
+#: qml/LoginFlow/BaseAuthorization.qml:79
+#, kde-format
+msgid "To continue, you must authorize Tokodon to access your account."
+msgstr ""
+"Um fortfahren zu können, müssen Sie Tokodon für den Zugriff auf Ihr Konto "
+"autorisieren."
+
+#: qml/LoginFlow/BaseAuthorization.qml:88
+#, kde-format
+msgid "Open Authorization Page"
+msgstr "Autorisierungsseite öffnen"
+
+#: qml/LoginFlow/BaseAuthorization.qml:100
+#, kde-format
+msgid "Copy Link to Authorization Page"
+msgstr "Link zur Autorisierungsseite kopieren"
+
+#: qml/LoginFlow/BaseAuthorization.qml:104
+#, kde-format
+msgid "Link copied."
+msgstr "Verknüpfung kopiert."
+
+#: qml/LoginFlow/BrowserAuthorization.qml:25
+#, kde-format
+msgid "Use Authorization Code"
+msgstr "Autorisierungscode verwenden"
+
+#: qml/LoginFlow/BrowserAuthorization.qml:26
+#, kde-format
+msgid "Use this login method if the above link does not work."
+msgstr ""
+"Benutzen Sie diese Anmeldemethode, falls der obige Link nicht funktioniert."
+
+#: qml/LoginFlow/CodeAuthorization.qml:25
+#, kde-format
+msgid "Enter authorization token:"
+msgstr "Autorisierungstoken eingeben:"
+
+#: qml/LoginFlow/LoginIssuePage.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Login Issue"
+msgstr "Problem mit Anmeldung"
+
+#: qml/LoginFlow/LoginIssuePage.qml:27
+#, fuzzy, kde-format
+#| msgid "There was an issue logging into the server:<br><b>%1</b>"
+msgid "There was an issue logging into %1:<br><b>%2</b>"
+msgstr "Es gab ein Problem bei der Anmeldungen am Server:<br><b>%1</b>"
+
+#: qml/LoginFlow/LoginIssuePage.qml:38
+#, kde-format
+msgid ""
+"Please check if the password service is running. For other login issues, you "
+"can try logging into the server's website.\n"
+"\n"
+"You can attempt to log in again with the button below, or restart Tokodon."
+msgstr ""
+"Bitte prüfen Sie, ob der Passwortdienst läuft. Bei anderen Problemen können "
+"Sie versuchen, sich auf der Webseite des Servers anzumelden.\n"
+"\n"
+"Sie können mit dem Knopf unten einen weiteren Anmeldeversuch starten, oder "
+"Starten Sie Tokodon neu."
+
+#: qml/LoginFlow/LoginIssuePage.qml:48
+#, kde-format
+msgid "View Website"
+msgstr "Webseite besuchen"
+
+#: qml/LoginFlow/LoginIssuePage.qml:57
+#, kde-format
+msgid "Re-Attempt Log In"
+msgstr "Anmeldung erneut versuchen"
+
+#: qml/LoginFlow/LoginIssuePage.qml:69 qml/Settings/AccountPage.qml:40
+#, fuzzy, kde-format
+#| msgid "Logout"
+msgid "Logout…"
+msgstr "Abmeldung"
+
+#: qml/LoginFlow/LoginIssuePage.qml:76 qml/Settings/AccountPage.qml:60
+#, kde-format
+msgctxt "@title"
+msgid "Logout"
+msgstr "Abmeldung"
+
+#: qml/LoginFlow/LoginIssuePage.qml:77
+#, kde-format
+msgctxt "@label"
+msgid "Are you sure you want to log out?"
+msgstr "Wollen Sie sich wirklich abmelden?"
+
+#: qml/LoginFlow/RegistrationPage.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Registration"
+msgstr "Registrierung"
+
+#: qml/LoginFlow/RegistrationPage.qml:25 qml/LoginFlow/RegistrationPage.qml:36
+#: qml/LoginFlow/RulesPage.qml:25 qml/LoginFlow/ServersPage.qml:30
+#, kde-format
+msgctxt "@info:status Network status"
+msgid "Failed to contact server: %1. Please check your proxy settings."
+msgstr ""
+"Server konnte nicht kontaktiert werden: %1. Bitte überprüfen Sie Ihre Proxy-"
+"Einstellungen."
+
+#: qml/LoginFlow/RegistrationPage.qml:85 qml/LoginFlow/RulesPage.qml:40
+#: qml/LoginFlow/ServersPage.qml:170 qml/Settings/NetworkProxyPage.qml:70
+#, kde-format
+msgid "Proxy Settings"
+msgstr "Proxyeinstellungen"
+
+#: qml/LoginFlow/RegistrationPage.qml:94
+#, kde-format
+msgctxt "@title:group"
+msgid "Register"
+msgstr "Registrieren"
+
+#: qml/LoginFlow/RegistrationPage.qml:100
+#, kde-format
+msgid "Username"
+msgstr "Benutzername"
+
+#: qml/LoginFlow/RegistrationPage.qml:109
+#, kde-format
+msgid "Email Address"
+msgstr "E-Mail-Adresse"
+
+#: qml/LoginFlow/RegistrationPage.qml:118 qml/Settings/NetworkProxyPage.qml:123
+#, kde-format
+msgid "Password"
+msgstr "Passwort"
+
+#: qml/LoginFlow/RegistrationPage.qml:128
+#, kde-format
+msgid "Date of Birth"
+msgstr ""
+
+#: qml/LoginFlow/RegistrationPage.qml:136
+#, kde-format
+msgid "Reason"
+msgstr "Grund"
+
+#: qml/LoginFlow/RegistrationPage.qml:145
+#, kde-format
+msgid "Register"
+msgstr "Registrieren"
+
+#: qml/LoginFlow/RulesPage.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Rules"
+msgstr "Regeln"
+
+#: qml/LoginFlow/RulesPage.qml:47
+#, kde-format
+msgctxt "@title:group"
+msgid "Rules"
+msgstr "Regeln"
+
+#: qml/LoginFlow/RulesPage.qml:100
+#, kde-format
+msgctxt "@action:button Agree to server rules"
+msgid "Agree"
+msgstr "Zustimmen"
+
+#: qml/LoginFlow/RulesPage.qml:118
+#, kde-format
+msgctxt "@action:button Disagree to server rules"
+msgid "Disagree"
+msgstr "Nicht zustimmen"
+
+#: qml/LoginFlow/ServersPage.qml:21
+#, kde-format
+msgctxt "@title:window"
+msgid "Pick a Server"
+msgstr "Einen Server auswählen"
+
+#: qml/LoginFlow/ServersPage.qml:21
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose your Existing Server"
+msgstr ""
+
+#: qml/LoginFlow/ServersPage.qml:38
+#, kde-format
+msgid "This server is closed for registration: %1"
+msgstr "Dieser Server nimmt keine Registrierungen entgegen: %1"
+
+#: qml/LoginFlow/ServersPage.qml:40
+#, kde-format
+msgid "This server is closed for registration, and did not provide a reason."
+msgstr ""
+"Dieser Server nimmt keine Registrierungen entgegen und liefert keine "
+"Begründung dafür."
+
+#: qml/LoginFlow/ServersPage.qml:178
+#, kde-format
+msgid "Search or enter URL…"
+msgstr "Suchen oder eine URL eingeben …"
+
+#: qml/LoginFlow/ServersPage.qml:217
+#, kde-format
+msgid "Custom Server"
+msgstr "Benutzerdefinierter Server"
+
+#: qml/LoginFlow/ServersPage.qml:226
+#, kde-format
+msgid "Public Servers"
+msgstr "Öffentliche Server"
+
+#: qml/LoginFlow/ServersPage.qml:256
+#, kde-format
+msgid "No Public Servers"
+msgstr "Keine öffentlichen Server"
+
+#: qml/LoginFlow/ServersPage.qml:257
+#, kde-format
+msgid "Enter a server URL manually in the search field."
+msgstr "Geben Sie eine Serveradresse in das Suchfeld ein."
+
+#: qml/LoginFlow/WebViewAuthorization.qml:22
+#, kde-format
+msgctxt "@action:button Open in external web browser"
+msgid "Open Externally"
+msgstr "Extern öffnen"
+
+#: qml/LoginFlow/WelcomePage.qml:55
+#, kde-format
+msgctxt "@info"
+msgid "Tokodon"
+msgstr "Tokodon"
+
+#: qml/LoginFlow/WelcomePage.qml:64
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Browse the Fediverse and connect with people on Mastodon (and other "
+"compatible software)."
+msgstr ""
+"Durchstöbern Sie das Fediverse und verbinden Sie sich mit Menschen auf "
+"Mastodon (und anderer kompatibler Software)."
+
+#: qml/LoginFlow/WelcomePage.qml:80
+#, fuzzy, kde-format
+#| msgid "Register"
+msgctxt "@action:button Pick a Mastodon server"
+msgid "Register"
+msgstr "Registrieren"
+
+#: qml/LoginFlow/WelcomePage.qml:90
+#, fuzzy, kde-format
+#| msgid "Login"
+msgctxt "@action:button Use an existing Mastodon account"
+msgid "Login"
+msgstr "Anmelden"
+
+#: qml/LoginFlow/WelcomePage.qml:97
+#, fuzzy, kde-format
+#| msgctxt "@action:button Use an existing Mastodon account"
+#| msgid "Use an Existing Account"
+msgctxt "@action:button Use an existing Mastodon account"
+msgid "Use System Account"
+msgstr "Ein bestehendes Konto verwenden"
+
+#: qml/LoginFlow/WelcomePage.qml:115
+#, kde-format
+msgctxt "@action:button Application settings"
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: qml/LoginFlow/WelcomePage.qml:126
+#, kde-format
+msgctxt "@action:button"
+msgid "Compatible with Mastodon"
+msgstr "Kompatibel mit Mastodon"
+
+#: qml/LoginFlow/WelcomePage.qml:132
+#, kde-format
+msgctxt "@info Compatible with Mastodon"
+msgid "Compatible with"
+msgstr "Kompatibel mit"
+
+#: qml/Main.qml:149
+#, kde-format
+msgctxt "@title"
+msgid "Open As…"
+msgstr "Öffnen als ..."
+
+#: qml/Main.qml:151
+#, kde-format
+msgctxt "@title"
+msgid "Reply As…"
+msgstr "Antworten als …"
+
+#: qml/Main.qml:153
+#, kde-format
+msgctxt "@title"
+msgid "Favorite As…"
+msgstr "Favoriten als ..."
+
+#: qml/Main.qml:155
+#, kde-format
+msgctxt "@title"
+msgid "Boost As…"
+msgstr "Beitrag teilen als ..."
+
+#: qml/Main.qml:157
+#, kde-format
+msgctxt "@title"
+msgid "Bookmark As…"
+msgstr "Lesezeichen speichern als ..."
+
+#: qml/Main.qml:159
+#, kde-format
+msgctxt "@title"
+msgid "Unknown Action"
+msgstr "Unbekannte Aktion"
+
+#: qml/Main.qml:283 qml/Main.qml:319 qml/Main.qml:334
+#, kde-format
+msgid "It seems pretty quiet right now, try posting something!"
+msgstr "Es scheint momentan ziemlich ruhig zu sein, schreiben Sie doch etwas!"
+
+#: qml/Main.qml:348
+#, kde-format
+msgid "No Favorites"
+msgstr "Keine Favoriten"
+
+#: qml/Main.qml:349
+#, kde-format
+msgid ""
+"Posts that you favorite will show up here. If you appreciate someone's post, "
+"favorite it!"
+msgstr ""
+"Beiträge, die Sie favorisieren, erscheinen hier. Wenn Sie jemandes Beitrag "
+"mögen, favorisieren Sie ihn!"
+
+#: qml/Main.qml:363
+#, kde-format
+msgid "No Bookmarks"
+msgstr "Keine Lesezeichen"
+
+#: qml/Main.qml:364
+#, kde-format
+msgid ""
+"Bookmark posts and they will show up here. Bookmarks are always kept "
+"private, even to the post's author."
+msgstr ""
+"Setzen Sie ein Lesezeichen für einen Beitrag und er erscheint hier. "
+"Lesezeichen werden stets geheim gehalten, sogar vor dem Autoren des Beitrags."
+
+#: qml/Main.qml:468
+#, kde-format
+msgid "Write a New Post"
+msgstr "Einen neuen Beitrag schreiben"
+
+#: qml/Main.qml:495
+#, kde-format
+msgid "Write a new post"
+msgstr "Einen neuen Beitrag schreiben"
+
+#: qml/Main.qml:540
+#, kde-format
+msgid "Reply to post"
+msgstr "Auf Beitrag antworten"
+
+#: qml/Main.qml:629
+#, kde-format
+msgctxt "@action:button Home Timeline"
+msgid "Home"
+msgstr "Startseite"
+
+#: qml/Main.qml:634
+#, kde-format
+msgctxt "@action:button Account Notifications"
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: qml/Main.qml:639
+#, kde-format
+msgctxt "@action:button Follows that require explicit allow/deny"
+msgid "Follow Requests"
+msgstr "Follower-Anfragen"
+
+#: qml/Main.qml:644
+#, kde-format
+msgctxt "@action:button Local timeline of posts from the account's own server"
+msgid "Local"
+msgstr "Lokal"
+
+#: qml/Main.qml:648
+#, kde-format
+msgctxt ""
+"@action:button Global timeline of posts from the entire Fediverse network"
+msgid "Global"
+msgstr "Global"
+
+#: qml/Main.qml:652
+#, kde-format
+msgctxt "@action:button Direct one-on-one messages between users"
+msgid "Conversations"
+msgstr "Unterhaltungen"
+
+#: qml/Main.qml:656
+#, kde-format
+msgctxt "@action:button This account's favorited posts"
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: qml/Main.qml:660
+#, kde-format
+msgctxt "@action:button This account's bookmarked posts"
+msgid "Bookmarks"
+msgstr "Lesezeichen"
+
+#: qml/Main.qml:664
+#, kde-format
+msgctxt "@action:button Explore this server's trending posts, news, and more"
+msgid "Explore"
+msgstr "Entdecken"
+
+#: qml/Main.qml:668
+#, kde-format
+msgctxt "@action:button A list of this account's followed accounts"
+msgid "Following"
+msgstr "Folge ich"
+
+#: qml/Main.qml:672
+#, kde-format
+msgctxt "@action:button Search for users, posts and tags"
+msgid "Search"
+msgstr "Suchen"
+
+#: qml/Main.qml:680
+#, kde-format
+msgctxt ""
+"@action:button This account's lists, or timelines consisting of a groups of "
+"accounts"
+msgid "Lists"
+msgstr "Listen"
+
+#: qml/Main.qml:684
+#, kde-format
+msgctxt "@action:button This account's profile"
+msgid "Profile"
+msgstr "Profil"
+
+#: qml/Main.qml:691
+#, kde-format
+msgctxt "@action:button Open debug page"
+msgid "Debug"
+msgstr "Fehlersuche"
+
+#: qml/Main.qml:704
+#, kde-format
+msgctxt "@action:button Open moderation tools"
+msgid "Moderation Tools"
+msgstr "Moderationswerkzeuge"
+
+#: qml/Main.qml:711
+#, kde-format
+msgctxt "@action:button Open settings dialog"
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: qml/Main.qml:874
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Unfollow"
+msgstr "Entfolgen"
+
+#: qml/Main.qml:874
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Follow"
+msgstr "Folgen"
+
+#: qml/ModerationTools/AccountToolPage.qml:31
+#: qml/ModerationTools/AccountToolPage.qml:215
+#, kde-format
+msgid "Advanced Search"
+msgstr "Erweiterte Suche"
+
+#: qml/ModerationTools/AccountToolPage.qml:41
+#, kde-format
+msgctxt "@info:placeholder Username for searching accounts"
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: qml/ModerationTools/AccountToolPage.qml:46
+#, kde-format
+msgctxt "@info:placeholder display name for searching accounts"
+msgid "Display Name:"
+msgstr "Anzeigename:"
+
+#: qml/ModerationTools/AccountToolPage.qml:51
+#, kde-format
+msgctxt "@info:placeholder email for searching accounts"
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: qml/ModerationTools/AccountToolPage.qml:56
+#, kde-format
+msgctxt "@info:placeholder ip for searching accounts"
+msgid "IP:"
+msgstr "IP:"
+
+#: qml/ModerationTools/AccountToolPage.qml:63
+#, kde-format
+msgctxt "@info:Search button to initiate searching accounts"
+msgid "Search"
+msgstr "Suchen"
+
+#: qml/ModerationTools/AccountToolPage.qml:74
+#, kde-format
+msgctxt "@info:Reset button to reset all the text fields"
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: qml/ModerationTools/AccountToolPage.qml:79
+#: qml/ModerationTools/FederationToolPage.qml:140
+#: qml/ModerationTools/FederationToolPage.qml:171
+#: qml/ModerationTools/IpRulePage.qml:121
+#: qml/ModerationTools/MainFederationToolPage.qml:110
+#, kde-format
+msgctxt "@info:Cancel button to close the dailog"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: qml/ModerationTools/AccountToolPage.qml:96
+#, kde-format
+msgctxt "@info:Location combobox to choose location filters"
+msgid "Location"
+msgstr "Ort"
+
+#: qml/ModerationTools/AccountToolPage.qml:109
+#, kde-format
+msgctxt "@info:Filter out accounts from any location"
+msgid "All"
+msgstr "Alle"
+
+#: qml/ModerationTools/AccountToolPage.qml:113
+#, kde-format
+msgctxt "@info:Filter out local accounts"
+msgid "Local"
+msgstr "Lokal"
+
+#: qml/ModerationTools/AccountToolPage.qml:117
+#, kde-format
+msgctxt "@info:Filter out remote accounts"
+msgid "Remote"
+msgstr "Entfernt"
+
+#: qml/ModerationTools/AccountToolPage.qml:131
+#, kde-format
+msgctxt ""
+"@info:Moderation Status combobox to choose between different moderation "
+"status filters"
+msgid "Moderation Status"
+msgstr "Moderationsstatus"
+
+#: qml/ModerationTools/AccountToolPage.qml:142
+#, kde-format
+msgctxt "@info:Filter out accounts with any moderation status"
+msgid "All"
+msgstr "Alle"
+
+#: qml/ModerationTools/AccountToolPage.qml:146
+#, kde-format
+msgctxt "@info:Filter out accounts with active moderation status"
+msgid "Active"
+msgstr "Aktiv"
+
+#: qml/ModerationTools/AccountToolPage.qml:150
+#, kde-format
+msgctxt "@info:Filter out accounts with pending moderation status"
+msgid "Pending"
+msgstr "Ausstehend"
+
+#: qml/ModerationTools/AccountToolPage.qml:154
+#, kde-format
+msgctxt "@info:Filter out accounts with disabled moderation status"
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: qml/ModerationTools/AccountToolPage.qml:158
+#, kde-format
+msgctxt "@info:Filter out accounts with silenced moderation status"
+msgid "Silenced"
+msgstr "Stummgeschaltet"
+
+#: qml/ModerationTools/AccountToolPage.qml:162
+#, kde-format
+msgctxt "@info:Filter out accounts with suspended moderation status"
+msgid "Suspended"
+msgstr "Gesperrt"
+
+#: qml/ModerationTools/AccountToolPage.qml:175
+#, kde-format
+msgctxt "@info:Role combobox to choose between different role filters"
+msgid "Role"
+msgstr "Rolle"
+
+#: qml/ModerationTools/AccountToolPage.qml:189
+#, kde-format
+msgctxt "@info:Filter out accounts with any role"
+msgid "All"
+msgstr "Alle"
+
+#: qml/ModerationTools/AccountToolPage.qml:193
+#, kde-format
+msgctxt "@info:Filter out accounts with moderator role"
+msgid "Moderator"
+msgstr "Moderator"
+
+#: qml/ModerationTools/AccountToolPage.qml:197
+#, kde-format
+msgctxt "@info:Filter out accounts with admin role"
+msgid "Admin"
+msgstr "Administrator"
+
+#: qml/ModerationTools/AccountToolPage.qml:201
+#, kde-format
+msgctxt "@info:Filter out accounts with owner role"
+msgid "Owner"
+msgstr "Eigentümer"
+
+#: qml/ModerationTools/AccountToolPage.qml:299
+#, kde-format
+msgid "No accounts found"
+msgstr "Keine Konten gefunden"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:17
+#, kde-format
+msgctxt "@action:button"
+msgid "Create Email Block"
+msgstr "E-Mail-Sperre erstellen"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:31
+#, kde-format
+msgctxt "@title"
+msgid "E-Mail Domain Info"
+msgstr "Informationen zur E-Mail-Domain"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:40
+#, kde-format
+msgctxt "@info The domain on which the block is imposed"
+msgid "Email domain name"
+msgstr "E-Mail-Domainname"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:48
+#, kde-format
+msgctxt "@info Time when the block was imposed."
+msgid "Block created at"
+msgstr "Sperre erstellt am"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:56
+#, kde-format
+msgctxt ""
+"@info The counted accounts signup attempts using that email domain within "
+"the last week."
+msgid "Account sign-up attempts in this week"
+msgstr "Konto-Registrierungsversuche in dieser Woche"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:64
+#, kde-format
+msgctxt ""
+"@info The counted IP signup attempts of that email domain within that day."
+msgid "IP sign-up attempts in this week"
+msgstr "IP-Registrierungsversuche in dieser Woche"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:73
+#: qml/ModerationTools/EmailBlockToolPage.qml:111
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:78
+#, kde-format
+msgctxt "@action:button"
+msgid "Delete email block"
+msgstr "E-Mail-Sperre entfernen"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:82
+#, kde-format
+msgid "Email block deleted"
+msgstr "E-Mail-Sperre entfernt"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:92
+#, kde-format
+msgctxt "@title"
+msgid "New E-Mail Domain Block"
+msgstr "Neue E-Mail-Domain-Sperre"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:102
+#, kde-format
+msgctxt "@info The domain on which the block will be imposed"
+msgid "Domain *"
+msgstr "Domain *"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:103
+#, kde-format
+msgid ""
+"This can be the domain name that shows up in the e-mail address or the MX "
+"record it uses. They will be checked upon sign-up."
+msgstr ""
+"Dies kann die Domain der E-Mail-Adresse sein oder der MX-Record, den sie "
+"benutzt. Diese werden beim Registrieren geprüft."
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:116
+#, kde-format
+msgctxt "@action:button"
+msgid "Resolve domain"
+msgstr "Domain auflösen"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:120
+#, kde-format
+msgid "New email block added"
+msgstr "Neue E-Mail-Sperre hinzugefügt"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:163
+#, kde-format
+msgctxt "@info"
+msgid "%1 sign-up attempts over the last week"
+msgstr "%1 Registrierungsversuche in der letzten Woche"
+
+#: qml/ModerationTools/EmailBlockToolPage.qml:185
+#, kde-format
+msgid "No email blocks found"
+msgstr "Keine E-Mail-Sperren gefunden"
+
+#: qml/ModerationTools/FederationToolPage.qml:20
+#, kde-format
+msgid "Add New Domain Block"
+msgstr "Neue Domain-Sperre hinzufügen"
+
+#: qml/ModerationTools/FederationToolPage.qml:26
+#: qml/ModerationTools/FederationToolPage.qml:159
+#, kde-format
+msgid "Allow Federation with Domain"
+msgstr "Föderation mit Domain erlauben"
+
+#: qml/ModerationTools/FederationToolPage.qml:38
+#, kde-format
+msgid "Allowed Domain Info"
+msgstr "Informationen zu erlaubter Domain"
+
+#: qml/ModerationTools/FederationToolPage.qml:44
+#, kde-format
+msgctxt "@info:The domain that is allowed to federate"
+msgid "Domain"
+msgstr "Domain"
+
+#: qml/ModerationTools/FederationToolPage.qml:50
+#, kde-format
+msgctxt "@info:Time when the domain was allowed to federate."
+msgid "Created at"
+msgstr "Erstellt am"
+
+#: qml/ModerationTools/FederationToolPage.qml:59
+#, kde-format
+msgid "Disallow Federation with Domain"
+msgstr "Föderation mit Domain verbieten"
+
+#: qml/ModerationTools/FederationToolPage.qml:63
+#, kde-format
+msgid "Disallowed federation with the domain"
+msgstr "Föderation mit der Domain wurde verboten"
+
+#: qml/ModerationTools/FederationToolPage.qml:73
+#, kde-format
+msgid "Add Domain Block"
+msgstr "Domain-Sperre hinzufügen"
+
+#: qml/ModerationTools/FederationToolPage.qml:83
+#, kde-format
+msgctxt "@info:Enter the domain address of the domain block"
+msgid "Domain*"
+msgstr "Domain*"
+
+#: qml/ModerationTools/FederationToolPage.qml:88
+#: qml/ModerationTools/MainFederationToolPage.qml:74
+#: qml/ModerationTools/MainFederationToolPage.qml:139
+#, kde-format
+msgid "Public comment"
+msgstr "Öffentlicher Kommentar"
+
+#: qml/ModerationTools/FederationToolPage.qml:93
+#, kde-format
+msgid "Private Comment"
+msgstr "Privater Kommentar"
+
+#: qml/ModerationTools/FederationToolPage.qml:98
+#: qml/ModerationTools/MainFederationToolPage.qml:50
+#, kde-format
+msgid "Moderation"
+msgstr "Moderator"
+
+#: qml/ModerationTools/FederationToolPage.qml:103
+#: qml/ModerationTools/MainFederationToolPage.qml:55
+#, kde-format
+msgctxt "@info:Filter out all the allowed domains"
+msgid "Silence"
+msgstr "Stummschalten"
+
+#: qml/ModerationTools/FederationToolPage.qml:107
+#: qml/ModerationTools/MainFederationToolPage.qml:59
+#, kde-format
+msgctxt "@info:Filter out all the blocked domains"
+msgid "Suspend"
+msgstr "Sperren"
+
+#: qml/ModerationTools/FederationToolPage.qml:111
+#: qml/ModerationTools/MainFederationToolPage.qml:63
+#, kde-format
+msgctxt "@info:Filter out all the blocked domains"
+msgid "None"
+msgstr "Keine"
+
+#: qml/ModerationTools/FederationToolPage.qml:120
+#: qml/ModerationTools/MainFederationToolPage.qml:85
+#, kde-format
+msgid "Reject media files"
+msgstr "Mediendateien verweigern"
+
+#: qml/ModerationTools/FederationToolPage.qml:121
+#: qml/ModerationTools/MainFederationToolPage.qml:86
+#, kde-format
+msgid ""
+"Removes locally stored media files and refuses to download any in the "
+"future. Irrelevant for suspensions"
+msgstr ""
+"Entfernt lokal gespeicherte Mediendateien und verhindert das zukünftige "
+"Herunterladen. Irrelevant für Sperrungen"
+
+#: qml/ModerationTools/FederationToolPage.qml:126
+#: qml/ModerationTools/MainFederationToolPage.qml:93
+#, kde-format
+msgid "Reject reports"
+msgstr "Meldungen verweigern"
+
+#: qml/ModerationTools/FederationToolPage.qml:127
+#: qml/ModerationTools/MainFederationToolPage.qml:94
+#, kde-format
+msgid "Ignore all reports coming from this domain. Irrelevant for suspensions"
+msgstr "Alle Meldungen von dieser Domain ignorieren. Irrelevant für Sperrungen"
+
+#: qml/ModerationTools/FederationToolPage.qml:132
+#: qml/ModerationTools/MainFederationToolPage.qml:101
+#, kde-format
+msgid "Obfuscate domain name"
+msgstr "Domainnamen verschleiern"
+
+#: qml/ModerationTools/FederationToolPage.qml:133
+#: qml/ModerationTools/MainFederationToolPage.qml:102
+#, kde-format
+msgid ""
+"Partially obfuscate the domain name in the list if advertising the list of "
+"domain limitations is enabled"
+msgstr ""
+"Domainnamen in der Liste teilweise verschleiern, wenn die Einschränkung der "
+"Veröffentlichung von Domainlisten aktiviert ist"
+
+#: qml/ModerationTools/FederationToolPage.qml:145
+#: qml/ModerationTools/FederationToolPage.qml:176
+#, kde-format
+msgctxt "@info:Button to create a domain block"
+msgid "Create Block"
+msgstr "Sperre anlegen"
+
+#: qml/ModerationTools/FederationToolPage.qml:150
+#, kde-format
+msgid "New domain block added"
+msgstr "Neue Domain-Sperre hinzugefügt"
+
+#: qml/ModerationTools/FederationToolPage.qml:165
+#, kde-format
+msgctxt ""
+"@info:This domain will be able to fetch data from this server and incoming "
+"data from it will be processed and stored"
+msgid "Domain*"
+msgstr "Domain*"
+
+#: qml/ModerationTools/FederationToolPage.qml:180
+#, kde-format
+msgid "New Allowed Domain Added"
+msgstr "Neue erlaubte Domain hinzugefügt"
+
+#: qml/ModerationTools/FederationToolPage.qml:193
+#, kde-format
+msgid ""
+"Allowed domain option is available for instances with limited federation "
+"mode enabled"
+msgstr ""
+"Die Option für erlaubte Domains ist auf Instanzen verfügbar, auf denen die "
+"Begrenzung des Föderationsmodus aktiviert ist"
+
+#: qml/ModerationTools/FederationToolPage.qml:201
+#, kde-format
+msgctxt "@info:Choose between allowed and limited domains"
+msgid "Moderation"
+msgstr "Moderator"
+
+#: qml/ModerationTools/FederationToolPage.qml:216
+#, kde-format
+msgctxt "@info:Filter out all the blocked domains"
+msgid "Blocked domains"
+msgstr "Gesperrte Domains"
+
+#: qml/ModerationTools/FederationToolPage.qml:220
+#, kde-format
+msgctxt "@info:Filter out all the allowed domains in limited federation mode"
+msgid "Allowed domains"
+msgstr "Erlaubte Domains"
+
+#: qml/ModerationTools/FederationToolPage.qml:286
+#, kde-format
+msgid "Allowed for federation"
+msgstr "Zum Föderieren zugelassen"
+
+#: qml/ModerationTools/FederationToolPage.qml:309
+#, kde-format
+msgid "No federations found"
+msgstr "Keine Föderationen gefunden"
+
+#: qml/ModerationTools/IpRulePage.qml:17
+#, kde-format
+msgctxt "@action:button"
+msgid "Create Rule"
+msgstr "Regel erstellen"
+
+#: qml/ModerationTools/IpRulePage.qml:25
+#, kde-format
+msgid "New IP Rule"
+msgstr "Neue IP-Regel"
+
+#: qml/ModerationTools/IpRulePage.qml:37
+#, kde-format
+msgctxt "@info:Enter the domain address of the domain block"
+msgid "IP*"
+msgstr "IP*"
+
+#: qml/ModerationTools/IpRulePage.qml:43
+#, kde-format
+msgctxt "@info:Time after which the rule will be lifted"
+msgid "Expire After"
+msgstr "Erlischt nach"
+
+#: qml/ModerationTools/IpRulePage.qml:48
+#, kde-format
+msgctxt "@info:Option to block out the IP for 1 day"
+msgid "1 day"
+msgstr "1 Tag"
+
+#: qml/ModerationTools/IpRulePage.qml:52
+#, kde-format
+msgctxt "@info:Option to block out the IP for 2 weeks"
+msgid "2 weeks"
+msgstr "2 Wochen"
+
+#: qml/ModerationTools/IpRulePage.qml:56
+#, kde-format
+msgctxt "@info:Option to block out the IP for 1 month"
+msgid "1 month"
+msgstr "1 Monat"
+
+#: qml/ModerationTools/IpRulePage.qml:60
+#, kde-format
+msgctxt "@info:Option to block out the IP for 6 months"
+msgid "6 month"
+msgstr "6 Monaten"
+
+#: qml/ModerationTools/IpRulePage.qml:64
+#, kde-format
+msgctxt "@info:Option to block out the IP for 1 year"
+msgid "1 year"
+msgstr "1 Jahr"
+
+#: qml/ModerationTools/IpRulePage.qml:68
+#, kde-format
+msgctxt "@info:Option to block out the IP for 3 years"
+msgid "3 year"
+msgstr "3 Jahren"
+
+#: qml/ModerationTools/IpRulePage.qml:79
+#, kde-format
+msgctxt "@info: The comment attached with the ip rule"
+msgid "Comment"
+msgstr "Kommentar"
+
+#: qml/ModerationTools/IpRulePage.qml:80
+#: qml/ModerationTools/MainIpRulePage.qml:110
+#, kde-format
+msgid "Optional. Remember why you added this rule."
+msgstr "Optional. Erinnerung für den Grund dieser Regel."
+
+#: qml/ModerationTools/IpRulePage.qml:87
+#, kde-format
+msgctxt "@info:The rule attached with the ip rule"
+msgid "Rule *"
+msgstr "Regel *"
+
+#: qml/ModerationTools/IpRulePage.qml:91
+#: qml/ModerationTools/MainIpRulePage.qml:121
+#, kde-format
+msgid "Choose what will happen with requests from this IP"
+msgstr "Was mit Anfragen von dieser IP geschehen soll"
+
+#: qml/ModerationTools/IpRulePage.qml:98
+#: qml/ModerationTools/MainIpRulePage.qml:129
+#, kde-format
+msgid "Limit sign-ups"
+msgstr "Registrierungen begrenzen"
+
+#: qml/ModerationTools/IpRulePage.qml:99
+#: qml/ModerationTools/MainIpRulePage.qml:130
+#, kde-format
+msgid "New sign-ups will require your approval"
+msgstr "Neue Registrierungen benötigen Ihre Zustimmung"
+
+#: qml/ModerationTools/IpRulePage.qml:105
+#: qml/ModerationTools/MainIpRulePage.qml:136
+#, kde-format
+msgid "Block sign-ups"
+msgstr "Registrierungen sperren"
+
+#: qml/ModerationTools/IpRulePage.qml:106
+#: qml/ModerationTools/MainIpRulePage.qml:137
+#, kde-format
+msgid "New sign-ups will not be possible"
+msgstr "Neue Registrierungen sind nicht möglich"
+
+#: qml/ModerationTools/IpRulePage.qml:111
+#: qml/ModerationTools/MainIpRulePage.qml:143
+#, kde-format
+msgid "Block access"
+msgstr "Zugriff sperren"
+
+#: qml/ModerationTools/IpRulePage.qml:112
+#: qml/ModerationTools/MainIpRulePage.qml:144
+#, kde-format
+msgid "Block access to all resources"
+msgstr "Zugriff auf sämtliche Ressourcen wird gesperrt"
+
+#: qml/ModerationTools/IpRulePage.qml:126
+#, kde-format
+msgctxt "@info:Button to create a IP rule"
+msgid "Create IP rule"
+msgstr "IP-Regel erstellen"
+
+#: qml/ModerationTools/IpRulePage.qml:130
+#, kde-format
+msgid "New IP rule added"
+msgstr "Neue IP-Regel hinzugefügt"
+
+#: qml/ModerationTools/IpRulePage.qml:156
+#: qml/ModerationTools/MainIpRulePage.qml:29
+#, kde-format
+msgctxt "@label"
+msgid "Limit sign-ups"
+msgstr "Registrierungen begrenzen"
+
+#: qml/ModerationTools/IpRulePage.qml:158
+#: qml/ModerationTools/MainIpRulePage.qml:31
+#, kde-format
+msgctxt "@label"
+msgid "Block sign-ups"
+msgstr "Registrierungen sperren"
+
+#: qml/ModerationTools/IpRulePage.qml:160
+#: qml/ModerationTools/MainIpRulePage.qml:33
+#, kde-format
+msgctxt "@label"
+msgid "Block access"
+msgstr "Zugriff sperren"
+
+#: qml/ModerationTools/IpRulePage.qml:207
+#, kde-format
+msgid "No IP rules found"
+msgstr "Keine IP-Regeln gefunden"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:29
+#, kde-format
+msgid "Not Available"
+msgstr "Nicht verfügbar"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:38
+#, kde-format
+msgid "Perform moderation action on %1"
+msgstr "Moderationsmaßnahme für %1 durchführen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:44
+#, kde-format
+msgctxt ""
+"@info: Use this to send a warning to the user, without triggering any other "
+"action."
+msgid "Warn"
+msgstr "Verwarnen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:48
+#, kde-format
+msgctxt ""
+"@info: Prevent the user from using their account, but do not delete or hide "
+"their contents."
+msgid "Freeze"
+msgstr "Einfrieren"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:53
+#, kde-format
+msgctxt ""
+"@info: Force all this user's media attachments to be flagged as sensitive."
+msgid "Force-Sensitive"
+msgstr "Inhaltswarnung erzwingen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:58
+#, kde-format
+msgctxt ""
+"@info: Prevent the user from being able to post with public visibility, hide "
+"their posts and notifications from people not following them."
+msgid "Limit"
+msgstr "Begrenzen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:63
+#, kde-format
+msgctxt ""
+"@info: Prevent any interaction from or to this account and delete its "
+"contents. Revertible within 30 days."
+msgid "Suspend"
+msgstr "Sperren"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:68
+#, kde-format
+msgctxt ""
+"@info: The user will receive an explanation of what happened with their "
+"account"
+msgid "Notify the user per e-mail"
+msgstr "Benutzer per E-Mail benachrichtigen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:74
+#, kde-format
+msgctxt "@info: Send a warning note to the user."
+msgid "Custom warning"
+msgstr "Benutzerdefinierte Warnung"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:83
+#, kde-format
+msgctxt "@info:Button to submit the action aginst the user."
+msgid "Submit"
+msgstr "Absenden"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:101
+#, kde-format
+msgid "Action taken successfully"
+msgstr "Maßnahme erfolgreich durchgeführt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:114
+#, kde-format
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:115
+#, kde-format
+msgid "Action will be taken against the account."
+msgstr "Maßnahmen gegen dieses Konto werden ergriffen."
+
+#: qml/ModerationTools/MainAccountToolPage.qml:123
+#, kde-format
+msgid "Successfully approved %1's sign-up application"
+msgstr "Antrag auf Registrierung von %1 wurde erfolgreich genehmigt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:127
+#, kde-format
+msgid "Successfully rejected %1's sign-up application"
+msgstr "Antrag auf Registrierung von %1 wurde erfolgreich abgelehnt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:131
+#, kde-format
+msgid "Successfully unfreezed %1's account"
+msgstr "Stilllegen des Kontos von %1 wurde erfolgreich aufgehoben"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:135
+#, kde-format
+msgid "Successfully unsilenced %1's account"
+msgstr "Stummschaltung des Kontos von %1 wurde erfolgreich aufgehoben"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:139
+#, kde-format
+msgid "Successfully unsuspended %1's account"
+msgstr "Sperre des Kontos von %1 wurde erfolgreich aufgehoben"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:143
+#, kde-format
+msgid "Successfully undo force-sensitive %1's account"
+msgstr "Erzwungene Inhaltswarnung erfolgreich vom Konto von %1 entfernt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:147
+#, kde-format
+msgid "Successfully deleted %1's account data"
+msgstr "Kontodaten von %1 erfolgreich gelöscht"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:185
+#, kde-format
+msgid "Reasons for joining"
+msgstr "Gründe für den Beitritt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:201
+#, kde-format
+msgctxt "@info Role of the account on this server."
+msgid "Role"
+msgstr "Rolle"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:202
+#, kde-format
+msgid "No role"
+msgstr "Keine Rolle"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:205
+#, kde-format
+msgctxt "@info The last time the account was active."
+msgid "Last Active"
+msgstr "Zuletzt aktiv"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:209
+#, kde-format
+msgctxt "@info The current login status of the account."
+msgid "Login Status"
+msgstr "Anmeldestatus"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:214
+#, kde-format
+msgctxt "@info: Locale of the user."
+msgid "Account Locale"
+msgstr "Sprache"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:219
+#, kde-format
+msgctxt "@info: Email of the user."
+msgid "Email"
+msgstr "E-Mail"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:224
+#, kde-format
+msgctxt "@info: Email confirmation status of the user."
+msgid "Email Status"
+msgstr "Status der E-Mail-Adresse"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:225
+#, kde-format
+msgid "Confirmed"
+msgstr "Bestätigt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:225
+#, kde-format
+msgid "Not Confirmed"
+msgstr "Nicht bestätigt"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:229
+#, kde-format
+msgctxt "@info: Joining date of the user"
+msgid "Joined"
+msgstr "Beigetreten"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:234
+#, kde-format
+msgid "Invited By"
+msgstr "Eingeladen von"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:242
+#, kde-format
+msgid "Most recent IP"
+msgstr "Letzte IP"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:267
+#, kde-format
+msgctxt "@info: Approve the user's request"
+msgid "Approve"
+msgstr "Akzeptieren"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:279
+#, kde-format
+msgctxt "@info: Reject the user's request"
+msgid "Reject"
+msgstr "Ablehnen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:290
+#, kde-format
+msgid "Delete Account Data"
+msgstr "Kontodaten löschen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:302
+#, kde-format
+msgctxt "@info: Unfreeze the user's account"
+msgid "Unfreeze"
+msgstr "Stilllegen aufheben"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:312
+#, kde-format
+msgid "Undo Limit"
+msgstr "Limit aufheben"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:322
+#, kde-format
+msgid "Undo Suspension"
+msgstr "Sperre aufheben"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:332
+#, kde-format
+msgid "Undo force-sensitive"
+msgstr "Erzwungene Inhaltswarnung entfernen"
+
+#: qml/ModerationTools/MainAccountToolPage.qml:343
+#, kde-format
+msgid "Take action against this account"
+msgstr "Maßnahme wird gegen dieses Konto ergriffen"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:29
+#, kde-format
+msgid "Remove Domain Block"
+msgstr "Domain-Sperre entfernen"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:32
+#, kde-format
+msgid "Domain Block Removed"
+msgstr "Domain-Sperre entfernt"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:40
+#, kde-format
+msgid "Edit domain block"
+msgstr "Domain-Sperre bearbeiten"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:80
+#: qml/ModerationTools/MainFederationToolPage.qml:146
+#, kde-format
+msgid "Private comment"
+msgstr "Persönlicher Kommentar"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:115
+#, kde-format
+msgctxt "@info:Button to update the domain block with new values"
+msgid "Update Block"
+msgstr "Sperre aktualisieren"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:122
+#, kde-format
+msgid "Domain block updated"
+msgstr "Domain-Sperre aktualisiert"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:132
+#: qml/ModerationTools/MainIpRulePage.qml:175
+#, kde-format
+msgid "Blocked at"
+msgstr "Gesperrt am"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:140
+#, kde-format
+msgctxt "@info: No public comment provided"
+msgid "None"
+msgstr "Keiner"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:147
+#, kde-format
+msgctxt "@info: No private comment provided"
+msgid "None"
+msgstr "Keiner"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:153
+#, kde-format
+msgctxt "@info:The policy to be applied by this domain block"
+msgid "Policy"
+msgstr "Strategie"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:160
+#, kde-format
+msgctxt "@info:Whether to obfuscate public displays of this domain block"
+msgid "Obfuscate"
+msgstr "Verschleiern"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:167
+#, kde-format
+msgctxt "@info:Whether to reject incoming media from this domain"
+msgid "Reject media"
+msgstr "Medien verweigern"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:174
+#, kde-format
+msgctxt "@info:Whether to reject incoming reports from this domain"
+msgid "Reject reports"
+msgstr "Meldungen verweigern"
+
+#: qml/ModerationTools/MainFederationToolPage.qml:185
+#, kde-format
+msgid "Edit Domain Block"
+msgstr "Domain-Sperre bearbeiten"
+
+#: qml/ModerationTools/MainIpRulePage.qml:40
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Remove IP Rule"
+msgstr "IP-Regel entfernen"
+
+#: qml/ModerationTools/MainIpRulePage.qml:43
+#, kde-format
+msgid "IP Rule Removed"
+msgstr "IP-Regel entfernt"
+
+#: qml/ModerationTools/MainIpRulePage.qml:51
+#, kde-format
+msgctxt "@title:window"
+msgid "Update IP Rule"
+msgstr "IP-Regel aktualisieren"
+
+#: qml/ModerationTools/MainIpRulePage.qml:63
+#, kde-format
+msgctxt "@info IP address of the ip block"
+msgid "IP"
+msgstr "IP"
+
+#: qml/ModerationTools/MainIpRulePage.qml:72
+#, kde-format
+msgctxt "@info Time after which the rule will be lifted"
+msgid "Expire After"
+msgstr "Erlischt nach"
+
+#: qml/ModerationTools/MainIpRulePage.qml:77
+#, kde-format
+msgctxt "@info Option to block out the IP for 1 day"
+msgid "1 day"
+msgstr "1 Tag"
+
+#: qml/ModerationTools/MainIpRulePage.qml:81
+#, kde-format
+msgctxt "@info Option to block out the IP for 2 weeks"
+msgid "2 weeks"
+msgstr "2 Wochen"
+
+#: qml/ModerationTools/MainIpRulePage.qml:85
+#, kde-format
+msgctxt "@info Option to block out the IP for 1 month"
+msgid "1 month"
+msgstr "1 Monat"
+
+#: qml/ModerationTools/MainIpRulePage.qml:89
+#, kde-format
+msgctxt "@info Option to block out the IP for 6 months"
+msgid "6 month"
+msgstr "6 Monaten"
+
+#: qml/ModerationTools/MainIpRulePage.qml:93
+#, kde-format
+msgctxt "@info Option to block out the IP for 1 year"
+msgid "1 year"
+msgstr "1 Jahr"
+
+#: qml/ModerationTools/MainIpRulePage.qml:97
+#, kde-format
+msgctxt "@info Option to block out the IP for 3 years"
+msgid "3 year"
+msgstr "3 Jahren"
+
+#: qml/ModerationTools/MainIpRulePage.qml:108
+#: qml/ModerationTools/MainIpRulePage.qml:189
+#, kde-format
+msgctxt "@info The comment attached with the ip rule"
+msgid "Comment"
+msgstr "Kommentar"
+
+#: qml/ModerationTools/MainIpRulePage.qml:117
+#, kde-format
+msgctxt "@info The rule attached with the ip rule"
+msgid "Rule *"
+msgstr "Regel *"
+
+#: qml/ModerationTools/MainIpRulePage.qml:154
+#, kde-format
+msgctxt "@info Cancel button to close the dailog"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: qml/ModerationTools/MainIpRulePage.qml:159
+#, kde-format
+msgctxt "@info Button to update an IP rule"
+msgid "Update IP rule"
+msgstr "IP-Regel aktualisieren"
+
+#: qml/ModerationTools/MainIpRulePage.qml:164
+#, kde-format
+msgid "IP rule updated"
+msgstr "IP-Regel aktualisiert"
+
+#: qml/ModerationTools/MainIpRulePage.qml:182
+#, kde-format
+msgctxt "@info Time after which the rule will be lifted"
+msgid "Expires at"
+msgstr "Erlischt am"
+
+#: qml/ModerationTools/MainIpRulePage.qml:190
+#, kde-format
+msgctxt "@info No public comment provided"
+msgid "None"
+msgstr "Keiner"
+
+#: qml/ModerationTools/MainIpRulePage.qml:196
+#, kde-format
+msgctxt "@info The severity to be applied by this IP rule"
+msgid "Severity"
+msgstr "Schwere"
+
+#: qml/ModerationTools/MainIpRulePage.qml:207
+#, kde-format
+msgctxt "@action:button"
+msgid "Update IP Rule"
+msgstr "IP-Regel aktualisieren"
+
+#: qml/ModerationTools/MainReportToolPage.qml:47
+#, kde-format
+msgid "Report #%1"
+msgstr "Meldung #%1"
+
+#: qml/ModerationTools/MainReportToolPage.qml:51
+#, fuzzy, kde-format
+#| msgid "Mark as unresolved"
+msgctxt "@action:intoolbar"
+msgid "Mark as unresolved"
+msgstr "Als ungeklärt markieren"
+
+#: qml/ModerationTools/MainReportToolPage.qml:51
+#, fuzzy, kde-format
+#| msgid "Mark as resolved"
+msgctxt "@action:intoolbar"
+msgid "Mark as resolved"
+msgstr "Als geklärt markieren"
+
+#: qml/ModerationTools/MainReportToolPage.qml:55
+#, fuzzy, kde-format
+#| msgid "Report Unresolved"
+msgctxt "@info"
+msgid "Report Unresolved"
+msgstr "Meldung ist ungeklärt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:58
+#, fuzzy, kde-format
+#| msgid "Report Resolved"
+msgctxt "@info"
+msgid "Report Resolved"
+msgstr "Meldung ist geklärt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:95
+#, kde-format
+msgctxt "@info Time at which the report was made"
+msgid "Reported"
+msgstr "Gemeldet"
+
+#: qml/ModerationTools/MainReportToolPage.qml:102
+#, kde-format
+msgctxt "@info The last time the reported account was active."
+msgid "Last Active"
+msgstr "Zuletzt aktiv"
+
+#: qml/ModerationTools/MainReportToolPage.qml:109
+#, kde-format
+msgctxt "@info Time at which the reported account joined."
+msgid "Joined"
+msgstr "Beigetreten"
+
+#: qml/ModerationTools/MainReportToolPage.qml:119
+#, fuzzy, kde-format
+#| msgid "Reported By"
+msgctxt "@label"
+msgid "Reported By"
+msgstr "Gemeldet von"
+
+#: qml/ModerationTools/MainReportToolPage.qml:134
+#, fuzzy, kde-format
+#| msgid "Report Status"
+msgctxt "@label"
+msgid "Report Status"
+msgstr "Meldestatus"
+
+#: qml/ModerationTools/MainReportToolPage.qml:135
+#, fuzzy, kde-format
+#| msgid "Resolved"
+msgctxt "@info"
+msgid "Resolved"
+msgstr "Geklärt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:135
+#, fuzzy, kde-format
+#| msgid "Unresolved"
+msgctxt "@info"
+msgid "Unresolved"
+msgstr "Ungeklärt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:144
+#, fuzzy, kde-format
+#| msgid "Action taken by"
+msgctxt "@label"
+msgid "Action taken by"
+msgstr "Maßnahme ergriffen durch"
+
+#: qml/ModerationTools/MainReportToolPage.qml:157
+#, fuzzy, kde-format
+#| msgid "Assigned moderator"
+msgctxt "@label"
+msgid "Assigned moderator"
+msgstr "Zugewiesener Moderator"
+
+#: qml/ModerationTools/MainReportToolPage.qml:158
+#, fuzzy, kde-format
+#| msgid "No one"
+msgctxt "@info"
+msgid "No one"
+msgstr "Niemanden"
+
+#: qml/ModerationTools/MainReportToolPage.qml:166
+#, fuzzy, kde-format
+#| msgid "Unassign"
+msgctxt "@action:button"
+msgid "Unassign"
+msgstr "Zuweisung aufheben"
+
+#: qml/ModerationTools/MainReportToolPage.qml:166
+#, fuzzy, kde-format
+#| msgid "Assign to me"
+msgctxt "@action:button"
+msgid "Assign to me"
+msgstr "Mir zuweisen"
+
+#: qml/ModerationTools/MainReportToolPage.qml:178
+#, fuzzy, kde-format
+#| msgid "Forwarded"
+msgctxt "@label"
+msgid "Forwarded"
+msgstr "Weitergeleitet"
+
+#: qml/ModerationTools/MainReportToolPage.qml:179
+#, kde-format
+msgctxt "@info:The report is forwarded"
+msgid "Yes"
+msgstr "Ja"
+
+#: qml/ModerationTools/MainReportToolPage.qml:179
+#, kde-format
+msgctxt "@info:The report is not forwarded"
+msgid "No"
+msgstr "Nein"
+
+#: qml/ModerationTools/MainReportToolPage.qml:184
+#, fuzzy, kde-format
+#| msgid "Category"
+msgctxt "@title:group"
+msgid "Category"
+msgstr "Kategorie"
+
+#: qml/ModerationTools/MainReportToolPage.qml:189
+#, kde-format
+msgid ""
+"The reason this account and/or content was reported will be cited in "
+"communication with the reported account"
+msgstr ""
+"Der Grund, aus dem dieses Konto und/oder der Inhalt gemeldet worden ist, "
+"wird in der Kommunikation mit dem gemeldeten Konto genannt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:199
+#, kde-format
+msgid "Other"
+msgstr "Andere"
+
+#: qml/ModerationTools/MainReportToolPage.qml:204
+#, kde-format
+msgid "Category changed to other"
+msgstr "Kategorie auf „Andere“ geändert"
+
+#: qml/ModerationTools/MainReportToolPage.qml:215
+#, kde-format
+msgid "Spam"
+msgstr "Spam"
+
+#: qml/ModerationTools/MainReportToolPage.qml:219
+#, kde-format
+msgid "Category changed to spam"
+msgstr "Kategorie zu „Spam“ geändert"
+
+#: qml/ModerationTools/MainReportToolPage.qml:230
+#, kde-format
+msgid "Content violates one or more server rules"
+msgstr "Inhalt verstößt eine oder mehrere Serverregeln"
+
+#: qml/ModerationTools/MainReportToolPage.qml:234
+#, kde-format
+msgid "Category changed to rule violation"
+msgstr "Kategorie zu „Regelverstoß“ geändert"
+
+#: qml/ModerationTools/MainReportToolPage.qml:273
+#, fuzzy, kde-format
+#| msgid "To provide more information, %1 wrote:"
+msgctxt "@title:group"
+msgid "To provide more information, %1 wrote:"
+msgstr "Um mehr Informationen anzugeben, schrieb %1:"
+
+#: qml/ModerationTools/MainReportToolPage.qml:283
+#, kde-format
+msgctxt "@info:Account didn't provide any comment on the report "
+msgid "N/A"
+msgstr "–"
+
+#: qml/ModerationTools/MainReportToolPage.qml:294
+#, fuzzy, kde-format
+#| msgid "Reported Content"
+msgctxt "@title:group"
+msgid "Reported Content"
+msgstr "Gemeldeter Inhalt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:302
+#, kde-format
+msgid ""
+"Offending content will be cited in communication with the reported account"
+msgstr ""
+"Der beanstandete Inhalt wird in der Kommunikation mit dem gemeldeten Konto "
+"erwähnt"
+
+#: qml/ModerationTools/MainReportToolPage.qml:332
+#, kde-format
+msgid "<b>Content Warning</b><br /> %1"
+msgstr "<b>Inhaltswarnung</b><br /> %1"
+
+#: qml/ModerationTools/MainReportToolPage.qml:338
+#, fuzzy, kde-format
+#| msgid "Show Less"
+msgctxt "@action:button"
+msgid "Show Less"
+msgstr "Weniger anzeigen"
+
+#: qml/ModerationTools/MainReportToolPage.qml:338
+#, fuzzy, kde-format
+#| msgid "Show More"
+msgctxt "@action:button"
+msgid "Show More"
+msgstr "Mehr anzeigen"
+
+#: qml/ModerationTools/ModerationToolsView.qml:14
+#, kde-format
+msgctxt "@title"
+msgid "Accounts"
+msgstr "Konten"
+
+#: qml/ModerationTools/ModerationToolsView.qml:20
+#, kde-format
+msgid "Reports"
+msgstr "Meldungen"
+
+#: qml/ModerationTools/ModerationToolsView.qml:26
+#, kde-format
+msgctxt "@title"
+msgid "Federation"
+msgstr "Föderation"
+
+#: qml/ModerationTools/ModerationToolsView.qml:32
+#, kde-format
+msgctxt "@title"
+msgid "IP Rules"
+msgstr "IP-Regeln"
+
+#: qml/ModerationTools/ModerationToolsView.qml:38
+#, kde-format
+msgctxt "@title"
+msgid "Email Blocks"
+msgstr "E-Mail-Sperren"
+
+#: qml/ModerationTools/ReportToolPage.qml:15
+#, kde-format
+msgid "Accounts Tool Page"
+msgstr "Konten-Werkzeuge"
+
+#: qml/ModerationTools/ReportToolPage.qml:33
+#, kde-format
+msgctxt "@info:Combobox to choose Report Status"
+msgid "Report Status"
+msgstr "Meldestatus"
+
+#: qml/ModerationTools/ReportToolPage.qml:45
+#, kde-format
+msgctxt "@info:Filter out unresolved reports"
+msgid "Unresolved"
+msgstr "Ungeklärt"
+
+#: qml/ModerationTools/ReportToolPage.qml:49
+#, kde-format
+msgctxt "@info:Filter out resolved reports"
+msgid "Resolved"
+msgstr "Geklärt"
+
+#: qml/ModerationTools/ReportToolPage.qml:63
+#, kde-format
+msgctxt "@info:Combobox to choose the origin of report"
+msgid "Report Origin"
+msgstr "Ursprung der Meldung"
+
+#: qml/ModerationTools/ReportToolPage.qml:76
+#, kde-format
+msgctxt "@info:Filter out accounts with any origin"
+msgid "All"
+msgstr "Alle"
+
+#: qml/ModerationTools/ReportToolPage.qml:80
+#, kde-format
+msgctxt "@info:Filter out accounts with local origin"
+msgid "Local"
+msgstr "Lokal"
+
+#: qml/ModerationTools/ReportToolPage.qml:84
+#, kde-format
+msgctxt "@info:Filter out accounts with remote origin"
+msgid "Remote"
+msgstr "Entfernt"
+
+#: qml/ModerationTools/ReportToolPage.qml:157
+#, kde-format
+msgid "Reported By:"
+msgstr "Gemeldet von:"
+
+#: qml/ModerationTools/ReportToolPage.qml:200
+#, fuzzy, kde-format
+#| msgctxt "@info: The comment attached with the ip rule"
+#| msgid "Comment"
+msgid "Comment:"
+msgstr "Kommentar"
+
+#: qml/ModerationTools/ReportToolPage.qml:223
+#, kde-format
+msgid "Assigned Account:"
+msgstr "Zugewiesenes Konto:"
+
+#: qml/ModerationTools/ReportToolPage.qml:248
+#, kde-format
+msgctxt "@info: No account assigned to the report"
+msgid "N/A"
+msgstr "–"
+
+#: qml/ModerationTools/ReportToolPage.qml:286
+#, kde-format
+msgid "No reports found"
+msgstr "Keine Meldungen gefunden"
+
+#: qml/NotificationPage.qml:18 qml/Settings/TokodonConfigurationView.qml:23
+#, kde-format
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: qml/NotificationPage.qml:43
+#, kde-format
+msgctxt "@action:intoolbar Mark all notifications as read"
+msgid "Mark All As Read"
+msgstr "Alle als gelesen markieren"
+
+#: qml/NotificationPage.qml:49
+#, fuzzy, kde-format
+#| msgctxt "@action:intoolbar"
+#| msgid "Configure Filters…"
+msgctxt "@action:intoolbar Configure Notifications"
+msgid "Configure…"
+msgstr "Filter einrichten …"
+
+#: qml/NotificationPage.qml:50
+#, kde-format
+msgctxt "@title:window"
+msgid "Notification Settings"
+msgstr "Benachrichtigungseinstellungen"
+
+#: qml/NotificationPage.qml:62
+#, kde-format
+msgctxt "@action:intoolbar Show all notifications"
+msgid "All"
+msgstr "Alle"
+
+#: qml/NotificationPage.qml:75
+#, kde-format
+msgctxt "@action:intoolbar Show only mentions"
+msgid "Mentions"
+msgstr "Erwähnungen"
+
+#: qml/NotificationPage.qml:88
+#, kde-format
+msgctxt "@action:intoolbar More filter categories"
+msgid "More"
+msgstr "Mehr"
+
+#: qml/NotificationPage.qml:110
+#, kde-format
+msgctxt "Show only boosts"
+msgid "Boosts"
+msgstr "Geteilte Beiträge"
+
+#: qml/NotificationPage.qml:119
+#, kde-format
+msgctxt "Show only favorites"
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: qml/NotificationPage.qml:128
+#, kde-format
+msgctxt "Show only poll results"
+msgid "Poll Results"
+msgstr "Umfrageergebnisse"
+
+#: qml/NotificationPage.qml:137
+#, kde-format
+msgctxt "Show only followed statuses"
+msgid "Posts"
+msgstr "Beiträge"
+
+#: qml/NotificationPage.qml:146
+#, kde-format
+msgctxt "Show only follows"
+msgid "Follows"
+msgstr "Gefolgte"
+
+#: qml/NotificationPage.qml:155
+#, fuzzy, kde-format
+#| msgid "Show Boosts"
+msgctxt "Show only quotes"
+msgid "Quotes"
+msgstr "Geteilte Beiträge anzeigen"
+
+#: qml/NotificationPage.qml:205
+#, fuzzy, kde-format
+#| msgid "News"
+msgctxt "@info:label New notifications"
+msgid "New"
+msgstr "Neuigkeiten"
+
+#: qml/NotificationPage.qml:205
+#, fuzzy, kde-format
+#| msgid "Previous image"
+msgctxt "@info:label Previous notifications"
+msgid "Previous"
+msgstr "Vorheriges Bild"
+
+#: qml/NotificationPage.qml:352
+#, kde-format
+msgid "No Notifications"
+msgstr "Keine Benachrichtigungen"
+
+#: qml/NotificationPage.qml:353
+#, fuzzy, kde-format
+#| msgid ""
+#| "You have no notifications yet. When people reply, favorite or boost your "
+#| "posts they will show up here."
+msgid ""
+"You have no notifications yet. When people reply, favorite or boost your "
+"posts they will show up here!"
+msgstr ""
+"Sie haben noch keine Benachrichtigungen. Wenn andere Ihnen antworten, Ihre "
+"Beiträge favorisieren oder teilen, dann erscheint das hier."
+
+#: qml/Notifications/AccountWarningDelegate.qml:67
+#, kde-format
+msgid "%1 has issued a warning against your account"
+msgstr "%1 hat Ihrem Konto eine Warnung ausgesprochen"
+
+#: qml/Notifications/AnnualReportDelegate.qml:64
+#, kde-kuit-format
+msgctxt ""
+"@info:label this is used for notifications, when an annual report is "
+"available. It's similar to spotify wrapped, it shows profile stats / it's a "
+"recap of the year. The variable is the current year e.g. 2024. Please don't "
+"translate the hashtag."
+msgid ""
+"Your %1 #FediWrapped awaits! Unveil your year's highlights and memorable "
+"moments on Mastodon!"
+msgstr ""
+"Ihr #FediWrapped für %1 ist fertig! Lüften Sie Ihre Highlights des Jahres "
+"und unvergesslichen Momente auf Mastodon!"
+
+#: qml/Notifications/AnnualReportDelegate.qml:71
+#, kde-format
+msgctxt "@action:button"
+msgid "View #FediWrapped"
+msgstr "#FediWrapped ansehen"
+
+#: qml/Notifications/FollowDelegate.qml:78
+#, kde-format
+msgid "%1 signed up"
+msgstr "%1 hat sich registriert"
+
+#: qml/Notifications/FollowDelegate.qml:107
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Follow Requests"
+msgctxt "@action:button"
+msgid "Manage Follow Requests"
+msgstr "Follower-Anfragen"
+
+#: qml/Notifications/GroupInteractionLabel.qml:64
+#, kde-format
+msgid "View %1's Profile"
+msgstr "Profil von %1 anzeigen"
+
+#: qml/Notifications/GroupInteractionLabel.qml:73
+#, kde-format
+msgid "%1 users favorited your post"
+msgstr "%1 Benutzer favorisierten Ihren Beitrag"
+
+#: qml/Notifications/GroupInteractionLabel.qml:75
+#, kde-format
+msgid "%1 users boosted your post"
+msgstr "%1 Benutzer teilten Ihren Beitrag"
+
+#: qml/Notifications/MinimalPostDelegate.qml:68
+#: qml/PostDelegate/PostDelegate.qml:105
+#, kde-format
+msgid "Normal Status"
+msgstr "Normaler Status"
+
+#: qml/Notifications/MinimalPostDelegate.qml:68
+#: qml/PostDelegate/PostDelegate.qml:105
+#, kde-format
+msgid "Spoiler Status"
+msgstr "Spoilerstatus"
+
+#: qml/Notifications/RelationshipSeveranceDelegate.qml:63
+#, kde-kuit-format
+msgctxt "@info:label"
+msgid ""
+"Moderation has blocked <b>%1</b>, including %2 of your followers and %3 "
+"account you follow."
+msgstr ""
+"Moderation hat <b>%1</b> blockiert, einschließlich %2 Ihrer Follower und %3 "
+"Konten, denen Sie folgen."
+
+#: qml/Notifications/ReportDelegate.qml:62
+#, kde-format
+msgctxt "@info:label"
+msgid "A report has been filed against a user in your server."
+msgstr "Einer der Benutzer auf Ihrem Server wurde gemeldet."
+
+#: qml/Notifications/UnknownNotificationDelegate.qml:48
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Unknown Action"
+msgctxt "@info"
+msgid "Unknown notification"
+msgstr "Unbekannte Aktion"
+
+#: qml/Notifications/UserInteractionLabel.qml:88
+#, kde-format
+msgid "A poll has ended"
+msgstr "Eine Umfrage ist abgelaufen"
+
+#: qml/Notifications/UserInteractionLabel.qml:90
+#, kde-format
+msgid "%1 updated their post"
+msgstr "%1 aktualisierte einen Betrag"
+
+#: qml/PostDelegate/AttachmentGrid.qml:97
+#, kde-format
+msgid "Status with image attachment"
+msgstr "Status mit Bildanhang"
+
+#: qml/PostDelegate/AttachmentGrid.qml:99
+#, kde-format
+msgid "Status with gif attachment"
+msgstr "Status mit Gif-Anhang"
+
+#: qml/PostDelegate/AttachmentGrid.qml:101
+#, kde-format
+msgid "Status with video attachment"
+msgstr "Status mit Videoanhang"
+
+#: qml/PostDelegate/AttachmentGrid.qml:103
+#, kde-format
+msgid "Status with audio attachment"
+msgstr "Status mit Audioanhang"
+
+#: qml/PostDelegate/AttachmentGrid.qml:148
+#: qml/PostDelegate/AttachmentGrid.qml:245
+#: qml/PostDelegate/AttachmentGrid.qml:287
+#: qml/PostDelegate/AttachmentGrid.qml:341
+#, kde-format
+msgctxt "@info"
+msgid "Sensitive media"
+msgstr "Sensible Medieninhalte"
+
+#: qml/PostDelegate/AttachmentGrid.qml:201
+#, kde-format
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: qml/PostDelegate/AttachmentGrid.qml:384
+#, kde-format
+msgctxt "@action:button"
+msgid "Hide Media"
+msgstr "Medien ausblenden"
+
+#: qml/PostDelegate/AttachmentGrid.qml:388
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Hide media"
+msgstr "Medien ausblenden"
+
+#: qml/PostDelegate/AttachmentGrid.qml:399
+#, kde-format
+msgid "Show Media"
+msgstr "Medien anzeigen"
+
+#: qml/PostDelegate/AttachmentMenu.qml:44
+#, kde-format
+msgid "Save Image As…"
+msgstr "Bild speichern unter ..."
+
+#: qml/PostDelegate/AttachmentMenu.qml:46
+#, kde-format
+msgid "Save Gif As…"
+msgstr "Gif speichern unter …"
+
+#: qml/PostDelegate/AttachmentMenu.qml:48
+#, kde-format
+msgid "Save Video As…"
+msgstr "Video speichern unter …"
+
+#: qml/PostDelegate/AttachmentMenu.qml:50
+#, kde-format
+msgid "Save Audio As…"
+msgstr "Audio speichern unter …"
+
+#: qml/PostDelegate/AttachmentMenu.qml:69
+#, kde-format
+msgid "Copy Image"
+msgstr "Bild kopieren"
+
+#: qml/PostDelegate/AttachmentMenu.qml:82 qml/PostDelegate/LinkMenu.qml:49
+#, kde-format
+msgctxt "@title"
+msgid "Post"
+msgstr "Beitrag"
+
+#: qml/PostDelegate/AudioAttachment.qml:81
+#: qml/PostDelegate/VideoAttachment.qml:120
+#, kde-format
+msgctxt "@action:button Start media playback"
+msgid "Play"
+msgstr "Wiedergabe"
+
+#: qml/PostDelegate/ContentNotice.qml:27
+#, kde-format
+msgctxt "@info"
+msgid "Content Notice"
+msgstr "Inhaltswarnung"
+
+#: qml/PostDelegate/ContentNotice.qml:45
+#, kde-format
+msgid "<b>Content Notice</b><br /> %1"
+msgstr "<b>Inhaltswarnung</b><br /> %1"
+
+#: qml/PostDelegate/ContentNotice.qml:52
+#, kde-format
+msgid "Show Less"
+msgstr "Weniger anzeigen"
+
+#: qml/PostDelegate/ContentNotice.qml:52
+#, kde-format
+msgid "Show More"
+msgstr "Mehr anzeigen"
+
+#: qml/PostDelegate/FilterNotice.qml:29
+#, kde-format
+msgctxt "@info"
+msgid "Filter"
+msgstr "Filter"
+
+#: qml/PostDelegate/FilterNotice.qml:47
+#, fuzzy, kde-format
+#| msgid "<b>Content Warning</b><br /> %1"
+msgid "<b>Filtered</b><br /> %1"
+msgstr "<b>Inhaltswarnung</b><br /> %1"
+
+#: qml/PostDelegate/FilterNotice.qml:54
+#, fuzzy, kde-format
+#| msgid "Show anyway"
+msgctxt "@action:button"
+msgid "Show Anyway"
+msgstr "Trotzdem anzeigen"
+
+#: qml/PostDelegate/InformationBar.qml:34
+#, kde-format
+msgctxt "Posted on 26 March 2024 Tuesday 20:43:18 +03"
+msgid "Posted on %1"
+msgstr "Am %1 geschrieben"
+
+#: qml/PostDelegate/InformationBar.qml:64
+#: qml/PostDelegate/InformationBar.qml:72
+#, kde-format
+msgid "Public"
+msgstr "Öffentlich"
+
+#: qml/PostDelegate/InformationBar.qml:66
+#, kde-format
+msgid "Unlisted"
+msgstr "Nicht aufgeführt"
+
+#: qml/PostDelegate/InformationBar.qml:68
+#, kde-format
+msgid "Private"
+msgstr "Privat"
+
+#: qml/PostDelegate/InformationBar.qml:70
+#, kde-format
+msgid "Direct Message"
+msgstr "Direktnachricht"
+
+#: qml/PostDelegate/InformationBar.qml:92
+#, kde-format
+msgid "No favorites"
+msgstr "Keine Favoriten"
+
+#: qml/PostDelegate/InformationBar.qml:94
+#, kde-format
+msgid "%1 favorite"
+msgid_plural "%1 favorites"
+msgstr[0] "%1 Favorit"
+msgstr[1] "%1 Favoriten"
+
+#: qml/PostDelegate/InformationBar.qml:115
+#, kde-format
+msgid "No boosts"
+msgstr "Nicht geteilt"
+
+#: qml/PostDelegate/InformationBar.qml:117
+#, kde-format
+msgid "%1 boost"
+msgid_plural "%1 boosts"
+msgstr[0] "%1 Mal geteilt"
+msgstr[1] "%1 Mal geteilt"
+
+#: qml/PostDelegate/InformationBar.qml:139
+#, fuzzy, kde-format
+#| msgid "(No votes)"
+msgid "No quotes"
+msgstr "(Keine Stimmen)"
+
+#: qml/PostDelegate/InformationBar.qml:141
+#, fuzzy, kde-format
+#| msgid "(No votes)"
+msgid "%1 quote"
+msgid_plural "%1 quotes"
+msgstr[0] "(Keine Stimmen)"
+msgstr[1] "(Keine Stimmen)"
+
+#: qml/PostDelegate/LinkMenu.qml:33 qml/PostDelegate/PostMenu.qml:61
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Link"
+msgstr "Verknüpfung kopieren"
+
+#: qml/PostDelegate/LinkMenu.qml:36 qml/PostDelegate/PostMenu.qml:64
+#, kde-format
+msgid "Post link copied."
+msgstr "Beitrag-Verknüpfung kopiert."
+
+#: qml/PostDelegate/LinkPreview.qml:27
+#, kde-format
+msgid "Link preview: %1"
+msgstr "Verknüpfungs-Vorschau: %1"
+
+#: qml/PostDelegate/LinkPreview.qml:204
+#, kde-format
+msgctxt ""
+"@info:label 'More from [this author]', where we put the user's avatar and "
+"name next to this label"
+msgid "More from"
+msgstr "Mehr von"
+
+#: qml/PostDelegate/LinkPreview.qml:241
+#, kde-format
+msgctxt "@info:label 'This is written by %1'"
+msgid "By %1"
+msgstr "Von %1"
+
+#: qml/PostDelegate/MediaContainer.qml:68
+#, kde-format
+msgctxt "Attachment has alt-text, Short for alt-text"
+msgid "Alt"
+msgstr "Alt"
+
+#: qml/PostDelegate/MediaContainer.qml:82
+#, kde-format
+msgid "Text description available"
+msgstr "Textbeschreibung verfügbar"
+
+#: qml/PostDelegate/MediaContainer.qml:90
+#, kde-format
+msgid "GIF"
+msgstr "GIF"
+
+#: qml/PostDelegate/MediaContainer.qml:99
+#, kde-format
+msgid "Video"
+msgstr "Video"
+
+#: qml/PostDelegate/MediaContainer.qml:129
+#, kde-format
+msgctxt "@title"
+msgid "Media Description"
+msgstr "Medienbeschreibung"
+
+#: qml/PostDelegate/PostContent.qml:29
+#, kde-format
+msgctxt "@info"
+msgid "Post content"
+msgstr "Beitragsinhalt"
+
+#: qml/PostDelegate/PostDelegate.qml:172
+#, kde-format
+msgctxt "@label"
+msgid "Pinned Post"
+msgstr "Angehefteter Beitrag"
+
+#: qml/PostDelegate/PostDelegate.qml:241
+#, kde-format
+msgctxt "@title"
+msgid "Delete Post"
+msgstr "Beitrag löschen"
+
+#: qml/PostDelegate/PostDelegate.qml:242
+#, kde-format
+msgctxt "@label"
+msgid "Are you sure you want to delete this post?"
+msgstr "Wollen Sie diesen Beitrag wirklich löschen?"
+
+#: qml/PostDelegate/PostDelegate.qml:257
+#, kde-format
+msgctxt "@title"
+msgid "Delete & Re-draft Post"
+msgstr "Beitrag löschen und neu verfassen"
+
+#: qml/PostDelegate/PostDelegate.qml:258
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Are you sure you want to redraft this post? This will delete the original "
+"post."
+msgstr ""
+"Wollen Sie diesen Beitrag wirklich neu verfassen? Dies wird den "
+"ursprünglichen Beitrag löschen."
+
+#: qml/PostDelegate/PostDelegate.qml:412
+#, kde-format
+msgctxt "Reply to a post"
+msgid "Reply"
+msgstr "Antworten"
+
+#: qml/PostDelegate/PostDelegate.qml:439
+#, kde-format
+msgid "Cannot boost direct messages"
+msgstr "Direktnachrichten können nicht geteilt werden"
+
+#: qml/PostDelegate/PostDelegate.qml:441
+#, kde-format
+msgid "Cannot boost private posts"
+msgstr "Private Beiträge können nicht geteilt werden"
+
+#: qml/PostDelegate/PostDelegate.qml:443
+#, kde-format
+msgctxt "Share a post"
+msgid "Boost"
+msgstr "Teilen"
+
+#: qml/PostDelegate/PostDelegate.qml:461
+#, kde-format
+msgid "Boosted"
+msgstr "Geteilt"
+
+#: qml/PostDelegate/PostDelegate.qml:461
+#, kde-format
+msgid "Boost"
+msgstr "Teilen"
+
+#: qml/PostDelegate/PostDelegate.qml:481
+#, kde-format
+msgctxt "Favorite a post"
+msgid "Favorite"
+msgstr "Favorisieren"
+
+#: qml/PostDelegate/PostDelegate.qml:484
+#, kde-format
+msgid "Favorited"
+msgstr "Favorisiert"
+
+#: qml/PostDelegate/PostDelegate.qml:484
+#, kde-format
+msgid "Favorite"
+msgstr "Favorisieren"
+
+#: qml/PostDelegate/PostDelegate.qml:503
+#, kde-format
+msgid "Remove bookmark"
+msgstr "Lesezeichen entfernen"
+
+#: qml/PostDelegate/PostDelegate.qml:503
+#, kde-format
+msgctxt "Bookmark a post"
+msgid "Bookmark"
+msgstr "Lesezeichen hinzufügen"
+
+#: qml/PostDelegate/PostDelegate.qml:506
+#, kde-format
+msgid "Bookmarked"
+msgstr "Lesezeichen gespeichert"
+
+#: qml/PostDelegate/PostDelegate.qml:506
+#, kde-format
+msgid "Bookmark"
+msgstr "Lesezeichen"
+
+#: qml/PostDelegate/PostDelegate.qml:540
+#, kde-format
+msgid ""
+"This post has been marked private. Some posts may be missing because its "
+"replies are marked as private by default."
+msgstr ""
+"Dieser Beitrag ist als privat markiert. Es können Beiträge fehlen, weil "
+"Antworten standardmäßig als privat markiert werden."
+
+#: qml/PostDelegate/PostInfoBar.qml:26
+#, kde-format
+msgctxt "@info"
+msgid "Post Author"
+msgstr "Autor des Beitrags"
+
+#: qml/PostDelegate/PostInfoBar.qml:55
+#, kde-format
+msgctxt "Edited on <datetime>"
+msgid "Edited on %1"
+msgstr "Bearbeitet am %1"
+
+#: qml/PostDelegate/PostInfoBar.qml:65
+#, kde-format
+msgctxt "Show more options"
+msgid "More actions"
+msgstr "Weitere Aktionen"
+
+#: qml/PostDelegate/PostInteractionLabel.qml:59
+#, kde-format
+msgctxt "@info Loading user that started this interaction"
+msgid "Loading…"
+msgstr "Wird geladen …"
+
+#: qml/PostDelegate/PostInteractionLabel.qml:63
+#, kde-format
+msgid "%1 boosted"
+msgstr "%1 teilte"
+
+#: qml/PostDelegate/PostInteractionLabel.qml:65
+#, kde-format
+msgid "In reply to %1"
+msgstr "Als Antwort auf %1"
+
+#: qml/PostDelegate/PostMenu.qml:45
+#, kde-format
+msgctxt "@action:inmenu 'Thread' is a series of posts."
+msgid "Open Thread"
+msgstr "Diskussion öffnen"
+
+#: qml/PostDelegate/PostMenu.qml:70
+#, fuzzy, kde-format
+#| msgid "Copy Image"
+msgctxt "@action:inmenu"
+msgid "Copy Text"
+msgstr "Bild kopieren"
+
+#: qml/PostDelegate/PostMenu.qml:74
+#, fuzzy, kde-format
+#| msgid "Post link copied."
+msgid "Post text copied."
+msgstr "Beitrag-Verknüpfung kopiert."
+
+#: qml/PostDelegate/PostMenu.qml:87
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Open as…"
+msgstr "Öffnen als ..."
+
+#: qml/PostDelegate/PostMenu.qml:95
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Reply as…"
+msgstr "Antworten als ..."
+
+#: qml/PostDelegate/PostMenu.qml:103
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Favorite as…"
+msgstr "Favorisieren als ..."
+
+#: qml/PostDelegate/PostMenu.qml:111
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Boost as…"
+msgstr "Teilen als ..."
+
+#: qml/PostDelegate/PostMenu.qml:119
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Bookmark as…"
+msgstr "Lesezeichen setzten als ..."
+
+#: qml/PostDelegate/PostMenu.qml:132
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Unpin on Profile"
+msgstr "Anheftung am Profil entfernen"
+
+#: qml/PostDelegate/PostMenu.qml:132
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Pin on Profile"
+msgstr "Am Profil anheften"
+
+#: qml/PostDelegate/PostMenu.qml:144
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Unmute Conversation"
+msgstr "Stummschaltung aufheben"
+
+#: qml/PostDelegate/PostMenu.qml:144
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Mute Conversation"
+msgstr "Unterhaltungen stummschalten"
+
+#: qml/PostDelegate/PostMenu.qml:154
+#, kde-format
+msgctxt "@action:inmenu Unmute account"
+msgid "Unmute @%1"
+msgstr "@%1 nicht mehr stummschalten"
+
+#: qml/PostDelegate/PostMenu.qml:156
+#, kde-format
+msgctxt "@action:inmenu Mute account"
+msgid "Mute @%1"
+msgstr "@%1 stummschalten"
+
+#: qml/PostDelegate/PostMenu.qml:174
+#, kde-format
+msgctxt "@action:inmenu Unblock account"
+msgid "Unblock @%1"
+msgstr "@%1 entsperren"
+
+#: qml/PostDelegate/PostMenu.qml:176
+#, kde-format
+msgctxt "@action:inmenu Block account"
+msgid "Block @%1"
+msgstr "@%1 sperren"
+
+#: qml/PostDelegate/PostMenu.qml:204
+#: qml/StatusComposer/EditorAttachmentGrid.qml:59
+#, kde-format
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: qml/PostDelegate/PostMenu.qml:212
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgid "Delete…"
+msgstr "Löschen"
+
+#: qml/PostDelegate/PostMenu.qml:220
+#, fuzzy, kde-format
+#| msgid "Delete & Re-draft"
+msgid "Delete & Re-draft…"
+msgstr "Löschen und neu verfassen"
+
+#: qml/PostDelegate/PostPoll.qml:41
+#, kde-format
+msgctxt "Votes percentage"
+msgid "%1%"
+msgstr "%1 %"
+
+#: qml/PostDelegate/PostPoll.qml:60
+#, kde-format
+msgid "You voted for this option"
+msgstr "Sie haben für diese Option gestimmt"
+
+#: qml/PostDelegate/PostPoll.qml:83
+#, kde-format
+msgid "(No votes)"
+msgstr "(Keine Stimmen)"
+
+#: qml/PostDelegate/PostPoll.qml:128
+#, kde-format
+msgid "Vote"
+msgstr "Abstimmen"
+
+#: qml/PostDelegate/PostPoll.qml:150
+#, kde-format
+msgctxt "@option:check Show poll results"
+msgid "Show Results"
+msgstr "Ergebnis anzeigen"
+
+#: qml/PostDelegate/PostPoll.qml:156
+#, kde-format
+msgid "Poll has closed"
+msgstr "Umfrage ist abgelaufen"
+
+#: qml/PostDelegate/PostTags.qml:50
+#, kde-format
+msgctxt "@info"
+msgid "Tag"
+msgstr "Tag"
+
+#: qml/PostDelegate/PostTags.qml:56
+#, kde-format
+msgctxt "@action:button expand the number of shown tags"
+msgid "…and %1 more"
+msgstr ""
+
+#: qml/PostDelegate/QuotePost.qml:66
+#, kde-format
+msgid "Post from %1"
+msgstr "Beitrag von %1"
+
+#: qml/PostDelegate/QuotePost.qml:85
+#, kde-format
+msgid "Quoted post"
+msgstr "Zitierter Beitrag"
+
+#: qml/PostDelegate/QuotePost.qml:154
+#, fuzzy, kde-format
+#| msgid "Add Poll"
+msgctxt "@info:label"
+msgid "Poll"
+msgstr "Umfrage hinzufügen"
+
+#: qml/PostDelegate/VideoAttachment.qml:201
+#, kde-format
+msgctxt "@action:button"
+msgid "Volume"
+msgstr ""
+
+#: qml/ReadMarker.qml:13
+#, kde-format
+msgctxt "Last read on this date"
+msgid "Last read on %1"
+msgstr "Zuletzt am %1 gelesen"
+
+#: qml/ReportDialog.qml:22
+#, kde-format
+msgctxt "@title"
+msgid "Report Post"
+msgstr "Beitrag melden"
+
+#: qml/ReportDialog.qml:22
+#, kde-format
+msgctxt "@title"
+msgid "Report User"
+msgstr "Benutzer melden"
+
+#: qml/ReportDialog.qml:45
+#, kde-format
+msgctxt "@title"
+msgid "Reason for reporting this post"
+msgstr "Grund für die Meldung dieses Beitrags"
+
+#: qml/ReportDialog.qml:45
+#, kde-format
+msgctxt "@title"
+msgid "Reason for reporting this user"
+msgstr "Grund für die Meldung dieses Benutzers"
+
+#: qml/ReportDialog.qml:65
+#, kde-format
+msgctxt "@action:button 'Report' as in 'Report this to moderators'"
+msgid "Report"
+msgstr "Melden"
+
+#: qml/ReportDialog.qml:75
+#, kde-format
+msgctxt "@action"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: qml/SearchDelegate.qml:102
+#, kde-format
+msgid "Hashtag"
+msgstr "Hashtag"
+
+#: qml/SearchPage.qml:18
+#, kde-format
+msgctxt "@title"
+msgid "Search"
+msgstr "Suche"
+
+#: qml/SearchView.qml:33
+#, fuzzy, kde-format
+#| msgctxt "@action Pop out the status composer"
+#| msgid "Pop Out"
+msgctxt "@action:button Pop out search results into its own page"
+msgid "Pop Out"
+msgstr "Herauslösen"
+
+#: qml/SearchView.qml:35
+#, kde-format
+msgctxt "@info"
+msgid "Pop out search results to a full page"
+msgstr ""
+
+#: qml/SearchView.qml:61
+#, kde-format
+msgid "Loading..."
+msgstr "Wird geladen ..."
+
+#: qml/SearchView.qml:69
+#, kde-format
+msgid "No search results"
+msgstr "Keine Suchergebnisse"
+
+#: qml/SearchView.qml:77
+#, kde-format
+msgid "Search for users, tags and posts"
+msgstr "Nach Benutzern, Tags und Beiträgen suchen"
+
+#: qml/ServerInformationPage.qml:25
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Rules"
+msgctxt "@title:window Server rules"
+msgid "Rules"
+msgstr "Regeln"
+
+#: qml/ServerInformationPage.qml:66
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Rules"
+msgctxt "@action:button"
+msgid "Rules"
+msgstr "Regeln"
+
+#: qml/ServerInformationPage.qml:78
+#, kde-format
+msgctxt "@action:button"
+msgid "Announcements"
+msgstr "Ankündigungen"
+
+#: qml/ServerInformationPage.qml:90
+#, kde-format
+msgctxt "@action:button"
+msgid "Privacy Policy"
+msgstr "Datenschutzrichtlinie"
+
+#: qml/ServerInformationPage.qml:91
+#, kde-format
+msgctxt "@title:window"
+msgid "Privacy Policy"
+msgstr "Datenschutzrichtlinie"
+
+#: qml/ServerInformationPage.qml:102
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Password Service"
+msgctxt "@action:button"
+msgid "Terms of Service"
+msgstr "Passwortdienst"
+
+#: qml/ServerInformationPage.qml:103
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Password Service"
+msgctxt "@title:window"
+msgid "Terms of Service"
+msgstr "Passwortdienst"
+
+#: qml/Settings/AccountPage.qml:26
+#, kde-format
+msgid "Edit Account"
+msgstr "Konto bearbeiten"
+
+#: qml/Settings/AccountPage.qml:35
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu 'Browser' being a web browser"
+#| msgid "Open in Browser"
+msgctxt "@abel Account preferences"
+msgid "Open In Browser"
+msgstr "Im Browser öffnen"
+
+#: qml/Settings/AccountPage.qml:52 qml/Settings/ProfileEditor.qml:31
+#, kde-format
+msgid "Please choose a file"
+msgstr "Bitte wählen Sie eine Datei"
+
+#: qml/Settings/AccountPage.qml:61
+#, kde-format
+msgctxt "@label"
+msgid "Are you sure you want to log out of %1?"
+msgstr "Wollen Sie sich wirklich von %1 abmelden?"
+
+#: qml/Settings/AccountPage.qml:76
+#, kde-format
+msgid "Profile"
+msgstr "Profil"
+
+#: qml/Settings/AccountPage.qml:83
+#, kde-format
+msgid "Account"
+msgstr "Konto"
+
+#: qml/Settings/AccountPage.qml:135
+#, kde-format
+msgid "Require approval for new followers"
+msgstr "Neue Follower müssen freigegeben werden"
+
+#: qml/Settings/AccountPage.qml:136
+#, kde-format
+msgid ""
+"By default new followers are automatically accepted. Uncheck if you want to "
+"manually approve or deny new ones. You always have the option to force "
+"someone to unfollow you."
+msgstr ""
+"Standardmäßig werden neue Follower automatisch akzeptiert. Entfernen Sie "
+"diesen Haken, wenn Sie neue von Hand zulassen oder ablehnen möchten. Sie "
+"haben stets die Möglichkeit, jemanden dazu zu zwingen, Sie zu entfolgen."
+
+#: qml/Settings/AccountPage.qml:145
+#, kde-format
+msgid "Is automated"
+msgstr "Ist automatisiert"
+
+#: qml/Settings/AccountPage.qml:146
+#, kde-format
+msgid ""
+"Whether to publicly mark this account as doing any kind of automated actions."
+msgstr ""
+"Ob öffentlich sichtbar sein soll, dass dieses Konto irgendeine Art von "
+"automatisierten Aktionen ausführt."
+
+#: qml/Settings/AccountPage.qml:155
+#, kde-format
+msgid "Feature profile and posts"
+msgstr "Profil und Beiträge empfehlen"
+
+#: qml/Settings/AccountPage.qml:156
+#, kde-format
+msgid "Your public profile and posts may be featured to other users."
+msgstr ""
+"Ihr öffentliches Profil und Ihre Beiträge können anderen Benutzern empfohlen "
+"werden."
+
+#: qml/Settings/AccountPage.qml:165
+#, kde-format
+msgid "Publicly list follows and followers"
+msgstr "Gefolgte Konten und Follower öffentlich auflisten"
+
+#: qml/Settings/AccountPage.qml:166
+#, kde-format
+msgid "By default everyone you follow and everyone who follows you is public."
+msgstr ""
+"Standardmäßig ist jeder, dem Sie folgen und der Ihnen folgt öffentlich "
+"einsehbar."
+
+#: qml/Settings/AccountPage.qml:175
+#, kde-format
+msgctxt "@label Account preferences"
+msgid "Mark uploaded media as sensitive by default"
+msgstr "Hochgeladene Inhalte immer mit Inhaltswarnung markieren"
+
+#: qml/Settings/AccountPage.qml:184
+#, kde-format
+msgctxt "@label Account preferences"
+msgid "Include public posts in search results"
+msgstr ""
+
+#: qml/Settings/AccountPage.qml:193
+#, kde-format
+msgctxt "@label Account preferences"
+msgid "Default post language"
+msgstr "Standardsprache für Beiträge"
+
+#: qml/Settings/AccountPage.qml:219
+#, kde-format
+msgctxt "@label Account preferences"
+msgid "Default post visibility"
+msgstr "Standardsichtbarkeit für Beiträge"
+
+#: qml/Settings/AccountPage.qml:221
+#, kde-format
+msgctxt "@item:inlistbox Default post visibility rule"
+msgid "Public"
+msgstr "Öffentlich"
+
+#: qml/Settings/AccountPage.qml:222
+#, kde-format
+msgctxt "@item:inlistbox Default post visibility rule"
+msgid "Unlisted"
+msgstr "Nicht aufgeführt"
+
+#: qml/Settings/AccountPage.qml:223
+#, kde-format
+msgctxt "@item:inlistbox Default post visibility rule"
+msgid "Private"
+msgstr "Privat"
+
+#: qml/Settings/AppearancePage.qml:18
+#, kde-format
+msgctxt "@title:group"
+msgid "General"
+msgstr "Allgemein"
+
+#: qml/Settings/AppearancePage.qml:25
+#, kde-format
+msgid "Color theme"
+msgstr "Farbschema"
+
+#: qml/Settings/AppearancePage.qml:44
+#, kde-format
+msgid "Pop out the post composer by default"
+msgstr "Beitragseingabebereich standardmäßig herauslösen"
+
+#: qml/Settings/AppearancePage.qml:58
+#, kde-format
+msgid "Continue reading where you last left off"
+msgstr "Lesen fortsetzen, wo Sie zuletzt waren"
+
+#: qml/Settings/AppearancePage.qml:59
+#, kde-format
+msgid ""
+"If checked, the Home timeline will begin where you last read. The position "
+"in the timeline is shared with other clients."
+msgstr ""
+"Wenn aktiviert, beginnt die Startseiten-Zeitleiste dort, wo Sie zuletzt "
+"waren. Die Position der Zeitleiste wird mit anderen Clients geteilt."
+
+#: qml/Settings/AppearancePage.qml:72
+#, kde-format
+msgid "Auto-update timelines"
+msgstr "Zeitleisten automatisch aktualisieren"
+
+#: qml/Settings/AppearancePage.qml:73
+#, kde-format
+msgid ""
+"If checked, Tokodon will automatically update certain timelines as new posts "
+"come in."
+msgstr ""
+"Wenn aktiviert, aktualisiert Tokodon bestimmte Zeitlinien automatisch, wenn "
+"ein neuer Beitrag eintrifft."
+
+#: qml/Settings/AppearancePage.qml:86
+#, kde-format
+msgctxt "@option:check Boosting means to repost, or retweet"
+msgid "Ask before boosting"
+msgstr "Vor dem Teilen fragen"
+
+#: qml/Settings/AppearancePage.qml:97
+#, kde-format
+msgctxt "@title:group"
+msgid "Posts"
+msgstr "Beiträge"
+
+#: qml/Settings/AppearancePage.qml:103
+#, kde-format
+msgid "Show number of favorites and boosts"
+msgstr "Anzahl von Favoriten und geteilten Beiträgen anzeigen"
+
+#: qml/Settings/AppearancePage.qml:118
+#, kde-format
+msgid "Show link previews"
+msgstr "Vorschau von Verknüpfung anzeigen"
+
+#: qml/Settings/AppearancePage.qml:133
+#, kde-format
+msgid "Content font"
+msgstr "Schriftart des Inhalts"
+
+#: qml/Settings/AppearancePage.qml:139
+#, kde-format
+msgid "Please choose a font"
+msgstr "Bitte wählen Sie eine Schriftart"
+
+#: qml/Settings/AppearancePage.qml:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Media"
+msgstr "Medien"
+
+#: qml/Settings/AppearancePage.qml:156
+#, kde-format
+msgid "Crop images on the timeline"
+msgstr "Bilder in der Zeitleiste zuschneiden"
+
+#: qml/Settings/AppearancePage.qml:157
+#, kde-format
+msgid ""
+"If unchecked, posts with only one image attached will be uncropped and shown "
+"in full."
+msgstr ""
+"Wenn deaktiviert, werden Beiträge mit nur einem Bild vollständig ohne "
+"Zuschnitt angezeigt."
+
+#: qml/Settings/AppearancePage.qml:171
+#, kde-format
+msgid "Auto-play animated GIFs"
+msgstr "Automatische Wiedergabe von GIF-Dateien"
+
+#: qml/Settings/BlockedDomainsPage.qml:19
+#, kde-format
+msgctxt "@title"
+msgid "Blocked Domains"
+msgstr "Gesperrte Domains"
+
+#: qml/Settings/BlockedDomainsPage.qml:51
+#, kde-format
+msgctxt "@action:button"
+msgid "Unblock"
+msgstr "Blockierung aufheben"
+
+#: qml/Settings/BlockedDomainsPage.qml:65
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Blocked Domains"
+msgstr "Keine gesperrten Domains"
+
+#: qml/Settings/EditFilterPage.qml:30
+#, kde-format
+msgctxt "@title:window"
+msgid "Create Filter"
+msgstr "Filter erstellen"
+
+#: qml/Settings/EditFilterPage.qml:30
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Filter"
+msgstr "Filter bearbeiten"
+
+#: qml/Settings/EditFilterPage.qml:84
+#, kde-format
+msgctxt "@label:textbox Filter title"
+msgid "Title"
+msgstr "Titel"
+
+#: qml/Settings/EditFilterPage.qml:89
+#, kde-format
+msgctxt "@info:header"
+msgid "Contexts"
+msgstr "Kontexte"
+
+#: qml/Settings/EditFilterPage.qml:96
+#, kde-format
+msgctxt "@info"
+msgid "Select one or more contexts where this filter should apply:"
+msgstr "Wählen Sie einen oder mehrere Kontexte, auf die der Filter passt:"
+
+#: qml/Settings/EditFilterPage.qml:101
+#, kde-format
+msgctxt "@label:checkbox"
+msgid "Home and Lists"
+msgstr "Startseite und Listen"
+
+#: qml/Settings/EditFilterPage.qml:106
+#, kde-format
+msgctxt "@label:checkbox"
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: qml/Settings/EditFilterPage.qml:111
+#, kde-format
+msgctxt "@label:checkbox"
+msgid "Public Timelines"
+msgstr "Öffentliche Zeitleisten"
+
+#: qml/Settings/EditFilterPage.qml:116
+#, kde-format
+msgctxt "@label:checkbox"
+msgid "Conversations"
+msgstr "Unterhaltungen"
+
+#: qml/Settings/EditFilterPage.qml:121
+#, kde-format
+msgctxt "@label:checkbox"
+msgid "Profiles"
+msgstr "Profile"
+
+#: qml/Settings/EditFilterPage.qml:126
+#, kde-format
+msgctxt "@info:header"
+msgid "Action"
+msgstr "Aktion"
+
+#: qml/Settings/EditFilterPage.qml:134
+#, fuzzy, kde-format
+#| msgid "Content font"
+msgctxt "@label:radiobutton"
+msgid "Hide with Content Notice"
+msgstr "Schriftart des Inhalts"
+
+#: qml/Settings/EditFilterPage.qml:140
+#, fuzzy, kde-format
+#| msgid "Content font"
+msgctxt "@label:radiobutton"
+msgid "Hide Media with Content Notice"
+msgstr "Schriftart des Inhalts"
+
+#: qml/Settings/EditFilterPage.qml:147
+#, kde-format
+msgctxt "@label:radiobutton"
+msgid "Hide Completely"
+msgstr "Komplett ausblenden"
+
+#: qml/Settings/EditFilterPage.qml:153
+#, kde-format
+msgctxt "@info:header"
+msgid "Keywords"
+msgstr "Schlüsselwörter"
+
+#: qml/Settings/EditFilterPage.qml:156
+#, kde-format
+msgctxt "@action:button Add keyword"
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: qml/Settings/EditFilterPage.qml:166
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No keywords"
+msgstr "Keine Schlüsselwörter"
+
+#: qml/Settings/EditFilterPage.qml:194
+#, kde-format
+msgctxt "@label:checkbox"
+msgid "Whole word"
+msgstr "Ganzes Wort"
+
+#: qml/Settings/EditFilterPage.qml:200
+#, kde-format
+msgctxt "@action:button Remove keyword"
+msgid "Remove"
+msgstr "Entfernen"
+
+#: qml/Settings/EditFilterPage.qml:227
+#, kde-format
+msgctxt "@action:button Create the filter"
+msgid "Create"
+msgstr "Erstellen"
+
+#: qml/Settings/EditFilterPage.qml:229
+#, fuzzy, kde-format
+#| msgctxt "@action:Button Save an edited a post"
+#| msgid "Save"
+msgctxt "@action:button Save the edited filter"
+msgid "Save"
+msgstr "Speichern"
+
+#: qml/Settings/EditFilterPage.qml:242
+#, kde-format
+msgctxt "@action:button Delete the filter"
+msgid "Delete"
+msgstr "Löschen"
+
+#: qml/Settings/EditFilterPage.qml:249
+#, kde-format
+msgctxt "@title"
+msgid "Deleting Filter"
+msgstr "Filter löschen"
+
+#: qml/Settings/EditFilterPage.qml:250
+#, kde-format
+msgctxt "@label"
+msgid "Are you sure you want to delete this filter?"
+msgstr "Sind Sie sicher, dass Sie diesen Filter löschen wollen?"
+
+#: qml/Settings/EditProfilePage.qml:21
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Profile"
+msgstr "Profil bearbeiten"
+
+#: qml/Settings/ErrorLogPage.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Error Log"
+msgstr "Fehlerprotokoll"
+
+#: qml/Settings/ErrorLogPage.qml:22
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Clear All"
+msgstr "Alles leeren"
+
+#: qml/Settings/ErrorLogPage.qml:72
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy To Clipboard"
+msgstr "In die Zwischenablage kopieren"
+
+#: qml/Settings/ErrorLogPage.qml:87
+#, kde-format
+msgctxt "@label"
+msgid "No Errors"
+msgstr "Keine Fehler"
+
+#: qml/Settings/FiltersPage.qml:21
+#, kde-format
+msgctxt "@title"
+msgid "Filters"
+msgstr "Filter"
+
+#: qml/Settings/FiltersPage.qml:28
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Create Filter"
+msgstr "Filter erstellen"
+
+#: qml/Settings/FiltersPage.qml:79
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Filters"
+msgstr "Keine Filter"
+
+#: qml/Settings/NetworkProxyPage.qml:15
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Proxy"
+msgstr "Netzwerk-Proxy"
+
+#: qml/Settings/NetworkProxyPage.qml:24
+#, kde-format
+msgid "System Default"
+msgstr "Systemvoreinstellung"
+
+#: qml/Settings/NetworkProxyPage.qml:36
+#, kde-format
+msgid "No Proxy"
+msgstr "Kein Proxy"
+
+#: qml/Settings/NetworkProxyPage.qml:48
+#, kde-format
+msgid "HTTP"
+msgstr "HTTP"
+
+#: qml/Settings/NetworkProxyPage.qml:60
+#, kde-format
+msgid "Socks5"
+msgstr "Socks5"
+
+#: qml/Settings/NetworkProxyPage.qml:79
+#, kde-format
+msgid "Host"
+msgstr "Rechner"
+
+#: qml/Settings/NetworkProxyPage.qml:92
+#, kde-format
+msgid "Port"
+msgstr "Port"
+
+#: qml/Settings/NetworkProxyPage.qml:113
+#, kde-format
+msgid "User"
+msgstr "Benutzer"
+
+#: qml/Settings/NetworkProxyPage.qml:141 qml/Settings/ProfileEditor.qml:304
+#, kde-format
+msgid "Apply"
+msgstr "Anwenden"
+
+#: qml/Settings/NotificationsPage.qml:29
+#, kde-format
+msgid "Enable notifications for this account"
+msgstr "Benachrichtigungen für dieses Konto aktivieren"
+
+#: qml/Settings/NotificationsPage.qml:33
+#, kde-format
+msgid "Notifications can appear even when Tokodon isn't running."
+msgstr ""
+"Benachrichtigungen können auch dann erscheinen, wenn Tokodon nicht läuft."
+
+#: qml/Settings/NotificationsPage.qml:35
+#, kde-format
+msgid ""
+"Push notifications are available but could not be enabled. Please log out "
+"and log back in."
+msgstr ""
+"Push-Benachrichtigungen sind verfügbar, aber können nicht aktiviert werden. "
+"Bitte loggen Sie sich aus und wieder ein."
+
+#: qml/Settings/NotificationsPage.qml:38
+#, kde-format
+msgid "Notifications will only appear when Tokodon is running."
+msgstr "Benachrichtigungen erscheinen nur, wenn Tokodon läuft."
+
+#: qml/Settings/NotificationsPage.qml:51
+#, kde-format
+msgctxt "@title:group"
+msgid "Filtering Policy"
+msgstr "Filterregeln"
+
+#: qml/Settings/NotificationsPage.qml:61
+#, kde-format
+msgctxt "@info:Option Accept and show this in notifications"
+msgid "Accept"
+msgstr "Annehmen"
+
+#: qml/Settings/NotificationsPage.qml:65
+#, kde-format
+msgctxt "@info:Option Filter and send to the filtered inbox"
+msgid "Filter"
+msgstr "Filter"
+
+#: qml/Settings/NotificationsPage.qml:69
+#, kde-format
+msgctxt "@info:Option Ignore completely, do not show notification"
+msgid "Ignore"
+msgstr "Ignorieren"
+
+#: qml/Settings/NotificationsPage.qml:77
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "People you don't follow"
+msgstr "Personen, denen Sie nicht folgen"
+
+#: qml/Settings/NotificationsPage.qml:78
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "Until you manually approve them."
+msgstr "Bis Sie ihnen manuell zugestimmt haben."
+
+#: qml/Settings/NotificationsPage.qml:84
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "People not following you"
+msgstr "Personen, die Ihnen nicht folgen"
+
+#: qml/Settings/NotificationsPage.qml:85
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "Including people who have been following you fewer than 3 days."
+msgstr "Einschließlich Personen, die Ihnen kürzer als drei Tage folgen."
+
+#: qml/Settings/NotificationsPage.qml:91
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "New accounts"
+msgstr "Neue Konten"
+
+#: qml/Settings/NotificationsPage.qml:92
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "Created within the past 30 days."
+msgstr "Innerhalb der letzten 30 Tage angelegt."
+
+#: qml/Settings/NotificationsPage.qml:98
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "Unsolicited conversations"
+msgstr "Unerwünschte Unterhaltungen"
+
+#: qml/Settings/NotificationsPage.qml:99
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid ""
+"Filtered unless it's in reply to your own mention or if you follow the "
+"sender."
+msgstr ""
+"Gefiltert, es sei denn es ist eine Antwort auf Ihre Erwähnung oder Sie "
+"folgen dem Sender."
+
+#: qml/Settings/NotificationsPage.qml:105
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "Moderated accounts"
+msgstr "Moderierte Konten"
+
+#: qml/Settings/NotificationsPage.qml:106
+#, kde-format
+msgctxt "@label Notification preferences"
+msgid "Limited by server moderators."
+msgstr "Durch Server-Moderatoren eingeschränkt."
+
+#: qml/Settings/NotificationsPage.qml:113
+#, kde-format
+msgctxt "@title:group"
+msgid "Events"
+msgstr "Termine"
+
+#: qml/Settings/NotificationsPage.qml:154
+#, fuzzy, kde-format
+#| msgctxt "@action:button See all familiar followers"
+#| msgid "View All"
+msgctxt "@action:button"
+msgid "Hide in All"
+msgstr "Alle anzeigen"
+
+#: qml/Settings/NotificationsPage.qml:154
+#, kde-format
+msgctxt "@action:button"
+msgid "Show in All"
+msgstr ""
+
+#: qml/Settings/NotificationsPage.qml:173
+#, fuzzy, kde-format
+#| msgid "Notifications"
+msgctxt "@action:button"
+msgid "Disable notifications"
+msgstr "Benachrichtigungen"
+
+#: qml/Settings/NotificationsPage.qml:173
+#, fuzzy, kde-format
+#| msgid "Notifications"
+msgctxt "@action:button"
+msgid "Enable notifications"
+msgstr "Benachrichtigungen"
+
+#: qml/Settings/NotificationsPage.qml:201
+#, kde-format
+msgid "Mentions"
+msgstr "Nennungen"
+
+#: qml/Settings/NotificationsPage.qml:202
+#, kde-format
+msgid ""
+"When someone mentions you in a new post, or replies to one of your threads."
+msgstr ""
+"Wenn Sie jemand in einem neuen Beitrag erwähnt oder in einer Ihrer "
+"Diskussionen antwortet."
+
+#: qml/Settings/NotificationsPage.qml:219
+#, fuzzy, kde-format
+#| msgid "Show Boosts"
+msgid "Quotes"
+msgstr "Geteilte Beiträge anzeigen"
+
+#: qml/Settings/NotificationsPage.qml:220
+#, fuzzy, kde-format
+#| msgid "When someone boosted one of your posts."
+msgid "When someone quotes you in a new post"
+msgstr "Wenn jemand einen Ihrer Beiträge teilt."
+
+#: qml/Settings/NotificationsPage.qml:237
+#, kde-format
+msgid "Statuses"
+msgstr "Status"
+
+#: qml/Settings/NotificationsPage.qml:238
+#, kde-format
+msgid "When a user you have notifications turned on for makes a new post."
+msgstr ""
+"Wenn ein Benutzer, für den Sie Benachrichtigungen aktiviert haben, einen "
+"neuen Beitrag erstellt."
+
+#: qml/Settings/NotificationsPage.qml:255
+#, kde-format
+msgid "Boosts"
+msgstr "Geteilte Beiträge"
+
+#: qml/Settings/NotificationsPage.qml:256
+#, kde-format
+msgid "When someone boosted one of your posts."
+msgstr "Wenn jemand einen Ihrer Beiträge teilt."
+
+#: qml/Settings/NotificationsPage.qml:273
+#, kde-format
+msgid "New followers"
+msgstr "Neue Follower"
+
+#: qml/Settings/NotificationsPage.qml:274
+#, kde-format
+msgid "When someone follows you."
+msgstr "Wenn Ihnen jemand folgt."
+
+#: qml/Settings/NotificationsPage.qml:291
+#, kde-format
+msgid "New follow requests"
+msgstr "Neue Folge-Anfrage"
+
+#: qml/Settings/NotificationsPage.qml:292
+#, kde-format
+msgid "When an account who requires manual approval wants to follow you."
+msgstr "Wenn ein Konto, das manuelle Zustimmung benötigt, Ihnen folgen will."
+
+#: qml/Settings/NotificationsPage.qml:309
+#, kde-format
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: qml/Settings/NotificationsPage.qml:310
+#, kde-format
+msgid "When a post you made was favorited by another user."
+msgstr ""
+"Wenn einer Ihrer Beiträge von einem anderen Benutzer favorisiert wurde."
+
+#: qml/Settings/NotificationsPage.qml:327
+#, kde-format
+msgid "Polls"
+msgstr "Umfragen"
+
+#: qml/Settings/NotificationsPage.qml:328
+#, kde-format
+msgid "When a poll you voted in has ended."
+msgstr "Wenn eine Umfrage, an der Sie teilgenommen haben, beendet ist."
+
+#: qml/Settings/NotificationsPage.qml:345
+#, kde-format
+msgid "Edits"
+msgstr "Bearbeitungen"
+
+#: qml/Settings/NotificationsPage.qml:346
+#, kde-format
+msgid "When a post you interacted with was edited by the author."
+msgstr ""
+"Wenn ein Beitrag, mit dem Sie interagierten, von seinem Autoren bearbeitet "
+"wurde."
+
+#: qml/Settings/NotificationsPage.qml:363
+#, kde-format
+msgid "Server Sign-ups"
+msgstr "Server-Registrierungen"
+
+#: qml/Settings/NotificationsPage.qml:364
+#, kde-format
+msgid "When someone signs up to your server."
+msgstr "Wenn sich jemand auf Ihrem Server registriert."
+
+#: qml/Settings/NotificationsPage.qml:383
+#, kde-format
+msgid "Server Reports"
+msgstr "Server-Meldungen"
+
+#: qml/Settings/NotificationsPage.qml:384
+#, kde-format
+msgid "When someone files a report against a user on your server."
+msgstr "Wenn jemand einen Benutzer Ihres Servers meldet."
+
+#: qml/Settings/NotificationsPage.qml:403
+#, kde-format
+msgid "Severed Relationships"
+msgstr "Getrennte Beziehungen"
+
+#: qml/Settings/NotificationsPage.qml:404
+#, kde-format
+msgid ""
+"When you or your server moderates another server, which you are following "
+"users or have followers with."
+msgstr ""
+"Wenn Sie oder Ihr Server einen anderen Server moderieren, auf dem Sie "
+"Nutzern folgen oder Follower haben."
+
+#: qml/Settings/NotificationsPage.qml:421
+#, kde-format
+msgctxt "@option:check"
+msgid "Annual Report"
+msgstr "Jahresbericht"
+
+#: qml/Settings/NotificationsPage.qml:422
+#, kde-format
+msgid "When you receive your #FediWrapped at the end of the year."
+msgstr "Wenn Sie Ihr #FediWrapped zum Jahresende empfangen."
+
+#: qml/Settings/ProfileEditor.qml:60
+#, kde-format
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#: qml/Settings/ProfileEditor.qml:78
+#, kde-format
+msgid "Bio"
+msgstr "Über mich"
+
+#: qml/Settings/ProfileEditor.qml:104
+#, kde-format
+msgid "Header"
+msgstr "Kopfzeile"
+
+#: qml/Settings/ProfileEditor.qml:139
+#, kde-format
+msgid "PNG, GIF or JPG. At most 2 MB. Will be downscaled to 1500x500px"
+msgstr "PNG, GIF oder JPG. Maximal 2 MB. Wird auf 1500x500px herunterskaliert"
+
+#: qml/Settings/ProfileEditor.qml:152 qml/Settings/ProfileEditor.qml:214
+#, kde-format
+msgid "Delete"
+msgstr "Löschen"
+
+#: qml/Settings/ProfileEditor.qml:167
+#, kde-format
+msgid "Avatar"
+msgstr "Avatar"
+
+#: qml/Settings/ProfileEditor.qml:200
+#, kde-format
+msgid "PNG, GIF or JPG. At most 2 MB. Will be downscaled to 400x400px"
+msgstr "PNG, GIF oder JPG. Maximal 2 MB. Wird auf 400x400px herunterskaliert"
+
+#: qml/Settings/ProfileEditor.qml:231
+#, kde-format
+msgctxt "Profile fields"
+msgid "Fields"
+msgstr "Felder"
+
+#: qml/Settings/ProfileEditor.qml:270
+#, kde-format
+msgctxt "@action:button"
+msgid "Remove"
+msgstr "Entfernen"
+
+#: qml/Settings/ProfileEditor.qml:281
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: qml/Settings/ProfileEditor.qml:297
+#, kde-format
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: qml/Settings/SafetyPage.qml:34
+#, kde-format
+msgid "Muted Users"
+msgstr "Stummgeschaltete Benutzer"
+
+#: qml/Settings/SafetyPage.qml:42
+#, kde-format
+msgid "Blocked Users"
+msgstr "Gesperrte Benutzer"
+
+#: qml/Settings/SafetyPage.qml:50
+#, kde-format
+msgid "Blocked Domains"
+msgstr "Gesperrte Domains"
+
+#: qml/Settings/TokodonConfigurationView.qml:17
+#, kde-format
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: qml/Settings/TokodonConfigurationView.qml:30
+#, kde-format
+msgid "Safety"
+msgstr "Sicherheit"
+
+#: qml/Settings/TokodonConfigurationView.qml:37
+#, kde-format
+msgid "Accounts"
+msgstr "Zugänge"
+
+#: qml/Settings/TokodonConfigurationView.qml:50
+#, kde-format
+msgid "Network Proxy"
+msgstr "Netzwerk-Proxy"
+
+#: qml/Settings/TokodonConfigurationView.qml:59
+#, kde-format
+msgid "Error Log"
+msgstr "Fehlerprotokoll"
+
+#: qml/Settings/TokodonConfigurationView.qml:65
+#, kde-format
+msgid "About Tokodon"
+msgstr "Über Tokodon"
+
+#: qml/Settings/TokodonConfigurationView.qml:68
+#: qml/Settings/TokodonConfigurationView.qml:75
+#, kde-format
+msgctxt "@title:group"
+msgid "About"
+msgstr "Über"
+
+#: qml/Settings/TokodonConfigurationView.qml:72
+#, kde-format
+msgid "About KDE"
+msgstr "Über KDE"
+
+#: qml/ShareDialog.qml:34
+#, kde-format
+msgid "Sharing failed"
+msgstr "Teilen fehlgeschlagen"
+
+#: qml/SocialGraphPage.qml:65
+#, kde-format
+msgctxt "@action:button Allow follow request"
+msgid "Allow"
+msgstr "Zulassen"
+
+#: qml/SocialGraphPage.qml:72
+#, kde-format
+msgctxt "@action:button Deny follow request"
+msgid "Deny"
+msgstr "Ablehnen"
+
+#: qml/SocialGraphPage.qml:79
+#, kde-format
+msgctxt "@action:button Deny follow request"
+msgid "Unfollow"
+msgstr "Entfolgen"
+
+#: qml/SocialGraphPage.qml:86
+#, kde-format
+msgctxt "@action:button Deny follow request"
+msgid "Remove Follower"
+msgstr "Follower entfernen"
+
+#: qml/SocialGraphPage.qml:93
+#, kde-format
+msgctxt "@action:button Deny follow request"
+msgid "Remove"
+msgstr "Entfernen"
+
+#: qml/SocialGraphPage.qml:100
+#, fuzzy, kde-format
+#| msgid "Unblock"
+msgctxt "@action:button Unblock this user"
+msgid "Unblock"
+msgstr "Blockierung aufheben"
+
+#: qml/SocialGraphPage.qml:106
+#, fuzzy, kde-format
+#| msgid "Unmute"
+msgctxt "@action:button Unmute this user"
+msgid "Unmute"
+msgstr "Stummschaltung aufheben"
+
+#: qml/StandaloneComposer.qml:57
+#, kde-format
+msgid "No accounts available"
+msgstr "Keine Konten verfügbar"
+
+#: qml/StatusComposer/AttachmentInfoDialog.qml:97
+#, kde-format
+msgctxt "@title:group Alternate text or description of the image"
+msgid "Description"
+msgstr "Beschreibung"
+
+#: qml/StatusComposer/AttachmentInfoDialog.qml:115
+#, kde-format
+msgctxt "@title:group"
+msgid "Focal point"
+msgstr "Fokus"
+
+#: qml/StatusComposer/ComposerPoll.qml:44
+#, kde-format
+msgctxt "@label:textbox Poll choice"
+msgid "Choice %1"
+msgstr "Auswahl %1"
+
+#: qml/StatusComposer/ComposerPoll.qml:69
+#, kde-format
+msgctxt "@action:intoolbar Poll toolbar"
+msgid "Add Choice"
+msgstr "Auswahl hinzufügen"
+
+#: qml/StatusComposer/ComposerPoll.qml:70
+#, kde-format
+msgctxt "@info:tooltip Poll toolbar"
+msgid "Add a new poll choice"
+msgstr "Neues Auswahlfeld hinzufügen"
+
+#: qml/StatusComposer/ComposerPoll.qml:89
+#, kde-format
+msgctxt "@info:tooltip Poll toolbar"
+msgid "When the poll will expire"
+msgstr "Wann wird die Umfrage enden"
+
+#: qml/StatusComposer/ComposerPoll.qml:98
+#, kde-format
+msgctxt "@option:check Poll toolbar"
+msgid "Multiple choice"
+msgstr "Mehrfachauswahl"
+
+#: qml/StatusComposer/ComposerPoll.qml:104
+#, kde-format
+msgctxt "@info:tooltip Poll toolbar"
+msgid "Allow multiple choices"
+msgstr "Mehrfachauswahl erlauben"
+
+#: qml/StatusComposer/ComposerPoll.qml:113
+#, kde-format
+msgctxt "@option:check Poll toolbar"
+msgid "Hide totals"
+msgstr "Summen ausblenden"
+
+#: qml/StatusComposer/ComposerPoll.qml:119
+#, kde-format
+msgctxt "@info:tooltip Poll toolbar"
+msgid "Hide vote count until the poll ends"
+msgstr "Stimmenzählung bis zum Ende der Umfrage ausblenden"
+
+#: qml/StatusComposer/EditorAttachmentGrid.qml:96
+#, kde-format
+msgid "Remove"
+msgstr "Entfernen"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:85
+#, fuzzy, kde-format
+#| msgctxt "@info:Time when the domain was allowed to federate."
+#| msgid "Created at"
+msgctxt "Draft, unfinished post"
+msgid "Created %1 ago"
+msgstr "Erstellt am"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:85
+#, kde-format
+msgctxt "Scheduled for this date"
+msgid "Scheduled for %1"
+msgstr "Geplant für den %1"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:93
+#, fuzzy, kde-format
+#| msgctxt "@action:button Schedule something to be posted later"
+#| msgid "Schedule"
+msgctxt "@action:button Re-schedule this post"
+msgid "Re-schedule…"
+msgstr "Zeitplan"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:104
+#, fuzzy, kde-format
+#| msgctxt "@action:button Discard this post"
+#| msgid "Discard"
+msgctxt "@action:button Discard this post"
+msgid "Discard…"
+msgstr "Verwerfen"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:116
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Drafts"
+msgstr "Keine Entwürfe"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:116
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Scheduled Posts"
+msgstr "Keine geplanten Beiträge"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:125
+#: qml/StatusComposer/StatusComposer.qml:181
+#, kde-format
+msgctxt "@title"
+msgid "Discard Draft"
+msgstr "Entwurf verwerfen"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:125
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Scheduled Posts"
+msgctxt "@title"
+msgid "Discard Scheduled Post"
+msgstr "Geplante Beiträge"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:126
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Are you sure you want to discard your draft?"
+msgctxt "@label"
+msgid "Are you sure you want to discard this draft?"
+msgstr "Wollen Sie Ihren Entwurf wirklich verwerfen?"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:126
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Are you sure you want to delete this post?"
+msgctxt "@label"
+msgid "Are you sure you want to discard this scheduled post?"
+msgstr "Wollen Sie diesen Beitrag wirklich löschen?"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:132
+#, kde-format
+msgctxt "@action:button Discard this draft"
+msgid "Discard"
+msgstr "Verwerfen"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:148
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Schedule Post"
+msgctxt "@title"
+msgid "Re-Schedule Post"
+msgstr "Beitrag planen"
+
+#: qml/StatusComposer/ScheduledPostsPage.qml:155
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@action:button Set this post's schedule to when it should be posted"
+#| msgid "Set Schedule"
+msgctxt "@action:button Set this post's schedule to when it should be posted"
+msgid "Set New Schedule"
+msgstr "Zeitplan einstellen"
+
+#: qml/StatusComposer/StatusComposer.qml:62
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit This Post"
+msgstr "Diesen Beitrag bearbeiten"
+
+#: qml/StatusComposer/StatusComposer.qml:64
+#, kde-format
+msgctxt "@title:window"
+msgid "Reply to This Post"
+msgstr "Auf diesen Beitrag antworten"
+
+#: qml/StatusComposer/StatusComposer.qml:66
+#, kde-format
+msgctxt "@title:window"
+msgid "Rewrite This Post"
+msgstr "Diesen Beitrag umschreiben"
+
+#: qml/StatusComposer/StatusComposer.qml:68
+#, kde-format
+msgctxt "@title:window"
+msgid "Write a New Post"
+msgstr "Einen neuen Beitrag schreiben"
+
+#: qml/StatusComposer/StatusComposer.qml:74
+#, kde-format
+msgctxt "@action:intoolbar Draft or unfinished posts"
+msgid "Drafts"
+msgstr "Entwürfe"
+
+#: qml/StatusComposer/StatusComposer.qml:82
+#, kde-format
+msgctxt "@action Pop out the status composer"
+msgid "Pop Out"
+msgstr "Herauslösen"
+
+#: qml/StatusComposer/StatusComposer.qml:148
+#, kde-format
+msgid "Saving an edited post that has a poll will clear existing results."
+msgstr ""
+"Beim Speichern eines bearbeiteten Beitrags mit Umfrage werden die "
+"bestehenden Ergebnisse gelöscht."
+
+#: qml/StatusComposer/StatusComposer.qml:168
+#, kde-format
+msgctxt "@action:button Send a post"
+msgid "Send"
+msgstr "Senden"
+
+#: qml/StatusComposer/StatusComposer.qml:170
+#, kde-format
+msgctxt "@action:button Reply to a post"
+msgid "Reply"
+msgstr "Antworten"
+
+#: qml/StatusComposer/StatusComposer.qml:172
+#, kde-format
+msgctxt "@action:button Send the same post again"
+msgid "Repost"
+msgstr "Erneut senden"
+
+#: qml/StatusComposer/StatusComposer.qml:174
+#, kde-format
+msgctxt "@action:Button Save an edited a post"
+msgid "Save"
+msgstr "Speichern"
+
+#: qml/StatusComposer/StatusComposer.qml:182
+#, kde-format
+msgctxt "@label"
+msgid "Are you sure you want to discard your draft?"
+msgstr "Wollen Sie Ihren Entwurf wirklich verwerfen?"
+
+#: qml/StatusComposer/StatusComposer.qml:188
+#, kde-format
+msgctxt "@action:button Keep this draft"
+msgid "Save"
+msgstr "Speichern"
+
+#: qml/StatusComposer/StatusComposer.qml:196
+#, kde-format
+msgctxt "@action:button Go back to editing"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: qml/StatusComposer/StatusComposer.qml:215
+#, kde-format
+msgctxt "@title"
+msgid "Schedule Post"
+msgstr "Beitrag planen"
+
+#: qml/StatusComposer/StatusComposer.qml:222
+#, kde-format
+msgctxt "@action:button Set this post's schedule to when it should be posted"
+msgid "Set Schedule"
+msgstr "Zeitplan einstellen"
+
+#: qml/StatusComposer/StatusComposer.qml:337
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Content notice"
+msgstr "Inhaltswarnung"
+
+#: qml/StatusComposer/StatusComposer.qml:351
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "What's new?"
+msgstr "Was ist neu?"
+
+#: qml/StatusComposer/StatusComposer.qml:490
+#, kde-format
+msgctxt "@title:window"
+msgid "Choose a File"
+msgstr "Wählen Sie eine Datei"
+
+#: qml/StatusComposer/StatusComposer.qml:495
+#, kde-format
+msgctxt "@action:button"
+msgid "Attach File"
+msgstr "Datei anhängen"
+
+#: qml/StatusComposer/StatusComposer.qml:500
+#: qml/StatusComposer/StatusComposer.qml:530
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "You can't have attachments and a poll in the same post."
+msgstr ""
+
+#: qml/StatusComposer/StatusComposer.qml:504
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "You have the maximum allowed number of attachments."
+msgstr ""
+
+#: qml/StatusComposer/StatusComposer.qml:507
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Attach file"
+msgstr "Datei anhängen"
+
+#: qml/StatusComposer/StatusComposer.qml:519
+#, kde-format
+msgctxt "@action:button"
+msgid "Attach Poll"
+msgstr "Umfrage anhängen"
+
+#: qml/StatusComposer/StatusComposer.qml:526
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "You can't modify or add a poll to an existing post."
+msgstr ""
+
+#: qml/StatusComposer/StatusComposer.qml:533
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Add poll"
+msgstr "Umfrage hinzufügen"
+
+#: qml/StatusComposer/StatusComposer.qml:543
+#, kde-format
+msgctxt "@action:button"
+msgid "Content Notice"
+msgstr "Inhaltswarnung"
+
+#: qml/StatusComposer/StatusComposer.qml:555
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Content notice"
+msgstr "Inhaltswarnung"
+
+#: qml/StatusComposer/StatusComposer.qml:581
+#, kde-format
+msgctxt "@action:button"
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+#: qml/StatusComposer/StatusComposer.qml:589
+#, kde-format
+msgctxt "@title"
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+#: qml/StatusComposer/StatusComposer.qml:593
+#, kde-format
+msgctxt "@item:inmenu Local to this server"
+msgid "Local"
+msgstr "Lokal"
+
+#: qml/StatusComposer/StatusComposer.qml:599
+#, kde-format
+msgctxt "@item:inmenu Public to the world"
+msgid "Public"
+msgstr "Öffentlich"
+
+#: qml/StatusComposer/StatusComposer.qml:604
+#, kde-format
+msgctxt "@item:inmenu Public but less so"
+msgid "Unlisted"
+msgstr "Nicht aufgeführt"
+
+#: qml/StatusComposer/StatusComposer.qml:609
+#, kde-format
+msgctxt "@item:inmenu Only to followers"
+msgid "Private"
+msgstr "Privat"
+
+#: qml/StatusComposer/StatusComposer.qml:614
+#, kde-format
+msgctxt "@item:inmenu Only to who is explicitly mentioned"
+msgid "Direct Message"
+msgstr "Direktnachricht"
+
+#: qml/StatusComposer/StatusComposer.qml:619
+#, kde-format
+msgctxt "@info:tooltip Post visibility"
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+#: qml/StatusComposer/StatusComposer.qml:627
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Post language"
+msgstr "Sprache des Beitrags"
+
+#: qml/StatusComposer/StatusComposer.qml:660
+#, kde-format
+msgctxt "@action:button"
+msgid "Add Emoji"
+msgstr "Emoji hinzufügen"
+
+#: qml/StatusComposer/StatusComposer.qml:671
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Add emoji"
+msgstr "Emoji hinzufügen"
+
+#: qml/StatusComposer/StatusComposer.qml:701
+#, kde-format
+msgctxt "@label Character count in the status composer"
+msgid "<b>%1/%2</b> characters"
+msgstr "<b>%1/%2</b> Zeichen"
+
+#: qml/StatusComposer/StatusComposer.qml:711
+#: qml/StatusComposer/StatusComposer.qml:788
+#, kde-format
+msgctxt "@action:button Schedule something to be posted later"
+msgid "Schedule"
+msgstr "Zeitplan"
+
+#: qml/StatusComposer/StatusComposer.qml:762
+#, kde-format
+msgctxt "@title"
+msgid "Alt Text Reminder"
+msgstr "Erinnerung an alternativen Text"
+
+#: qml/StatusComposer/StatusComposer.qml:766
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Some of your media is missing alt text. Adding descriptions help everyone, "
+"especially the visually impaired."
+msgstr ""
+"Einige Ihrer Medien haben keinen alternativen Text. Eine Beschriftung "
+"hinzuzufügen hilft vor allem Personen mit Sehbeeinträchtigung."
+
+#: qml/TimelinePage.qml:41 timeline/accountmodel.cpp:41
+#, kde-format
+msgid "Loading"
+msgstr "Wird geladen"
+
+#: qml/TimelinePage.qml:43
+#, kde-format
+msgid "Home (%1)"
+msgstr "Startseite (%1)"
+
+#: qml/TimelinePage.qml:115
+#, kde-format
+msgid "Show Boosts"
+msgstr "Geteilte Beiträge anzeigen"
+
+#: qml/TimelinePage.qml:122
+#, fuzzy, kde-format
+#| msgid "Show Boosts"
+msgid "Show Quotes"
+msgstr "Geteilte Beiträge anzeigen"
+
+#: qml/TimelinePage.qml:129
+#, kde-format
+msgid "Show Replies"
+msgstr "Antworten anzeigen"
+
+#: qml/TimelinePage.qml:150
+#, kde-format
+msgctxt "@info:status Network status"
+msgid "Failed to contact server: %1. Please check your settings."
+msgstr ""
+"Server konnte nicht kontaktiert werden: %1. Bitte überprüfen Sie Ihre "
+"Einstellungen."
+
+#: qml/TimelinePage.qml:191
+#, kde-format
+msgctxt "@action:button Load more posts above this"
+msgid "Load More"
+msgstr "Mehr laden"
+
+#: qml/UserInfo.qml:104
+#, kde-format
+msgid "Switch Account"
+msgstr "Konto wechseln"
+
+#: qml/UserInfo.qml:107
+#, kde-format
+msgid "Switch account"
+msgstr "Konto wechseln"
+
+#: timeline/maintimelinemodel.cpp:29
+#, kde-format
+msgctxt "@title"
+msgid "Home"
+msgstr "Startseite"
+
+#: timeline/maintimelinemodel.cpp:32
+#, kde-format
+msgctxt "@title"
+msgid "Local"
+msgstr "Lokal"
+
+#: timeline/maintimelinemodel.cpp:35
+#, kde-format
+msgctxt "@title"
+msgid "Global"
+msgstr "Global"
+
+#: timeline/maintimelinemodel.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Bookmarks"
+msgstr "Lesezeichen"
+
+#: timeline/maintimelinemodel.cpp:41
+#, kde-format
+msgctxt "@title"
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: timeline/maintimelinemodel.cpp:44
+#, kde-format
+msgctxt "@title"
+msgid "Trending"
+msgstr "Aktuelle Trends"
+
+#: timeline/tagsmodel.cpp:27
+#, kde-format
+msgid "Trending"
+msgstr "Aktuelle Trends"
+
+#: timeline/threadmodel.cpp:45
+#, kde-format
+msgctxt "@title:window"
+msgid "Loading…"
+msgstr "Wird geladen …"
+
+#: timeline/threadmodel.cpp:50
+#, kde-format
+msgctxt "@title"
+msgid "Post by %1"
+msgstr "Beitrag von %1"
+
+#: timeline/trendingnewsmodel.cpp:55
+#, kde-format
+msgctxt "@title:window"
+msgid "Trending News"
+msgstr "Aktuelle Neuigkeiten"
+
+#: tokodonapplication.cpp:17
+#, kde-format
+msgctxt "@title:group Title for the group of account related actions"
+msgid "Account"
+msgstr "Zugang"
+
+#: tokodonapplication.cpp:64
+#, kde-format
+msgctxt "@action:button"
+msgid "Switch to '%1'"
+msgstr "Zu „%1“ wechseln"
+
+#: tokodonapplication.cpp:65 tokodonapplication.cpp:224
+#, kde-format
+msgctxt "@action:button"
+msgid "Configure '%1'"
+msgstr "„%1“ einrichten"
+
+#: tokodonapplication.cpp:72
+#, kde-format
+msgctxt "@action:button"
+msgid "Add Account"
+msgstr "Zugang hinzufügen"
+
+#: tokodonapplication.cpp:91
+#, kde-format
+msgctxt "@action:button"
+msgid "Write a New Post"
+msgstr "Einen neuen Beitrag schreiben"
+
+#: tokodonapplication.cpp:98
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "End of Timeline"
+msgctxt "@action:button Home Timeline"
+msgid "Open Home Timeline"
+msgstr "Ende der Zeitleiste"
+
+#: tokodonapplication.cpp:104
+#, fuzzy, kde-format
+#| msgid "Notifications"
+msgctxt "@action:button Account Notifications"
+msgid "Open Notifications"
+msgstr "Benachrichtigungen"
+
+#: tokodonapplication.cpp:110
+#, fuzzy, kde-format
+#| msgid "Follow Requests"
+msgctxt "@action:button Follows that require explicit allow/deny"
+msgid "Open Follow Requests"
+msgstr "Follower-Anfragen"
+
+#: tokodonapplication.cpp:116
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Local Timeline"
+msgctxt "@action:button Local timeline of posts from the account's own server"
+msgid "Open Local Timeline"
+msgstr "Lokale Zeitleiste"
+
+#: tokodonapplication.cpp:122
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Global Timeline"
+msgctxt ""
+"@action:button Global timeline of posts from the entire Fediverse network"
+msgid "Open Global Timeline"
+msgstr "Globale Zeitleiste"
+
+#: tokodonapplication.cpp:128
+#, fuzzy, kde-format
+#| msgid "Conversations"
+msgctxt "@action:button Direct one-on-one messages between users"
+msgid "Open Conversations"
+msgstr "Unterhaltungen"
+
+#: tokodonapplication.cpp:134
+#, fuzzy, kde-format
+#| msgid "Favorites"
+msgctxt "@action:button This account's favorited posts"
+msgid "Open Favorites"
+msgstr "Favoriten"
+
+#: tokodonapplication.cpp:140
+#, fuzzy, kde-format
+#| msgid "Bookmarks"
+msgctxt "@action:button This account's bookmarked posts"
+msgid "Open Bookmarks"
+msgstr "Lesezeichen"
+
+#: tokodonapplication.cpp:146
+#, fuzzy, kde-format
+#| msgid "Explore"
+msgctxt "@action:button Explore this server's trending posts, news, and more"
+msgid "Open Explore"
+msgstr "Entdecken"
+
+#: tokodonapplication.cpp:152
+#, fuzzy, kde-format
+#| msgid "Following"
+msgctxt "@action:button A list of this account's followed accounts"
+msgid "Open Following"
+msgstr "Folge ich"
+
+#: tokodonapplication.cpp:158
+#, fuzzy, kde-format
+#| msgid "Search"
+msgctxt "@action:button Search for users, posts and tags"
+msgid "Open Search"
+msgstr "Suchen"
+
+#: tokodonapplication.cpp:164
+#, fuzzy, kde-format
+#| msgctxt "@abel Account preferences"
+#| msgid "Open Server in Browser"
+msgctxt "@action:button"
+msgid "Open Server Information"
+msgstr "Server im Browser öffnen"
+
+#: tokodonapplication.cpp:170
+#, fuzzy, kde-format
+#| msgid "Open Link"
+msgctxt ""
+"@action:button This account's lists, or timelines consisting of a groups of "
+"accounts"
+msgid "Open Lists"
+msgstr "Verknüpfung öffnen"
+
+#: tokodonapplication.cpp:176
+#, fuzzy, kde-format
+#| msgid "View Profile"
+msgctxt "@action:button This account's profile"
+msgid "Open Profile"
+msgstr "Profil anzeigen"
+
+#: tokodonapplication.cpp:180
+#, fuzzy, kde-format
+#| msgid "Account editor"
+msgctxt "@action:button"
+msgid "Open Account Switcher"
+msgstr "Kontoeditor"
+
+#: tokodonapplication.cpp:216
+#, kde-format
+msgctxt "@action:button"
+msgid "Switch '%1'"
+msgstr "Zu „%1“ wechseln"
+
+#: utils/emojimodel.cpp:139
+#, kde-format
+msgctxt "Previously used emojis"
+msgid "History"
+msgstr "Verlauf"
+
+#: utils/emojimodel.cpp:144
+#, kde-format
+msgctxt "'Custom' is a category of emoji"
+msgid "Custom"
+msgstr "Eigene"
+
+#: utils/emojimodel.cpp:149
+#, kde-format
+msgctxt "'Smileys' is a category of emoji"
+msgid "Smileys"
+msgstr "Smileys"
+
+#: utils/emojimodel.cpp:154
+#, kde-format
+msgctxt "'People' is a category of emoji"
+msgid "People"
+msgstr "Personen"
+
+#: utils/emojimodel.cpp:159
+#, kde-format
+msgctxt "'Nature' is a category of emoji"
+msgid "Nature"
+msgstr "Natur"
+
+#: utils/emojimodel.cpp:164
+#, kde-format
+msgctxt "'Food' is a category of emoji"
+msgid "Food"
+msgstr "Essen"
+
+#: utils/emojimodel.cpp:169
+#, kde-format
+msgctxt "'Activities' is a category of emoji"
+msgid "Activities"
+msgstr "Aktivitäten"
+
+#: utils/emojimodel.cpp:174
+#, kde-format
+msgctxt "'Travel' is  a category of emoji"
+msgid "Travel"
+msgstr "Reisen"
+
+#: utils/emojimodel.cpp:179
+#, kde-format
+msgctxt "'Objects' is a category of emoji"
+msgid "Objects"
+msgstr "Gegenstände"
+
+#: utils/emojimodel.cpp:184
+#, kde-format
+msgctxt "'Symbols' is a category of emoji"
+msgid "Symbols"
+msgstr "Symbole"
+
+#: utils/emojimodel.cpp:189
+#, kde-format
+msgctxt "'Flags' is a category of emoji"
+msgid "Flags"
+msgstr "Flaggen"
+
+#: utils/filetransferjob.cpp:36
+#, kde-format
+msgid "Could not open the temporary download file"
+msgstr "Die temporäre Download-Datei kann nicht geöffnet werden"
+
+#: utils/filetransferjob.cpp:78
+#, kde-format
+msgid "Could not reserve disk space for download"
+msgstr "Für den Download kann kein Speicherplatz reserviert werden"
+
+#: utils/filetransferjob.cpp:86
+#, kde-format
+msgctxt "Job heading, like 'Copying'"
+msgid "Downloading"
+msgstr "Wird heruntergeladen"
+
+#: utils/filetransferjob.cpp:87
+#, kde-format
+msgctxt "The URL being downloaded/uploaded"
+msgid "Source"
+msgstr "Quelle"
+
+#: utils/filetransferjob.cpp:88
+#, kde-format
+msgctxt "The location being downloaded to"
+msgid "Destination"
+msgstr "Ziel"
+
+#: utils/texthandler.cpp:174
+#, kde-format
+msgid "in the future"
+msgstr "In der Zukunft"
+
+#: utils/texthandler.cpp:176
+#, kde-format
+msgid "%1s"
+msgstr "%1 Sek."
+
+#: utils/texthandler.cpp:178
+#, kde-format
+msgid "%1m"
+msgstr "%1 Min."
+
+#: utils/texthandler.cpp:180
+#, kde-format
+msgid "%1h"
+msgstr "%1 Std."
+
+#: utils/texthandler.cpp:191
+#, kde-format
+msgid "Today"
+msgstr "Heute"
+
+#: utils/texthandler.cpp:193
+#, kde-format
+msgid "%1d"
+msgstr "%1 Tage"
+
+#: utils/texthandler.cpp:197
+#, kde-format
+msgid "1 week ago"
+msgid_plural "%1 weeks ago"
+msgstr[0] "Vor einer Woche"
+msgstr[1] "Vor %1 Wochen"
+
+#: utils/texthandler.cpp:200
+#, kde-format
+msgid "1 month ago"
+msgid_plural "%1 months ago"
+msgstr[0] "Vor einem Monat"
+msgstr[1] "Vor %1 Monaten"
+
+#: utils/texthandler.cpp:204
+#, kde-format
+msgid "1 year ago"
+msgid_plural "%1 years ago"
+msgstr[0] "Vor einem Jahr"
+msgstr[1] "Vor %1 Jahren"
+
+#~ msgctxt "@info:status"
+#~ msgid "End of Timeline"
+#~ msgstr "Ende der Zeitleiste"
+
+#~ msgctxt "@title"
+#~ msgid "Embed Information"
+#~ msgstr "Informationen einbetten"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Configure Notifications…"
+#~ msgstr "Benachrichtigungen einrichten …"
+
+#~ msgctxt "@action Open embed into website dialog"
+#~ msgid "Embed"
+#~ msgstr "Einbetten"
+
+#~ msgctxt "@abel Account preferences"
+#~ msgid "Open Server in Browser"
+#~ msgstr "Server im Browser öffnen"
+
+#~ msgid "Some settings can only be configured on your server's website."
+#~ msgstr ""
+#~ "Einige Einstellungen können nur über die Webseite Ihres Servers "
+#~ "eingerichtet werden."
+
+#~ msgctxt "@info:Cancel button to close the dailog."
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgctxt "@info Bio label of account."
+#~ msgid "Bio"
+#~ msgstr "Über mich"
+
+#~ msgctxt "@info:Number of Posts"
+#~ msgid "Posts"
+#~ msgstr "Beiträge"
+
+#~ msgctxt "@info:Number of followers."
+#~ msgid "Followers"
+#~ msgstr "Follower"
+
+#~ msgctxt "@info:row Number of accounts followed by the account"
+#~ msgid "Following"
+#~ msgstr "Folge ich"
+
+#~ msgctxt "@info: Role of the user."
+#~ msgid "Role"
+#~ msgstr "Rolle"
+
+#~ msgctxt "@info Number of Posts"
+#~ msgid "Posts"
+#~ msgstr "Beiträge"
+
+#~ msgctxt "@info Number of followers."
+#~ msgid "Followers"
+#~ msgstr "Follower"
+
+#~ msgctxt "@info Row Number of accounts followed by the account"
+#~ msgid "Following"
+#~ msgstr "Folge ich"
+
+#~ msgctxt "@info The current login status of the account."
+#~ msgid "Reported"
+#~ msgstr "Gemeldet"
+
+#~ msgid "Create List"
+#~ msgstr "Liste erstellen"
+
+#~ msgid "Edit List"
+#~ msgstr "Liste bearbeiten"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Show Boosts"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Quotes"
+#~ msgstr "Geteilte Beiträge anzeigen"
+
+#~ msgctxt "Draft, unfinished post"
+#~ msgid "Draft"
+#~ msgstr "Entwurf"
+
+#~ msgctxt "@action:button"
+#~ msgid "Post"
+#~ msgstr "Beitrag"
+
+#~ msgctxt "@action:button Edit the list"
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgctxt "@action:button Edit the filter"
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Share a line of text in the standalone composer."
+#~ msgstr "Eine Textzeile aus dem eigenständigen Editor teilen."
+
+#~ msgid "The text to share."
+#~ msgstr "Der zu teilende Text."
+
+#~ msgid "Internal usage only."
+#~ msgstr "Wird nur intern genutzt."
+
+#~ msgctxt "@info"
+#~ msgid "Interaction"
+#~ msgstr "Interaktion"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove Bookmark"
+#~ msgstr "Lesezeichen entfernen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Bookmark"
+#~ msgstr "Lesezeichen"
+
+#~ msgctxt "@info:placeholder"
+#~ msgid "No Privacy Policy"
+#~ msgstr "Keine Datenschutzrichtlinie"
+
+#~ msgctxt "@title:window"
+#~ msgid "Login"
+#~ msgstr "Anmeldung"
+
+#~ msgctxt "@title:group"
+#~ msgid "Login"
+#~ msgstr "Anmeldung"
+
+#~ msgid "Server URL:"
+#~ msgstr "Server-URL:"
+
+#~ msgid "mastodon.social"
+#~ msgstr "mastodon.social"
+
+#~ msgid "Enable moderation tools"
+#~ msgstr "Moderationswerkzeuge aktivieren"
+
+#~ msgid ""
+#~ "Allow Tokodon to access moderation tools. Try disabling this if you have "
+#~ "trouble logging in."
+#~ msgstr ""
+#~ "Tokodon erlauben, Moderationswerkzeuge zu verwenden. Wenn Sie Probleme "
+#~ "mit der Anmeldung haben, probieren Sie, diese Option zu deaktivieren."
+
+#~ msgid "Server URL must not be empty!"
+#~ msgstr "Die Server-URL darf nicht leer sein."
+
+#~ msgctxt "@action:button Pick a Mastodon server"
+#~ msgid "Pick a Server"
+#~ msgstr "Einen Server auswählen"
+
+#~ msgid "%1 replied to your post"
+#~ msgstr "%1 antwortete auf Ihren Beitrag"
+
+#, fuzzy
+#~| msgid "Content font"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Content Notice"
+#~ msgstr "Schriftart des Inhalts"
+
+#~ msgid "Filtered: %1"
+#~ msgstr "Gefiltert: %1"
+
+#, fuzzy
+#~| msgctxt "@title Server-wide announcements set by admins."
+#~| msgid "Announcements"
+#~ msgctxt "@action:buttin"
+#~ msgid "Announcements"
+#~ msgstr "Ankündigungen"
+
+#~ msgctxt "@action:button Server Announcements"
+#~ msgid "Announcements"
+#~ msgstr "Ankündigungen"
+
+#~ msgid ""
+#~ "To continue, please open the following link in your web browser to "
+#~ "authorize Tokodon: %1"
+#~ msgstr ""
+#~ "Um fortzufahren, öffnen Sie bitte den folgenden Link in Ihrem Browser und "
+#~ "autorisieren Sie Tokodon: %1"
+
+#~ msgctxt "%1 is the Mastodon application name used for posting"
+#~ msgid ", via %1"
+#~ msgstr " über %1"
+
+#~ msgid "Media Hidden"
+#~ msgstr "Medien ausgeblendet"
+
+#~ msgid "Mastodon client"
+#~ msgstr "Mastodon-Client"
+
+#, fuzzy
+#~| msgid "Client for the decentralized social network: mastodon"
+#~ msgid "Client for decentralized social networks like Mastodon"
+#~ msgstr "Ein Programm für Mastodon, das dezentrale soziale Netzwerk"
+
+#~ msgid "No follow requests"
+#~ msgstr "Keine Follower-Anfragen"
+
+#~ msgid "No muted users"
+#~ msgstr "Keine stummgeschalteten Benutzer"
+
+#~ msgid "No blocked users"
+#~ msgstr "Keine blockierten Benutzer"
+
+#~ msgid "No featured users"
+#~ msgstr "Keine empfohlenen Benutzer"
+
+#, fuzzy
+#~| msgid "No followers"
+#~ msgid "No familiar followers"
+#~ msgstr "Keine Follower"
+
+#, fuzzy
+#~| msgid "No users favourited this post"
+#~ msgid "No users in this list"
+#~ msgstr "Kein Benuzter hat diese Beitrag favorisiert"
+
+#~ msgctxt "@title:group"
+#~ msgid "Network Settings"
+#~ msgstr "Network Settings"
+
+#~ msgctxt "@option:check Login page"
+#~ msgid "Ignore SSL errors"
+#~ msgstr "SSL-Fehler ignorieren"
+
+#~ msgctxt "Show all notifications"
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgctxt "Show only mentions"
+#~ msgid "Mentions"
+#~ msgstr "Nennungen"
+
+#~ msgctxt "@label"
+#~ msgid "No Trending Posts"
+#~ msgstr "Keine aufstrebenden Beiträge"
+
+#~ msgid "No posts"
+#~ msgstr "Keine Beiträge"
+
+#, fuzzy
+#~| msgid "Content Warning"
+#~ msgctxt "@info:placeholder"
+#~ msgid "Content warning"
+#~ msgstr "Inhaltswarnung"
+
+#~ msgctxt "@action:intoolbar Short for content warning"
+#~ msgid "cw"
+#~ msgstr "IW"
+
+#, fuzzy
+#~| msgid "Content Warning"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Content warning"
+#~ msgstr "Inhaltswarnung"
+
+#~ msgid "Note:"
+#~ msgstr "Notiz:"
+
+#~ msgid "Click to add a note"
+#~ msgstr "Klicken, um Notiz hinzuzufügen"
+
+#~ msgid "This is a bot account"
+#~ msgstr "Dies ist ein Bot-Konto"
+
+#~ msgid "Suggest account to others"
+#~ msgstr "Das Konto anderen vorschlagen"
+
+#~ msgid "Open Original Page"
+#~ msgstr "Original öffnen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Open Original Page"
+#~ msgstr "Original öffnen"
+
+#~ msgctxt "@title:group"
+#~ msgid "Pick a Server"
+#~ msgstr "Einen Server auswählen"
+
+#~ msgid "Server URL must not be empty."
+#~ msgstr "Die Server-URL darf nicht leer sein."
+
+#~ msgctxt "@title"
+#~ msgid "%1 favourite"
+#~ msgid_plural "%1 favourites"
+#~ msgstr[0] "%1 Favorit"
+#~ msgstr[1] "%1 Favoriten"
+
+#~ msgid "Favourites"
+#~ msgstr "Favoriten"
+
+#~ msgid "Favourite"
+#~ msgstr "Favorit"
+
+#~ msgctxt "@title"
+#~ msgid "Favourites"
+#~ msgstr "Favoriten"
+
+#, fuzzy
+#~| msgid "Configure"
+#~ msgctxt "@action:button"
+#~ msgid "Configure %1"
+#~ msgstr "Einrichten"
+
+#, fuzzy
+#~| msgid "Spellchecking"
+#~ msgid "Spell Checking"
+#~ msgstr "Rechtschreibprüfung"
+
+#~ msgid "Enable automatic spell checking"
+#~ msgstr "Automatische Rechtschreibprüfung aktivieren"
+
+#~ msgid "Ignore uppercase words"
+#~ msgstr "Durchgehend groß geschriebene Wörter ignorieren"
+
+#~ msgid "Ignore hyphenated words"
+#~ msgstr "Bindestrichwörter ignorieren"
+
+#~ msgid "Detect language automatically"
+#~ msgstr "Sprache automatisch erkennen"
+
+#~ msgid "Selected default language:"
+#~ msgstr "Ausgewählte Standardsprache:"
+
+#~ msgid "None"
+#~ msgstr "Keine"
+
+#~ msgid "Additional Spell Checking Languages"
+#~ msgstr "Zusätzliche Sprache für Rechtschreibprüfung"
+
+#~ msgid ""
+#~ "%1 will provide spell checking and suggestions for the languages listed "
+#~ "here when autodetection is enabled."
+#~ msgstr ""
+#~ "%1 bietet Rechtschreibprüfung und -vorschläge für die hier aufgelisteten "
+#~ "Sprachen an, wenn die automatische Erkennung aktiv ist."
+
+#~ msgid "Open Personal Dictionary"
+#~ msgstr "Persönliches Wörterbuch öffnen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Spell checking languages"
+#~ msgstr "Sprache für Rechtschreibprüfung"
+
+#~ msgid "Default Language"
+#~ msgstr "Ausgewählte Standardsprache"
+
+#~ msgid "Spell checking dictionary"
+#~ msgstr "Wörterbuch für Rechtschreibprüfung"
+
+#~ msgid "Add a new word to your personal dictionary…"
+#~ msgstr "Ein neues Wort zu Ihrem persönlichen Wörterbuch hinzufügen ..."
+
+#~ msgctxt "@action:button"
+#~ msgid "Add Word"
+#~ msgstr "Wort hinzufügen"
+
+#, fuzzy
+#~| msgid "Edit"
+#~ msgctxt "@action:Button Edit a post"
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgctxt "@title:window"
+#~ msgid "Settings"
+#~ msgstr "Einstellungen"
+
+#~ msgid "Moderation Tools"
+#~ msgstr "Moderationswerkzeuge"
+
+#~ msgid "Copy Link to This Profile"
+#~ msgstr "Verknüpfung zum Profil kopieren"
+
+#, fuzzy
+#~| msgctxt "Share a post"
+#~| msgid "Boost"
+#~ msgid "%1 Boost"
+#~ msgid_plural "%1 Boosts"
+#~ msgstr[0] "Teilen"
+#~ msgstr[1] "Teilen"
+
+#, fuzzy
+#~| msgid "No Notifications"
+#~ msgid "Group Notifications"
+#~ msgstr "Keine Benachrichtigungen"
+
+#, fuzzy
+#~| msgid "Instance Url:"
+#~ msgid "Instance URL:"
+#~ msgstr "Instanz-Adresse:"
+
+#~ msgid "Instance URL must not be empty!"
+#~ msgstr "Instanz-Adresse darf nicht leer sein."
+
+#~ msgctxt "login status"
+#~ msgid "Silenced"
+#~ msgstr "Stummgeschaltet"
+
+#, fuzzy
+#~| msgctxt "Reply to a post"
+#~| msgid "Reply"
+#~ msgid "%1 Reply"
+#~ msgid_plural "%1 Replies"
+#~ msgstr[0] "Antworten"
+#~ msgstr[1] "Antworten"
+
+#~ msgctxt "@item:inlistbox Group of preferred languages"
+#~ msgid "Preferred Languages"
+#~ msgstr "Ausgewählte Standardsprachen"
+
+#~ msgctxt "@item:inlistbox Group of all languages"
+#~ msgid "All Languages"
+#~ msgstr "Alle Sprachen"
+
+#~ msgctxt "@title"
+#~ msgid "Muted Accounts"
+#~ msgstr "Stummgeschaltete Konten"
+
+#~ msgctxt "@title"
+#~ msgid "Blocked Accounts"
+#~ msgstr "Blockierte Konten"
+
+#, fuzzy
+#~| msgid "%1 followers"
+#~ msgid "No followed accounts"
+#~ msgstr "%1 Abonnenten"
+
+#~ msgid "Requested"
+#~ msgstr "Angefordert"
+
+#~ msgid "Stop Muting"
+#~ msgstr "Nicht mehr stummschalten"
+
+#~ msgid "Stop Blocking"
+#~ msgstr "Nicht mehr blockieren"
+
+#~ msgid "Blocked Accounts"
+#~ msgstr "Blockierte Konten"
+
+#~ msgid "Copy Link to This Post"
+#~ msgstr "Verknüpfung zum Beitrag kopieren"
+
+#~ msgid "Pinned entry"
+#~ msgstr "Angehefteter Eintrag"
+
+#~ msgid "People"
+#~ msgstr "Personen"
+
+#, fuzzy
+#~| msgid "Notifications"
+#~ msgctxt "@title:group"
+#~ msgid "Notifications"
+#~ msgstr "Benachrichtigungen"
+
+#, fuzzy
+#~| msgctxt "@info The current login status of the account."
+#~| msgid "Login Status"
+#~ msgid "Status"
+#~ msgstr "Anmeldestatus"
+
+#~ msgid "Authorize Tokodon to act on your behalf"
+#~ msgstr "Tokodon erlauben, in Ihrem Namen zu handeln"
+
+#~ msgid "Show detailed statistics about posts"
+#~ msgstr "Detaillierte Statistiken über die Beiträge anzeigen"
+
+#~ msgctxt "@label Account preferences"
+#~ msgid ""
+#~ "These preferences apply to the current account and are synced to other "
+#~ "clients."
+#~ msgstr ""
+#~ "Diese Voreinstellungen gelten für das aktuelle Konto und werden mit "
+#~ "anderen Programmen synchronisiert."
+
+#~ msgid "Profile Editor"
+#~ msgstr "Profileditor"
+
+#~ msgctxt "@label Settings header"
+#~ msgid "Preferences"
+#~ msgstr "Voreinstellungen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Open Moderation Tools"
+#~ msgstr "Moderationswerkzeuge öffnen"
+
+#~ msgid "Open settings"
+#~ msgstr "Einstellungen öffnen"
+
+#~ msgid "Add a description"
+#~ msgstr "Beschreibung hinzufügen"
+
+#, fuzzy
+#~| msgid "Accounts"
+#~ msgctxt "@title"
+#~ msgid "Federation Tool Page"
+#~ msgstr "Zugänge"
+
+#, fuzzy
+#~| msgid "Accounts"
+#~ msgid "IP Rule Tool Page"
+#~ msgstr "Zugänge"
+
+#~ msgctxt "@label User's number of followed accounts"
+#~ msgid "<b>%1</b> following"
+#~ msgstr "<b>%1</b> Folgt"
+
+#, fuzzy
+#~| msgctxt "Share a post"
+#~| msgid "Boost"
+#~ msgid "%1 Boosts"
+#~ msgstr "Teilen"
+
+#~ msgid "Please insert the generated token."
+#~ msgstr "Bitte geben Sie das erzeugte Token ein."
+
+#~ msgid "Public post"
+#~ msgstr "Öffentlicher Beitrag"
+
+#~ msgid "Followers-only post"
+#~ msgstr "Beitrag nur für Follower"
+
+#~ msgid "Direct post"
+#~ msgstr "Direktnachricht"
+
+#~ msgctxt "@info:whatsthis Post language selection"
+#~ msgid "Select the language the post is written in"
+#~ msgstr "Die Sprache auswählen, in der der Beitrag erstellt wurde"
+
+#~ msgctxt "Like a post"
+#~ msgid "Like"
+#~ msgstr "Mag ich"
+
+#~ msgid "Toot"
+#~ msgstr "Tröt"
+
+#~ msgid "Next image"
+#~ msgstr "Nächstes Bild"
+
+#~ msgid "%1 toots"
+#~ msgstr "%1 Tröts"
+
+#~ msgctxt "hour:minute"
+#~ msgid "%1:%2"
+#~ msgstr "%1:%2"
+
+#~ msgid "Image View"
+#~ msgstr "Bildbetrachter"
+
+#~ msgid "Add an account"
+#~ msgstr "Einen Zugang hinzufügen"
+
+#~ msgid "Options:"
+#~ msgstr "Einstellungen:"
+
+#~ msgid "Notifications support is not implemented yet"
+#~ msgstr "Benachrichtigungen werden noch nicht unterstützt"
+
+#~ msgid "Shared by %1"
+#~ msgstr "Geteilt von %1"

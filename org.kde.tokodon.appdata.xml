@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  - SPDX-License-Identifier: CC0-1.0
+  - SPDX-FileCopyrightText: 2020-2021 Carl Schwan <carlschwan@kde.org>
+ -->
+<component type="desktop">
+  <id>org.kde.tokodon</id>
+  <provides>
+    <binary>tokodon</binary>
+  </provides>
+  <name>Tokodon</name>
+  <name xml:lang="ar">توكودون</name>
+  <name xml:lang="ast">Tokodon</name>
+  <name xml:lang="ca">Tokodon</name>
+  <name xml:lang="ca-valencia">Tokodon</name>
+  <name xml:lang="cs">Tokodon</name>
+  <name xml:lang="de">Tokodon</name>
+  <name xml:lang="en-GB">Tokodon</name>
+  <name xml:lang="eo">Tokodon</name>
+  <name xml:lang="es">Tokodon</name>
+  <name xml:lang="eu">Tokodon</name>
+  <name xml:lang="fi">Tokodon</name>
+  <name xml:lang="fr">Tokodon</name>
+  <name xml:lang="gl">Tokodon</name>
+  <name xml:lang="he">Tokodon</name>
+  <name xml:lang="hi">टोकोडोन</name>
+  <name xml:lang="hu">Tokodon</name>
+  <name xml:lang="ia">Tokodon</name>
+  <name xml:lang="id">Tokodon</name>
+  <name xml:lang="is">Tokodon</name>
+  <name xml:lang="it">Tokodon</name>
+  <name xml:lang="ka">Tokodon</name>
+  <name xml:lang="ko">Tokodon</name>
+  <name xml:lang="lv">Tokodon</name>
+  <name xml:lang="nl">Tokodon</name>
+  <name xml:lang="nn">Tokodon</name>
+  <name xml:lang="pa">ਟੂਕੂਡੂਨ</name>
+  <name xml:lang="pl">Tokodon</name>
+  <name xml:lang="pt">Tokodon</name>
+  <name xml:lang="pt-BR">Tokodon</name>
+  <name xml:lang="ru">Tokodon</name>
+  <name xml:lang="sa">तोकोदोन्</name>
+  <name xml:lang="sk">Tokodon</name>
+  <name xml:lang="sl">Tokodon</name>
+  <name xml:lang="sq">Tokodon</name>
+  <name xml:lang="sv">Tokodon</name>
+  <name xml:lang="tr">Tokodon</name>
+  <name xml:lang="uk">Tokodon</name>
+  <name xml:lang="zh-CN">Tokodon</name>
+  <name xml:lang="zh-TW">Tokodon</name>
+  <summary>Browse the Fediverse</summary>
+  <summary xml:lang="ar">تصفح فيديفيرس</summary>
+  <summary xml:lang="ca">Navegueu pel Fedivers</summary>
+  <summary xml:lang="ca-valencia">Navegueu per Fedivers</summary>
+  <summary xml:lang="en-GB">Browse the Fediverse</summary>
+  <summary xml:lang="eo">Foliumi la Fediverson</summary>
+  <summary xml:lang="es">Explorar el Fediverso</summary>
+  <summary xml:lang="eu">Arakatu Fedibertsioa</summary>
+  <summary xml:lang="fi">Selaa fediversumia</summary>
+  <summary xml:lang="fr">Naviguer dans le Fediverse</summary>
+  <summary xml:lang="gl">Explore o Fediverso</summary>
+  <summary xml:lang="he">מסע בפדיברס</summary>
+  <summary xml:lang="hi">फेडिवर्स ब्राउज़ करें</summary>
+  <summary xml:lang="hu">A Fediverse böngészése</summary>
+  <summary xml:lang="it">Naviga il Fediverso</summary>
+  <summary xml:lang="ka">Fediverse-ის დათვალიერება</summary>
+  <summary xml:lang="ko">연합우주 탐색하기</summary>
+  <summary xml:lang="lv">Pārlūkojiet „Fediverse“</summary>
+  <summary xml:lang="nl">In de Fediverse bladeren</summary>
+  <summary xml:lang="nn">Bla gjennom Allheimen</summary>
+  <summary xml:lang="pl">Przejrzyj Fediverse</summary>
+  <summary xml:lang="pt-BR">Navegue no Fediverse</summary>
+  <summary xml:lang="ru">Просмотр Fediverse</summary>
+  <summary xml:lang="sa">Fediverse ब्राउज् कुर्वन्तु</summary>
+  <summary xml:lang="sk">Browse the Fediverse</summary>
+  <summary xml:lang="sl">Brskaj po fediversu</summary>
+  <summary xml:lang="sq">Shfletoni Fediversin</summary>
+  <summary xml:lang="sv">Bläddra på Fediverse</summary>
+  <summary xml:lang="tr">Fediverse’i Tarayın</summary>
+  <summary xml:lang="uk">Навігація Fediverse</summary>
+  <summary xml:lang="zh-CN">浏览Fediverse</summary>
+  <summary xml:lang="zh-TW">瀏覽聯邦宇宙</summary>
+  <description>
+    <p>Tokodon is a Mastodon client. It allows you to interact with the Fediverse community.</p>
+    <p xml:lang="ar">توكودون هو عميل ماستودون. يسمح لك بالتفاعل مع مجتمع فيديفيرس.</p>
+    <p xml:lang="ca">El Tokodon és un client de Mastodon. Permet que interactueu amb la comunitat Fedivers.</p>
+    <p xml:lang="ca-valencia">Tokodon és un client de Mastodon. Permet que interactueu amb la comunitat Fedivers.</p>
+    <p xml:lang="de">Tokodon ist ein Mastodon-Client. Er ermöglicht Ihnen die Interaktion mit der Fediverse-Gemeinschaft.</p>
+    <p xml:lang="en-GB">Tokodon is a Mastodon client. It allows you to interact with the Fediverse community.</p>
+    <p xml:lang="eo">Tokodon estas Mastodon-kliento. Ĝi permesas vin interagi kun la komunumo Fediverse.</p>
+    <p xml:lang="es">Tokodon es un cliente de Mastodon. Le permite interactuar con la comunidad del Fediverso.</p>
+    <p xml:lang="eu">«Tokodon» «Mastodon» bezero bat da. «Fedibertso» komunitatearekin harremanak izateko aukera ematen du.</p>
+    <p xml:lang="fi">Tokodon on Mastodon-asiakas, jolla voit olla vuorovaikutuksessa Fediverse-yhteisöön.</p>
+    <p xml:lang="fr">Tokodon est un client Mastodon. Il vous permet d'interagir avec la communauté Fediverse.</p>
+    <p xml:lang="gl">Tokodon é un cliente para Mastodon. Permíteche relacionarte coa comunidade do Fediverso.</p>
+    <p xml:lang="he">Tokodon הוא לקוח Mastodon. הוא מאפשר לתקשר בקהילת הפדיברס.</p>
+    <p xml:lang="hi">टोकोडॉन एक मैस्टोडॉन क्लाइंट है। यह आपको फेडिवर्स समुदाय के साथ बातचीत करने की अनुमति देता है।</p>
+    <p xml:lang="hu">A Tokodon egy Mastodon kliens. Lehetővé teszi a kapcsolattartást a Fediverse közösséggel.</p>
+    <p xml:lang="id">Tokodon adalah klien Mastodon. Ini memungkinkan kamu untuk berinteraksi dengan komunitas Fediverse.</p>
+    <p xml:lang="is">Tokodon er Mastodon-forrit. Það gerir þér kleift að eiga samskipti við þá sem eru á Fediverse-samfélagsnetum.</p>
+    <p xml:lang="it">Tokodon è un cliente Mastodon. Ti consente di interagire con la comunità del Fediverso.</p>
+    <p xml:lang="ka">Tokodon -ი Mastodon -ის კლიენტია. ის საშუალებას გაძლევთ Fediverse -ის საზოგადოებასთან იკონტაქტოთ.</p>
+    <p xml:lang="ko">Tokodon은 마스토돈 클라이언트입니다. Fediverse 커뮤니티를 사용할 수 있습니다.</p>
+    <p xml:lang="lv">„Tokodon“ ir „Mastodon“ klients. Tas ļauj mijiedarboties ar „Fediverse“ kopienu.</p>
+    <p xml:lang="nl">Tokodon is een Mastodon-client. Het biedt u interactie met de Fediverse gemeenschap.</p>
+    <p xml:lang="nn">Tokodon er ein Mastodon-klient som lèt deg kommunisera med fellesskapet på Allheimen.</p>
+    <p xml:lang="pa">ਟੂਕੂਡੂਨ ਮਸਟੂਡੂਨ ਕਲਾਈਂਟ ਹੈ। ਇਹ ਤੁਹਾਨੂੰ ਫ਼ੇਡਾਈਵਰਸ ਸਮਾਜ ਨਾਲ ਸੰਪਰਕ ਵਿੱਚ ਰਹਿਣ ਲਈ ਮਦਦਗਾਰ ਹੈ।</p>
+    <p xml:lang="pl">Tokodon to program do Mastodona. Umożliwia działanie w społeczności Fediverse.</p>
+    <p xml:lang="pt">O Tokodon é um cliente de Mastodon. Permite-lhe interagir com a comunidade Fediverse.</p>
+    <p xml:lang="pt-BR">Tokodon é um cliente Mastodon. Ele permite a você interagir com a comunidade do Fediverse.</p>
+    <p xml:lang="ru">Tokodon — клиент Mastodon. Программа позволяет взаимодействовать с сообществом Fediverse.</p>
+    <p xml:lang="sa">टोकोडोन् मस्टोडन् ग्राहकः अस्ति । एतेन भवन्तः Fediverse समुदायेन सह अन्तरक्रियां कर्तुं शक्नुवन्ति ।</p>
+    <p xml:lang="sk">Tokodon je klient pre Mastodon. Umožňuje vám komunikovať s komunitou Fediverse.</p>
+    <p xml:lang="sl">Tokodon je odjemalec za Mastodon. Omogoča interakcijo s skupnostjo Fediverse.</p>
+    <p xml:lang="sq">Tokodon është një klient Mastodon-i. Ju lejon të ndërveproni me bashkësinë Fediverse.</p>
+    <p xml:lang="sv">Tokodon är en Mastodon-klient. Den låter dig interagera med Fediverse-gemenskapen.</p>
+    <p xml:lang="tr">Tokodon, bir Mastodon istemcisidir. Fediverse topluluğu ile etkileşmenize izin verir.</p>
+    <p xml:lang="uk">Tokodon — клієнт Mastodon. За його допомогою ви можете спілкуватися із учасниками спільноти Fediverse.</p>
+    <p xml:lang="zh-CN">Tokodon 是一个 Mastodon 客户端。它允许您与 Fediverse 社区进行交互。</p>
+    <p xml:lang="zh-TW">Tokodon 是一個 Mastodon 用戶端。它讓您與聯邦宇宙社群進行互動。</p>
+  </description>
+  <url type="homepage">https://apps.kde.org/tokodon/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=Tokodon</url>
+  <url type="donation">https://kde.org/donate/?app=tokodon</url>
+  <url type="vcs-browser">https://invent.kde.org/network/tokodon/</url>
+  <url type="translate">https://community.kde.org/Get_Involved/translation</url>
+  <url type="contact">https://discuss.kde.org/tag/tokodon</url>
+  <url type="contribute">https://community.kde.org/Get_Involved</url>
+  <categories>
+    <category>Network</category>
+  </categories>
+  <developer id="kde.org">
+    <name translate="no">KDE</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <branding>
+    <color type="primary" scheme_preference="light">#cdecfc</color>
+    <color type="primary" scheme_preference="dark">#17a3ea</color>
+  </branding>
+  <custom>
+    <value key="KDE::matrix">#tokodon:kde.org</value>
+    <value key="KDE::mastodon">https://kde.social/@tokodon</value>
+  </custom>
+  <launchable type="desktop-id">org.kde.tokodon.desktop</launchable>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+  </content_rating>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/tokodon/tokodon-desktop.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/tokodon/tokodon-notifications.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="26.04.1" date="2026-05-07"/>
+    <release version="26.04.0" date="2026-04-16"/>
+    <release version="25.12.3" date="2026-03-05"/>
+    <release version="25.12.2" date="2026-02-05"/>
+    <release version="25.12.1" date="2026-01-08"/>
+    <release version="25.12.0" date="2025-12-11"/>
+    <release version="25.08.3" date="2025-11-06"/>
+    <release version="25.08.2" date="2025-10-09"/>
+    <release version="25.08.1" date="2025-09-11"/>
+    <release version="25.08.0" date="2025-08-14"/>
+    <release version="25.04.3" date="2025-07-03"/>
+    <release version="25.04.2" date="2025-06-05"/>
+    <release version="25.04.1" date="2025-05-08"/>
+    <release version="25.04.0" date="2025-04-17"/>
+    <release version="24.12.3" date="2025-03-06"/>
+    <release version="24.12.2" date="2025-02-06"/>
+    <release version="24.12.1" date="2025-01-09"/>
+    <release version="24.12.0" date="2024-12-12"/>
+    <release version="24.08.3" date="2024-11-07"/>
+    <release version="24.08.2" date="2024-10-10"/>
+    <release version="24.08.1" date="2024-09-12"/>
+    <release version="24.08.0" date="2024-08-22"/>
+    <release version="24.05.2" date="2024-07-04"/>
+    <release version="24.05.1" date="2024-06-13"/>
+    <release version="24.05.0" date="2024-05-23"/>
+    <release version="24.02.2" date="2024-04-11"/>
+    <release version="24.02.1" date="2024-03-21"/>
+    <release version="24.02.0" date="2024-02-28">
+      <url>https://kde.org/announcements/megarelease/6/#tokodon</url>
+      <description>
+        <p>In this release, writing new posts is even easier. You can set the focal points that your followers will see when viewing your post in their timeline. Images can be copy-pasted or dropped in the composer. When discarding your draft, a configuration popup will prevent you from deleting your post by mistake.</p>
+        <p xml:lang="ar">في هذا الإصدار، أصبحت كتابة المنشورات الجديدة أسهل. يمكنك ضبط نقاط التركيز التي سيراها متابعوك عند عرض منشورك في الخط الزمني الخاص بهم. يمكن نسخ ولصق الصور أو إسقاطها في الملحن. عند تجاهل مسودتك، ستمنعك منبثقة الضبط من حذف منشورك عن طريق الخطأ.</p>
+        <p xml:lang="ca">En aquesta versió, és encara més fàcil escriure publicacions noves. Podeu establir els punts focals que veuran els vostres seguidors en visualitzar la publicació en la seva línia de temps. Les imatges es poden copiar o deixar anar a l'editor. En descartar un esborrany, una finestra emergent de configuració evitarà que suprimiu la publicació per error.</p>
+        <p xml:lang="ca-valencia">En esta versió, és encara més fàcil escriure publicacions noves. Podeu establir els punts focals que veuran els vostres seguidors en visualitzar la publicació en la seua línia de temps. Les imatges es poden copiar o deixar anar a l'editor. En descartar un esborrany, una finestra emergent de configuració evitarà que suprimiu la publicació per error.</p>
+        <p xml:lang="es">En esta versión, escribir nuevas publicaciones es aún más fácil. Puedes configurar los puntos focales que verán tus seguidores al ver tu publicación en su cronología. Puedes copiar y pegar imágenes o soltarlas en el editor. Al descartar tu borrador, una ventana emergente de configuración evitará que borres tu publicación por error.</p>
+        <p xml:lang="fr">Dans cette version, la rédaction de nouveaux posts est encore plus facile. Vous pouvez définir les points focaux que vos personnes abonnées verront lorsqu'elles consulteront votre message dans leur fil d'actualité. Les images peuvent être copiées-collées ou déposées dans l'éditeur. Lors de la suppression de votre brouillon, une fenêtre contextuelle de configuration vous empêchera de supprimer votre message par erreur.</p>
+        <p xml:lang="he">במהדורה הזאת, כתיבת רשומות חדשות היא אפילו קלה יותר. אפשר להגדיר את נקודות המיקוד שהעוקבים שלך יראו כשהם צופים ברשומה שלך בציר הזמן שלהם. אפשר להעתיק ולהדביק או לגרור תמונות לחלונית הכתיבה. בעת סילוק טיוטות, תקפוץ חלונית הגדרות ותמנע ממך למחוק את הרשומה שלך בטעות.</p>
+        <p xml:lang="it">In questa versione, scrivere nuovi commenti è ancora più semplice. Puoi impostare i punti focali che i tuoi seguaci vedranno quando visualizzano il tuo commento nella loro linea temporale. Le immagini possono essere copiate e incollate o trascinate nel compositore. Quando elimini la bozza, una finestra a comparsa di configurazione ti impedirà di eliminare il commento per errore.</p>
+        <p xml:lang="ka">ამ ვერსიაში ახალი პოსტების წერა კიდევ უფრო გამარტივდა. თქვენ შეგიძლიათ მიუთითოთ ფოკუსის წერტილები, რომლებსაც თქვენი მიმდევრები ქრონოლოგიაში პოსტის დათვალიერებისას დაინახავენ. სურათების რედაქტორში ჩასმა კოპირებით ან უბრალოდ გადმოთრევითაცაა შესაძლებელი. შავი ვერსიის გაუქმებისას კონფიგურაციის მხტუნარა ფანჯარა პოსტის შემთხვევით წაშლისგან დაგაზღვევთ.</p>
+        <p xml:lang="nl">In deze uitgave is het schrijven van nieuwe berichten nog eenvoudiger. U kunt de belangrijkste elementen instellen die uw volgers zien wanneer ze uw bericht in hun tijdlijn bekijken. Afbeeldingen kunnen worden gekopieerd en geplakt of in de bewerker worden geplaatst. Wanneer u uw concept verwijdert, voorkomt een configuratiepop-up dat u uw bericht per ongeluk verwijdert.</p>
+        <p xml:lang="pt-BR">Nesta versão, escrever novas publicações ficou ainda mais fácil. Você pode definir os pontos focais que seus seguidores verão ao visualizar sua publicação na linha do tempo deles. As imagens podem ser copiadas e coladas ou arrastadas e soltas no editor. Ao descartar seu rascunho, uma janela pop-up de configuração impedirá que você exclua sua publicação por engano.</p>
+        <p xml:lang="ru">В этой версии упрощено создание новых публикаций. Можно задать точки фокусировки, которые будут видны подписчикам в ленте. Изображения можно вставлять в редактор копированием или перетаскиванием. При отмене черновика появляется окно настройки, чтобы избежать случайного удаления публикации.</p>
+        <p xml:lang="sk">V tomto vydaní je písanie nových príspevkov ešte jednoduchšie. Môžete nastaviť ohniskové body, ktoré vaši sledovatelia uvidia pri zobrazení vášho príspevku na ich časovej osi. Obrázky je možné kopírovať, vložiť alebo pretiahnuť do editora. Pri zahodení konceptu vás konfiguračné vyskakovacie okno ochráni pred omylným odstránením vášho príspevku.</p>
+        <p xml:lang="sl">V tej izdaji je pisanje novih objav še lažje. Nastavite lahko osrednje točke, ki jih bodo vaši sledilci videli, ko si bodo ogledovali vašo objavo na svoji časovnici. Slike lahko kopirate in prilepite ali spustite v sestavljalnik. Ko zavržete osnutek, vam bo pojavno okno s konfiguracijo preprečilo, da bi po pomoti izbrisali objavo.</p>
+        <p xml:lang="tr">Bu sürümde yeni gönderiler yazmak daha da kolaylaştı. Takipçilerinizin zaman akışlarında gönderinizi görüntülerken görecekleri odak noktalarını ayarlayabilirsiniz. Görselleri kopyalayıp yapıştırabilir veya oluşturucuya sürükleyip bırakabilirsiniz. Taslağınızı silerken, bir yapılandırma açılır penceresi gönderinizi yanlışlıkla silmenizi önleyecektir.</p>
+        <p xml:lang="uk">З цим новим випуском писати нові дописи стало ще легше. Ви можете встановити фокусні точки, які бачитимуть ваші підписники під час перегляду вашого допису у своєму розкладі. Зображення можна скопіювати або вставити у редактор. Під час відхилення чернетки контекстне вікно налаштовування надасть змогу запобігти помилковому видаленню публікації.</p>
+        <p>We give you more control over what you see in Mastodon. You can hide boosts and replies in your main timeline. Reporting and muting accounts is now more accessible, with these actions directly available from the timeline. You can also leave comments when your report an offending account.</p>
+        <p xml:lang="ar">نمنحك تحكما أكبر فيما تراه في ماستودون. يمكنك إخفاء التعزيزات والردود في الخط الزمني الرئيسي. أصبح الإبلاغ عن الحسابات وكتمها متاحا أكثر، حيث تتوفر هذه الإجراءات مباشرة من الخط الزمني. يمكنك أيضا ترك تعليقات عند الإبلاغ عن حساب مسيء.</p>
+        <p xml:lang="ca">Us donem més control sobre què veieu a Mastodon. Podeu amagar impulsos i respostes en la vostra línia de temps principal. Informar o silenciar comptes ara és més accessible, amb aquestes accions directament disponibles des de la línia de temps. També podeu deixar comentaris quan informeu d'un compte ofensiu.</p>
+        <p xml:lang="ca-valencia">Vos donem més control sobre què veeu a Mastodon. Podeu amagar impulsos i respostes en la vostra línia de temps principal. Informar o silenciar comptes ara és més accessible, amb estes accions directament disponibles des de la línia de temps. També podeu deixar comentaris quan informeu d'un compte ofensiu.</p>
+        <p xml:lang="es">Te damos más control sobre lo que ves en Mastodon. Puedes ocultar las promociones y las respuestas en tu cronología principal. Denunciar y silenciar cuentas es ahora más accesible, con estas acciones disponibles directamente desde la cronología. También puedes dejar comentarios al denunciar una cuenta infractora.</p>
+        <p xml:lang="fr">Nous vous donnons plus de contrôle sur ce que vous voyez sur Mastodon. Vous pouvez masquer les boosts et les réponses dans votre frise chronologique principale. Le signalement et la mise de comptes en sourdine sont plus accessibles, ces actions étant maintenant directement disponibles depuis la frise chronologique. Vous pouvez également laisser des commentaires lorsque vous signalez un compte offensant.</p>
+        <p xml:lang="he">אנו מספקים לך שליטה טובה יותר על מה שמסטודון מציג. אפשר להסתיר קידומים ותגובות בציר הזמן הראשי שלך. דיווח והשתקת חשבונות נגישים יותר, כאשר הפעולות האלה זמינות ישירות מציר הזמן. אפשר גם להשאיר תגובות בעת דיווח על חשבון סורר.</p>
+        <p xml:lang="it">Ti diamo più controllo su ciò che vedi in Mastodon. Puoi nascondere boost e risposte nella tua cronologia principale. Segnalare e silenziare gli account è ora più accessibile, con queste azioni disponibili direttamente dalla cronologia. Puoi anche lasciare commenti quando segnali un account offensivo.</p>
+        <p xml:lang="ka">ჩვენ Mastodon-ში ნანახ შინაარსზე მეტ კონტროლს გაძლევთ. თქვენ შეგიძლიათ ძირითად ქრონოლოგიაში გაზიარებები და პასუხები დამალოთ. ანგარიშების დარეპორტება და დადუმება ახლა უფრო ხელმისაწვდომია, რადგან ეს მოქმედებები პირდაპირ ქრონოლოგიიდანაა შესაძლებელი. ასევე, შეურაცხმყოფელი ანგარიშის დარეპორტებისას შეგიძლიათ, კომენტარიც დატოვოთ.</p>
+        <p xml:lang="nl">We geven u meer controle over wat u ziet in Mastodon. U kunt aanmoedigingen en reacties verbergen in uw hoofdtijdlijn. Het rapporteren en monddood maken van accounts is nu gemakkelijker, omdat deze acties direct vanuit de tijdlijn beschikbaar zijn. U kunt ook reacties achterlaten wanneer u een account rapporteert dat zich misdraagt.</p>
+        <p xml:lang="pt-BR">Oferecemos mais controle sobre o que você vê no Mastodon. Você pode ocultar impulsionamentos e respostas na sua linha do tempo principal. Denunciar e silenciar contas agora é mais fácil, com essas ações disponíveis diretamente na linha do tempo. Você também pode deixar comentários ao denunciar uma conta ofensiva.</p>
+        <p xml:lang="ru">Новая версия позволяет лучше контролировать то, что вы видите в Mastodon: в основной ленте стало возможно скрывать продвижения и ответы. Действия отправления жалобы и блокирования теперь доступны непосредственно из ленты. Кроме того, стало возможным оставлять комментарий к жалобе.</p>
+        <p xml:lang="sk">Poskytujeme vám väčšiu kontrolu nad tým, čo vidíte v Mastodone. Môžete skryť zdieľania a odpovede na vašej hlavnej časovej osi. Nahlasovanie a stíšenie účtov je teraz dostupnejšie, pretože tieto akcie sú priamo k dispozícii z časovej osi. Pri nahlasovaní nevhodného účtu môžete tiež zanechať komentáre.</p>
+        <p xml:lang="sl">Dajemo vam večji nadzor nad tem, kaj vidite v Mastodonu. Na glavni časovnici lahko skrijete izboljšave in odgovore. Prijava in utišanje računov je zdaj bolj dostopna, saj so ta dejanja na voljo neposredno na časovnici. Ko prijavite račun kršitelja, lahko pustite tudi komentarje.</p>
+        <p xml:lang="tr">Mastodon’da ne gördüğünüz üzerinde size daha fazla denetim olanağı sunuyoruz. Ana zaman akışınızda destekleri ve yanıtları gizleyebilirsiniz. Hesapları bildirmek ve susturmak artık daha kolay; bu işlemler doğrudan zaman akışından yapılabilir. Ayrıca, rahatsız edici bir hesabı bildirdiğinizde yorum da bırakabilirsiniz.</p>
+        <p xml:lang="uk">Ще одна зміна полягає в тому, що ми надаємо вам більше контролю над тим, що ви бачите в Mastodon. Ви можете приховати посилення та відповіді у своєму основному розкладі. Звітування та ігнорування облікових записів тепер доступніше, ці дії доступні безпосередньо на панелі розкладу. І ви можете залишати коментарі до свого звіту щодо облікових засобів, які порушують правила.</p>
+        <p>We completely redesigned the first launch experience, allowing you to learn more about Mastodon, log in to your existing account, and register an account on a server. Additionally, Tokodon will give you some explanation about errors encountered during login and give you the possibility to try again.</p>
+        <p xml:lang="ar">أُعيد تصميم تجربة التشغيل الأولى بالكامل، مما يتيح لك معرفة المزيد عن ماستودون، والولوج إلى حسابك الحالي، وتسجيل حساب في خادم. بالإضافة إلى ذلك، سيقدم لك توكودون بعض الشرح حول الأخطاء التي صودفت أثناء الولوج ويمنحك إمكانية المحاولة مرة أخرى.</p>
+        <p xml:lang="ca">Hem redissenyat completament la primera experiència de llançament, permetent-vos aprendre més sobre Mastodon, iniciar sessió al vostre compte existent i registrar un compte en un servidor. A més, el Tokodon us donarà una explicació dels errors trobats durant l'inici de sessió i us donarà la possibilitat de tornar-ho a provar.</p>
+        <p xml:lang="ca-valencia">Hem redissenyat completament la primera experiència de llançament, permetent-vos aprendre més sobre Mastodon, iniciar sessió al vostre compte existent i registrar un compte en un servidor. A més, Tokodon vos donarà una explicació dels errors trobats durant l'inici de sessió i vos donarà la possibilitat de tornar-ho a provar.</p>
+        <p xml:lang="es">Hemos rediseñado por completo la experiencia de inicio, permitiéndote obtener más información sobre Mastodon, iniciar sesión en tu cuenta y registrar una en un servidor. Además, Tokodon te explicará los errores detectados al iniciar sesión y te dará la posibilidad de volver a intentarlo.</p>
+        <p xml:lang="fr">Nous avons complètement repensé l'expérience du premier lancement, vous permettant d'en apprendre davantage sur Mastodon, de vous connecter à votre compte existant et de créer un compte sur un serveur. De plus, Tokodon vous expliquera certaines des erreurs rencontrées lors de la connexion et vous offrira la possibilité de réessayer.</p>
+        <p xml:lang="he">עיצבנו מחדש את חוויית ההפעלה הראשונית, מה שמאפשר לך ללמוד עוד על מסטודון, להיכנס לחשבון הקיים שלך ולהירשם לחשבון בשרת. בנוסף, Tokodon יספק לך הסברים על שגיאות שהתרחשו במהלך הכניסה ויספק לך אפשרות לנסות שוב.</p>
+        <p xml:lang="it">Abbiamo completamente riprogettato l'esperienza di lancio iniziale, consentendoti di scoprire di più su Mastodon, accedere al tuo account esistente e registrarne uno su un server. Inoltre, Tokodon ti fornirà una spiegazione sugli errori riscontrati durante l'accesso e ti darà la possibilità di riprovare.</p>
+        <p xml:lang="ka">ჩვენ პროგრამის პირველი გაშვების პროცესი სრულად გადავაკეთეთ, რაც საშუალებას გაძლევთ, გაიგოთ მეტი Mastodon-ის შესახებ, შეხვიდეთ თქვენს არსებულ ანგარიშზე და დაარეგისტრიროთ ახალი ანგარიში სერვერზე. გარდა ამისა, Tokodon-ი ავტორიზაციისას წარმოქმნილი შეცდომების შესახებ განმარტებებს მოგაწვდით და ხელახლა ცდის შესაძლებლობას მოგცემთ.</p>
+        <p xml:lang="nl">We hebben de eerste opstartervaring volledig opnieuw ontworpen, zodat u meer te weten kunt komen over Mastodon, kunt aanmelden met uw bestaande account en een account kunt registreren op een server. Daarnaast geeft Tokodon u uitleg over fouten die tijdens het aanmelden zijn opgetreden en biedt het u de mogelijkheid om het opnieuw te proberen.</p>
+        <p xml:lang="pt-BR">Redesenhamos completamente a experiência de primeiro acesso, permitindo que você aprenda mais sobre o Mastodon, faça login em sua conta existente e registre uma conta em um servidor. Além disso, o Tokodon fornecerá explicações sobre erros encontrados durante o login e lhe dará a possibilidade de tentar novamente.</p>
+        <p xml:lang="ru">Диалог первого запуска был полностью переработан, и теперь позволяет больше узнать о Mastodon, войти в свою существующую учётную запись или зарегистрировать новую учётную запись на сервере. Кроме того, Tokodon, в случае возникновения ошибок при входе в систему, предоставит объяснение и предложит повторить попытку.</p>
+        <p xml:lang="sk">Kompletne sme prepracovali zážitok z prvého spustenia, ktorý vám umožní dozvedieť sa viac o Mastodone, prihlásiť sa do existujúceho účtu a zaregistrovať si účet na serveri. Okrem toho vám Tokodon poskytne vysvetlenie chýb, ktoré sa vyskytli počas prihlásenia, a dá vám možnosť skúsiť to znova.</p>
+        <p xml:lang="sl">Popolnoma smo prenovili izkušnjo prvega zagona, ki vam omogoča, da izveste več o Mastodonu, se prijavite v svoj obstoječi račun in registrirate račun na strežniku. Poleg tega vam bo Tokodon podal nekaj pojasnil o napakah, ki so se pojavile med prijavo, in vam dal možnost, da poskusite znova.</p>
+        <p xml:lang="tr">İlk başlangıç deneyimini tamamen yeniden tasarladık; bu sayede Mastodon hakkında daha fazla bilgi edinebilir, var olan hesabınıza oturum açabilir ve bir sunucuda hesap oluşturabilirsiniz. Ayrıca, Tokodon giriş sırasında karşılaşılan hatalar hakkında size bazı açıklamalar sunacak ve yeniden deneme olanağı sağlayacaktır.</p>
+        <p xml:lang="uk">Ми повністю оновили дизайн першого запуску, надаючи вам змогу дізнатися більше про Mastodon, увійти у свій наявний обліковий запис і зареєструвати обліковий запис на сервері. Крім того, Tokodon надасть вам деякі пояснення щодо помилок, які виникли під час входу, і дасть вам можливість спробувати ще раз.</p>
+        <p xml:lang="zh-TW">我們完全重新設計了初次啟動的體驗，提供您關於 Mastodon 的知識、登入現有帳號以及選擇伺服器並註冊帳號的選項。另外，Tokodon 也會在登入發生錯誤時提供說明，並提供重試的選項。</p>
+        <p>We also redesigned the profile pages. The new profile page also allows filtering posts on a profile by their featured tags.</p>
+        <p xml:lang="ar">أُعيد أيضا تصميم صفحات التشكيلة. تتيح صفحة التشكيلة الجديدة أيضا ترشيح المنشورات في التشكيلة حسب وسومها المميزة.</p>
+        <p xml:lang="ca">També hem redissenyat les pàgines de perfils. La pàgina nova del perfil també permet filtrar les entrades d'un perfil per les seves etiquetes destacades.</p>
+        <p xml:lang="ca-valencia">També hem redissenyat les pàgines de perfils. La pàgina nova del perfil també permet filtrar les entrades d'un perfil per les seues etiquetes destacades.</p>
+        <p xml:lang="es">También hemos rediseñado las páginas de perfil. La nueva página de perfil también permite filtrar las publicaciones de un perfil por sus etiquetas destacadas.</p>
+        <p xml:lang="fr">Nous avons également repensé les pages de profils. La nouvelle page de profils permet également de filtrer les messages sur un profil en fonction de leurs étiquettes principales.</p>
+        <p xml:lang="he">עיצבנו את עמודי הפרופילים מחדש. עמוד הפרופיל החדש מאפשר גם לסנן רשומות בפרופיל לפי התגיות המובילות שלהן.</p>
+        <p xml:lang="it">Abbiamo anche riprogettato le pagine del profilo. La nuova pagina del profilo consente anche di filtrare i commenti di un profilo in base ai tag in evidenza.</p>
+        <p xml:lang="ka">ჩვენ პროფილის გვერდებიც გადავაკეთეთ. პროფილის ახალი გვერდი ასევე იძლევა პოსტების გაფილტვრის საშუალებას მათი რჩეული ჭდეების მიხედვით.</p>
+        <p xml:lang="nl">We hebben ook de profielpagina's opnieuw ontworpen. De nieuwe profielpagina biedt nu ook de mogelijkheid om berichten op een profiel te filteren op basis van de tags die ze bevatten.</p>
+        <p xml:lang="pt-BR">Também redesenhamos as páginas de perfil. A nova página de perfil permite filtrar as publicações de um perfil pelas suas etiquetas em destaque.</p>
+        <p xml:lang="ru">Страница профиля была переработана и теперь позволяет фильтровать сообщения по их тегам.</p>
+        <p xml:lang="sk">Taktiež sme prepracovali stránky profilov. Nová stránka profilu umožňuje aj filtrovanie príspevkov na profile podľa ich odporúčaných štítkov.</p>
+        <p xml:lang="sl">Prav tako smo preoblikovali strani profilov. Nova stran profila omogoča tudi filtriranje objav v profilu po njihovih predstavljenih oznakah.</p>
+        <p xml:lang="tr">Profil sayfalarını da yeniden tasarladık. Yeni profil sayfası, profildeki gönderileri öne çıkan etiketlerine göre süzmeye de olanak tanıyor.</p>
+        <p xml:lang="uk">Сторінки профілю користувача також було перероблено. Нова сторінка профілю також надає змогу фільтрувати дописи у профілі за їхніми мітками.</p>
+        <p xml:lang="zh-TW">我們也重新設計了個人資料頁面。新的個人資料頁面也提供依其釘選標籤來過濾個人檔案的嘟文的功能。</p>
+        <p>And more:</p>
+        <p xml:lang="ar">والمزيد:</p>
+        <p xml:lang="ca">I més:</p>
+        <p xml:lang="ca-valencia">I més:</p>
+        <p xml:lang="es">Y más:</p>
+        <p xml:lang="fr">Et plus :</p>
+        <p xml:lang="he">ויש עוד:</p>
+        <p xml:lang="it">e  altri:</p>
+        <p xml:lang="ka">და კიდევ:</p>
+        <p xml:lang="nl">En meer:</p>
+        <p xml:lang="pt-BR">E mais:</p>
+        <p xml:lang="ru">И ещё:</p>
+        <p xml:lang="sk">A ďalšie:</p>
+        <p xml:lang="sl">In več:</p>
+        <p xml:lang="tr">Daha fazlası da var:</p>
+        <p xml:lang="uk">І ще:</p>
+        <p xml:lang="zh-TW">還有更多：</p>
+        <ul>
+          <li>Color themes support on Android</li>
+          <li xml:lang="ar">دعم سمات الألوان على أندرويد</li>
+          <li xml:lang="ca">Implementació de temes de color a l'Android</li>
+          <li xml:lang="ca-valencia">Implementació de temes de color a Android</li>
+          <li xml:lang="es">Compatibilidad con temas de color en Android</li>
+          <li xml:lang="fr">Prise en charge des thèmes de couleurs sous Android</li>
+          <li xml:lang="he">תמיכה בערכות צבע ב־Android</li>
+          <li xml:lang="it">Supporto dei temi di colore su Android</li>
+          <li xml:lang="ka">ფერადი თემების მხარდაჭერა Android-ზე</li>
+          <li xml:lang="nl">Ondersteuning voor kleurthema's op Android</li>
+          <li xml:lang="pt-BR">Suporte a temas de cores no Android</li>
+          <li xml:lang="ru">Поддержка цветовых схем в Android</li>
+          <li xml:lang="sk">Podpora farebných tém na Androide</li>
+          <li xml:lang="sl">Podpora za barvne teme v sistemu Android</li>
+          <li xml:lang="tr">Android üzerinde renk temaları desteği</li>
+          <li xml:lang="uk">Підтримка тем кольорів в Android</li>
+          <li xml:lang="zh-TW">在 Android 上支援顏色主題</li>
+          <li>TweetDeck-style cross account actions</li>
+          <li xml:lang="ar">إجراءات عابرة للحسابات بنمط TweetDeck</li>
+          <li xml:lang="ca">Accions de compte creuat a l'estil TweetDeck</li>
+          <li xml:lang="ca-valencia">Accions de compte creuat a l'estil TweetDeck</li>
+          <li xml:lang="es">Acciones entre cuentas al estilo TweetDeck</li>
+          <li xml:lang="fr">Actions inter-comptes à la manière de TweetDeck</li>
+          <li xml:lang="he">פעולות חוצות חשבונות בסגנון TweetDeck</li>
+          <li xml:lang="it">Azioni multi-account in stile TweetDeck</li>
+          <li xml:lang="ka">TweetDeck-ის სტილი ანგარიშის ქმედებებში</li>
+          <li xml:lang="nl">TweetDeck-stijl cross-account acties</li>
+          <li xml:lang="pt-BR">Ações entre contas no estilo TweetDeck</li>
+          <li xml:lang="ru">Действия между учётными записями в стиле TweetDeck;</li>
+          <li xml:lang="sk">Akcie naprieč účtami v štýle TweetDeck</li>
+          <li xml:lang="sl">Dejanja za več računov v slogu TweetDecka</li>
+          <li xml:lang="tr">TweetDeck tarzı çapraz hesap eylemleri</li>
+          <li xml:lang="uk">Дії для усіх облікових записів у стилі TweetDeck</li>
+          <li xml:lang="zh-TW">像是 TweetDeck 一樣的跨帳號動作</li>
+          <li>System integration of sharing with Tokodon</li>
+          <li xml:lang="ar">تكامل النظام للمشاركة مع توكودون</li>
+          <li xml:lang="ca">Integració del sistema de compartir amb el Tokodon</li>
+          <li xml:lang="ca-valencia">Integració del sistema de compartir amb Tokodon</li>
+          <li xml:lang="es">Integración de compartición con Tokodon en el sistema</li>
+          <li xml:lang="fr">Intégration avec le système du partage avec Tokodon</li>
+          <li xml:lang="he">שילוב מערכת לשיתוף עם Tokodon</li>
+          <li xml:lang="it">Integrazione del sistema di condivisione con Tokodon</li>
+          <li xml:lang="ka">Tokodon-თან გაზიარების სისტემაში ინტეგრაცია</li>
+          <li xml:lang="nl">Systeemintegratie van delen met Tokodon</li>
+          <li xml:lang="pt-BR">Integração do sistema de compartilhamento com Tokodon</li>
+          <li xml:lang="ru">Интеграция с системой для отправки сообщений через Tokodon;</li>
+          <li xml:lang="sk">Systémová integrácia zdieľania s Tokodon</li>
+          <li xml:lang="sl">Sistemska integracija deljenja s Tokodonom</li>
+          <li xml:lang="tr">Tokodon ile paylaşırken sistem tümleşimi</li>
+          <li xml:lang="uk">Інтеграція до системи оприлюднення даних за допомогою Tokodon</li>
+          <li xml:lang="zh-TW">透過 Tokodon 分享的系統整合</li>
+          <li>List support</li>
+          <li xml:lang="ar">دعم القوائم</li>
+          <li xml:lang="ca">Implementació de llistes</li>
+          <li xml:lang="ca-valencia">Implementació de llistes</li>
+          <li xml:lang="es">Implementación de listas</li>
+          <li xml:lang="fr">Prise en charge de liste</li>
+          <li xml:lang="he">תמיכה ברשימות</li>
+          <li xml:lang="it">Supporto degli elenchi</li>
+          <li xml:lang="ka">ჩამონათვლის მხარდაჭერა</li>
+          <li xml:lang="nl">Ondersteuning voor lijsten</li>
+          <li xml:lang="pt-BR">Suporte à listas</li>
+          <li xml:lang="ru">Поддержка списков;</li>
+          <li xml:lang="sk">Podpora zoznamov</li>
+          <li xml:lang="sl">Podpora za seznam</li>
+          <li xml:lang="tr">Liste desteği</li>
+          <li xml:lang="uk">Підтримка списків</li>
+          <li xml:lang="zh-TW">列表支援</li>
+          <li>Moderation tool for admins</li>
+          <li xml:lang="ar">أداة إشراف للمديرين</li>
+          <li xml:lang="ca">Eina de moderació per als administradors</li>
+          <li xml:lang="ca-valencia">Eina de moderació per als administradors</li>
+          <li xml:lang="es">Herramienta de moderación para administradores</li>
+          <li xml:lang="fr">Outil de modération pour les administrateurs</li>
+          <li xml:lang="he">כלי פיקוח למנהלים</li>
+          <li xml:lang="it">Strumento di moderazione per gli amministratori</li>
+          <li xml:lang="ka">მოდერაციის ხელსაწყო ადმინებისთვის</li>
+          <li xml:lang="nl">Hulpmiddel voor moderatie voor systeembeheerders</li>
+          <li xml:lang="pt-BR">Ferramentas de moderação para administradores</li>
+          <li xml:lang="ru">Инструменты модерации для администраторов</li>
+          <li xml:lang="sk">Nástroj na moderovanie pre správcov</li>
+          <li xml:lang="sl">Orodje moderiranja za skrbnike</li>
+          <li xml:lang="tr">Yöneticiler için moderasyon araçları</li>
+          <li xml:lang="uk">Інструмент модерації для адміністраторів</li>
+          <li>Visible post edited status</li>
+          <li xml:lang="ar">حالة المنشور المعدل مرئية</li>
+          <li xml:lang="ca">L'estat de publicació editada és visible</li>
+          <li xml:lang="ca-valencia">L'estat de publicació editada és visible</li>
+          <li xml:lang="es">Estado de publicación editada visible</li>
+          <li xml:lang="fr">Statut visible de modification de messages</li>
+          <li xml:lang="he">מצב גלוי לכך שרשומה נערכה</li>
+          <li xml:lang="it">Stato di modifica dei commenti visibile</li>
+          <li xml:lang="ka">ხილული პოსტის ჩასწორების სტატუსი</li>
+          <li xml:lang="nl">Zichtbare status na bewerking</li>
+          <li xml:lang="pt-BR">Status de publicação editada visível</li>
+          <li xml:lang="ru">Пометка о том, что сообщение было отредактировано</li>
+          <li xml:lang="sk">Viditeľný stav úpravy príspevku</li>
+          <li xml:lang="sl">Vidno stanje urejanja objave</li>
+          <li xml:lang="tr">Düzenlenen gönderi ikazı</li>
+          <li xml:lang="uk">Видимий стан редагованості допису</li>
+          <li>Granular notification controls</li>
+          <li xml:lang="ar">عناصر تحكم دقيقة في التنبيهات</li>
+          <li xml:lang="ca">Controls granulars de notificacions</li>
+          <li xml:lang="ca-valencia">Controls granulars de notificacions</li>
+          <li xml:lang="es">Controles de notificación granulares</li>
+          <li xml:lang="fr">Contrôles granulaires de notification</li>
+          <li xml:lang="he">פקדי התראות נקודתיים</li>
+          <li xml:lang="it">Controlli di notifica granulari</li>
+          <li xml:lang="ka">მარცვლოვანი გაფრთხილების მართვა</li>
+          <li xml:lang="nl">Fijn afregelen van meldingen</li>
+          <li xml:lang="pt-BR">Controle de notificação granular</li>
+          <li xml:lang="ru">Точное управление уведомлениями</li>
+          <li xml:lang="sk">Podrobné ovládanie upozornení</li>
+          <li xml:lang="sl">Podrobni nadzor nad obvestili</li>
+          <li xml:lang="tr">Daha hassas bildirim denetimleri</li>
+          <li xml:lang="uk">Точніше керування сповіщеннями</li>
+          <li xml:lang="zh-TW">詳細通知控制</li>
+        </ul>
+      </description>
+    </release>
+    <release version="23.08.5" date="2024-02-15"/>
+    <release version="23.08.4" date="2023-12-07"/>
+    <release version="23.08.3" date="2023-11-09"/>
+    <release version="23.08.2" date="2023-10-12"/>
+    <release version="23.08.1" date="2023-09-14"/>
+    <release version="23.08.0" date="2023-08-24">
+      <url>https://kde.org/announcements/gear/23.08.0/#tokodonhttpsappskdeorgtokodon</url>
+      <description>
+        <p>In this release, Tokodon received a visual overhaul and the timeline is now much smoother.</p>
+        <p xml:lang="ar">في هذا الإصدار، تلقى توكودون تحسينا بصريا وأصبح الخط الزمني الآن أكثر سلاسة بكثير.</p>
+        <p xml:lang="ca">En aquesta versió, el Tokodon ha rebut una revisió visual i la línia de temps ara és molt més suau.</p>
+        <p xml:lang="ca-valencia">En esta versió, Tokodon ha rebut una revisió visual i la línia de temps ara és molt més suau.</p>
+        <p xml:lang="es">En esta versión, se ha realizado una revisión visual de Tokodon y la línea de tiempo es ahora mucho más fluida.</p>
+        <p xml:lang="fr">Dans cette version, Tokodon a bénéficié d'une refonte visuelle et la frise chronologique est désormais beaucoup plus fluide.</p>
+        <p xml:lang="he">במהדורה הזאת, Tokodon קיבל מתיחת פנים וציר הזמן הרבה יותר חלק מעכשיו.</p>
+        <p xml:lang="it">In questa versione, Tokodon ha ricevuto una revisione visiva e la sequenza temporale è ora molto più fluida.</p>
+        <p xml:lang="ka">ამ გამოცემაში Tokodon-ის ვიზუალური მხარე სრულად განახლდა და ქრონოლოგია ახლა ბევრად უფრო გლუვია.</p>
+        <p xml:lang="nl">In deze uitgave heeft Tokodon een visuele opknapbeurt gekregen en de tijdlijn is nu veel vloeiender.</p>
+        <p xml:lang="pt-BR">Nesta versão, o Tokodon recebeu uma reformulação visual e a linha do tempo agora está muito mais fluida.</p>
+        <p xml:lang="ru">В этой версии Tokodon получил обновлённое оформление, а лента новостей стала намного плавнее.</p>
+        <p xml:lang="sk">V tomto vydaní dostal Tokodon vizuálnu úpravu a časová os je teraz oveľa plynulejšia.</p>
+        <p xml:lang="sl">V tej izdaji je Tokodon prejel vizualno prenovo, časovnica pa je zdaj veliko bolj gladka.</p>
+        <p xml:lang="tr">Bu sürümde Tokodon görsel olarak yenilendi ve zaman akışı artık çok daha akıcı.</p>
+        <p xml:lang="uk">У цьому випуску візуальний інтерфейс Tokodon було оновлено. Панель розкладу дописів тепер виглядає набагато приємніше.</p>
+        <p>More importantly, if you run your own Mastodon instance, you can now manage and moderate your instance directly from within Tokodon. Version 23.08 gives you the tools to manage users and list the instances you want to (or not) federate with.</p>
+        <p xml:lang="ar">والأهم من ذلك، إذا كنت تدير نموذج ماستودون الخاص بك، فيمكنك الآن إدارة نموذجك والإشراف عليه مباشرة من داخل توكودون. يمنحك الإصدار 23.08 الأدوات لإدارة المستخدمين وسرد النماذج التي تريد (أو لا تريد) الاتحاد معها.</p>
+        <p xml:lang="ca">I el més important, si gestioneu la vostra pròpia instància de Mastodon, ara podeu gestionar i moderar la instància directament des del Tokodon. La versió 23.08 us ofereix les eines per a gestionar usuaris i llistar les instàncies amb les quals us voleu (o no) federar.</p>
+        <p xml:lang="ca-valencia">I el més important, si gestioneu la vostra pròpia instància de Mastodon, ara podeu gestionar i moderar la instància directament des de Tokodon. La versió 23.08 vos oferix les eines per a gestionar usuaris i llistar les instàncies amb les quals vos voleu (o no) federar.</p>
+        <p xml:lang="es">Y lo que es más importante, si gestionas tu propia instancia de Mastodon, ahora puedes administrarla y moderarla directamente desde Tokodon. La versión 23.08 te ofrece las herramientas para administrar usuarios y listar las instancias con las que te quieres (o no) federar.</p>
+        <p xml:lang="fr">Plus important encore, si vous exécutez votre propre instance de Mastodon, vous pouvez désormais administrer et modérer celle-ci directement depuis Tokodon. La version 23.08 vous offre les outils pour gérer les utilisateurs et lister les instances avec lesquelles vous souhaitez (ou non) les fédérer.</p>
+        <p xml:lang="he">יתרה מכך, אם יש לך עותק עצמאי של מסטודון, ניתן מעתה לנהל ולפקח על העותק שלך ישירות מתוך Tokodon. גרסה 23.08 מספקת לך את הכלים לניהול משתמשים ולהציג את העותקים שאיתם ליצור (או לא ליצור) קשר (federate).</p>
+        <p xml:lang="it">Ancora più importante, se gestisci la tua istanza Mastodon, ora puoi gestirla e moderarla direttamente da Tokodon. La versione 23.08 ti offre gli strumenti per gestire gli utenti ed elencare le istanze con cui desideri (o meno) federarti.</p>
+        <p xml:lang="ka">რაც კიდევ უფრო მნიშვნელოვანია, თუ თქვენ საკუთარ Mastodon გაშვებულ ასლს ფლობთ, მისი მართვა და მოდერაცია ახლა პირდაპირ Tokodon-იდან შეგიძლიათ. 23.08 ვერსია გაძლევთ ინსტრუმენტებს მომხმარებლების სამართავად და იმ ინსტანციების სიის შესადგენად, რომლებთანაც გსურთ (ან არ გსურთ) ფედერაციული კავშირის დამყარება.</p>
+        <p xml:lang="nl">Belangrijker, als u u eigen Mastodon exemplaar draait, dan kunt u nu uw exemplaar beheren en modereren direct vanuit Tokodon. Versie 23.08 geeft u de hulpmiddelen om gebruikers te beheren en een lijst te maken van de exemplaren waarmee u wilt (of niet) een federatie aangaan.</p>
+        <p xml:lang="pt-BR">Mais importante ainda, se você administra sua própria instância do Mastodon, agora você pode gerenciar e moderar sua instância diretamente do Tokodon. A versão 23.08 oferece as ferramentas para gerenciar usuários e listar as instâncias com as quais você deseja (ou não) federar.</p>
+        <p xml:lang="ru">Важнее то, что теперь можно управлять собственным экземпляром Mastodon и модерировать его непосредственно из Tokodon. В версии 23.08 добавлены инструменты для управления пользователями и составления списка экземпляров, с которыми требуется (или не требуется) взаимодействовать.</p>
+        <p xml:lang="sk">Čo je dôležitejšie, ak prevádzkujete vlastnú inštanciu Mastodonu, teraz ju môžete spravovať a moderovať priamo z Tokodonu. Verzia 23.08 vám poskytuje nástroje na správu používateľov a zobrazenie zoznamu inštancií, s ktorými chcete (alebo nechcete) federovať.</p>
+        <p xml:lang="sl">Še pomembneje pa je, da če imate lasten pojavek Mastodona, ga lahko zdaj upravljate in moderirate neposredno znotraj Tokodona. Različica 23.08 vam ponuja orodja za upravljanje uporabnikov in seznam pojavkov, s katerimi se želite (ali ne) povezati.</p>
+        <p xml:lang="tr">Daha da önemlisi, kendi Mastodon örneğinizi çalıştırıyorsanız, artık örneğinizi doğrudan Tokodon içinden yönetebilir ve denetleyebilirsiniz. Sürüm 23.08, kullanıcıları yönetmenizi ve federasyon kurmak istediğiniz (veya istemediğiniz) örnekleri listelemenizi sağlayan araçlar sunar.</p>
+        <p xml:lang="uk">Що важливіше, якщо ви працюєте із власним екземпляром Mastodon. У новій версії ви можете керувати вашим екземпляром безпосередньо з Tokodon та модерувати дописи у ньому. У версії 23.08 реалізовано засоби для керування записами користувачів та список екземплярів, з якими вам потрібна (або не потрібна) федерація.</p>
+        <p>Other new features let you share posts through other apps, save your access token securely in KWallet, view all blocked and muted accounts, and pin your status to your profile.</p>
+        <p xml:lang="ar">تتيح لك الميزات الجديدة الأخرى مشاركة المنشورات عبر تطبيقات أخرى، وحفظ رمز الوصول الخاص بك بأمان في KWallet، وعرض جميع الحسابات المحظورة والمكتومة، وتثبيت حالتك في تشكيلتك.</p>
+        <p xml:lang="ca">Altres característiques noves us permeten compartir entrades a través d'altres aplicacions, desar el testimoni d'accés de manera segura al KWallet, veure tots els comptes bloquejats i silenciats i fixar el vostre estat al perfil.</p>
+        <p xml:lang="ca-valencia">Altres característiques noves vos permeten compartir entrades a través d'altres aplicacions, guardar el testimoni d'accés de manera segura a KWallet, veure tots els comptes bloquejats i silenciats i fixar el vostre estat al perfil.</p>
+        <p xml:lang="es">Otras nuevas funcionalidades permiten compartir publicaciones a través de otras aplicaciones, guardar el token de acceso de forma segura en KWallet, ver todas las cuentas bloqueadas y silenciadas, así como fijar el estado al perfil.</p>
+        <p xml:lang="fr">D'autres nouvelles fonctionnalités vous permettent de partager des messages grâce à d'autres applications, d'enregistrer votre jeton d'accès en toute sécurité dans KWallet, de voir tous les comptes bloqués et masqués et d'épingler votre statut sur votre profil.</p>
+        <p xml:lang="he">יכולות חדשות נוספות מאפשרות לך לשתף רשומות דרך יישומים אחרים, לשמור את אסימון הגישה שלך באופן מאובטח ב־KWallet, לצפות בכל החשבונות החסומים והמושתקים ולנעוץ את המצב שלך לפרופיל שלך.</p>
+        <p xml:lang="it">Altre nuove funzionalità ti consentono di condividere commenti tramite altre applicazioni, salvare il tuo token di accesso in modo sicuro in KWallet, visualizzare tutti gli account bloccati e disattivati ​​e aggiungere il tuo stato al tuo profilo.</p>
+        <p xml:lang="ka">სხვა ახალი ფუნქციები საშუალებას გაძლევთ გააზიაროთ პოსტები სხვა აპლიკაციების მეშვეობით, უსაფრთხოდ შეინახოთ თქვენი წვდომის ტოკენი KWallet-ში, იხილოთ ყველა დაბლოკილი და დადუმებული ანგარიში და მიამაგროთ თქვენი სტატუსი პროფილზე.</p>
+        <p xml:lang="nl">Andere nieuwe functies laten u berichten delen via andere toepassingen, uw toegangstoken veilig opslaan in KWallet, alle geblokkeerde en gedempte accounts zien en uw status aan uw profiel vastpinnen.</p>
+        <p xml:lang="pt-BR">Outros novos recursos permitem que você compartilhe postagens por meio de outros aplicativos, salve seu token de acesso com segurança no KWallet, visualize todas as contas bloqueadas e silenciadas e fixe seu status ao seu perfil.</p>
+        <p xml:lang="ru">Добавлена возможность публикации записей через другие приложения, безопасного хранения токена доступа в KWallet, просмотра всех заблокированных и скрытых учётных записей, а также закрепления статуса в профиле.</p>
+        <p xml:lang="sk">Ďalšie nové funkcie vám umožňujú zdieľať príspevky prostredníctvom iných aplikácií, bezpečne uložiť prístupový token v KWallet, zobraziť všetky zablokované a stíšené účty a pripnúť svoj stav na profil.</p>
+        <p xml:lang="sl">Druge nove zmožnosti vam omogočajo deljenje objav prek drugih aplikacij, varno shranjevanje žetona za dostop v KWallet, ogled vseh blokiranih in utišanih računov ter pripenjanje stanja v profil.</p>
+        <p xml:lang="tr">Diğer yeni özellikler sayesinde gönderilerinizi diğer uygulamalar aracılığıyla paylaşabilir, erişim jetonunuzu K Cüzdan içinde güvenli bir şekilde saklayabilir, engellenen ve sessize alınan tüm hesapları görüntüleyebilir ve durumunuzu profilinize sabitleyebilirsiniz.</p>
+        <p xml:lang="uk">Інші нові функції надають вам змогу ділитися публікаціями через інші програми, безпечно зберігати свій жетон доступу у KWallet, переглядати всі заблоковані та ігноровані облікові записи, а також закріплювати свій стан у профілі.</p>
+        <p>It's also possible to browse the trending tags and posts of your instance.</p>
+        <p xml:lang="ar">من الممكن أيضا تصفح الوسوم والمنشورات الرائجة في نموذجك.</p>
+        <p xml:lang="ca">També és possible navegar per les etiquetes i entrades de tendència de la vostra instància.</p>
+        <p xml:lang="ca-valencia">També és possible navegar per les etiquetes i entrades de tendència de la vostra instància.</p>
+        <p xml:lang="es">También es posible explorar las etiquetas y publicaciones de tendencias de la instancia.</p>
+        <p xml:lang="fr">Il est également possible de naviguer parmi les étiquettes et les messages tendance de votre instance.</p>
+        <p xml:lang="he">אפשר גם לעיין בתגיות והרשומות המובילים בעותק שלך.</p>
+        <p xml:lang="it">È anche possibile sfogliare i tag e i commenti di tendenza della tua istanza.</p>
+        <p xml:lang="ka">ასევე შესაძლებელია თქვენი გაშვებული ასლის პოპულარული პოსტებისა და ჭდეების დათვალიერება.</p>
+        <p xml:lang="nl">Het is ook mogelijk in de trending tags en in berichten van uw exemplaar te bladeren.</p>
+        <p xml:lang="pt-BR">Também é possível navegar pelas etiquetas e postagens mais populares da sua instância.</p>
+        <p xml:lang="ru">Также можно просматривать популярные метки и записи на вашем сервере.</p>
+        <p xml:lang="sk">Je tiež možné prechádzať populárne štítky a príspevky vašej inštancie.</p>
+        <p xml:lang="sl">Možno je tudi brskati po trendnih oznakah in objavah vašega pojavka.</p>
+        <p xml:lang="tr">Ayrıca, kendi sisteminize ait trend künyelerini ve gönderilerini de inceleyebilirsiniz.</p>
+        <p xml:lang="uk">У новій версії можна здійснювати навігацію тенденціями у мітках та дописах вашого екземпляра.</p>
+        <p>We have also upgraded the multimedia framework, making the video player much more reliable.</p>
+        <p xml:lang="ar">حدثنا أيضا إطار عمل الوسائط المتعددة، مما جعل مشغل الفيديو أكثر موثوقية بكثير.</p>
+        <p xml:lang="ca">També hem actualitzat l'entorn de treball multimèdia, fent que el reproductor de vídeo sigui molt més fiable.</p>
+        <p xml:lang="ca-valencia">També hem actualitzat l'entorn de treball multimèdia, fent que el reproductor de vídeo siga molt més fiable.</p>
+        <p xml:lang="es">También hemos actualizado la infraestructura multimedia, haciendo que el reproductor de vídeo sea mucho más fiable.</p>
+        <p xml:lang="fr">Nous avons également mis à jour l'environnement de développement multimédia, rendant le lecteur vidéo beaucoup plus fiable.</p>
+        <p xml:lang="he">שדרגנו גם את תשתית המולטימדיה, ובכך נגן הווידאו הרבה יותר אמין.</p>
+        <p xml:lang="it">Abbiamo anche aggiornato il framework multimediale, rendendo il lettore video molto più affidabile.</p>
+        <p xml:lang="ka">ჩვენ მულტიმედიის სისტემაც განვაახლეთ, რამაც ვიდეო დამკვრელი ბევრად უფრო საიმედო გახადა.</p>
+        <p xml:lang="nl">We hebben ook het framework voor multimedia opgewaardeerd, waardoor de videospeler veel betrouwbaarder is geworden.</p>
+        <p xml:lang="pt-BR">Também atualizamos a estrutura multimídia, tornando o reprodutor de vídeo muito mais confiável.</p>
+        <p xml:lang="ru">Также обновлён мультимедийный фреймворк, что значительно повысило надёжность видеоплеера.</p>
+        <p xml:lang="sk">Taktiež sme aktualizovali multimediálny rámec, čím sa prehrávač videa stal oveľa spoľahlivejším.</p>
+        <p xml:lang="sl">Nadgradili smo tudi multimedijski okvir, zaradi česar je video predvajalnik veliko zanesljivejši.</p>
+        <p xml:lang="tr">Ayrıca çoklu ortam altyapısını da güncelleyerek video oynatıcısını çok daha güvenilir hale getirdik.</p>
+        <p xml:lang="uk">Також нами оновлено мультимедійні бібліотеки, що зробило програвач відео набагато надійнішим.</p>
+      </description>
+    </release>
+    <release version="23.04.3" date="2023-07-06"/>
+    <release version="23.04.2" date="2023-06-08"/>
+    <release version="23.04.1" date="2023-05-11"/>
+    <release version="23.04.0" date="2023-04-20">
+      <url>https://kde.org/announcements/gear/23.04.0/#tokodonhttpsappskdeorgtokodon</url>
+      <description>
+        <p>With version 23.04, communicating with your fellow Fediverse users is even easier, thanks to new features like the ability to see previous messages when replying and the ability to send polls to your followers. Tokodon's mobile version also features a dedicated search page to streamline the process of finding specific posts.</p>
+        <p xml:lang="ar">مع الإصدار 23.04، أصبح التواصل مع مستخدمي فيديفيرس الزملاء أسهل، بفضل ميزات جديدة مثل القدرة على رؤية الرسائل السابقة عند الرد والقدرة على إرسال استطلاعات الرأي إلى متابعيك. تتميز نسخة توكودون للهواتف أيضا بصفحة بحث مخصصة لتبسيط عملية العثور على منشورات محددة.</p>
+        <p xml:lang="ca">Amb la versió 23.04, comunicar-se amb els vostres companys usuaris del Fedivers és encara més fàcil, gràcies a característiques noves com la capacitat de veure missatges anteriors en respondre i la capacitat d'enviar enquestes als vostres seguidors. La versió mòbil del Tokodon també compta amb una pàgina de cerca dedicada per a simplificar el procés de trobar entrades específiques.</p>
+        <p xml:lang="ca-valencia">Amb la versió 23.04, comunicar-se amb els vostres companys usuaris de Fedivers és encara més fàcil, gràcies a característiques noves com la capacitat de veure missatges anteriors en respondre i la capacitat d'enviar enquestes als vostres seguidors. La versió mòbil de Tokodon també compta amb una pàgina de busca dedicada per a simplificar el procés de trobar entrades específiques.</p>
+        <p xml:lang="es">Con la versión 23.04, comunicarse con otros usuarios del Fediverso es aún más fácil gracias a nuevas funciones, como ver mensajes anteriores al responder y enviar encuestas a los seguidores. La versión móvil de Tokodon también incluye una página de búsqueda dedicada para agilizar la búsqueda de publicaciones específicas.</p>
+        <p xml:lang="fr">Avec la version 23.04, la communication avec les autres personnes utilisatrices du Fediverse est encore plus facile, grâce à de nouvelles fonctionnalités comme la possibilité d'afficher les messages précédents lors d'une réponse et d'envoyer des sondages à vos abonnés. La version mobile de Tokodon dispose également d'une page de recherche dédiée pour faciliter la recherche de messages spécifiques.</p>
+        <p xml:lang="he">עם גרסה 23.04, התקשורת מול המשמשים אחרים בפדיברס אפילו קלה יותר, תודות ליכולות חדשות כגון היכולת לראות הודעות קודמות בעת תגובה והיכולת לשלוח סקרים לעוקבים שלך. הגרסה של Tokodon לניידים מציגה עמוד חיפוש ייעודי כדי לפשט את התהליך של איתור רשומות מסוימות.</p>
+        <p xml:lang="it">Con la versione 23.04, comunicare con gli altri utenti del Fediverso è ancora più semplice, grazie a nuove funzionalità come la possibilità di visualizzare i messaggi precedenti quando si risponde e la possibilità di inviare sondaggi ai propri seguaci. La versione mobile di Tokodon include anche una pagina di ricerca dedicata per semplificare la ricerca di commenti specifici.</p>
+        <p xml:lang="ka">23.04 ვერსიით ფედერაციული ქსელის სხვა მომხმარებლებთან კომუნიკაცია კიდევ უფრო გამარტივდა ისეთი ახალი ფუნქციების წყალობით, როგორიცაა პასუხისას წინა შეტყობინებების ნახვისა და მიმდევრებისთვის გამოკითხვების გაგზავნის შესაძლებლობა. Tokodon-ის მობილურ ვერსიაში ასევე დაემატა ძიების სპეციალური გვერდი კონკრეტული პოსტების პოვნის პროცესის გასამარტივებლად.</p>
+        <p xml:lang="nl">Met versie 23.04 is communiceren met uw medegebruikers van Fediverse zelfs gemakkelijker, dankzij nieuwe functies zoals de mogelijkheid om eerdere berichten te zien bij antwoorden en de mogelijkheid om peilingen te verzenden naar uw volgers. de mobiele versue van Tokodon heeft ook een daaraan gewijde zoekpagina om het proces van zoeken naar specifieke posts te stroomlijnen.</p>
+        <p xml:lang="pt-BR">Com a versão 23.04, a comunicação com outros usuários do Fediverse ficou ainda mais fácil, graças a novos recursos como a possibilidade de ver mensagens anteriores ao responder e a possibilidade de enviar enquetes aos seus seguidores. A versão mobile do Tokodon também conta com uma página de busca dedicada para agilizar o processo de encontrar postagens específicas.</p>
+        <p xml:lang="ru">В версии 23.04 общение с другими пользователями Федиверса стало ещё проще благодаря таким новым функциям, как просмотр предыдущих сообщений при ответе и возможность отправлять опросы подписчикам. В мобильной версии Tokodon также появилась отдельная страница поиска для быстрого нахождения конкретных записей.</p>
+        <p xml:lang="sk">S verziou 23.04 je komunikácia s ostatnými používateľmi Fediverse ešte jednoduchšia vďaka novým funkciám, ako je možnosť zobraziť predchádzajúce správy pri odpovedaní a možnosť posielať ankety vašim sledovateľom. Mobilná verzia Tokodonu tiež obsahuje špeciálnu stránku na vyhľadávanie, ktorá zjednodušuje proces hľadania konkrétnych príspevkov.</p>
+        <p xml:lang="sl">Z različico 23.04 je komunikacija z drugimi uporabniki Fediverse še lažja, zahvaljujoč novim funkcijam, kot sta možnost ogleda prejšnjih sporočil pri odgovarjanju in možnost pošiljanja anket vašim sledilcem. Mobilna različica Tokodona ima tudi namensko stran za iskanje, ki poenostavi postopek iskanja določenih objav.</p>
+        <p xml:lang="tr">23.04 sürümüyle, yanıt verirken önceki iletileri görebilme ve takipçilerinize anket gönderebilme gibi yeni özellikler sayesinde Fediverse kullanıcılarıyla iletişim kurmak daha da kolaylaşıyor. Tokodon’un mobil sürümünde ayrıca belirli gönderileri bulma sürecini kolaylaştırmak için özel bir arama sayfası da bulunuyor.</p>
+        <p xml:lang="uk">У версії 23.04 спілкування з вашими друзями у Fediverse є простішим, завдяки новим можливостям з перегляду попередніх повідомлень під час відповіді на них та можливості надсилання опитувань тим, хто стежить за вашим обліковим записом. У версії Tokodon для мобільних пристроїв також передбачено підтримку спеціалізованої сторінки пошуку для спрощення пошуку певних дописів.</p>
+        <p>Furthermore, version 23.04 enhances your privacy by allowing you to configure a proxy before logging into your Mastodon account. You can also view a list of follow requests, giving you more control over who you interact with on the Fediverse.</p>
+        <p xml:lang="ar">علاوة على ذلك، يعزز الإصدار 23.04 خصوصيتك من خلال السماح لك بضبط الوكيل قبل الولوج إلى حساب ماستودون الخاص بك. يمكنك أيضا عرض قائمة بطلبات المتابعة، مما يمنحك تحكما أكبر في من تتفاعل معه على فيديفيرس.</p>
+        <p xml:lang="ca">A més, la versió 23.04 millora la vostra privadesa permetent-vos configurar un servidor intermediari abans d'iniciar sessió al vostre compte de Mastodon. També podeu veure una llista de peticions de seguiment, donant-vos més control sobre amb qui interactueu al Fedivers.</p>
+        <p xml:lang="ca-valencia">A més, la versió 23.04 millora la vostra privadesa permetent-vos configurar un servidor intermediari abans d'iniciar sessió al vostre compte de Mastodon. També podeu veure una llista de peticions de seguiment, donant-vos més control sobre amb qui interactueu a Fedivers.</p>
+        <p xml:lang="es">Además, la versión 23.04 mejora la privacidad al permitirte configurar un proxy antes de iniciar sesión en la cuenta de Mastodon. También se puede ver una lista de solicitudes de seguimiento, lo que permite mayor control sobre con quién se interactúa en el Fediverso.</p>
+        <p xml:lang="fr">De plus, la version 23.04 renforce votre confidentialité en vous permettant de configurer un serveur mandataire avant de vous connecter à votre compte Mastodon. Vous pouvez également consulter une liste de demandes de suivi, vous offrant ainsi un meilleur contrôle sur les personnes avec qui vous interagissez sur le Fediverse.</p>
+        <p xml:lang="he">יתרה מכך, גרסה 23.04 מחזקת את הפרטיות שלך על ידי מתן האפשרות להגדיר מתווך לפני כניסה לחשבון המסטודון שלך. אפשר גם לצפות ברשימת בקשות מעקב, מה שמעניק לך יותר שליטה על הקשר הבין אישי שלך בפדיברס.</p>
+        <p xml:lang="it">Inoltre, la versione 23.04 migliora la tua riservatezza consentendoti di configurare un proxy prima di accedere al tuo account Mastodon. Puoi anche visualizzare un elenco di richieste di seguito, ottenendo un maggiore controllo sulle persone con cui interagisci nel Fediverso.</p>
+        <p xml:lang="ka">გარდა ამისა, 23.04 ვერსია თქვენს კონფიდენციალურობას აუმჯობესებს, რადგან Mastodon-ის ანგარიშზე შესვლამდე პროქსის კონფიგურაციის საშუალებას გაძლევთ. თქვენ ასევე შეგიძლიათ, იხილოთ გამოწერის მოთხოვნების სია, რაც მეტ კონტროლს გაძლევთ იმაზე, თუ ვისთან გექნებათ ურთიერთობა ფედერაციულ ქსელში.</p>
+        <p xml:lang="nl">Verder verhoogt versie 23.04 uw privacy door u toe te staan een proxy te configureren alvorens u aan te melden bij ue Mastodon account. U kunt ook een lijst van volgverzoeken bekijken, waarmee u meer controle hebt over met wie u interact op de Fediverse.</p>
+        <p xml:lang="pt-BR">Além disso, a versão 23.04 aumenta sua privacidade, permitindo que você configure um proxy antes de fazer login na sua conta Mastodon. Você também pode visualizar uma lista de solicitações de acompanhamento, dando a você mais controle sobre com quem você interage no Fediverse.</p>
+        <p xml:lang="ru">Кроме того, в версии 23.04 улучшена защита приватности: появилась возможность настройки прокси перед входом в учётную запись Mastodon. Также добавлен просмотр списка запросов на подписку, что даёт больше контроля над тем, с кем вы взаимодействуете в Федивёрсе.</p>
+        <p xml:lang="sk">Okrem toho verzia 23.04 vylepšuje vaše súkromie tým, že vám umožňuje nakonfigurovať proxy server pred prihlásením do vášho účtu Mastodon. Môžete tiež zobraziť zoznam žiadostí o sledovanie, čo vám dáva väčšiu kontrolu nad tým, s kým komunikujete na Fediverse.</p>
+        <p xml:lang="sl">Poleg tega različica 23.04 izboljšuje vašo zasebnost, saj vam omogoča konfiguracijo posrednika, preden se prijavite v svoj račun Mastodon. Ogledate si lahko tudi seznam zahtev za sledenje, kar vam daje večji nadzor nad tem, s kom komunicirate na Fediversu.</p>
+        <p xml:lang="tr">Ayrıca 23.04 sürümü, Mastodon hesabınıza giriş yapmadan önce bir vekil yapılandırmanıza olanak tanıyarak gizliliğinizi artırır. Ayrıca takip isteklerinin listesini görüntüleyerek Fediverse’de kimlerle etkileşim kuracağınız konusunda daha fazla denetim sahibi olabilirsiniz.</p>
+        <p xml:lang="uk">Крім того, у версії 23.04 удосконалено можливості конфіденційності: уможливлено налаштовування прокіс до входу до облікового запису Mastodon. Ви також можете переглядати список запитів щодо стеження, що надає вам більше можливостей щодо того, хто взаємодіятиме з вами у Fediverse.</p>
+      </description>
+    </release>
+    <release version="23.02.0" date="2023-02-17">
+      <url>https://carlschwan.eu/2023/02/17/tokodon-23.02-release/</url>
+      <description>
+        <p>This release improve the post composer, making it possible to add alternative text for screen readers and generally the experience more reliable. Aside from that it is not possible to edit your post, see all your bookmarks and favorite posts and much more.</p>
+        <p xml:lang="ar">يحسن هذا الإصدار ملحن المنشورات، مما يجعل من الممكن إضافة نص بديل لقارئات الشاشة ويجعل التجربة أكثر موثوقية بشكل عام. بصرف النظر عن ذلك، يمكن تحرير منشورك، ورؤية جميع علاماتك المرجعية ومنشوراتك المفضلة وأكثر من ذلك بكثير.</p>
+        <p xml:lang="ca">Aquest llançament millora l'editor de publicacions, permetent afegir text alternatiu per als lectors de pantalla i en general l'experiència és més fiable. A part d'això, no és possible editar la vostra publicació, veure tots els vostres punts i publicacions preferides i molt més.</p>
+        <p xml:lang="ca-valencia">Este llançament millora l'editor de publicacions, permetent afegir text alternatiu per als lectors de pantalla i en general l'experiència és més fiable. A part d'açò, no és possible editar la vostra publicació, veure tots els vostres punts i publicacions preferides i molt més.</p>
+        <p xml:lang="es">Esta versión mejora el editor de publicaciones, permitiendo añadir texto alternativo para lectores de pantalla y, en general, mejorando la experiencia. Aparte de esto, se pueden editar publicaciones, ver todos los marcadores y las publicaciones favoritas, y mucho más.</p>
+        <p xml:lang="fr">Cette version améliore l'éditeur de publications, permettant d'ajouter du texte alternatif pour les lecteurs d'écran et rendant l'expérience générale plus fiable. À part cela, il n'est pas possible de modifier votre message, de voir tous vos signets et vos messages préférés, et bien plus encore.</p>
+        <p xml:lang="he">המהדורה הזאת משפרת את חלונית כתיבת ההודעות, מה שמאפשר להוסיף טקסט חלופי למקריאי מסך ובאופן כללי החויוה היא אמינה יותר. למעט העובדה שאי אפשר לערוך רשומות שלך, לצפות בכל הסימניות והרשומות המועדפות עליך ועוד.</p>
+        <p xml:lang="it">Questa versione migliora il compositore di commenti, rendendo possibile l'aggiunta di testo alternativo per i lettori di schermi e, in generale, rendendo l'esperienza più affidabile. A parte questo, non è possibile modificare i commenti, visualizzare tutti i segnalibri, i commenti preferiti e molto altro.</p>
+        <p xml:lang="ka">ამ გამოცემაში გაუმჯობესდა პოსტის რედაქტორი, რაც ეკრანის მკითხველებისთვის ალტერნატიული ტექსტის დამატების საშუალებას იძლევა და მთლიანობაში პროცესს უფრო საიმედოს ხდის. გარდა ამისა, ახლა უკვე შესაძლებელია პოსტების ჩასწორება, სანიშნეებისა და რჩეული პოსტების ნახვა და მრავალი სხვა.</p>
+        <p xml:lang="nl">Deze bijgewerkte versie verbetert de berichtenbewerker, waardoor het mogelijk is om alternatieve tekst voor schermlezers toe te voegen en de algehele ervaring betrouwbaarder te maken. Daarnaast is het niet mogelijk om uw bericht te bewerken, al uw bladwijzers en favoriete berichten te bekijken en nog veel meer.</p>
+        <p xml:lang="pt-BR">Esta versão aprimora o editor de postagens, possibilitando a adição de texto alternativo para leitores de tela e, de modo geral, tornando a experiência mais confiável. Além disso, não é possível editar suas postagens, visualizar seus favoritos e marcadores, e muito mais.</p>
+        <p xml:lang="ru">В этой версии улучшен редактор сообщений: добавлена возможность указывать альтернативный текст для экранных дикторов, а также повышена общая надёжность. Кроме того, реализовано редактирование сообщений, просмотр закладок и избранных сообщений, а также множество других возможностей.</p>
+        <p xml:lang="sk">Toto vydanie vylepšuje editor príspevkov, umožňuje pridávať alternatívny text pre čítačky obrazovky a celkovo robí prácu spoľahlivejšou. Okrem toho je teraz možné upravovať vaše príspevky, zobraziť všetky vaše záložky a obľúbené príspevky a oveľa viac.</p>
+        <p xml:lang="sl">Ta izdaja izboljšuje sestavljalnik objav, saj omogoča dodajanje alternativnega besedila za bralnike zaslona in na splošno zanesljivejšo izkušnjo. Razen tega ni mogoče urejati objave, si ogledati vseh zaznamkov in priljubljenih objav ter še veliko več.</p>
+        <p xml:lang="tr">Bu sürüm, gönderi oluşturma aracını geliştirerek ekran okuyucular için alternatif metin eklemeyi ve genel olarak deneyimi daha güvenilir hale getirmeyi olanaklı kılıyor. Bunun dışında, gönderinizi düzenleyemezsiniz, tüm yer imlerinizi ve favori gönderilerinizi göremezsiniz ve daha birçok özellik kullanılamaz.</p>
+        <p xml:lang="uk">У цьому випуску удосконалено редактор дописів, що дозволило додавати альтернативний текст для програм зчитування з екрана та загалом підвищило надійність роботи. Окрім цього, можна редагувати свої дописи, переглядати всі закладки та обрані дописи, а також багато іншого.</p>
+      </description>
+    </release>
+    <release version="23.01.0" date="2023-01-02">
+      <url>https://carlschwan.eu/2023/01/02/tokodon-23.01-release/</url>
+      <description>
+        <p>This release makes it possible to search with tokodon, handles hashtag, adds an account editor and a conversation view</p>
+        <p xml:lang="ar">يتيح هذا الإصدار إمكانية البحث باستخدام توكودون، ويتعامل مع الوسوم، ويضيف محررا للحساب وعرضا للمحادثة</p>
+        <p xml:lang="ca">Aquest llançament permet cercar amb el Tokodon, gestiona les etiquetes, afegeix un editor de comptes i una vista de conversa</p>
+        <p xml:lang="ca-valencia">Este llançament permet buscar amb Tokodon, gestiona les etiquetes, afig un editor de comptes i una vista de conversa</p>
+        <p xml:lang="es">Esta versión permite realizar búsquedas con Tokodon, maneja hashtags, añade un editor de cuentas y una vista de conversaciones.</p>
+        <p xml:lang="fr">Cette version permet la recherche avec Tokodon, la gestion des hashtags. Elle apporte un éditeur de comptes et une vue pour affichage des conversations.</p>
+        <p xml:lang="he">המהדורה הזאת מאפשרת לך לחפש במסטודון, מטפלת בתגיות הקבץ, מוסיפה עורך חשבונות ותצוגת תכתובת</p>
+        <p xml:lang="it">Questa versione rende possibile la ricerca con tokodon, gestisce gli hashtag, aggiunge un editor di account e una vista delle conversazioni</p>
+        <p xml:lang="ka">ამ გამოცემაში Tokodon-ს შეუძლია ძებნა, ჰეშთეგებთან მუშაობა, დაემატა ანგარიშის რედაქტორი და საუბრის ხედი</p>
+        <p xml:lang="nl">Deze uitgave maakt het mogelijk om met Tokodon te zoeken, ondersteunt hashtags, voegt een accountbewerker en een gespreksweergave toe.</p>
+        <p xml:lang="pt-BR">Esta versão permite pesquisar com o Tokodon, suporta hashtags, adiciona um editor de conta e uma visualização de conversas.</p>
+        <p xml:lang="ru">В этом выпуске реализована возможность поиска в Tokodon, добавлена поддержка хештегов, редактор учётных записей и просмотр бесед.</p>
+        <p xml:lang="sk">Toto vydanie umožňuje vyhľadávanie v aplikácii Tokodon, spracováva hashtagy, pridáva editor účtu a zobrazenie konverzácie</p>
+        <p xml:lang="sl">Ta izdaja omogoča iskanje s tokodonom, obravnava hashtag, dodaja urejevalnik računov in pogled pogovorov</p>
+        <p xml:lang="tr">Bu sürüm; Tokodon ile arama özelliğini, etiketleri yöneticisi, hesap düzenleyicisi ve konuşma görünümü ekler.</p>
+        <p xml:lang="uk">У цьому випуску реалізовано пошук у tokodon, обробку хештегі, додано редактор облікових записів та панель спілкування.</p>
+      </description>
+    </release>
+    <release version="22.11.2" date="2022-12-17">
+      <description>
+        <p>This release fix some regressions and a packaging issue.</p>
+        <p xml:lang="ar">يصلح هذا الإصدار بعض التراجعات ومشكلة في الحزم.</p>
+        <p xml:lang="ca">Aquest llançament soluciona algunes regressions i un problema d'empaquetatge.</p>
+        <p xml:lang="ca-valencia">Este llançament soluciona algunes regressions i un problema d'empaquetatge.</p>
+        <p xml:lang="es">Esta versión corrige algunas regresiones y un problema de empaquetado.</p>
+        <p xml:lang="fr">Cette version corrige certaines régressions et un problème d'empaquetage.</p>
+        <p xml:lang="he">המהדורה הזאת מתקנת תקלות חוזרות ובעיית אריזה.</p>
+        <p xml:lang="it">Questa versione corregge alcune regressioni e un problema di pacchettizzazione.</p>
+        <p xml:lang="ka">ეს ვერსია ასწორებს რამდენიმე რეგრესიისა და შეფუთვის პრობლემას.</p>
+        <p xml:lang="nl">Deze uitgave verhelpt enkele bugs en een probleem met het pakket maken.</p>
+        <p xml:lang="pt-BR">Esta versão corrige algumas regressões e um problema de empacotamento.</p>
+        <p xml:lang="ru">В этом выпуске исправлены некоторые регрессии и проблема с упаковкой.</p>
+        <p xml:lang="sk">Toto vydanie opravuje niektoré regresie a problém s balíčkovaním.</p>
+        <p xml:lang="sl">Ta izdaja odpravlja nekatere regresije in težave s pakiranjem.</p>
+        <p xml:lang="tr">Bu sürüm bazı hataları ve paketleme sorununu düzeltiyor.</p>
+        <p xml:lang="uk">Виправлено деякі регресії та помилку у пакуванні.</p>
+      </description>
+    </release>
+    <release version="22.11.1" date="2022-12-06">
+      <description>
+        <p>This release contains a lot of bugfixes (including one for a pretty serious crash). This also improve the look of the reaction buttons and improve the layout of the timeline.</p>
+        <p xml:lang="ar">يحتوي هذا الإصدار على الكثير من إصلاحات الأخطاء (بما في ذلك إصلاح لانهيار خطير للغاية). يحسن هذا أيضا مظهر أزرار التفاعل ويحسن تخطيط الخط الزمني.</p>
+        <p xml:lang="ca">Aquest llançament conté moltes correccions d'errors (inclosa una per a una fallada força greu). Aquest també millora l'aspecte dels botons de reacció i millora la disposició de la línia de temps.</p>
+        <p xml:lang="ca-valencia">Este llançament conté moltes esmenes d'errors (inclosa una per a una fallada força greu). Este també millora l'aspecte dels botons de reacció i millora la disposició de la línia de temps.</p>
+        <p xml:lang="es">Esta versión incluye numerosas correcciones de errores (incluida una para un fallo grave). También se ha mejorado el aspecto de los botones de reacción y el diseño de la línea de tiempo.</p>
+        <p xml:lang="fr">Cette version contient de nombreux correctifs de bogues (Y compris pour un plantage plutôt sérieux). Elle améliore également l'apparence des boutons de réaction et l'agencement de la frise chronologique.</p>
+        <p xml:lang="he">המהדורה הזאת מכילה המון תיקוני תקלות (כולל אחת לקריסה די חמורה). היא משפרת גם את המראה של כפתורי הרגש ומשפרת את פריסת ציר הזמן.</p>
+        <p xml:lang="it">Questa versione contiene numerose correzioni di bug (tra cui una per un arresto anomalo piuttosto grave). Sono stati inoltre migliorati l'aspetto dei pulsanti di reazione e la disposizione della linea temporale.</p>
+        <p xml:lang="ka">ეს გამოცემა უამრავ ხარვეზის გასწორებას შეიცავს (მათ შორის ერთ-ერთი საკმაოდ სერიოზულ ავარიულ გათიშვას ეხება). ასევე, გაუმჯობესდა რეაქციის ღილაკების ვიზუალური მხარე და დაიხვეწა ქრონოლოგიის განლაგება.</p>
+        <p xml:lang="nl">Deze uitgave bevat veel reparaties van bugs (waaronder een voor een behoorlijk ernstige crash). Ook is het uiterlijk van de reactieknoppen verbeterd en de indeling van de tijdlijn geoptimaliseerd.</p>
+        <p xml:lang="pt-BR">Esta versão contém diversas correções de bugs (incluindo uma para um problema bastante grave que causava um travamento). Ela também melhora a aparência dos botões de reação e o layout da linha do tempo.</p>
+        <p xml:lang="ru">В этой версии исправлено множество ошибок, включая одну, приводившую к аварийному завершению. Также улучшен внешний вид кнопок реакций и компоновка ленты событий.</p>
+        <p xml:lang="sk">Toto vydanie obsahuje množstvo opráv chýb (vrátane jednej pre pomerne závažné padanie). Taktiež vylepšuje vzhľad tlačidiel reakcií a rozloženie časovej osi.</p>
+        <p xml:lang="sl">Ta izdaja vsebuje veliko popravkov hroščev (vključno z enim za precej resno sesutje). Izboljšan je tudi videz reakcijskih gumbov in postavitev časovnice.</p>
+        <p xml:lang="tr">Bu sürüm, oldukça ciddi bir çökme hatası da dahil olmak üzere birçok hata düzeltmesi içeriyor. Ayrıca tepki düğmelerinin görünümünü ve zaman akışının yerleşimini de iyileştiriyor.</p>
+        <p xml:lang="uk">У цьому випуску виправлено багато помилок (зокрема одне досить серйозне аварійне завершення роботи). Також удосконалено зовнішній вигляд кнопок реакції та компонування розкладу.</p>
+      </description>
+    </release>
+    <release version="22.11" date="2022-11-30">
+      <url>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/</url>
+    </release>
+    <release version="22.09" date="2022-09-27">
+      <url>https://www.plasma-mobile.org/2022/09/27/plasma-mobile-gear-22-09/</url>
+    </release>
+    <release version="22.06" date="2022-06-24">
+      <url>https://www.plasma-mobile.org/2022/06/28/plasma-mobile-gear-22-06/</url>
+      <description>
+        <ul>
+          <li>Support Mastodon instances installed in subfolder such as Nextcloud social</li>
+          <li xml:lang="ar">دعم نماذج ماستودون المثبتة في مجلد فرعي مثل Nextcloud social</li>
+          <li xml:lang="ca">Admet instàncies de Mastodon instal·lades en un subcarpeta com ara Nextcloud social</li>
+          <li xml:lang="ca-valencia">Admet instàncies de Mastodon instal·lades en un subcarpeta com ara Nextcloud social</li>
+          <li xml:lang="es">Admite instancias de Mastodon instaladas en subcarpetas, como Nextcloud social</li>
+          <li xml:lang="fr">Prise en charge des instances de Mastodon installées dans un sous-dossier, comme le réseau social Nextcloud</li>
+          <li xml:lang="he">התמיכה בעותקים של מסטודון מותקנת בתת־תיקייה כגון Netcloud social</li>
+          <li xml:lang="it">Supporta le istanze di Mastodon installate in sottocartelle come Nextcloud social</li>
+          <li xml:lang="ka">Nexcloud social-ის მაგვარ ქვესაქაღალდეში დაყენებული Mastodon-ის გაშვებული ასლების მხარდაჭერა</li>
+          <li xml:lang="nl">Ondersteuning voor Mastodon-exemplaren die zijn geïnstalleerd in submappen zoals Nextcloud Social</li>
+          <li xml:lang="pt-BR">Suporte a instâncias do Mastodon instaladas em subpastas, como a pasta social do Nextcloud</li>
+          <li xml:lang="ru">Поддержка экземпляров Mastodon, установленных во вложенных папках, например Nextcloud Social;</li>
+          <li xml:lang="sk">Podpora inštancií Mastodon nainštalovaných v podpriečinku, ako napríklad Nextcloud social</li>
+          <li xml:lang="sl">Podpora za pojavke Mastodon, nameščene v podmapah, kot je Nextcloud social</li>
+          <li xml:lang="tr">Nextcloud Social gibi alt klasörlere yüklenmiş Mastodon örneklerini destekler.</li>
+          <li xml:lang="uk">Підтримка екземплярів Mastodon, які встановлено у підтеку, зокрема як соціальну мережу Nextcloud</li>
+          <li>Add support for cards</li>
+          <li xml:lang="ar">إضافة دعم للبطاقات</li>
+          <li xml:lang="ca">Afegeix la implementació de targetes</li>
+          <li xml:lang="ca-valencia">Afig la implementació de targetes</li>
+          <li xml:lang="es">Se ha añadido compatibilidad con tarjetas</li>
+          <li xml:lang="fr">Ajouter la prise en charge des cartes</li>
+          <li xml:lang="he">נוספה תמיכה בכרטיסים</li>
+          <li xml:lang="it">Aggiungere il supporto per le schede</li>
+          <li xml:lang="ka">დაემატა ბარათების მარდაჭერა</li>
+          <li xml:lang="nl">Voegt ondersteuning voor kaarten toe</li>
+          <li xml:lang="pt-BR">Adicionado suporte à cartões</li>
+          <li xml:lang="ru">Добавлена поддержка карточек;</li>
+          <li xml:lang="sk">Pridaná podpora pre karty</li>
+          <li xml:lang="sl">Doda podporo za kartice</li>
+          <li xml:lang="tr">Kart desteği ekle</li>
+          <li xml:lang="uk">Додано підтримку карток</li>
+          <li xml:lang="zh-TW">支援卡片</li>
+          <li>Support desktop notifications and notifications view</li>
+          <li xml:lang="ar">دعم تنبيهات سطح المكتب وعرض التنبيهات</li>
+          <li xml:lang="ca">Admet notificacions de l'escriptori i la vista de notificacions</li>
+          <li xml:lang="ca-valencia">Admet notificacions de l'escriptori i la vista de notificacions</li>
+          <li xml:lang="es">Admite notificaciones de escritorio y vista de notificaciones</li>
+          <li xml:lang="fr">Prise en charge des notifications sur le bureau et l'affichage des notifications</li>
+          <li xml:lang="he">תמיכה בהתראות שולחן עבודה ובתצוגת התראות</li>
+          <li xml:lang="it">Supporta le notifiche desktop e la visualizzazione delle notifiche</li>
+          <li xml:lang="ka">სამუშაო მაგიდის გაფრთხილებებისა და გაფრთხილებების ხედის მხარდაჭერა</li>
+          <li xml:lang="nl">Ondersteuning voor bureaubladmeldingen en de weergave van meldingen</li>
+          <li xml:lang="pt-BR">Suporte a notificações na área de trabalho e visualização de notificações</li>
+          <li xml:lang="ru">Поддержка уведомлений рабочего стола и просмотра уведомлений;</li>
+          <li xml:lang="sk">Podpora upozornení na pracovnej ploche a zobrazenia upozornení</li>
+          <li xml:lang="sl">Podpora za obvestila na namizju in pogled obvestil</li>
+          <li xml:lang="tr">Masaüstü bildirimlerini ve bildirim görünümünü destekle</li>
+          <li xml:lang="uk">Підтримка сповіщень стільниці та панелі сповіщень</li>
+          <li xml:lang="zh-TW">支援桌面通知和通知檢視</li>
+        </ul>
+      </description>
+    </release>
+    <release version="22.04" date="2022-04-26">
+      <url>https://www.plasma-mobile.org/2022/04/26/plasma-mobile-gear-22-04/</url>
+      <description>
+        <p>Tokodon profile view received many improvements. It's now possible to interact with other accounts directly from it (subscribe, mute, ban, ...), leave note about an account and all the profile information. The desktop mode was also improved.</p>
+        <p xml:lang="ar">تلقى عرض تشكيلة توكودون العديد من التحسينات. أصبح من الممكن الآن التفاعل مع الحسابات الأخرى مباشرة منه (الاشتراك، الكتم، الحظر، ...)، وترك ملاحظة حول حساب ما وجميع معلومات التشكيلة. حُسن وضع سطح المكتب أيضا.</p>
+        <p xml:lang="ca">La vista de perfils del Tokodon ha rebut moltes millores. Ara és possible interactuar amb altres comptes directament des d'ell (subscriure, silenciar, bandejar...), deixar una nota sobre un compte i tota la informació del perfil. També s'ha millorat el mode d'escriptori.</p>
+        <p xml:lang="ca-valencia">La vista de perfils de Tokodon ha rebut moltes millores. Ara és possible interactuar amb altres comptes directament des d'ell (subscriure, silenciar, bandejar…), deixar una nota sobre un compte i tota la informació del perfil. També s'ha millorat el mode d'escriptori.</p>
+        <p xml:lang="es">La vista de perfil de Tokodon ha recibido muchas mejoras. Ahora se puede interactuar con otras cuentas directamente desde ella (suscribirse, silenciar, expulsar, etc.), dejar notas sobre una cuenta y toda la información del perfil. El modo de escritorio también se ha mejorado.</p>
+        <p xml:lang="fr">La vue du profil Tokodon a reçu de nombreuses améliorations. Il est désormais possible d'interagir directement avec d'autres comptes depuis celle-ci (S'abonner, couper le son, bannir, ...), laisser une note sur un compte et accéder à toutes les informations du profil. Le mode de bureau a également été amélioré.</p>
+        <p xml:lang="he">תצוגת הפרופילים ב־Tokodon קיבלה מגוון שיפורים. מעתה ניתן לתקשר מול חשבונות אחרים ישירות ממנה (להירשם, להשתיק, לחסום, …), להשאיר הערה על חשבון וכל פרטי הפרופיל. מצב שולחן העבודה השתפר גם הוא.</p>
+        <p xml:lang="it">La visualizzazione del profilo di Tokodon ha ricevuto numerosi miglioramenti. Ora è possibile interagire direttamente con altri account (iscriversi, silenziare, bandire, ecc.), lasciare una nota su un account e visualizzare tutte le informazioni del profilo. Anche la modalità desktop è stata migliorata.</p>
+        <p xml:lang="ka">Tokodon-ის პროფილის ხედი მნიშვნელოვნად გაუმჯობესდა. ახლა უკვე შესაძლებელია სხვა ანგარიშებთან ურთიერთქმედება პირდაპირ პროფილის გვერდიდან (გამოწერა, დადუმება, დაბლოკვა და სხვ), ანგარიშის შესახებ შენიშვნის დატოვება და პროფილის სრული ინფორმაციის ნახვა. ასევე დაიხვეწა კომპიუტერის ვერსიის რეჟიმიც.</p>
+        <p xml:lang="nl">De profielweergave van Tokodon heeft veel verbeteringen ondergaan. Het is nu mogelijk om direct vanuit het profiel met andere accounts te communiceren (abonneren, monddood maken, blokkeren, enz.), een notitie over een account achter te laten en alle profielinformatie te bekijken. De bureaubladmodus is ook verbeterd.</p>
+        <p xml:lang="pt-BR">A visualização de perfil do Tokodon recebeu diversas melhorias. Agora é possível interagir diretamente com outras contas (seguir, silenciar, banir, etc.), deixar comentários sobre uma conta e visualizar todas as informações do perfil. O modo desktop também foi aprimorado.</p>
+        <p xml:lang="ru">Вид профиля Tokodon был значительно улучшен. Теперь можно взаимодействовать с другими учётными записями напрямую из него (подписываться, отключать звук, блокировать…), оставлять заметки об учётной записи и просматривать всю информацию профиля. Также был улучшен режим для настольных компьютеров.</p>
+        <p xml:lang="sk">Zobrazenie profilu v aplikácii Tokodon dostalo mnoho vylepšení. Teraz je možné priamo z neho interagovať s inými účtami (odoberať, stlmiť, zablokovať, ...), zanechať poznámku o účte a zobraziť všetky informácie o profile. Režim pre pracovnú plochu bol taktiež vylepšený.</p>
+        <p xml:lang="sl">Pogled profila Tokodon je bil deležen številnih izboljšav. Zdaj je mogoče neposredno komunicirati z drugimi računi (naročiti se, utišati, prepovedati ...), pustiti sporočilo o računu in vse informacije o profilu. Izboljšan je bil tudi namizni način.</p>
+        <p xml:lang="tr">Tokodon profil görünümünde birçok iyileştirme yapıldı. Artık diğer hesaplarla doğrudan etkileşim kurmak (abone olmak, sessize almak, yasaklamak, …), bir hesap hakkında not bırakmak ve tüm profil bilgilerini görüntülemek olanaklı. Masaüstü kipi de geliştirildi.</p>
+        <p xml:lang="uk">Значно удосконалено панель перегляду профілю Tokodon. Тепер можна взаємодіяти з іншими обліковими записами безпосередньо з нього (підписуватися, ігнорувати, блокувати тощо), залишати повідомлення про обліковий запис та всі відомості про профіль. Також було покращено режим робочої станції.</p>
+      </description>
+    </release>
+    <release version="22.02" date="2022-02-09">
+      <url>https://www.plasma-mobile.org/2022/02/09/plasma-mobile-gear-22-02/</url>
+      <description>
+        <ul>
+          <li>Do not allow posting empty posts</li>
+          <li xml:lang="ar">عدم السماح بنشر منشورات فارغة</li>
+          <li xml:lang="ca">No permet enviar publicacions buides</li>
+          <li xml:lang="ca-valencia">No permet enviar publicacions buides</li>
+          <li xml:lang="es">No permitir la publicación de mensajes vacíos</li>
+          <li xml:lang="fr">Ne pas autoriser la publication de messages vides</li>
+          <li xml:lang="he">לא לאפשר לפרסם רשומות ריקות</li>
+          <li xml:lang="it">Non consentire la pubblicazione di commenti vuoti</li>
+          <li xml:lang="ka">ცარიელი პოსტების დაპოსტვის არდაშვება</li>
+          <li xml:lang="nl">Staat het plaatsen van lege berichten niet toe.</li>
+          <li xml:lang="pt-BR">Não permitir a publicação de postagens vazias</li>
+          <li xml:lang="ru">Запрещена  публикация пустых записей;</li>
+          <li xml:lang="sk">Zakázanie odosielania prázdnych príspevkov</li>
+          <li xml:lang="sl">Ne dovoli objavljanja praznih objav</li>
+          <li xml:lang="tr">Boş gönderileri gönderme</li>
+          <li xml:lang="uk">Заборонено створювати порожні дописи</li>
+          <li>Do not allow to remove login page from stack</li>
+          <li xml:lang="ar">عدم السماح بإزالة صفحة الولوج من المكدس</li>
+          <li xml:lang="ca">No permet eliminar la pàgina d'inici de sessió de la pila</li>
+          <li xml:lang="ca-valencia">No permet eliminar la pàgina d'inici de sessió de la pila</li>
+          <li xml:lang="es">No permitir la eliminación de la página de inicio de sesión de la pila</li>
+          <li xml:lang="fr">Ne pas autoriser la suppression de la page de connexion de la pile</li>
+          <li xml:lang="he">לא להרשות להסיר את עמוד הכניסה מהערמה</li>
+          <li xml:lang="it">Non consente la rimozione della pagina di accesso dallo stack</li>
+          <li xml:lang="ka">შესვლის გვერდის ნაკრებიდან წაშლის არდაშვება</li>
+          <li xml:lang="nl">Voorkom dat de aanmeldpagina uit de stapel wordt verwijderd</li>
+          <li xml:lang="pt-BR">Não permitir remover a página de login da pilha</li>
+          <li xml:lang="ru">Запрещено удаление страницы входа из стека;</li>
+          <li xml:lang="sk">Zakázanie odstránenia prihlasovacej stránky zo zásobníka</li>
+          <li xml:lang="sl">Ne dovoli odstraniti prijavne strani iz sklada</li>
+          <li xml:lang="tr">Oturum açma sayfasını yığından kaldırmayı engelle</li>
+          <li xml:lang="uk">Заборонено вилучати сторінку входу зі стосу</li>
+          <li>Fix removal of the accounts</li>
+          <li xml:lang="ar">إصلاح إزالة الحسابات</li>
+          <li xml:lang="ca">Corregeix l'eliminació dels comptes</li>
+          <li xml:lang="ca-valencia">Corregix l'eliminació dels comptes</li>
+          <li xml:lang="es">Se ha corregido la eliminación de cuentas</li>
+          <li xml:lang="fr">Correction de suppression des comptes</li>
+          <li xml:lang="he">תוקנה הסרת חשבונות</li>
+          <li xml:lang="it">Corregge la rimozione degli account</li>
+          <li xml:lang="ka">გასწორდა ანგარიშების წაშლა</li>
+          <li xml:lang="nl">Los het probleem op met het verwijderen van de accounts</li>
+          <li xml:lang="pt-BR">Correção na remoção de contas</li>
+          <li xml:lang="ru">Исправлено удаление учётных записей;</li>
+          <li xml:lang="sk">Oprava odstraňovania účtov</li>
+          <li xml:lang="sl">Popravi odstranjevanje računov</li>
+          <li xml:lang="tr">Hesap kaldırmayı onar</li>
+          <li xml:lang="uk">Виправлено вилучення облікових записів</li>
+          <li>Add opt-in option to see detailed post stats</li>
+          <li xml:lang="ar">إضافة خيار اختياري لرؤية إحصائيات المنشور التفصيلية</li>
+          <li xml:lang="ca">Afegeix una opció d'alta voluntària per a veure estadístiques detallades de publicacions</li>
+          <li xml:lang="ca-valencia">Afig una opció d'alta voluntària per a veure estadístiques detallades de publicacions</li>
+          <li xml:lang="es">Se ha añadido la opción de suscripción para ver estadísticas detalladas de las publicaciones</li>
+          <li xml:lang="fr">Ajouter une option d'acceptation pour affichage des statistiques détaillées des publications</li>
+          <li xml:lang="he">נוספה אפשרות בחירה כדי לצפות סטטיסטיקה מפורטת על רשומה</li>
+          <li xml:lang="it">Aggiungi l'opzione di iscrizione per visualizzare statistiche dettagliate dei commenti</li>
+          <li xml:lang="ka">დაემატა არასავალდებულო პარამეტრი პოსტის დეტალური სტატისტიკის სანახავად</li>
+          <li xml:lang="nl">Voeg een opt-in-optie toe om gedetailleerde statistieken van berichten te bekijken</li>
+          <li xml:lang="pt-BR">Adicionar opção de ativação para visualizar estatísticas detalhadas das postagens</li>
+          <li xml:lang="ru">Добавлена опция для просмотра подробной статистики записей;</li>
+          <li xml:lang="sk">Pridaná voliteľná možnosť zobrazenia podrobných štatistík príspevkov</li>
+          <li xml:lang="sl">Doda možnost ogleda podrobne statistike objav</li>
+          <li xml:lang="tr">Gönderi istatistiklerini görmek için isteğe bağlı seçenek</li>
+          <li xml:lang="uk">Додано додатковий пункт для перегляду докладної статистики щодо дописів</li>
+          <li>Fix uploading files</li>
+          <li xml:lang="ar">إصلاح رفع الملفات</li>
+          <li xml:lang="ca">Corregeix la pujada de fitxers</li>
+          <li xml:lang="ca-valencia">Corregix la pujada de fitxers</li>
+          <li xml:lang="es">Se ha corregido el envío de archivos</li>
+          <li xml:lang="fr">Correction de l'envoi de fichiers</li>
+          <li xml:lang="he">העלאת קבצים תוקנה</li>
+          <li xml:lang="it">Corregge il caricamento dei file</li>
+          <li xml:lang="ka">გასწორდა ფაილების ატვირთვა</li>
+          <li xml:lang="nl">Bestanden uploaden gerepareerd</li>
+          <li xml:lang="pt-BR">Correção do envio de arquivos</li>
+          <li xml:lang="ru">Исправлена загрузка файлов;</li>
+          <li xml:lang="sk">Oprava nahrávania súborov</li>
+          <li xml:lang="sl">Popravi prenos datotek tja</li>
+          <li xml:lang="tr">Dosya yüklemeyi onar</li>
+          <li xml:lang="uk">Виправлено вивантаження файлів</li>
+          <li xml:lang="zh-TW">修正檔案上傳</li>
+          <li>General user interface improvements and bugfixes</li>
+          <li xml:lang="ar">تحسينات عامة على واجهة المستخدم وإصلاحات للأخطاء</li>
+          <li xml:lang="ca">Millores generals en la interfície d'usuari i correccions d'errors</li>
+          <li xml:lang="ca-valencia">Millores generals en la interfície d'usuari i esmenes d'errors</li>
+          <li xml:lang="es">Mejoras generales de la interfaz de usuario y corrección de fallos</li>
+          <li xml:lang="fr">Améliorations générales de l'interface utilisateur et corrections de bogues</li>
+          <li xml:lang="he">שיפור ממשק משתמש כלליים ותיקוני תקלות</li>
+          <li xml:lang="it">Miglioramenti generali dell'interfaccia utente e correzioni di bug</li>
+          <li xml:lang="ka">ზოგადი მომხმარებლის ინტერფეისის გაუმჯობესება და შეცდომების გასწორება</li>
+          <li xml:lang="nl">Algemene verbeteringen aan het gebruikersinterface en reparaties van bugs</li>
+          <li xml:lang="pt-BR">Melhorias gerais na interface do usuário e correções de bugs</li>
+          <li xml:lang="ru">Улучшения пользовательского интерфейса и исправления ошибок;</li>
+          <li xml:lang="sk">Všeobecné vylepšenia používateľského rozhrania a opravy chýb</li>
+          <li xml:lang="sl">Splošne izboljšave uporabniškega vmesnika in popravki napak</li>
+          <li xml:lang="tr">Genel arayüz iyileştirmeleri ve hata düzeltmeleri</li>
+          <li xml:lang="uk">Загальні удосконалення інтерфейсу користувача та виправлення вад</li>
+        </ul>
+      </description>
+    </release>
+    <release version="21.12" date="2021-12-07">
+      <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
+      <description>
+        <ul>
+          <li>New logo for application</li>
+          <li xml:lang="ar">شعار جديد للتطبيق</li>
+          <li xml:lang="ca">Logotip nou de l'aplicació</li>
+          <li xml:lang="ca-valencia">Logotip nou de l'aplicació</li>
+          <li xml:lang="es">Nuevo logotipo para la aplicación</li>
+          <li xml:lang="fr">Nouveau logo pour l'application</li>
+          <li xml:lang="he">לוגו חדש ליישום</li>
+          <li xml:lang="it">Nuovo logo per l'applicazione</li>
+          <li xml:lang="ka">ახალი ლოგო აპლიკაციისთვის</li>
+          <li xml:lang="nl">Nieuw logo voor toepassing</li>
+          <li xml:lang="pt-BR">Novo logotipo para o aplicativo</li>
+          <li xml:lang="ru">Новый логотип приложения;</li>
+          <li xml:lang="sk">Nové logo pre aplikáciu</li>
+          <li xml:lang="sl">Nov logotip za aplikacijo</li>
+          <li xml:lang="tr">Yeni uygulama logosu</li>
+          <li xml:lang="uk">Новий логотип програми</li>
+          <li xml:lang="zh-TW">新圖示</li>
+          <li>Add support for navigation toolbar</li>
+          <li xml:lang="ar">إضافة دعم لشريط أدوات التنقل</li>
+          <li xml:lang="ca">Afegeix la implementació de la barra d'eines de navegació</li>
+          <li xml:lang="ca-valencia">Afig la implementació de la barra d'eines de navegació</li>
+          <li xml:lang="es">Se ha añadido compatibilidad para la barra de herramientas de navegación</li>
+          <li xml:lang="fr">Ajouter la prise en charge de la barre d'outils de navigation</li>
+          <li xml:lang="he">נוספה תמיכה בסרגל כלי ניווט</li>
+          <li xml:lang="it">Aggiunge il supporto per la barra degli strumenti di navigazione</li>
+          <li xml:lang="ka">დაემატა ნავიგაციის ხელსაწყოთა პანელის მხარდაჭერა</li>
+          <li xml:lang="nl">Ondersteuning voor navigatiewerkbalk toegevoegd</li>
+          <li xml:lang="pt-BR">Adicionado suporte para barra de navegação</li>
+          <li xml:lang="ru">Добавлена поддержка панели навигации;</li>
+          <li xml:lang="sk">Pridaná podpora pre navigačný panel nástrojov</li>
+          <li xml:lang="sl">Doda podporo za navigacijsko orodno vrstico</li>
+          <li xml:lang="tr">Dolaşım araç çubuğu desteği</li>
+          <li xml:lang="uk">Додано підтримку панелі інструментів навігації</li>
+          <li xml:lang="zh-TW">新增對導覽工具列的支援</li>
+          <li>Several bugfixes</li>
+          <li xml:lang="ar">إصلاحات أخطاء عديدة</li>
+          <li xml:lang="ca">Diverses correccions d'errors</li>
+          <li xml:lang="ca-valencia">Diverses esmenes d'errors</li>
+          <li xml:lang="es">Diversas correcciones de errores</li>
+          <li xml:lang="fr">Plusieurs correctifs de bogues</li>
+          <li xml:lang="he">מגוון תיקוני תקלות</li>
+          <li xml:lang="it">Diverse correzioni di bug</li>
+          <li xml:lang="ka">გასწორდა რამდენიმე შეცდომა</li>
+          <li xml:lang="nl">Verschillende reparaties van bugs</li>
+          <li xml:lang="pt-BR">Várias correções de bugs</li>
+          <li xml:lang="ru">Исправлено несколько ошибок;</li>
+          <li xml:lang="sk">Niekoľko opráv chýb</li>
+          <li xml:lang="sl">Več popravkov hroščev</li>
+          <li xml:lang="tr">Çeşitli hata düzeltmeleri</li>
+          <li xml:lang="uk">Декілька виправлень вад</li>
+          <li xml:lang="zh-TW">一些錯誤修正</li>
+        </ul>
+      </description>
+    </release>
+    <release version="21.08" date="2021-08-31">
+      <url>https://www.plasma-mobile.org/2021/08/31/plasma-mobile-gear-21-08/</url>
+    </release>
+    <release version="21.07" date="2021-07-20">
+      <url>https://www.plasma-mobile.org/2021/07/20/plasma-mobile-gear-21-07/</url>
+    </release>
+    <release version="21.06" date="2021-06-10">
+      <description>
+        <p>First beta release of Tokodon, with most basic feature working (timeline, sending posts, replying, adding attachments, viewing images and multi-account support).</p>
+        <p xml:lang="ar">الإصدار التجريبي الأول من توكودون، مع عمل معظم الميزات الأساسية (الخط الزمني، إرسال المنشورات، الرد، إضافة المرفقات، عرض الصور ودعم الحسابات المتعددة).</p>
+        <p xml:lang="ca">Primera versió beta del Tokodon, amb la majoria de funcions bàsiques funcionant (línia de temps, enviament de publicacions, resposta, afegir adjunts, visualització d'imatges i admet comptes múltiples).</p>
+        <p xml:lang="ca-valencia">Primera versió beta de Tokodon, amb la majoria de funcions bàsiques funcionant (línia de temps, enviament de publicacions, resposta, afegir adjunts, visualització d'imatges i admet comptes múltiples).</p>
+        <p xml:lang="es">Primera versión beta de Tokodon, con la mayoría de las funciones básicas funcionales (cronología, envío de publicaciones, respuestas, adición de archivos adjuntos, visualización de imágenes y compatibilidad con múltiples cuentas).</p>
+        <p xml:lang="fr">Première version « Bêta » de Tokodon, avec les fonctionnalités les plus classiques et opérationnelles (Frise chronologique, envoi de messages, réponses, ajout de pièces jointes, affichage d'images et prise en charge de plusieurs comptes).</p>
+        <p xml:lang="he">מהדורת הניסיון (בטא) הראשונה של Tokodon, כשהיכולות הבסיסיות ביותר עובדות (ציר זמן, שליחת רשומות, תגובה, הוספת קבצים, הצגת תמונות ותמיכה בריבוי חשבונות).</p>
+        <p xml:lang="it">Prima versione beta di Tokodon, con la maggior parte delle funzionalità di base funzionanti (linea temporale, invio di commenti, risposta, aggiunta di allegati, visualizzazione di immagini e supporto multi-account).</p>
+        <p xml:lang="ka">წარმოგიდგენთ Tokodon-ის პირველ ბეტა გამოცემას, რომელშიც ძირითადი ფუნქციები (ქრონოლოგია, პოსტების გაგზავნა, პასუხების დაბრუნება, ფაილების მიბმა, სურათების დათვალიერება და ერთზე მეტი ანგარიშის მხარდაჭერა) უკვე მუშაობს.</p>
+        <p xml:lang="nl">Eerste bètaversie van Tokodon, met de meeste basisfuncties werkend (tijdlijn, berichten verzenden, reageren, bijlagen toevoegen, afbeeldingen bekijken en ondersteuning voor meerdere accounts).</p>
+        <p xml:lang="pt-BR">Primeira versão beta do Tokodon, com a maioria das funcionalidades básicas funcionando (linha do tempo, envio de mensagens, respostas, adição de anexos, visualização de imagens e suporte a múltiplas contas).</p>
+        <p xml:lang="ru">Выпущена первая бета-версия Tokodon с основными функциями: лента, отправка постов, ответы, добавление вложений, просмотр изображений и поддержка нескольких учётных записей.</p>
+        <p xml:lang="sk">Prvé beta vydanie aplikácie Tokodon so základnými funkciami (časová os, odosielanie príspevkov, odpovedanie, pridávanie príloh, zobrazovanie obrázkov a podpora viacerých účtov).</p>
+        <p xml:lang="sl">Prva beta izdaja Tokodona, z večino osnovnih zmožnosti (časovnica, pošiljanje objav, odgovarjanje, dodajanje prilog, ogled slik in podpora za več računov).</p>
+        <p xml:lang="tr">Tokodon’un ilk beta sürümü, en temel özelliklerin çoğunun çalıştığı haliyle yayınlandı (zaman akışı, gönderi gönderme, yanıt verme, ek dosya ekleme, resim görüntüleme ve çoklu hesap desteği).</p>
+        <p xml:lang="uk">Перший бета-випуск Tokodon, у якому працює більшість базових можливостей (розклад, надсилання дописів, відповіді, додавання вкладень, перегляд зображень та підтримка кількох облікових записів).</p>
+        <p>Currently big missing features are the support for polls, videos and notifications.</p>
+        <p xml:lang="ar">الميزات الكبيرة المفقودة حاليا هي دعم استطلاعات الرأي، ومقاطع الفيديو، والتنبيهات.</p>
+        <p xml:lang="ca">Actualment les característiques grans que falten són la implementació d'enquestes, vídeos i notificacions.</p>
+        <p xml:lang="ca-valencia">Actualment les característiques grans que falten són la implementació d'enquestes, vídeos i notificacions.</p>
+        <p xml:lang="es">Las funciones que actualmente faltan son la compatibilidad con encuestas, vídeos y notificaciones.</p>
+        <p xml:lang="fr">Actuellement, les grandes fonctionnalités manquantes sont la prise en charge des sondages, des vidéos et des notifications.</p>
+        <p xml:lang="he">היכולות הגדולות ביותר החסרות הן תמיכה בסקרים, סרטונים והתראות.</p>
+        <p xml:lang="it">Attualmente le funzionalità più carenti sono il supporto per sondaggi, video e notifiche.</p>
+        <p xml:lang="ka">ამჟამად დიდი ნაკლული ფუნქციებია არჩევნების, ვიდეოების და გაფრთხილებების მხარდაჭერა.</p>
+        <p xml:lang="nl">Momenteel ontbreken er nog belangrijke functies, zoals ondersteuning voor enquêtes, video's en meldingen.</p>
+        <p xml:lang="pt-BR">Atualmente, as principais funcionalidades ausentes são o suporte para enquetes, vídeos e notificações.</p>
+        <p xml:lang="ru">В настоящее время не поддерживаются опросы, видео и уведомления.</p>
+        <p xml:lang="sk">V súčasnosti medzi veľké chýbajúce funkcie patrí podpora pre ankety, videá a upozornenia.</p>
+        <p xml:lang="sl">Trenutno pomembne manjkajoče zmožnosti so podpora za ankete, videoposnetke in obvestila.</p>
+        <p xml:lang="tr">Şu anda büyük eksiklikler arasında anket, video ve bildirim desteği yer alıyor.</p>
+        <p xml:lang="uk">У поточній версії великими недоліками є нестача підтримки голосувань, відео та сповіщень.</p>
+      </description>
+      <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
+    </release>
+  </releases>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+</component>

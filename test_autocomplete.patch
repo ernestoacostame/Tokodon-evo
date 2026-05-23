@@ -1,0 +1,17 @@
+--- src/qml/StatusComposer/StatusComposer.qml
++++ src/qml/StatusComposer/StatusComposer.qml
+@@ -20,6 +20,15 @@
+ Kirigami.ScrollablePage {
+     id: root
+ 
++    SearchModel {
++        id: followedAccountsSearchModel
++    }
++
++    SearchModel {
++        id: globalAccountsSearchModel
++    }
++
+     enum Purpose {
+         New,
+     }

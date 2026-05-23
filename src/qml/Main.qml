@@ -1,0 +1,927 @@
+// SPDX-FileCopyrightText: 2021 Carl Schwan <carl@carlschwan.eu>
+// SPDX-FileCopyrightText: 2020 Han Young <hanyoung@protonmail.com>
+// SPDX-FileCopyrightText: 2020 Devin Lin <espidev@gmail.com>
+// SPDX-License-Identifier: GPL-3.0-only
+
+pragma ComponentBehavior: Bound
+
+import QtQuick
+import org.kde.kirigami as Kirigami
+import QtQuick.Controls as QQC2
+import QtQuick.Templates as T
+import QtQuick.Layouts
+import QtQml.Models
+import org.kde.tokodon
+import org.kde.kitemmodels as KItemModels
+
+import org.kde.kirigamiaddons.delegates as Delegates
+import org.kde.kirigamiaddons.statefulapp as StatefulApp
+
+import "./StatusComposer"
+import "./PostDelegate"
+
+StatefulApp.StatefulWindow {
+    id: root
+
+    application: TokodonApplication {
+        accountManager: AccountManager
+
+        configurationView: TokodonConfigurationView {
+            window: root
+            application: root.application
+        }
+    }
+
+    title: pageStack.currentItem?.title ?? ""
+    windowName: "Main"
+
+    property bool isShowingFullScreenImage: false
+    readonly property bool wideMode: root.width >= Kirigami.Units.gridUnit * 50
+
+    // A new post was created by us. Currently used by ThreadPages to update themselves when we reply.
+    signal newPost()
+
+    minimumWidth: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.gridUnit * 22
+    minimumHeight: Kirigami.Settings.isMobile ? 0 : Kirigami.Units.gridUnit * 20
+
+    pageStack {
+        defaultColumnWidth: root.width
+
+        globalToolBar {
+            canContainHandles: true
+            style: Kirigami.ApplicationHeaderStyle.ToolBar
+            showNavigationButtons: if (root.pageStack.currentIndex > 0
+                || root.pageStack.currentIndex > 0) {
+                Kirigami.ApplicationHeaderStyle.ShowBackButton
+            } else {
+                0
+            }
+        }
+    }
+
+    header: Kirigami.Separator {
+        width: root.width
+        height: visible ? 1 : 0
+        visible: !AccountManager.isReady
+    }
+
+    function decideDefaultPage(): void {
+        root.pageStack.clear();
+
+        if (InitialSetupFlow.isSetupNeeded()) {
+            globalDrawer.drawerOpen = false;
+            root.pageStack.push(Qt.createComponent("org.kde.tokodon", "SetupWelcome"));
+            return;
+        }
+
+        if (AccountManager.selectedAccountHasIssue) {
+            root.pageStack.push(Qt.createComponent("org.kde.tokodon", "LoginIssuePage"));
+        } else {
+            // HACK: We can't use trigger() here for some reason, but the action is super simple.
+            homeAction.checked = true;
+            root.application.openHomeTimeline();
+        }
+    }
+
+    function startupAccountCheck(): void {
+        if (AccountManager.hasAccounts) {
+            decideDefaultPage();
+        } else {
+            root.pageStack.push(Qt.createComponent("org.kde.tokodon", "WelcomePage"), { application: root.application });
+        }
+    }
+
+    function navigateLink(link: string, shouldOpenInternalLinks: bool): void {
+        if (link.startsWith('hashtag:/') && shouldOpenInternalLinks) {
+            root.pageStack.push(tagModelComponent, {
+                hashtag: link.substring(9),
+            })
+        } else if (link.startsWith('account:/') && shouldOpenInternalLinks) {
+            Navigation.openAccount(link.substring(9))
+        } else if (link.startsWith('web+ap:/') && shouldOpenInternalLinks) {
+            Controller.openWebApLink(link.substring(8))
+        } else {
+            Controller.openLink(link);
+        }
+    }
+
+    function requestCrossAction(action: string, url: string): void {
+        crossActionDialogLoader.active = true;
+        crossActionDialogLoader.item.action = action;
+        crossActionDialogLoader.item.url = url;
+        crossActionDialogLoader.item.open();
+    }
+
+    // Checks if the current item matches the expected pageId
+    // If true, then it has sent us back to the top and you shouldn't push the same page.
+    function checkIfCurrentPage(pageId: string): bool {
+        if (root.pageStack.currentItem?.pageId === pageId) {
+            if (root.pageStack.currentItem?.returnToTop) {
+                root.pageStack.currentItem.returnToTop();
+            }
+
+            return true;
+        }
+        return false;
+    }
+
+    Kirigami.Action {
+        fromQAction: root.application.action('open_status_composer')
+    }
+
+    Kirigami.Action {
+        fromQAction: root.application.action('open_kcommand_bar')
+    }
+
+    Loader {
+        id: crossActionDialogLoader
+
+        active: false
+
+        sourceComponent: Kirigami.PromptDialog {
+            id: crossActionDialog
+
+            property string url
+            property string action
+
+            title: {
+                if (action === 'open') {
+                    return i18nc("@title", "Open As…")
+                } else if (action === 'reply') {
+                    return i18nc("@title", "Reply As…")
+                } else if (action === 'favourite') {
+                    return i18nc("@title", "Favorite As…")
+                } else if (action === 'reblog') {
+                    return i18nc("@title", "Boost As…")
+                } else if (action === 'bookmark') {
+                    return i18nc("@title", "Bookmark As…")
+                } else {
+                    return i18nc("@title", "Unknown Action")
+                }
+            }
+
+            standardButtons: Kirigami.Dialog.NoButton
+
+            onClosed: crossActionDialogLoader.active = false
+
+            mainItem: ColumnLayout {
+                Repeater {
+                    id: accounts
+
+                    // Only show accounts that don't have issues
+                    model: KItemModels.KSortFilterProxyModel {
+                        sourceModel: AccountManager
+                        filterRoleName: "hasIssue"
+                        filterString: "false"
+                    }
+
+                    delegate: Delegates.RoundedItemDelegate {
+                        id: delegate
+
+                        required property int index
+                        required property string displayName
+                        required property string instance
+                        required property var account
+
+                        text: displayName
+
+                        Layout.fillWidth: true
+
+                        contentItem: InlineIdentityInfo {
+                            identity: delegate.account.identity
+                        }
+
+                        onClicked: crossActionDialog.takeAction(account)
+                    }
+                }
+            }
+
+            function takeAction(account: AbstractAccount): void {
+                if (action === 'open' || action === 'reply') {
+                    AccountManager.selectedAccount = account;
+                }
+
+                Qt.callLater(() => {
+                    if (action === 'open') {
+                        Controller.openWebApLink(url);
+                    } else {
+                        account.mutateRemotePost(url, action);
+                    }
+                });
+
+                close();
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        if (AccountManager.isReady) {
+            startupAccountCheck();
+        }
+    }
+
+    Connections {
+        target: AccountManager
+
+        function onAccountSelected(): void {
+            if (AccountManager.isReady) {
+                decideDefaultPage();
+            }
+        }
+
+        function onAccountRemoved(): void {
+            if (!AccountManager.hasAccounts) {
+                root.pageStack.clear();
+                root.pageStack.push(Qt.createComponent("org.kde.tokodon", "WelcomePage"), { application: root.application });
+                globalDrawer.drawerOpen = false;
+            }
+        }
+
+        function onAccountsReloaded(): void {
+            root.pageStack.replace(mainTimeline.createObject(root), {
+                name: "home"
+            });
+        }
+
+        function onAccountsReady(): void {
+            root.startupAccountCheck();
+        }
+    }
+
+    Connections {
+        target: root.application
+
+        function onConfigureAccount(account: AbstractAccount): void {
+            root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "ProfileEditor"), {
+                account: account,
+            });
+        }
+
+        function onAddAccount(): void {
+            let page;
+            // pushDialogLayer is inherently broken in Kirigami, so let's push it as a page on mobile instead
+            if (Kirigami.Settings.isMobile) {
+                page = root.pageStack.push(Qt.createComponent("org.kde.tokodon", "WelcomePage"), { application: root.application, showSettingsButton: false });
+            } else {
+                page = root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "WelcomePage"), { application: root.application, showSettingsButton: false });
+            }
+            page.QQC2.ApplicationWindow.window.pageStack.columnView.columnResizeMode = Kirigami.ColumnView.SingleColumn;
+        }
+
+        function onOpenHomeTimeline(): void {
+            if (root.checkIfCurrentPage("home")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(mainTimeline.createObject(root), {
+                pageId: "home",
+                name: "home",
+                iconName: "go-home-large",
+                placeholderText: i18n("No Posts"),
+                placeholderExplanation: i18n("It seems pretty quiet right now, try posting something!")
+            });
+        }
+
+        function onOpenNotifications(): void {
+            if (root.checkIfCurrentPage("notifications")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(notificationTimeline.createObject(root, { pageId: "notifications" }));
+        }
+
+        function onOpenFollowRequests(): void {
+            if (root.checkIfCurrentPage("followRequests")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(socialGraphComponent.createObject(root), {
+                pageId: "followRequests",
+                name: "request",
+            });
+        }
+
+        function onOpenLocalTimeline(): void {
+            if (root.checkIfCurrentPage("local")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(mainTimeline.createObject(root), {
+                pageId: "local",
+                name: "public",
+                iconName: "system-users",
+                placeholderText: i18n("No Posts"),
+                placeholderExplanation: i18n("It seems pretty quiet right now, try posting something!")
+            });
+        }
+
+        function onOpenGlobalTimeline(): void {
+            if (root.checkIfCurrentPage("global")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(mainTimeline.createObject(root), {
+                pageId: "global",
+                name: "federated",
+                iconName: "kstars_xplanet",
+                placeholderText: i18n("No Posts"),
+                placeholderExplanation: i18n("It seems pretty quiet right now, try posting something!")
+            });
+        }
+
+        function onOpenFavorites(): void {
+            if (root.checkIfCurrentPage("favorites")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(mainTimeline.createObject(root), {
+                pageId: "favorites",
+                name: "favourites",
+                iconName: "favorite",
+                placeholderText: i18n("No Favorites"),
+                placeholderExplanation: i18n("Posts that you favorite will show up here. If you appreciate someone's post, favorite it!")
+            });
+        }
+
+        function onOpenBookmarks(): void {
+            if (root.checkIfCurrentPage("bookmarks")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(mainTimeline.createObject(root), {
+                pageId: "bookmarks",
+                name: "bookmarks",
+                iconName: "bookmarks",
+                placeholderText: i18n("No Bookmarks"),
+                placeholderExplanation: i18n("Bookmark posts and they will show up here. Bookmarks are always kept private, even to the post's author.")
+            });
+        }
+
+        function onOpenExplore(): void {
+            if (root.checkIfCurrentPage("explore")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(exploreTimeline.createObject(root, { pageId: "explore" }));
+        }
+
+        function onOpenFollowing(): void {
+            if (root.checkIfCurrentPage("following")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(followingTimeline.createObject(root, { pageId: "following" }));
+        }
+
+        function onOpenSearch(): void {
+            if (root.checkIfCurrentPage("search")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(searchPage.createObject(root, { pageId: "search" }));
+        }
+
+        function onOpenServerInformation(): void {
+            if (root.checkIfCurrentPage("serverInformation")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(serverInformationPage.createObject(root, { pageId: "serverInformation" }));
+        }
+
+        function onOpenLists(): void {
+            if (root.checkIfCurrentPage("lists")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(listsPage.createObject(root, { pageId: "lists" }));
+        }
+
+        function onOpenProfile(): void {
+            if (root.checkIfCurrentPage("profile")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(Qt.createComponent("org.kde.tokodon", "AccountInfo"), {
+                pageId: "profile",
+                accountId: AccountManager.selectedAccountId,
+            });
+        }
+
+        function onOpenConversations(): void {
+            if (root.checkIfCurrentPage("conversations")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(Qt.createComponent("org.kde.tokodon", "ConversationPage"), {
+                pageId: "conversations",
+            });
+        }
+
+        function onOpenAccountSwitcher(): void {
+            let dialog = Qt.createComponent("org.kde.tokodon", "AccountSwitchDialog").createObject(root.QQC2.Overlay.overlay, {
+                application: root.application,
+                userInfo: root,
+            });
+            dialog.open();
+        }
+
+        function onSearchFor(query: string): void {
+            if (root.checkIfCurrentPage("search")) {
+                return;
+            }
+
+            root.pageStack.clear();
+            root.pageStack.push(searchPage.createObject(root, {
+                pageId: "search",
+                initialSearchTerms: query
+
+            }));
+
+        }
+    }
+
+    function popoutStatusComposer(originalEditor: StatusComposer): void {
+        const item = root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "StatusComposer"), {
+            closeApplicationWhenFinished: true,
+            purpose: originalEditor.purpose,
+            initialText: originalEditor.backend.status,
+            inReplyTo: originalEditor.inReplyTo,
+            previewPost: originalEditor.previewPost,
+            globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
+        }, {
+            title: i18n("Write a New Post"),
+            width: Kirigami.Units.gridUnit * 30,
+            height: Kirigami.Units.gridUnit * 30,
+            modality: Qt.NonModal
+        });
+        item.backend.copyFromOther(originalEditor.backend);
+        item.refreshData();
+        item.Window.window.closing.connect(event => {
+            if (item.shouldClose()) {
+                event.accepted = false;
+            }
+        });
+    }
+
+    Component {
+        id: fullScreenImage
+        FullScreenImage {}
+    }
+
+    function openComposer(initialText: string, visibility: var) {
+        const item = root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "StatusComposer"), {
+            closeApplicationWhenFinished: true,
+            purpose: StatusComposer.New,
+            initialText,
+            visibility: visibility ?? AccountManager.selectedAccount.preferences.defaultVisibility
+        }, {
+            title: i18n("Write a new post"),
+            width: Kirigami.Units.gridUnit * 30,
+            height: Kirigami.Units.gridUnit * 30,
+            modality: Qt.NonModal
+        });
+        item.Window.window.closing.connect(event => {
+            if (item.shouldClose()) {
+                event.accepted = false;
+            }
+        });
+    }
+
+    Connections {
+        target: Navigation
+
+        function onOpenFullScreenImage(attachments: var, identity: Identity, currentIndex: int): void {
+            const dialog = fullScreenImage.createObject(QQC2.Overlay.overlay, {
+                attachments: attachments,
+                identity: identity,
+                initialIndex: currentIndex,
+            });
+            dialog.open();
+        }
+
+        function onOpenComposer(text: string): void {
+            root.openComposer(text, undefined);
+        }
+
+        function onOpenConversation(accountId: string): void {
+            root.openComposer("@" + accountId + " ", Post.Direct);
+        }
+
+        function onReplyTo(post: Post): void {
+            const item = root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "StatusComposer"), {
+                closeApplicationWhenFinished: true,
+                purpose: StatusComposer.Reply,
+            }, {
+                title: i18n("Reply to post"),
+                width: Kirigami.Units.gridUnit * 30,
+                height: Kirigami.Units.gridUnit * 30,
+                modality: Qt.NonModal
+            });
+            item.backend.setupReplyTo(post);
+            item.refreshData();
+            item.Window.window.closing.connect(event => {
+                if (item.shouldClose()) {
+                    event.accepted = false;
+                }
+            });
+        }
+
+        function onOpenPost(postId: string): void {
+            if (!root.pageStack.currentItem.postId || root.pageStack.currentItem.postId !== postId) {
+                root.pageStack.push(Qt.createComponent("org.kde.tokodon", "ThreadPage"), {
+                    postId: postId,
+                });
+            }
+        }
+
+        function onOpenAccount(accountId: string): void {
+            if (!root.pageStack.currentItem.accountId || root.pageStack.currentItem.accountId !== accountId) {
+                root.pageStack.push(Qt.createComponent("org.kde.tokodon", "AccountInfo"), {
+                    accountId: accountId,
+                });
+            }
+        }
+
+        function onOpenTag(tag: string): void {
+            root.pageStack.push(tagModelComponent, {
+                hashtag: tag,
+            })
+        }
+
+        function onReportPost(identity: var, postId: string): void {
+            root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "ReportDialog"),
+                {
+                    type: ReportDialog.Post,
+                    identity: identity,
+                    postId: postId
+                });
+        }
+
+        function onReportUser(identity: Identity): void {
+            root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "ReportDialog"),
+                {
+                    type: ReportDialog.User,
+                    identity: identity
+                });
+        }
+
+        function onOpenList(listId: string, name: string): void {
+            root.pageStack.push(listTimelinePage.createObject(root, {
+                name,
+                listId
+            }));
+        }
+
+        function onSearchFor(query: string): void {
+            root.pageStack.push(searchPage.createObject(root, {
+                pageId: "search",
+                initialSearchTerms: query
+            }));
+        }
+    }
+
+    globalDrawer: Sidebar {
+        id: drawer
+
+        enabled: AccountManager.hasAccounts && AccountManager.isReady
+        application: root.application
+        shouldCollapse: !root.wideMode
+        actions: {
+            let items = [];
+            if (!root.wideMode) {
+                items.push(root.searchAction);
+            } else {
+                items.push(root.homeAction);
+                items.push(root.notificationAction);
+            }
+            if (root.followRequestAction.visible) items.push(root.followRequestAction);
+            if (Config.showFollowing) items.push(root.followingAction);
+            if (Config.showExplore && root.wideMode) items.push(root.exploreAction);
+            if (Config.showLocal) items.push(root.localTimelineAction);
+            if (Config.showGlobal) items.push(root.globalTimelineAction);
+            if (Config.showConversations) items.push(root.conversationAction);
+            if (Config.showBookmarks) items.push(root.bookmarksAction);
+            if (Config.showFavorites) items.push(root.favouritesAction);
+            if (Config.showLists) items.push(root.listsAction);
+            return items;
+        }
+        bottomActions: [root.serverInformationAction, root.debugAction, root.moderationToolsAction, root.configureAction]
+    }
+
+    // Notification auto-refresh timer — polls the server for unread notification count
+    Timer {
+        id: notificationRefreshTimer
+        interval: Config.autoRefreshInterval > 0 ? Config.autoRefreshInterval * 1000 : 30000
+        repeat: true
+        running: AccountManager.hasAccounts && AccountManager.isReady
+        onTriggered: {
+            if (AccountManager.selectedAccount) {
+                AccountManager.selectedAccount.checkForUnreadNotifications();
+            }
+        }
+    }
+
+    readonly property Kirigami.Action homeAction: Kirigami.Action {
+        text: i18nc("@action:button Home Timeline", "Home")
+        fromQAction: root.application.action('home_timeline')
+    }
+    readonly property Kirigami.Action notificationAction: Kirigami.Action {
+        readonly property int alertCount: AccountManager.selectedAccount ? AccountManager.selectedAccount.unreadNotificationsCount : 0
+        text: i18nc("@action:button Account Notifications", "Notifications")
+        fromQAction: root.application.action('notifications')
+    }
+    readonly property Kirigami.Action followRequestAction: Kirigami.Action {
+        readonly property int alertCount: AccountManager.selectedAccount ? AccountManager.selectedAccount.followRequestCount : 0
+        text: i18nc("@action:button Follows that require explicit allow/deny", "Follow Requests")
+        fromQAction: root.application.action('follow_requests')
+        visible: AccountManager.hasAccounts && AccountManager.selectedAccount && alertCount > 0
+    }
+    readonly property Kirigami.Action localTimelineAction: Kirigami.Action {
+        text: i18nc("@action:button Local timeline of posts from the account's own server", "Local")
+        fromQAction: root.application.action('local_timeline')
+    }
+    readonly property Kirigami.Action globalTimelineAction: Kirigami.Action {
+        text: i18nc("@action:button Global timeline of posts from the entire Fediverse network", "Global")
+        fromQAction: root.application.action('global_timeline')
+    }
+    readonly property Kirigami.Action conversationAction: Kirigami.Action {
+        text: i18nc("@action:button Direct one-on-one messages between users", "Conversations")
+        fromQAction: root.application.action('conversations')
+    }
+    readonly property Kirigami.Action favouritesAction: Kirigami.Action {
+        text: i18nc("@action:button This account's favorited posts", "Favorites")
+        fromQAction: root.application.action('favorites')
+    }
+    readonly property Kirigami.Action bookmarksAction: Kirigami.Action {
+        text: i18nc("@action:button This account's bookmarked posts", "Bookmarks")
+        fromQAction: root.application.action('bookmarks')
+    }
+    readonly property Kirigami.Action exploreAction: Kirigami.Action {
+        text: i18nc("@action:button Explore this server's trending posts, news, and more", "Explore")
+        fromQAction: root.application.action('explore')
+    }
+    readonly property Kirigami.Action followingAction: Kirigami.Action {
+        text: i18nc("@action:button A list of this account's followed accounts", "Following")
+        fromQAction: root.application.action('following')
+    }
+    readonly property Kirigami.Action searchAction: Kirigami.Action {
+        text: i18nc("@action:button Search for users, posts and tags", "Search")
+        fromQAction: root.application.action('search')
+    }
+    readonly property Kirigami.Action serverInformationAction: Kirigami.Action {
+        text: AccountManager.selectedAccount ? AccountManager.selectedAccount.instanceName : ""
+        fromQAction: root.application.action('server_information')
+    }
+    readonly property Kirigami.Action listsAction: Kirigami.Action {
+        text: i18nc("@action:button This account's lists, or timelines consisting of a groups of accounts", "Lists")
+        fromQAction: root.application.action('lists')
+    }
+    readonly property Kirigami.Action profileAction: Kirigami.Action {
+        text: i18nc("@action:button This account's profile", "Profile")
+        fromQAction: root.application.action('profile')
+    }
+    readonly property Kirigami.Action debugAction: Kirigami.Action {
+        icon.name: "debug-run"
+        onTriggered: root.pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "DebugPage"))
+        visible: AccountManager.testMode
+        text: i18nc("@action:button Open debug page", "Debug")
+    }
+    readonly property Kirigami.Action accountSwitcherAction: Kirigami.Action {
+        fromQAction: root.application.action('account_switcher')
+    }
+
+    property ModerationToolsView moderationToolsView: ModerationToolsView {
+        id: moderationToolsView
+        window: root
+    }
+
+    property Kirigami.Action moderationToolsAction: Kirigami.Action {
+        icon.name: "lock"
+        text: i18nc("@action:button Open moderation tools", "Moderation Tools")
+        visible: AccountManager.selectedAccount && (AccountManager.selectedAccount.identity.permission & AdminAccountInfo.ManageUsers)
+
+        onTriggered: moderationToolsView.open()
+    }
+
+    property Kirigami.Action configureAction: Kirigami.Action {
+        text: i18nc("@action:button Open settings dialog", "Settings")
+        fromQAction: root.application.action('options_configure')
+    }
+
+    property Component serverInformationPage: Qt.createComponent("org.kde.tokodon", "ServerInformationPage", Qt.Asynchronous)
+    property Component listsPage: Qt.createComponent("org.kde.tokodon", "ListsPage", Qt.Asynchronous)
+    property Component searchPage: Qt.createComponent("org.kde.tokodon", "SearchPage", Qt.Asynchronous)
+    property Component conversationPage: Qt.createComponent("org.kde.tokodon", "ConversationPage", Qt.Asynchronous)
+    property Component listTimelinePage: Qt.createComponent("org.kde.tokodon", "ListTimelinePage", Qt.Asynchronous)
+
+    footer: Kirigami.NavigationTabBar {
+        id: tabbar
+
+        // Make sure we take in count drawer width
+        visible: root.pageStack.layers.depth <= 1 && AccountManager.hasAccounts && !root.wideMode && AccountManager.isReady
+        enabled: !AccountManager.selectedAccountHasIssue
+
+        contentItem: RowLayout {
+            spacing: 0
+
+            Kirigami.NavigationTabButton {
+                action: root.homeAction
+                Layout.minimumWidth: tabbar.buttonWidth
+                Layout.maximumWidth: tabbar.buttonWidth
+                Layout.fillHeight: true
+            }
+
+            Kirigami.NavigationTabButton {
+                action: root.notificationAction
+                Layout.minimumWidth: tabbar.buttonWidth
+                Layout.maximumWidth: tabbar.buttonWidth
+                Layout.fillHeight: true
+
+                // Notification indicator
+                Rectangle {
+                    anchors {
+                        top: parent.top
+                        topMargin: Kirigami.Units.mediumSpacing
+                        right: parent.right
+                        rightMargin: Kirigami.Units.mediumSpacing
+                    }
+
+                    color: Kirigami.Theme.highlightColor
+
+                    width: 20
+                    height: width
+                    radius: width
+                    visible: root.notificationAction.alertCount > 0
+
+                    QQC2.Label {
+                        anchors {
+                            centerIn: parent
+                        }
+
+                        text: root.notificationAction.alertCount ?? ""
+                        horizontalAlignment: Text.AlignHCenter
+                    }
+                }
+            }
+
+            Kirigami.NavigationTabButton {
+                action: root.exploreAction
+                Layout.minimumWidth: tabbar.buttonWidth
+                Layout.maximumWidth: tabbar.buttonWidth
+                Layout.fillHeight: true
+            }
+
+            Kirigami.NavigationTabButton {
+                action: root.profileAction
+                Layout.minimumWidth: tabbar.buttonWidth
+                Layout.maximumWidth: tabbar.buttonWidth
+                Layout.fillHeight: true
+            }
+        }
+    }
+
+
+    Component {
+        id: mainTimeline
+        TimelinePage {
+            id: timelinePage
+
+            property alias name: timelineModel.name
+
+            model: MainTimelineModel {
+                id: timelineModel
+                showReplies: timelinePage.showReplies
+                showBoosts: timelinePage.showBoosts
+                showQuotes: timelinePage.showQuotes
+            }
+        }
+    }
+
+    Component {
+        id: socialGraphComponent
+        SocialGraphPage {
+            id: socialGraphPage
+            property alias name: socialGraphModel.name
+            property alias accountId: socialGraphModel.accountId
+            property alias statusId: socialGraphModel.statusId
+            property alias count: socialGraphModel.count
+            model: SocialGraphModel {
+                id: socialGraphModel
+                name: socialGraphPage.name
+                accountId: socialGraphPage.accountId
+                statusId: socialGraphPage.statusId
+                count: socialGraphPage.count
+            }
+        }
+    }
+
+    Component {
+        id: notificationTimeline
+        NotificationPage {}
+    }
+
+    Component {
+        id: exploreTimeline
+        ExplorePage {}
+    }
+
+    Component {
+        id: followingTimeline
+        FollowingPage {}
+    }
+
+    property Item hoverLinkIndicator: QQC2.Control {
+        property string text
+
+        parent: overlay
+        opacity: text.length > 0 ? 1 : 0
+        visible: !Kirigami.Settings.isMobile && !text.startsWith("hashtag:") && !text.startsWith("account:")
+
+        z: root.globalDrawer.z + 1
+        x: 0
+        y: parent.height - implicitHeight
+
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+
+        onTextChanged: {
+            // This is done so the text doesn't disappear for a split second while in the opacity transition
+            if (text.length > 0) {
+                linkText.text = text;
+            }
+        }
+
+        Behavior on opacity {
+            OpacityAnimator {
+                duration: Kirigami.Units.shortDuration
+                easing.type: Easing.InOutQuad
+            }
+        }
+
+        contentItem: QQC2.Label {
+            id: linkText
+        }
+
+        background: Kirigami.ShadowedRectangle {
+            corners.topRightRadius: Kirigami.Units.cornerRadius
+            color: Kirigami.Theme.backgroundColor
+            border {
+                color: Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, Kirigami.Theme.frameContrast)
+                width: 1
+            }
+        }
+    }
+
+    Component {
+        id: tagModelComponent
+        TimelinePage {
+            id: tagPage
+            property string hashtag
+            actions: Kirigami.Action {
+                icon.name: tagsModel.following ?  "list-remove-user" : "list-add-user"
+                text: tagsModel.following ? i18nc("@action:intoolbar", "Unfollow") : i18nc("@action:intoolbar", "Follow")
+                onTriggered: tagsModel.following ? tagsModel.unfollow() : tagsModel.follow()
+            }
+            model: TagsTimelineModel {
+                id: tagsModel
+
+                hashtag: tagPage.hashtag
+                showReplies: tagPage.showReplies
+                showBoosts: tagPage.showBoosts
+                showQuotes: tagPage.showQuotes
+            }
+        }
+    }
+
+    Rectangle {
+        anchors.fill: parent
+        visible: !AccountManager.isReady
+        color: Kirigami.Theme.backgroundColor
+
+        Kirigami.LoadingPlaceholder {
+            anchors.centerIn: parent
+        }
+
+        Image {
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            source: "qrc:/content/elephant.svg"
+            LayoutMirroring.enabled: false
+            asynchronous: true
+        }
+    }
+}

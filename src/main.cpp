@@ -1,0 +1,214 @@
+// SPDX-FileCopyrightText: 2021 Carl Schwan <carl@carlschwan.eu>
+// SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+
+#include <QCommandLineParser>
+#include <QQmlApplicationEngine>
+#include <QQuickStyle>
+#include <QQuickWindow>
+#include <QTimer>
+#include <QUrlQuery>
+
+#ifdef HAVE_WEBVIEW
+#include <QtWebView>
+#endif
+
+#include <QApplication>
+
+#ifdef HAVE_KDBUSADDONS
+#include <KDBusService>
+#include <KWindowSystem>
+#include <QDBusConnection>
+#endif
+#include <KLocalizedString>
+#include <KirigamiApp>
+
+#include <QNetworkProxyFactory>
+
+#include "tokodon-version.h"
+
+#include "account/accountmanager.h"
+#include "accountconfig.h"
+#include "admin/emailinfo.h"
+#include "config.h"
+#include "network/networkaccessmanagerfactory.h"
+#include "network/networkcontroller.h"
+#include "tokodon_debug.h"
+#include "utils/blurhashimageprovider.h"
+#include "utils/colorschemer.h"
+
+#ifdef TEST_MODE
+#include "autotests/helperreply.h"
+#include "autotests/mockaccount.h"
+#endif
+
+using namespace Qt::Literals::StringLiterals;
+
+int main(int argc, char *argv[])
+{
+    QNetworkProxyFactory::setUseSystemConfiguration(true);
+
+#ifdef HAVE_WEBVIEW
+    QtWebView::initialize();
+#endif
+
+    KirigamiApp::App app(argc, argv);
+    KirigamiApp kapp;
+
+
+
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("tokodon"));
+    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
+
+    KAboutData about(QStringLiteral("tokodon"),
+                     i18n("Tokodon"),
+                     QStringLiteral(TOKODON_VERSION_STRING),
+                     i18n("Browse the Fediverse"),
+                     KAboutLicense::GPL_V3,
+                     i18n("© 2021-2025 KDE Community"));
+    about.addAuthor(i18n("Carl Schwan"),
+                    i18n("Maintainer"),
+                    QStringLiteral("carl@carlschwan.eu"),
+                    QStringLiteral("https://carlschwan.eu"),
+                    QUrl(QStringLiteral("https://carlschwan.eu/avatar.png")));
+    about.addAuthor(i18n("Joshua Goins"),
+                    i18n("Maintainer"),
+                    QStringLiteral("josh@redstrate.com"),
+                    QStringLiteral("https://redstrate.com/"),
+                    QUrl(QStringLiteral("https://redstrate.com/rss-image.png")));
+    about.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
+    about.setOrganizationDomain("kde.org");
+    about.setBugAddress("https://bugs.kde.org/enter_bug.cgi?product=Tokodon&component=general");
+
+    KAboutData::setApplicationData(about);
+    QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.tokodon")));
+
+    QCommandLineParser parser;
+    parser.setApplicationDescription(i18n("Browse the Fediverse"));
+    parser.addPositionalArgument(QStringLiteral("url"), i18n("Supports https, and web+ap url schemes."));
+
+    QCommandLineOption shareOption(QStringLiteral("share"));
+    shareOption.setFlags(QCommandLineOption::Flag::HiddenFromHelp);
+    parser.addOption(shareOption);
+
+    QCommandLineOption notifyOption(QStringLiteral("dbus-activated"));
+    notifyOption.setFlags(QCommandLineOption::Flag::HiddenFromHelp);
+    parser.addOption(notifyOption);
+
+    about.setupCommandLine(&parser);
+    parser.process(app);
+    about.processCommandLine(&parser);
+
+#ifdef HAVE_KUNIFIEDPUSH
+    if (parser.isSet(notifyOption)) {
+        qInfo(TOKODON_LOG) << "Beginning to check for notifications...";
+
+#ifdef HAVE_KDBUSADDONS
+        // We *don't* want to use KDBusService here. I don't know why, but it makes activation super unreliable. We don't really need it anyway.
+        const auto serviceName = QStringLiteral("org.kde.tokodon");
+        if (!QDBusConnection::sessionBus().registerService(serviceName)) {
+            // Gracefully fail if Tokodon is already running
+            qWarning() << "Tokodon already running, not sending push notifications.";
+            return 0;
+        }
+#endif
+
+        NetworkController::instance().setupPushNotifications(true);
+
+        // Process events before quitting.
+        QTimer::singleShot(std::chrono::seconds(5), &app, &QCoreApplication::quit);
+
+        return QCoreApplication::exec();
+    }
+#endif
+
+    auto &colorSchemer = ColorSchemer::instance();
+    if (!Config::colorScheme().isEmpty()) {
+        colorSchemer.apply(Config::colorScheme());
+    }
+
+    QQmlApplicationEngine engine;
+
+#ifdef HAVE_KDBUSADDONS
+    KDBusService service(KDBusService::Unique);
+#endif
+
+    NetworkController::instance().setupPushNotifications(false);
+
+#ifdef HAVE_KDBUSADDONS
+    QObject::connect(&service, &KDBusService::activateRequested, &engine, [&engine](const QStringList &arguments, const QString & /*workingDirectory*/) {
+        const auto rootObjects = engine.rootObjects();
+        for (auto obj : rootObjects) {
+            if (auto view = qobject_cast<QQuickWindow *>(obj)) {
+                KWindowSystem::updateStartupId(view);
+                KWindowSystem::activateWindow(view);
+
+                if (arguments.isEmpty()) {
+                    return;
+                }
+
+                auto args = arguments;
+                args.removeFirst();
+
+                if (!args.empty()) {
+                    if (args.first().startsWith("tokodon"_L1)) {
+                        if (!NetworkController::instance().setAuthCode(QUrl(args.first()))) {
+                            NetworkController::instance().openWebApLink(args.first());
+                        }
+                    } else if (args.first() == "--share"_L1) {
+                        NetworkController::instance().startComposing(args[1]);
+                    } else {
+                        NetworkController::instance().openWebApLink(args.first());
+                    }
+                }
+
+                return;
+            }
+        }
+    });
+#endif
+    NetworkAccessManagerFactory namFactory;
+    engine.setNetworkAccessManagerFactory(&namFactory);
+
+    engine.addImageProvider(QLatin1String("blurhash"), new BlurHashImageProvider);
+
+#ifdef TEST_MODE
+    AccountManager::instance().setTestMode(true);
+
+    auto account = new MockAccount();
+    AccountManager::instance().addAccount(account);
+    AccountManager::instance().selectAccount(account, false);
+
+    QUrl url = account->apiUrl(QStringLiteral("/api/v2/search"));
+    url.setQuery(QUrlQuery{{QStringLiteral("q"), QStringLiteral("myquery")}, {QStringLiteral("resolve"), QStringLiteral("true")}});
+    account->registerGet(url, new TestReply(QStringLiteral("search-result.json"), account));
+
+    QUrl readMarkerUrl = account->apiUrl(QStringLiteral("/api/v1/markers"));
+    readMarkerUrl.setQuery(QUrlQuery{{QStringLiteral("timeline[]"), QStringLiteral("home")}});
+    account->registerGet(readMarkerUrl, new TestReply(QStringLiteral("markers_home.json"), account));
+    account->registerGet(account->apiUrl(QStringLiteral("/api/v1/timelines/home")), new TestReply(QStringLiteral("statuses.json"), account));
+    account->registerGet(account->apiUrl(QStringLiteral("/api/v1/notifications")), new TestReply(QStringLiteral("notifications.json"), account));
+#else
+    AccountManager::instance().migrateSettings();
+    AccountManager::instance().loadFromSettings();
+#endif
+
+
+
+    if (parser.isSet(shareOption)) {
+        kapp.start("org.kde.tokodon", "StandaloneComposer", &engine);
+
+        NetworkController::instance().startComposing(parser.value(shareOption));
+    } else {
+        kapp.start("org.kde.tokodon", "Main", &engine);
+
+        if (!parser.positionalArguments().empty()) {
+            NetworkController::instance().openWebApLink(parser.positionalArguments()[0]);
+        }
+    }
+
+    if (engine.rootObjects().isEmpty()) {
+        return -1;
+    }
+
+    return QCoreApplication::exec();
+}

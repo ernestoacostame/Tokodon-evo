@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: None
+# SPDX-License-Identifier: CC0-1.0
+
+include:
+  - project: sysadmin/ci-utilities
+    file:
+      - /gitlab-templates/reuse-lint.yml
+      - /gitlab-templates/linux-qt6.yml
+      - /gitlab-templates/linux-qt6-next.yml
+      - /gitlab-templates/freebsd-qt6.yml
+      - /gitlab-templates/android-qt6.yml
+      - /gitlab-templates/craft-android-qt6-apks.yml
+      - /gitlab-templates/flatpak.yml
+      - /gitlab-templates/windows-qt6.yml
+      - /gitlab-templates/craft-windows-x86-64-qt6.yml
+
+qml-check-icons:
+  stage: validate
+  image: invent-registry.kde.org/sysadmin/ci-images/suse-qt611:latest
+  tags:
+    - Linux
+  interruptible: true
+  rules:
+    - changes:
+      - "**/*.qml"
+      - 'src/icon-list.txt'
+    - when: manual
+      # we don't want the manual job to block the pipeline
+      allow_failure: true
+  tags:
+    - Linux
+  script:
+    - git config --global --add safe.directory $CI_PROJECT_DIR
+    - bash scripts/generate-icon-list.sh --ci

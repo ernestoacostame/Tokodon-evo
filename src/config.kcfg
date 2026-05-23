@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+
+<!--
+SPDX-FileCopyrightText: Carl Schwan <carl@carlschwan.eu>
+SPDX-License-Identifier: CC0-1.0
+-->
+  <kcfgfile name="tokodonrc" />
+  <include>Kirigami/Platform/PlatformTheme</include>
+  <include>QNetworkRequest</include>
+  <group name="General">
+    <entry name="ShowPostStats" type="bool">
+      <label>Show statistics about stats</label>
+      <default>false</default>
+    </entry>
+    <entry name="ShowLinkPreview" type="bool">
+      <label>Show link preview</label>
+      <default>true</default>
+    </entry>
+    
+    <entry name="ContinueReading" type="bool">
+      <label>If checked, Tokodon will save where you were in your Home timeline.</label>
+      <default>false</default>
+    </entry>
+    <entry name="AutoUpdate" type="bool">
+      <label>If checked, Tokodon will automatically update certain timelines as new posts come in.</label>
+      <default>true</default>
+    </entry>
+    <entry name="AutoRefreshInterval" type="int">
+      <label>Interval in seconds to automatically refresh timelines. Set to 0 to disable.</label>
+      <default>30</default>
+      <min>0</min>
+      <max>300</max>
+    </entry>
+    <entry name="AutoScrollOnRefresh" type="bool">
+      <label>Automatically scroll to the top when the timeline refreshes.</label>
+      <default>false</default>
+    </entry>
+    <entry name="ShowExplore" type="bool">
+      <label>Show the Explore item in the sidebar.</label>
+      <default>false</default>
+    </entry>
+    <entry name="ShowLocal" type="bool">
+      <label>Show the Local timeline item in the sidebar.</label>
+      <default>false</default>
+    </entry>
+    <entry name="ShowGlobal" type="bool">
+      <label>Show the Global timeline item in the sidebar.</label>
+      <default>false</default>
+    </entry>
+    <entry name="ShowConversations" type="bool">
+      <label>Show the Conversations item in the sidebar.</label>
+      <default>true</default>
+    </entry>
+    <entry name="ShowFavorites" type="bool">
+      <label>Show the Favorites item in the sidebar.</label>
+      <default>true</default>
+    </entry>
+    <entry name="ShowBookmarks" type="bool">
+      <label>Show the Bookmarks item in the sidebar.</label>
+      <default>true</default>
+    </entry>
+    <entry name="ShowFollowing" type="bool">
+      <label>Show the Following item in the sidebar.</label>
+      <default>true</default>
+    </entry>
+    <entry name="ShowLists" type="bool">
+      <label>Show the Lists item in the sidebar.</label>
+      <default>true</default>
+    </entry>
+    <entry name="CropMedia" type="bool">
+      <label>Crop images in the timeline to 16:9</label>
+      <default>true</default>
+    </entry>
+    <entry name="AutoPlayGif" type="bool">
+      <label>Auto-play animated GIFs</label>
+      <default>true</default>
+    </entry>
+    <entry name="LastUsedAccount" type="string">
+      <label>Last used account</label>
+      <default></default>
+    </entry>
+    <entry name="ColorScheme" type="String">
+      <label>Color scheme</label>
+    </entry>
+    <entry name="defaultFont" type="Font">
+      <label>Default font</label>
+      <code>
+        Kirigami::Platform::PlatformTheme theme;
+      </code>
+      <default code="true">theme.defaultFont()</default>
+    </entry>
+    <entry name="PromptedNotificationPermission" type="bool">
+      <default>false</default>
+    </entry>
+    <entry name="AskBeforeBoosting" type="bool">
+      <default>false</default>
+    </entry>
+  </group>
+  <group name="NetworkProxy">
+    <entry name="ProxyType" type="Enum">
+      <label>The type of proxy used by the application.</label>
+      <choices>
+        <choice name="System">
+          <label>System Default</label>
+        </choice>
+        <choice name="HTTP">
+          <label>HTTP</label>
+        </choice>
+        <choice name="Socks5">
+          <label>Socks5</label>
+        </choice>
+        <choice name="NoProxy">
+          <label>NoProxy</label>
+        </choice>
+      </choices>
+      <default>System</default>
+    </entry>
+    <entry name="ProxyHost" type="String">
+      <label>IP or hostname of the proxy</label>
+      <default>127.0.0.1</default>
+    </entry>
+    <entry name="ProxyPort" type="int">
+      <label>The port number of the proxy</label>
+      <default>1080</default>
+    </entry>
+    <entry name="ProxyUser" type="String">
+      <label>The user of the proxy</label>
+      <default></default>
+    </entry>
+    <entry name="ProxyPassword" type="Password">
+      <label>The password of the proxy</label>
+      <default></default>
+    </entry>
+  </group>
+  <group name="Network">
+    <entry name="Timeout" type="int">
+      <label>The default timeout for requests</label>
+      <default>(int)QNetworkRequest::DefaultTransferTimeoutConstant</default>
+    </entry>
+  </group>
+</kcfg>

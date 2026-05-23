@@ -1,0 +1,113 @@
+{
+    "id": "org.kde.tokodon",
+    "branch": "master",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.10",
+    "sdk": "org.kde.Sdk",
+    "command": "tokodon",
+    "tags": [
+        "nightly"
+    ],
+    "desktop-file-name-suffix": " (Nightly)",
+    "finish-args": [
+        "--device=dri",
+        "--env=QML_IMPORT_PATH=/app/qml",
+        "--env=QT_PLUGIN_PATH=/app/plugins:/app/lib64/plugins:/app/lib/plugins:/usr/share/runtime/lib/plugins",
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland",
+        "--talk-name=org.unifiedpush.Distributor.*",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.kde.kwalletd5",
+        "--talk-name=org.kde.kwalletd6",
+        "--talk-name=org.kde.KOnlineAccounts"
+    ],
+    "modules": [
+        {
+            "name": "icon",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p /app/share/icons/hicolor/32x32/apps/",
+                "install -D /usr/share/icons/breeze/mimetypes/64/none.svg /app/share/icons/hicolor/32x32/apps/org.kde.tokodon.svg"
+            ]
+        },
+        {
+            "name": "qtkeychain",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/0.15.0.tar.gz",
+                    "sha256": "f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 4138,
+                        "stable-only": true,
+                        "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz"
+                    }
+                }
+            ],
+            "config-opts": [
+                "-DBUILD_TRANSLATIONS=NO",
+                "-DBUILD_WITH_QT6=ON",
+                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
+                "-DENABLE_TESTING=OFF",
+                "-DLIB_INSTALL_DIR=/app/lib"
+            ]
+        },
+        {
+            "name": "QtWebView",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DENABLE_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.10/6.10.1/submodules/qtwebview-everywhere-src-6.10.1.tar.xz",
+                    "sha256": "421080583d7af564a855013dc336363a65303f31c9045a39963ae6b94ab26f6f",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "url-template": "https://download.qt.io/official_releases/qt/${major}.${minor}/$version/submodules/qtwebview-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "kunifiedpush",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DENABLE_TESTING=OFF",
+                "-DKUNIFIEDPUSH_CLIENT_ONLY=ON"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/kunifiedpush.git"
+                }
+            ]
+        },
+        {
+            "name": "tokodon",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ],
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DENABLE_TESTING=OFF",
+                "-DTOKODON_FLATPAK=ON",
+                "-DUSE_QTMULTIMEDIA=ON"
+            ]
+        }
+    ]
+}

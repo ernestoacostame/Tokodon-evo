@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+<!--
+SPDX-FileCopyrightText: 2023 Joshua Goins <josh@redstrate.com>
+SPDX-License-Identifier: CC0-1.0
+-->
+  <kcfgfile/>
+    <kcfgfile name="tokodonstaterc" stateConfig="true">
+      <parameter name="groupname"/>
+    </kcfgfile>
+    <group name="$(groupname)">
+      <entry key="Token" type="string">
+      </entry>
+      <entry key="ClientId" type="string">
+      </entry>
+      <entry key="InstanceUri" type="string">
+      </entry>
+      <entry key="Name" type="string">
+      </entry>
+      <entry key="lastUsedEmojis" type="StringList">
+      </entry>
+      <entry key="EnableNotifications" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyMention" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyQuote" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyStatus" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyBoost" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyFollow" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyFollowRequest" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyFavorite" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyPoll" type="bool">
+        <default>false</default>
+      </entry>
+      <entry key="NotifyUpdate" type="bool">
+        <default>false</default>
+      </entry>
+      <entry key="NotifySignup" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyReport" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyRelationships" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="NotifyAnnualReport" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayMention" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayQuote" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayStatus" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayBoost" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayFollow" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayFollowRequest" type="bool">
+        <default>false</default>
+      </entry>
+      <entry key="DisplayFavorite" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayPoll" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayUpdate" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplaySignup" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayReport" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayRelationships" type="bool">
+        <default>true</default>
+      </entry>
+      <entry key="DisplayAnnualReport" type="bool">
+        <default>true</default>
+      </entry>
+      <entry name="NotifyPolicy" type="Enum">
+        <choices>
+          <choice name="All">
+          </choice>
+          <choice name="Followed">
+          </choice>
+          <choice name="Followers">
+          </choice>
+          <choice name="None">
+          </choice>
+        </choices>
+        <default>All</default>
+      </entry>
+      <entry key="LastPushNotification" type="String">
+      </entry>
+      <entry key="EnablePushNotifications" type="bool">
+        <default>false</default>
+      </entry>
+      <entry key="FavoriteListIds" type="StringList">
+      </entry>
+    </group>
+</kcfg>
