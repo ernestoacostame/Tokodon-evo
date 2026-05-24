@@ -17,7 +17,7 @@ Kirigami.OverlayDrawer {
 
     required property TokodonApplication application
     required property bool shouldCollapse
-    readonly property bool isCollapsed: !shouldCollapse && Config.sidebarCollapsed
+    readonly property bool isCollapsed: !shouldCollapse && (width === 0 ? Config.sidebarCollapsed : (width < Kirigami.Units.gridUnit * 9))
 
     property alias actions: actionsRepeater.model
     property alias bottomActions: bottomActionsRepeater.model
@@ -40,6 +40,15 @@ Kirigami.OverlayDrawer {
     handleVisible: !isShowingFullScreenImage && enabled
 
     onModalChanged: drawerOpen = !modal
+    onWidthChanged: {
+        if (!shouldCollapse && width > 0) {
+            let collapsed = width < Kirigami.Units.gridUnit * 9;
+            if (collapsed !== Config.sidebarCollapsed) {
+                Config.sidebarCollapsed = collapsed;
+                Config.save();
+            }
+        }
+    }
 
     interactiveResizeEnabled: enabled
 
@@ -67,6 +76,8 @@ Kirigami.OverlayDrawer {
         activeFocusOnTab: true
 
         display: drawer.isCollapsed ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
+        icon.width: drawer.isCollapsed ? Kirigami.Units.iconSizes.medium : Kirigami.Units.iconSizes.smallMedium
+        icon.height: drawer.isCollapsed ? Kirigami.Units.iconSizes.medium : Kirigami.Units.iconSizes.smallMedium
 
         Binding {
             target: delegate.contentItem ? delegate.contentItem.iconItem : null
