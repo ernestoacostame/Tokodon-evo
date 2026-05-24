@@ -124,47 +124,6 @@ Kirigami.OverlayDrawer {
     contentItem: ColumnLayout {
         spacing: 0
 
-        QQC2.ToolBar {
-            Layout.fillWidth: true
-            Layout.preferredHeight: pageStack.globalToolBar.preferredHeight
-            Layout.bottomMargin: Kirigami.Units.smallSpacing / 2
-
-            visible: !drawer.shouldCollapse
-
-            contentItem: RowLayout {
-                spacing: Kirigami.Units.smallSpacing
-
-                QQC2.ToolButton {
-                    icon.name: drawer.isCollapsed ? "sidebar-expand" : "sidebar-collapse"
-                    text: drawer.isCollapsed ? i18n("Expand Sidebar") : i18n("Collapse Sidebar")
-                    display: QQC2.AbstractButton.IconOnly
-                    onClicked: {
-                        Config.sidebarCollapsed = !Config.sidebarCollapsed;
-                        Config.save();
-                    }
-                    QQC2.ToolTip.text: text
-                    QQC2.ToolTip.visible: hovered
-                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-                }
-
-                SearchField {
-                    Layout.fillWidth: true
-                    visible: !drawer.isCollapsed && !applicationWindow().checkIfCurrentPage("search")
-                }
-
-                QQC2.ToolButton {
-                    icon.name: "search"
-                    visible: drawer.isCollapsed
-                    onClicked: Navigation.openSearch()
-                    text: i18n("Search")
-                    display: QQC2.AbstractButton.IconOnly
-                    QQC2.ToolTip.text: text
-                    QQC2.ToolTip.visible: hovered
-                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-                }
-            }
-        }
-
         UserInfo {
             Layout.fillWidth: true
             application: drawer.application

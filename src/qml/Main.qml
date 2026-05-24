@@ -620,7 +620,7 @@ StatefulApp.StatefulWindow {
             if (Config.showLists) items.push(root.listsAction);
             return items;
         }
-        bottomActions: [root.serverInformationAction, root.debugAction, root.moderationToolsAction, root.configureAction]
+        bottomActions: [root.serverInformationAction, root.debugAction, root.moderationToolsAction, root.configureAction, root.accountSwitcherAction]
     }
 
     // Notification auto-refresh timer — polls the server for unread notification count
@@ -669,6 +669,7 @@ StatefulApp.StatefulWindow {
     }
     readonly property Kirigami.Action bookmarksAction: Kirigami.Action {
         text: i18nc("@action:button This account's bookmarked posts", "Bookmarks")
+        icon.name: "bookmark-new-symbolic"
         fromQAction: root.application.action('bookmarks')
     }
     readonly property Kirigami.Action exploreAction: Kirigami.Action {
@@ -702,6 +703,8 @@ StatefulApp.StatefulWindow {
         text: i18nc("@action:button Open debug page", "Debug")
     }
     readonly property Kirigami.Action accountSwitcherAction: Kirigami.Action {
+        text: i18n("Switch Account")
+        icon.name: "system-switch-user"
         fromQAction: root.application.action('account_switcher')
     }
 

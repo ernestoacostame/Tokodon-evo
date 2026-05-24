@@ -98,30 +98,6 @@ QQC2.Pane {
                     itemDelegate: currentAccountDelegate
                     Layout.fillWidth: true
                 }
-
-                QQC2.ToolButton {
-                    visible: !root.sidebar.isCollapsed
-                    icon.name: "system-switch-user"
-                    onClicked: {
-                        if (root.sidebar.modal) {
-                            root.sidebar.close();
-                        }
-
-                        let dialog = Qt.createComponent("org.kde.tokodon", "AccountSwitchDialog").createObject(root.QQC2.Overlay.overlay, {
-                            application: root.application,
-                            userInfo: root,
-                        });
-                        dialog.open();
-                    }
-                    text: i18n("Switch Account")
-                    display: QQC2.AbstractButton.IconOnly
-
-                    QQC2.ToolTip.text: i18n("Switch account")
-                    QQC2.ToolTip.visible: hovered
-                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-
-                    Layout.minimumWidth: Layout.preferredWidth
-                }
             }
         }
     }

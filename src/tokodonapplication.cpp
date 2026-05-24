@@ -138,7 +138,7 @@ void TokodonApplication::setupActions()
     bookmarksAction->setCheckable(true);
     bookmarksAction->setActionGroup(pagesGroup);
     bookmarksAction->setText(i18nc("@action:button This account's bookmarked posts", "Open Bookmarks"));
-    bookmarksAction->setIcon(QIcon::fromTheme(QStringLiteral("bookmarks")));
+    bookmarksAction->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-symbolic")));
 
     auto exploreAction = mainCollection()->addAction(u"explore"_s, this, &TokodonApplication::openExplore);
     exploreAction->setCheckable(true);

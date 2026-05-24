@@ -115,6 +115,12 @@ Kirigami.ScrollablePage {
 
     actions: [
         Kirigami.Action {
+            id: searchAction
+            text: i18nc("@action:button Search for users, posts and tags", "Search")
+            icon.name: "search"
+            onTriggered: Navigation.openSearch()
+        },
+        Kirigami.Action {
             id: filterAction
             text: i18nc("@action:button", "Filters")
             icon.name: "view-filter"
