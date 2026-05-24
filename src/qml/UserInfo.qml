@@ -17,7 +17,7 @@ QQC2.Pane {
     required property TokodonApplication application
     // NOTE: we can't specify Sidebar here explicitly or else it becomes a cyclic dependency
     required property var sidebar
-    readonly property Kirigami.PageRow pageStack: (QQC2.ApplicationWindow.window as Main).pageStack
+    readonly property Kirigami.PageRow pageStack: QQC2.ApplicationWindow.window ? (QQC2.ApplicationWindow.window as Main).pageStack : null
 
     visible: AccountManager.selectedAccount
     padding: 0
@@ -63,6 +63,7 @@ QQC2.Pane {
                 }
             }
             Layout.fillWidth: true
+            padding: root.sidebar.isCollapsed ? 0 : Kirigami.Units.largeSpacing
 
             contentItem: RowLayout {
                 spacing: root.sidebar.isCollapsed ? 0 : Kirigami.Units.smallSpacing

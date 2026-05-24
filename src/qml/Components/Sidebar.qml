@@ -25,7 +25,12 @@ Kirigami.OverlayDrawer {
     edge: Qt.application.layoutDirection === Qt.RightToLeft ? Qt.RightEdge : Qt.LeftEdge
     modal: shouldCollapse || !enabled
     z: modal ? Math.round(position * 10000000) : 100
-    preferredSize: {width: drawer.isCollapsed ? Kirigami.Units.gridUnit * 3.5 : Kirigami.Units.gridUnit * 14}
+    collapsible: !modal
+    collapsed: isCollapsed
+    collapsedSize: Kirigami.Units.gridUnit * 2.2
+    preferredSize: Kirigami.Units.gridUnit * 14
+    width: collapsed ? collapsedSize : preferredSize
+
     Behavior on width {
         NumberAnimation {
             duration: Kirigami.Units.shortDuration
@@ -39,7 +44,19 @@ Kirigami.OverlayDrawer {
     handleOpenIcon.name: "sidebar-collapse"
     handleVisible: !isShowingFullScreenImage && enabled
 
-    onModalChanged: drawerOpen = !modal
+    onModalChanged: {
+        drawerOpen = !modal
+        if (!modal) {
+            collapsible = true
+            collapsed = isCollapsed
+        }
+    }
+
+    onIsCollapsedChanged: {
+        if (!modal) {
+            collapsed = isCollapsed
+        }
+    }
 
     interactiveResizeEnabled: !isCollapsed && enabled
 
@@ -62,7 +79,7 @@ Kirigami.OverlayDrawer {
 
         property int alertCount
 
-        padding: Kirigami.Units.largeSpacing
+        padding: drawer.isCollapsed ? 0 : Kirigami.Units.largeSpacing
         Layout.fillWidth: true
         activeFocusOnTab: true
 
@@ -115,19 +132,6 @@ Kirigami.OverlayDrawer {
     contentItem: ColumnLayout {
         spacing: 0
 
-        UserInfo {
-            Layout.fillWidth: true
-            application: drawer.application
-            sidebar: drawer
-        }
-
-        Kirigami.Separator {
-            Layout.fillWidth: true
-            Layout.margins: scrollView.QQC2.ScrollBar.vertical.visible ? 0 : Kirigami.Units.smallSpacing
-            Layout.topMargin: Math.round(Kirigami.Units.smallSpacing / 2)
-            Layout.bottomMargin: 0
-        }
-
         QQC2.ScrollView {
             id: scrollView
 
@@ -145,6 +149,12 @@ Kirigami.OverlayDrawer {
 
                 width: scrollView.contentWidth
                 height: Math.max(scrollView.availableHeight, implicitHeight)
+
+                UserInfo {
+                    Layout.fillWidth: true
+                    application: drawer.application
+                    sidebar: drawer
+                }
 
                 Repeater {
                     id: actionsRepeater
