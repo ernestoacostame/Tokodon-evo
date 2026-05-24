@@ -46,17 +46,22 @@ Kirigami.ScrollablePage {
 
         return model.displayName ?? "";
     }
-    titleDelegate: Kirigami.Heading {
-        // identical to normal Kirigami headers
-        Layout.fillWidth: true
-        Layout.maximumWidth: implicitWidth + 1
-        Layout.minimumWidth: 0
-        maximumLineCount: 1
-        elide: Text.ElideRight
+    titleDelegate: RowLayout {
+        spacing: Kirigami.Units.smallSpacing
 
-        text: root.title
+        Kirigami.Heading {
+            Layout.fillWidth: true
+            maximumLineCount: 1
+            elide: Text.ElideRight
+            text: root.title
+            textFormat: Text.RichText
+        }
 
-        textFormat: Text.RichText
+        SearchField {
+            id: headerSearchField
+            Layout.preferredWidth: Kirigami.Units.gridUnit * 12
+            visible: !applicationWindow().checkIfCurrentPage("search")
+        }
     }
 
     header: Kirigami.InlineMessage {
@@ -114,12 +119,6 @@ Kirigami.ScrollablePage {
     }
 
     actions: [
-        Kirigami.Action {
-            id: searchAction
-            text: i18nc("@action:button Search for users, posts and tags", "Search")
-            icon.name: "search"
-            onTriggered: Navigation.openSearch()
-        },
         Kirigami.Action {
             id: filterAction
             text: i18nc("@action:button", "Filters")
