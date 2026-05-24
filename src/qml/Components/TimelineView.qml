@@ -6,6 +6,7 @@ pragma ComponentBehavior: Bound
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls as QQC2
+import QtQuick.Templates as T
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.components as Components
 import org.kde.tokodon
@@ -108,6 +109,7 @@ ListView {
         }
 
         Components.FloatingButton {
+            id: singleFloatingButton
             anchors {
                 right: parent.right
                 rightMargin: Kirigami.Units.largeSpacing
@@ -117,9 +119,56 @@ ListView {
 
             visible: !root.needsToShowBothActions
             action: root.singleActionToShow
+            icon.color: action === root.postAction ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+
+            background: Kirigami.ShadowedRectangle {
+                anchors.centerIn: parent
+                width: Math.min(parent.width, parent.height)
+                height: width
+                radius: singleFloatingButton.radius
+
+                shadow {
+                    size: 10
+                    xOffset: 0
+                    yOffset: 2
+                    color: Qt.rgba(0, 0, 0, 0.2)
+                }
+
+                border {
+                    width: 1
+                    color: if (singleFloatingButton.down || singleFloatingButton.visualFocus) {
+                        Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.4)
+                    } else if (singleFloatingButton.enabled && singleFloatingButton.hovered) {
+                        Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.6)
+                    } else {
+                        Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, Kirigami.Theme.frameContrast)
+                    }
+                }
+
+                color: {
+                    if (singleFloatingButton.action === root.postAction) {
+                        if (singleFloatingButton.down || singleFloatingButton.visualFocus) {
+                            return Kirigami.Theme.hoverColor;
+                        } else if (singleFloatingButton.enabled && singleFloatingButton.hovered) {
+                            return Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.highlightColor, 0.8);
+                        } else {
+                            return Kirigami.Theme.highlightColor;
+                        }
+                    } else {
+                        if (singleFloatingButton.down || singleFloatingButton.visualFocus) {
+                            return Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.6);
+                        } else if (singleFloatingButton.enabled && singleFloatingButton.hovered) {
+                            return Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.8);
+                        } else {
+                            return Kirigami.Theme.backgroundColor;
+                        }
+                    }
+                }
+            }
         }
 
-        Components.DoubleFloatingButton {
+        Kirigami.ShadowedRectangle {
+            id: doubleFloatingButton
             anchors {
                 right: parent.right
                 rightMargin: Kirigami.Units.largeSpacing
@@ -128,8 +177,176 @@ ListView {
             }
 
             visible: root.needsToShowBothActions
-            leadingAction: root.goToTopAction
-            trailingAction: root.postAction
+
+            radius: Kirigami.Units.largeSpacing
+            color: Kirigami.Theme.backgroundColor
+
+            readonly property real __padding: Kirigami.Settings.hasTransientTouchInput ? (Kirigami.Units.largeSpacing * 2) : Kirigami.Units.largeSpacing
+
+            // Left for leading and right for trailing buttons
+            function __radiusA(): real {
+                return LayoutMirroring.enabled ? 0 : radius;
+            }
+
+            // and vice-versa
+            function __radiusB(): real {
+                return LayoutMirroring.enabled ? radius : 0;
+            }
+
+            implicitHeight: Math.max(leadingButton.implicitBackgroundHeight + leadingButton.topInset + leadingButton.bottomInset,
+                                     leadingButton.implicitContentHeight + leadingButton.topPadding + leadingButton.bottomPadding)
+            implicitWidth: 2 * implicitHeight - 1
+
+            shadow {
+                size: 10
+                xOffset: 0
+                yOffset: 2
+                color: Qt.rgba(0, 0, 0, 0.2)
+            }
+
+            T.RoundButton {
+                id: leadingButton
+
+                LayoutMirroring.enabled: doubleFloatingButton.LayoutMirroring.enabled
+
+                readonly property size __effectiveIconSize: Qt.size(
+                    root.goToTopAction.icon.height > 0 ? root.goToTopAction.icon.height : Kirigami.Units.iconSizes.medium,
+                    root.goToTopAction.icon.width > 0 ? root.goToTopAction.icon.width : Kirigami.Units.iconSizes.medium,
+                )
+
+                padding: doubleFloatingButton.__padding
+
+                topPadding: padding
+                leftPadding: padding
+                rightPadding: padding
+                bottomPadding: padding
+
+                z: (down || visualFocus || (enabled && hovered)) ? 2 : 0
+
+                background: Kirigami.ShadowedRectangle {
+                    Kirigami.Theme.inherit: false
+                    Kirigami.Theme.colorSet: Kirigami.Theme.Button
+
+                    corners {
+                        topLeftRadius: doubleFloatingButton.__radiusA()
+                        bottomLeftRadius: doubleFloatingButton.__radiusA()
+                        topRightRadius: doubleFloatingButton.__radiusB()
+                        bottomRightRadius: doubleFloatingButton.__radiusB()
+                    }
+
+                    border {
+                        width: 1
+                        color: if (leadingButton.down || leadingButton.visualFocus) {
+                            Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.4)
+                        } else if (leadingButton.enabled && leadingButton.hovered) {
+                            Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.6)
+                        } else {
+                            Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor, Kirigami.Theme.frameContrast)
+                        }
+                    }
+
+                    color: if (leadingButton.down || leadingButton.visualFocus) {
+                        Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.6)
+                    } else if (leadingButton.enabled && leadingButton.hovered) {
+                        Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.backgroundColor, 0.8)
+                    } else {
+                        Kirigami.Theme.backgroundColor
+                    }
+                }
+
+                contentItem: Item {
+                    implicitWidth: parent.__effectiveIconSize.width
+                    implicitHeight: parent.__effectiveIconSize.height
+
+                    Kirigami.Icon {
+                        anchors.fill: parent
+                        color: leadingButton.icon.color
+                        source: root.goToTopAction.icon.name !== "" ? root.goToTopAction.icon.name : root.goToTopAction.icon.source
+                    }
+                }
+
+                action: root.goToTopAction
+                anchors.left: parent.left
+                height: parent.height
+                width: parent.height
+                enabled: action ? action.enabled : false
+                display: QQC2.AbstractButton.IconOnly
+                QQC2.ToolTip.visible: hovered && QQC2.ToolTip.text.length > 0
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+                QQC2.ToolTip.text: action.tooltip
+            }
+
+            T.RoundButton {
+                id: trailingButton
+
+                readonly property size __effectiveIconSize: Qt.size(
+                    root.postAction.icon.height > 0 ? root.postAction.icon.height : Kirigami.Units.iconSizes.medium,
+                    root.postAction.icon.width > 0 ? root.postAction.icon.width : Kirigami.Units.iconSizes.medium,
+                )
+
+                padding: doubleFloatingButton.__padding
+
+                topPadding: padding
+                leftPadding: padding
+                rightPadding: padding
+                bottomPadding: padding
+
+                LayoutMirroring.enabled: doubleFloatingButton.LayoutMirroring.enabled
+
+                z: (down || visualFocus || (enabled && hovered)) ? 2 : 0
+
+                background: Kirigami.ShadowedRectangle {
+                    Kirigami.Theme.inherit: false
+                    Kirigami.Theme.colorSet: Kirigami.Theme.Button
+
+                    corners {
+                        topLeftRadius: doubleFloatingButton.__radiusB()
+                        bottomLeftRadius: doubleFloatingButton.__radiusB()
+                        topRightRadius: doubleFloatingButton.__radiusA()
+                        bottomRightRadius: doubleFloatingButton.__radiusA()
+                    }
+
+                    border {
+                        width: 1
+                        color: if (trailingButton.down || trailingButton.visualFocus) {
+                            Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.highlightColor, 0.4)
+                        } else if (trailingButton.enabled && trailingButton.hovered) {
+                            Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.highlightColor, 0.6)
+                        } else {
+                            Kirigami.ColorUtils.linearInterpolation(Kirigami.Theme.highlightColor, Kirigami.Theme.textColor, Kirigami.Theme.frameContrast)
+                        }
+                    }
+
+                    color: if (trailingButton.down || trailingButton.visualFocus) {
+                        Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.highlightColor, 0.6)
+                    } else if (trailingButton.enabled && trailingButton.hovered) {
+                        Kirigami.ColorUtils.tintWithAlpha(Kirigami.Theme.hoverColor, Kirigami.Theme.highlightColor, 0.8)
+                    } else {
+                        Kirigami.Theme.highlightColor
+                    }
+                }
+
+                contentItem: Item {
+                    implicitWidth: parent.__effectiveIconSize.width
+                    implicitHeight: parent.__effectiveIconSize.height
+
+                    Kirigami.Icon {
+                        anchors.fill: parent
+                        color: Kirigami.Theme.highlightedTextColor
+                        source: root.postAction.icon.name !== "" ? root.postAction.icon.name : root.postAction.icon.source
+                    }
+                }
+
+                action: root.postAction
+                anchors.right: parent.right
+                height: parent.height
+                width: parent.height
+                enabled: action ? action.enabled : false
+                display: QQC2.AbstractButton.IconOnly
+                QQC2.ToolTip.visible: hovered && QQC2.ToolTip.text.length > 0
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+                QQC2.ToolTip.text: action.tooltip
+            }
         }
     }
 

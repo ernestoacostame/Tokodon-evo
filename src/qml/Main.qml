@@ -741,6 +741,7 @@ StatefulApp.StatefulWindow {
 
             Kirigami.NavigationTabButton {
                 action: root.homeAction
+                display: QQC2.AbstractButton.IconOnly
                 Layout.minimumWidth: tabbar.buttonWidth
                 Layout.maximumWidth: tabbar.buttonWidth
                 Layout.fillHeight: true
@@ -748,6 +749,7 @@ StatefulApp.StatefulWindow {
 
             Kirigami.NavigationTabButton {
                 action: root.notificationAction
+                display: QQC2.AbstractButton.IconOnly
                 Layout.minimumWidth: tabbar.buttonWidth
                 Layout.maximumWidth: tabbar.buttonWidth
                 Layout.fillHeight: true
@@ -781,6 +783,7 @@ StatefulApp.StatefulWindow {
 
             Kirigami.NavigationTabButton {
                 action: root.exploreAction
+                display: QQC2.AbstractButton.IconOnly
                 Layout.minimumWidth: tabbar.buttonWidth
                 Layout.maximumWidth: tabbar.buttonWidth
                 Layout.fillHeight: true
@@ -788,6 +791,7 @@ StatefulApp.StatefulWindow {
 
             Kirigami.NavigationTabButton {
                 action: root.profileAction
+                display: QQC2.AbstractButton.IconOnly
                 Layout.minimumWidth: tabbar.buttonWidth
                 Layout.maximumWidth: tabbar.buttonWidth
                 Layout.fillHeight: true

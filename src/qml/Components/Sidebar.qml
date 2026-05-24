@@ -17,6 +17,7 @@ Kirigami.OverlayDrawer {
 
     required property TokodonApplication application
     required property bool shouldCollapse
+    readonly property bool isCollapsed: !shouldCollapse && Config.sidebarCollapsed
 
     property alias actions: actionsRepeater.model
     property alias bottomActions: bottomActionsRepeater.model
@@ -24,7 +25,7 @@ Kirigami.OverlayDrawer {
     edge: Qt.application.layoutDirection === Qt.RightToLeft ? Qt.RightEdge : Qt.LeftEdge
     modal: shouldCollapse || !enabled
     z: modal ? Math.round(position * 10000000) : 100
-    preferredSize: {width: Kirigami.Units.gridUnit * 14}
+    preferredSize: {width: drawer.isCollapsed ? Kirigami.Units.gridUnit * 4 : Kirigami.Units.gridUnit * 14}
     Behavior on width {
         NumberAnimation {
             duration: Kirigami.Units.shortDuration
@@ -64,6 +65,9 @@ Kirigami.OverlayDrawer {
         padding: Kirigami.Units.largeSpacing
         Layout.fillWidth: true
         activeFocusOnTab: true
+
+        display: drawer.isCollapsed ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
+        horizontalAlignment: drawer.isCollapsed ? Qt.AlignHCenter : Qt.AlignLeft
 
         onClicked: {
             if (delegate.checkable) {
@@ -109,9 +113,40 @@ Kirigami.OverlayDrawer {
             Layout.preferredHeight: pageStack.globalToolBar.preferredHeight
             Layout.bottomMargin: Kirigami.Units.smallSpacing / 2
 
-            visible: !drawer.shouldCollapse && !applicationWindow().checkIfCurrentPage("search")
+            visible: !drawer.shouldCollapse
 
-            contentItem: SearchField {}
+            contentItem: RowLayout {
+                spacing: Kirigami.Units.smallSpacing
+
+                QQC2.ToolButton {
+                    icon.name: drawer.isCollapsed ? "sidebar-expand" : "sidebar-collapse"
+                    text: drawer.isCollapsed ? i18n("Expand Sidebar") : i18n("Collapse Sidebar")
+                    display: QQC2.AbstractButton.IconOnly
+                    onClicked: {
+                        Config.sidebarCollapsed = !Config.sidebarCollapsed;
+                        Config.save();
+                    }
+                    QQC2.ToolTip.text: text
+                    QQC2.ToolTip.visible: hovered
+                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+                }
+
+                SearchField {
+                    Layout.fillWidth: true
+                    visible: !drawer.isCollapsed && !applicationWindow().checkIfCurrentPage("search")
+                }
+
+                QQC2.ToolButton {
+                    icon.name: "search"
+                    visible: drawer.isCollapsed
+                    onClicked: Navigation.openSearch()
+                    text: i18n("Search")
+                    display: QQC2.AbstractButton.IconOnly
+                    QQC2.ToolTip.text: text
+                    QQC2.ToolTip.visible: hovered
+                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+                }
+            }
         }
 
         UserInfo {

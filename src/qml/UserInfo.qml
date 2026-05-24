@@ -65,13 +65,18 @@ QQC2.Pane {
             Layout.fillWidth: true
 
             contentItem: RowLayout {
-                spacing: Kirigami.Units.smallSpacing
+                spacing: root.sidebar.isCollapsed ? 0 : Kirigami.Units.smallSpacing
+
+                Item {
+                    visible: root.sidebar.isCollapsed
+                    Layout.fillWidth: true
+                }
 
                 QQC2.AbstractButton {
                     Layout.preferredHeight: Kirigami.Units.iconSizes.medium
                     Layout.preferredWidth: Kirigami.Units.iconSizes.medium
-                    Layout.leftMargin: Kirigami.Units.smallSpacing
-                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                    Layout.leftMargin: root.sidebar.isCollapsed ? 0 : Kirigami.Units.smallSpacing
+                    Layout.rightMargin: root.sidebar.isCollapsed ? 0 : Kirigami.Units.smallSpacing
 
                     contentItem: KirigamiComponents.Avatar {
                         name: currentAccountDelegate.name
@@ -81,7 +86,13 @@ QQC2.Pane {
                     onClicked: root.openAccountPage()
                 }
 
+                Item {
+                    visible: root.sidebar.isCollapsed
+                    Layout.fillWidth: true
+                }
+
                 Delegates.SubtitleContentItem {
+                    visible: !root.sidebar.isCollapsed
                     subtitle: AccountManager.selectedAccount ? '@' + AccountManager.selectedAccount.username : ''
                     subtitleItem.textFormat: Text.PlainText
                     itemDelegate: currentAccountDelegate
@@ -89,6 +100,7 @@ QQC2.Pane {
                 }
 
                 QQC2.ToolButton {
+                    visible: !root.sidebar.isCollapsed
                     icon.name: "system-switch-user"
                     onClicked: {
                         if (root.sidebar.modal) {
