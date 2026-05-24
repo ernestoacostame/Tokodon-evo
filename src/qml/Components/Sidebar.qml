@@ -67,7 +67,12 @@ Kirigami.OverlayDrawer {
         activeFocusOnTab: true
 
         display: drawer.isCollapsed ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
-        horizontalAlignment: drawer.isCollapsed ? Qt.AlignHCenter : Qt.AlignLeft
+
+        Binding {
+            target: delegate.contentItem ? delegate.contentItem.iconItem : null
+            property: "Layout.alignment"
+            value: drawer.isCollapsed ? (Qt.AlignHCenter | Qt.AlignVCenter) : Qt.AlignVCenter
+        }
 
         onClicked: {
             if (delegate.checkable) {
