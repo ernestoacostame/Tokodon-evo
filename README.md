@@ -1,13 +1,6 @@
 # Tokodon (Custom Fork)
 
-<img width="1076" height="1353" alt="Tokodon" src="https://github.com/user-attachments/assets/9b140b68-cb17-4c23-87c0-bcb6b338d717" />
-
-<img width="930" height="1239" alt="Tokodon_Compose_Autocomplete" src="https://github.com/user-attachments/assets/043261a6-2d79-496a-afbd-966f194c73c4" />
-
-<img width="641" height="256" alt="Tokodon_Repost" src="https://github.com/user-attachments/assets/c7489e7d-3f46-4530-a46c-8da4b9844fb6" />
-
-<img width="1030" height="1032" alt="Tokodon_Settings" src="https://github.com/user-attachments/assets/4998a6b7-d68a-48fb-a90e-0956f04b4835" />
-
+<img width="1034" height="1196" alt="tokodon" src="https://github.com/user-attachments/assets/788a4933-b9ec-4009-93f4-e7373181a972" />
 
 
 This is a custom fork of Tokodon that includes several improvements, bug fixes, and additional features over the upstream project.
