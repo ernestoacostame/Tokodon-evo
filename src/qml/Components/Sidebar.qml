@@ -30,6 +30,7 @@ Kirigami.OverlayDrawer {
     collapsedSize: Kirigami.Units.gridUnit * 2.2
     preferredSize: Kirigami.Units.gridUnit * 14
     width: collapsed ? collapsedSize : preferredSize
+    height: parent && (edge === Qt.LeftEdge || edge === Qt.RightEdge) ? (modal ? parent.height : (parent.height - y - (QQC2.ApplicationWindow.window && QQC2.ApplicationWindow.window.footer && QQC2.ApplicationWindow.window.footer.visible ? QQC2.ApplicationWindow.window.footer.height : 0))) : implicitHeight
 
     Behavior on width {
         NumberAnimation {
@@ -79,7 +80,10 @@ Kirigami.OverlayDrawer {
 
         property int alertCount
 
-        padding: drawer.isCollapsed ? 0 : Kirigami.Units.largeSpacing
+        topPadding: drawer.isCollapsed ? Kirigami.Units.mediumSpacing : Kirigami.Units.largeSpacing
+        bottomPadding: drawer.isCollapsed ? Kirigami.Units.mediumSpacing : Kirigami.Units.largeSpacing
+        leftPadding: drawer.isCollapsed ? 0 : Kirigami.Units.largeSpacing
+        rightPadding: drawer.isCollapsed ? 0 : Kirigami.Units.largeSpacing
         Layout.fillWidth: true
         activeFocusOnTab: true
 

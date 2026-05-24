@@ -63,7 +63,10 @@ QQC2.Pane {
                 }
             }
             Layout.fillWidth: true
-            padding: root.sidebar.isCollapsed ? 0 : Kirigami.Units.largeSpacing
+            topPadding: root.sidebar.isCollapsed ? Kirigami.Units.mediumSpacing : Kirigami.Units.largeSpacing
+            bottomPadding: root.sidebar.isCollapsed ? Kirigami.Units.mediumSpacing : Kirigami.Units.largeSpacing
+            leftPadding: root.sidebar.isCollapsed ? 0 : Kirigami.Units.largeSpacing
+            rightPadding: root.sidebar.isCollapsed ? 0 : Kirigami.Units.largeSpacing
 
             contentItem: RowLayout {
                 spacing: root.sidebar.isCollapsed ? 0 : Kirigami.Units.smallSpacing
