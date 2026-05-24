@@ -17,7 +17,7 @@ Kirigami.OverlayDrawer {
 
     required property TokodonApplication application
     required property bool shouldCollapse
-    readonly property bool isCollapsed: !shouldCollapse && (width === 0 ? Config.sidebarCollapsed : (width < Kirigami.Units.gridUnit * 8))
+    readonly property bool isCollapsed: !shouldCollapse
 
     property alias actions: actionsRepeater.model
     property alias bottomActions: bottomActionsRepeater.model
@@ -25,7 +25,7 @@ Kirigami.OverlayDrawer {
     edge: Qt.application.layoutDirection === Qt.RightToLeft ? Qt.RightEdge : Qt.LeftEdge
     modal: shouldCollapse || !enabled
     z: modal ? Math.round(position * 10000000) : 100
-    preferredSize: {width: drawer.isCollapsed ? Kirigami.Units.gridUnit * 3 : Kirigami.Units.gridUnit * 10}
+    preferredSize: {width: drawer.isCollapsed ? Kirigami.Units.gridUnit * 3.5 : Kirigami.Units.gridUnit * 14}
     Behavior on width {
         NumberAnimation {
             duration: Kirigami.Units.shortDuration
@@ -40,17 +40,8 @@ Kirigami.OverlayDrawer {
     handleVisible: !isShowingFullScreenImage && enabled
 
     onModalChanged: drawerOpen = !modal
-    onWidthChanged: {
-        if (!shouldCollapse && width > 0) {
-            let collapsed = width < Kirigami.Units.gridUnit * 8;
-            if (collapsed !== Config.sidebarCollapsed) {
-                Config.sidebarCollapsed = collapsed;
-                Config.save();
-            }
-        }
-    }
 
-    interactiveResizeEnabled: enabled
+    interactiveResizeEnabled: !isCollapsed && enabled
 
     leftPadding: parent.SafeArea.margins.left
     rightPadding: parent.SafeArea.margins.right
@@ -76,8 +67,8 @@ Kirigami.OverlayDrawer {
         activeFocusOnTab: true
 
         display: drawer.isCollapsed ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
-        icon.width: drawer.isCollapsed ? Kirigami.Units.iconSizes.smallMedium : Kirigami.Units.iconSizes.sizeForLabels
-        icon.height: drawer.isCollapsed ? Kirigami.Units.iconSizes.smallMedium : Kirigami.Units.iconSizes.sizeForLabels
+        icon.width: drawer.isCollapsed ? Kirigami.Units.iconSizes.medium : Kirigami.Units.iconSizes.smallMedium
+        icon.height: drawer.isCollapsed ? Kirigami.Units.iconSizes.medium : Kirigami.Units.iconSizes.smallMedium
 
         Binding {
             target: delegate.contentItem ? delegate.contentItem.iconItem : null

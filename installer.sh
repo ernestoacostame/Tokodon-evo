@@ -18,8 +18,8 @@ fi
 # -i: Install the package after build
 if makepkg -si --noconfirm; then
     echo -e "${GREEN}Installation successful. Cleaning up temporary folders...${NC}"
-    # Force clean up of src/ and pkg/ just in case
-    rm -rf src pkg
+    # Force clean up of build directories and pkg
+    rm -rf build-dir build src/build pkg
     echo -e "${GREEN}Done!${NC}"
 else
     echo -e "${RED}Error: Build or installation failed.${NC}"
