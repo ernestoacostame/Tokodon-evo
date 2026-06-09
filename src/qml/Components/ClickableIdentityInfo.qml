@@ -75,10 +75,6 @@ RowLayout {
                 cursorShape: Qt.PointingHandCursor
                 onClicked: avatar.clicked()
             }
-
-            Component.onDestruction: {
-                text = "";
-            }
         }
 
         QQC2.Label {

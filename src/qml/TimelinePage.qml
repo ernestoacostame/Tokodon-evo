@@ -222,7 +222,7 @@ Kirigami.ScrollablePage {
                 text: i18nc("@action:button Load more posts above this", "Load More")
                 icon.name: "content-loading-symbolic"
 
-                onClicked: timelineModel.fetchPrevious()
+                onClicked: root.model.fetchPrevious()
 
                 Layout.alignment: Qt.AlignHCenter
                 Layout.topMargin: Kirigami.Units.largeSpacing

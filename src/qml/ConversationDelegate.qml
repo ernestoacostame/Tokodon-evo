@@ -57,10 +57,6 @@ Delegates.IndicatorItemDelegate {
                     text: root.authorIdentity.displayNameHtml
                     elide: Text.ElideRight
                     font.weight: root.unread ? Font.Bold : Font.Normal
-
-                    Component.onDestruction: {
-                        text = "";
-                    }
                 }
                 QQC2.Label {
                     text: root.relativeTime

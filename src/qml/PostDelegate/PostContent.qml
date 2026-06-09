@@ -81,8 +81,4 @@ QQC2.Label {
         enabled: root.hoverEnabled
         cursorShape: root.hoveredLink !== '' ? Qt.PointingHandCursor : Qt.ArrowCursor
     }
-
-    Component.onDestruction: {
-        text = "";
-    }
 }

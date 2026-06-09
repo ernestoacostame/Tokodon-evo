@@ -84,10 +84,6 @@ QQC2.ItemDelegate {
                 textFormat: Text.StyledText
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignVCenter
-
-                Component.onDestruction: {
-                    text = "";
-                }
             }
 
             Item {

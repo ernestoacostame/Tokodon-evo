@@ -70,10 +70,6 @@ RowLayout {
 
         Layout.alignment: Qt.AlignBaseline
         Layout.fillWidth: true
-
-        Component.onDestruction: {
-            text = "";
-        }
     }
 
     TapHandler {

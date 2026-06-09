@@ -40,10 +40,6 @@ Kirigami.Page {
         text: accountModel.identity ? accountModel.identity.displayNameHtml : i18nc("@title:window", "Profile")
 
         textFormat: Text.RichText
-
-        Component.onDestruction: {
-            text = "";
-        }
     }
 
     topPadding: 0

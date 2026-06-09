@@ -54,10 +54,6 @@ RowLayout {
             maximumLineCount: 1
 
             Layout.fillWidth: true
-
-            Component.onDestruction: {
-                text = "";
-            }
         }
 
         RowLayout {

@@ -226,10 +226,6 @@ Item {
                                 maximumLineCount: 1
 
                                 Layout.fillHeight: true
-
-                                Component.onDestruction: {
-                                    text = "";
-                                }
                             }
                             Item {
                                 Layout.fillWidth: true

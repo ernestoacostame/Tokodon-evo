@@ -370,13 +370,8 @@ void MainTimelineModel::updateReadMarker(const QString &postId)
 
 void MainTimelineModel::refresh()
 {
-    // If we have pagination data, use that to refresh. Otherwise fall back to reloading the whole thing.
-    if (m_prev) {
-        fillTimeline({}, true);
-    } else {
-        reset();
-        fillTimeline({});
-    }
+    reset();
+    fillTimeline({});
 }
 
 void MainTimelineModel::checkForNewPosts()
