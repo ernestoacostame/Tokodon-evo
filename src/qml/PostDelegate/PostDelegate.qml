@@ -90,8 +90,8 @@ QQC2.ItemDelegate {
 
     topPadding: Kirigami.Units.largeSpacing * 2
     bottomPadding: Kirigami.Units.largeSpacing * 2
-    leftPadding: Kirigami.Units.smallSpacing
-    rightPadding: Kirigami.Units.smallSpacing
+    leftPadding: Kirigami.Units.largeSpacing * 2
+    rightPadding: Kirigami.Units.largeSpacing * 2
 
     topInset: Kirigami.Units.smallSpacing
     leftInset: Kirigami.Units.largeSpacing

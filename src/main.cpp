@@ -20,7 +20,8 @@
 #include <QDBusConnection>
 #endif
 #include <KLocalizedString>
-#include <KirigamiApp>
+#include <KirigamiAppDefaults>
+#include <KLocalizedQmlContext>
 
 #include <QNetworkProxyFactory>
 
@@ -51,8 +52,12 @@ int main(int argc, char *argv[])
     QtWebView::initialize();
 #endif
 
-    KirigamiApp::App app(argc, argv);
-    KirigamiApp kapp;
+#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS)
+    QGuiApplication app(argc, argv);
+#else
+    QApplication app(argc, argv);
+#endif
+    KirigamiAppDefaults::apply(&app);
 
 
 
@@ -127,6 +132,7 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine;
+    KLocalization::setupLocalizedContext(&engine);
 
 #ifdef HAVE_KDBUSADDONS
     KDBusService service(KDBusService::Unique);
@@ -195,11 +201,11 @@ int main(int argc, char *argv[])
 
 
     if (parser.isSet(shareOption)) {
-        kapp.start("org.kde.tokodon", "StandaloneComposer", &engine);
+        engine.loadFromModule("org.kde.tokodon", "StandaloneComposer");
 
         NetworkController::instance().startComposing(parser.value(shareOption));
     } else {
-        kapp.start("org.kde.tokodon", "Main", &engine);
+        engine.loadFromModule("org.kde.tokodon", "Main");
 
         if (!parser.positionalArguments().empty()) {
             NetworkController::instance().openWebApLink(parser.positionalArguments()[0]);

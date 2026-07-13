@@ -22,6 +22,7 @@ Kirigami.FlexColumn {
 
     RowLayout {
         spacing: 0
+        Layout.fillWidth: true
 
         Item {
             id: threadSpace
@@ -61,6 +62,7 @@ Kirigami.FlexColumn {
 
         ColumnLayout {
             id: inner
+            Layout.fillWidth: true
 
             spacing: Kirigami.Units.largeSpacing
         }
