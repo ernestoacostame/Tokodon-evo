@@ -22,10 +22,12 @@ MediaContainer {
     property bool looping: false
     property alias loading: busyIndicator.visible
     property real volume: 1.0
+    property bool playOnLoad: false
 
     signal errorOccurred(error: int, errorString: string)
 
     function pause() {
+        playOnLoad = false;
         // Unlike the other functions, we want to make sure the item doesn't accidentally get created when the video is auto-paused due to scrolling
         if (player.active) {
             player.item?.pause();
@@ -33,16 +35,24 @@ MediaContainer {
     }
 
     function play() {
-        player.active = true;
-        player.item?.play();
+        if (player.item) {
+            player.item.play();
+        } else {
+            playOnLoad = true;
+            player.active = true;
+        }
     }
 
     function togglePlayPause() {
-        player.active = true;
-        if (player.item?.paused || player.item?.stopped) {
-            player.item?.play();
+        if (player.item) {
+            if (player.item.paused || player.item.stopped) {
+                player.item.play();
+            } else {
+                player.item.pause();
+            }
         } else {
-            player.item?.pause();
+            playOnLoad = true;
+            player.active = true;
         }
     }
 
@@ -59,12 +69,19 @@ MediaContainer {
             onErrorOccurred: (error, errorString) => root.errorOccurred(error, errorString)
             volume: root.volume
         }
+
+        onLoaded: {
+            if (root.playOnLoad) {
+                root.playOnLoad = false;
+                item.play();
+            }
+        }
     }
 
     Image {
         anchors.fill: parent
         source: visible ? modelData.tempSource : ''
-        visible: previewImage.status !== Image.Ready || root.isSensitive
+        visible: (previewImage.status !== Image.Ready || root.isSensitive) && ((player.item?.loading ?? false) || (player.item?.stopped ?? true))
     }
 
     Image {
@@ -107,7 +124,7 @@ MediaContainer {
             }
 
             // don't show the controls if the media is still loading
-            if (player.item.loading) {
+            if (player.item?.loading) {
                 return false;
             }
 
