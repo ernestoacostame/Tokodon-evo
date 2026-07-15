@@ -258,6 +258,7 @@ QQC2.Pane {
                                 textFormat: TextEdit.PlainText
                                 wrapMode: TextEdit.Wrap
                                 readOnly: true
+                                selectByMouse: true
                                 background: null
                                 font.pixelSize: 18
 
@@ -524,6 +525,7 @@ QQC2.Pane {
                     text: root.identity.bio
                     textFormat: TextEdit.RichText
                     readOnly: true
+                    selectByMouse: true
                     Layout.fillWidth: true
                     Layout.leftMargin: Kirigami.Units.largeSpacing
                     Layout.rightMargin: Kirigami.Units.largeSpacing
@@ -545,7 +547,7 @@ QQC2.Pane {
                     MouseArea {
                         anchors.fill: parent
                         acceptedButtons: Qt.NoButton // don't eat clicks on the Text
-                        cursorShape: parent.hoveredLink ? Qt.PointingHandCursor : Qt.ArrowCursor
+                        cursorShape: parent.hoveredLink ? Qt.PointingHandCursor : Qt.IBeamCursor
                     }
                 }
             }
@@ -580,6 +582,7 @@ QQC2.Pane {
                     QQC2.TextArea {
                         Layout.fillWidth: true
                         readOnly: true
+                        selectByMouse: true
                         background: null
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.PlainText
@@ -653,6 +656,7 @@ QQC2.Pane {
                             QQC2.TextArea {
                                 Layout.fillWidth: true
                                 readOnly: true
+                                selectByMouse: true
                                 background: null
                                 wrapMode: TextEdit.Wrap
                                 textFormat: TextEdit.RichText
@@ -661,7 +665,7 @@ QQC2.Pane {
                                 MouseArea {
                                     anchors.fill: parent
                                     acceptedButtons: Qt.NoButton // don't eat clicks on the Text
-                                    cursorShape: parent.hoveredLink ? Qt.PointingHandCursor : Qt.ArrowCursor
+                                    cursorShape: parent.hoveredLink ? Qt.PointingHandCursor : Qt.IBeamCursor
                                 }
                             }
                         }

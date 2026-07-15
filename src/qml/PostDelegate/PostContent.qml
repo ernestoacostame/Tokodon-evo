@@ -10,13 +10,14 @@ import org.kde.tokodon
 
 
 // This is the main text content of a status
-QQC2.Label {
+QQC2.TextArea {
     id: root
 
     required property string content
     required property bool expandedPost
     required property bool secondary
     required property bool shouldOpenInternalLinks
+    property bool selected: false
     property bool shouldOpenAnyLinks: true
     property bool hoverEnabled: true
 
@@ -35,6 +36,9 @@ QQC2.Label {
     textFormat: TextEdit.RichText
     wrapMode: TextEdit.Wrap
     color: root.secondary ? Kirigami.Theme.disabledTextColor : Kirigami.Theme.textColor
+    readOnly: true
+    selectByMouse: root.selected
+    background: null
     onHoveredLinkChanged: if (hoveredLink.length > 0) {
         applicationWindow().hoverLinkIndicator.text = hoveredLink;
     } else {
@@ -79,6 +83,6 @@ QQC2.Label {
 
     HoverHandler {
         enabled: root.hoverEnabled
-        cursorShape: root.hoveredLink !== '' ? Qt.PointingHandCursor : Qt.ArrowCursor
+        cursorShape: root.hoveredLink !== '' ? Qt.PointingHandCursor : (root.selectByMouse ? Qt.IBeamCursor : Qt.ArrowCursor)
     }
 }

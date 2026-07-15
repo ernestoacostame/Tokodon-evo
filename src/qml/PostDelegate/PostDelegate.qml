@@ -311,6 +311,7 @@ QQC2.ItemDelegate {
                 id: postContent
 
                 content: root.content
+                selected: root.selected
                 expandedPost: root.expandedPost
                 secondary: root.secondary
                 visible: root.spoilerText.length === 0 || AccountManager.selectedAccount.preferences.extendSpoiler

@@ -125,6 +125,7 @@ QQC2.Pane {
                 textFormat: TextEdit.PlainText
                 wrapMode: TextEdit.Wrap
                 readOnly: true
+                selectByMouse: true
                 background: null
                 font.pixelSize: 18
 
