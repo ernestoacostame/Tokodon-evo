@@ -237,9 +237,14 @@ Kirigami.ScrollablePage {
         Connections {
             target: notificationModel
             function onPostSourceReady(backend, isEdit) {
-                const item = pageStack.layers.push(Qt.createComponent("org.kde.tokodon", "StatusComposer"), {
+                const item = applicationWindow().pageStack.pushDialogLayer(Qt.createComponent("org.kde.tokodon", "StatusComposer"), {
                     purpose: isEdit ? StatusComposer.Edit : StatusComposer.Redraft,
                     backend: backend
+                }, {
+                    title: isEdit ? i18n("Edit Post") : i18n("Re-draft Post"),
+                    width: Kirigami.Units.gridUnit * 30,
+                    height: Kirigami.Units.gridUnit * 30,
+                    modality: Qt.NonModal
                 });
                 item.refreshData(); // to refresh spoiler text, etc
             }

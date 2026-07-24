@@ -386,7 +386,12 @@ public:
      * @param parent The parent object that calls get() or the callback belongs to.
      * @param callback The callback that should be executed if the request is successful.
      */
-    virtual void put(const QUrl &url, const QJsonDocument &doc, bool authenticated, QObject *parent, std::function<void(QNetworkReply *)> callback) = 0;
+    virtual void put(const QUrl &url,
+                     const QJsonDocument &doc,
+                     bool authenticated,
+                     QObject *parent,
+                     std::function<void(QNetworkReply *)> callback,
+                     std::function<void(QNetworkReply *)> errorCallback = nullptr) = 0;
 
     /**
      * @brief Make an HTTP PUT request to the server.

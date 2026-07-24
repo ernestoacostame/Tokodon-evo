@@ -297,13 +297,33 @@ void PostEditorBackend::edit()
     QUrl edit_status_url = m_account->apiUrl(QStringLiteral("/api/v1/statuses/%1").arg(m_id));
     auto doc = toJsonDocument();
 
-    m_account->put(edit_status_url, doc, true, this, [this](QNetworkReply *reply) {
-        auto data = reply->readAll();
-        auto doc = QJsonDocument::fromJson(data);
-        auto obj = doc.object();
+    m_account->put(
+        edit_status_url,
+        doc,
+        true,
+        this,
+        [this](QNetworkReply *reply) {
+            auto data = reply->readAll();
+            auto doc = QJsonDocument::fromJson(data);
+            auto obj = doc.object();
 
-        Q_EMIT editComplete(obj);
-    });
+            if (obj.contains("error"_L1)) {
+                Q_EMIT posted(obj["error"_L1].toString());
+            } else {
+                Q_EMIT editComplete(obj);
+            }
+        },
+        [this](QNetworkReply *reply) {
+            auto data = reply->readAll();
+            auto doc = QJsonDocument::fromJson(data);
+            auto obj = doc.object();
+
+            if (obj.contains("error"_L1)) {
+                Q_EMIT posted(obj["error"_L1].toString());
+            } else {
+                Q_EMIT posted(i18n("An unknown error occurred."));
+            }
+        });
 }
 
 void PostEditorBackend::saveDraft()

@@ -8,6 +8,7 @@
 #include "account/abstractaccount.h"
 #include "editor/attachmenteditormodel.h"
 #include "editor/posteditorbackend.h"
+#include "utils/texthandler.h"
 
 using namespace Qt::Literals::StringLiterals;
 
@@ -220,41 +221,57 @@ void AbstractTimelineModel::actionRepeat(const QModelIndex &index, Post *post)
 
 void AbstractTimelineModel::actionRedraft(const QModelIndex &index, Post *post, bool isEdit)
 {
-    m_account->get(m_account->apiUrl(QStringLiteral("/api/v1/statuses/%1/source").arg(post->postId())),
-                   true,
-                   this,
-                   [this, post, index, isEdit](QNetworkReply *reply) {
-                       if (!isEdit) {
-                           actionDelete(index, post);
-                       }
+    if (!post) {
+        return;
+    }
 
-                       const auto postSource = QJsonDocument::fromJson(reply->readAll()).object();
+    auto createAndEmitBackend = [this, post, index, isEdit](const QString &text, const QString &spoilerText) {
+        if (!isEdit) {
+            actionDelete(index, post);
+        }
 
-                       auto backend = new PostEditorBackend();
-                       backend->setId(post->postId());
-                       backend->setStatus(postSource["text"_L1].toString());
-                       backend->setSpoilerText(postSource["spoiler_text"_L1].toString());
-                       backend->setInReplyTo(post->inReplyTo());
-                       backend->setVisibility(post->visibility());
-                       backend->setLanguage(post->language());
-                       backend->setMentions(post->mentions()); // TODO: needed?
-                       backend->setSensitive(post->sensitive());
-                       backend->setHasExistingPoll(post->poll() != nullptr);
+        auto backend = new PostEditorBackend();
+        backend->setId(post->postId());
+        backend->setStatus(text);
+        backend->setSpoilerText(spoilerText);
+        backend->setInReplyTo(post->inReplyTo());
+        backend->setVisibility(post->visibility());
+        backend->setLanguage(post->language());
+        backend->setMentions(post->mentions());
+        backend->setSensitive(post->sensitive());
+        backend->setHasExistingPoll(post->poll() != nullptr);
 
-                       Q_EMIT postSourceReady(backend, isEdit);
+        auto attachmentBackend = backend->attachmentEditorModel();
+        for (const auto &attachment : post->attachments()) {
+            attachmentBackend->appendExisting(attachment);
+        }
 
-                       auto attachmentBackend = backend->attachmentEditorModel();
-                       for (const auto &attachment : post->attachments()) {
-                           attachmentBackend->appendExisting(attachment);
-                       }
+        Q_EMIT postSourceReady(backend, isEdit);
 
-                       if (isEdit) {
-                           connect(backend, &PostEditorBackend::editComplete, this, [this, post, index](QJsonObject object) {
-                               post->fromJson(std::move(object));
-                               Q_EMIT dataChanged(index, index);
-                           });
-                       }
-                   });
+        if (isEdit) {
+            connect(backend, &PostEditorBackend::editComplete, this, [this, post, index](QJsonObject object) {
+                post->fromJson(std::move(object));
+                Q_EMIT dataChanged(index, index);
+            });
+        }
+    };
+
+    m_account->get(
+        m_account->apiUrl(QStringLiteral("/api/v1/statuses/%1/source").arg(post->postId())),
+        true,
+        this,
+        [post, createAndEmitBackend](QNetworkReply *reply) {
+            const auto postSource = QJsonDocument::fromJson(reply->readAll()).object();
+            const QString text = postSource.contains("text"_L1) ? postSource["text"_L1].toString() : TextHandler::stripHtml(post->content());
+            const QString spoilerText = postSource.contains("spoiler_text"_L1) ? postSource["spoiler_text"_L1].toString() : post->spoilerText();
+            createAndEmitBackend(text, spoilerText);
+        },
+        [post, createAndEmitBackend](QNetworkReply *) {
+            const QString text = TextHandler::stripHtml(post->content());
+            const QString spoilerText = post->spoilerText();
+            createAndEmitBackend(text, spoilerText);
+        },
+        true);
 }
 
 void AbstractTimelineModel::actionBookmark(const QModelIndex &index, Post *post)

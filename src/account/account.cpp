@@ -107,7 +107,12 @@ void Account::post(const QUrl &url,
     handleReply(reply, reply_cb, error_cb);
 }
 
-void Account::put(const QUrl &url, const QJsonDocument &doc, bool authenticated, QObject *parent, std::function<void(QNetworkReply *)> reply_cb)
+void Account::put(const QUrl &url,
+                  const QJsonDocument &doc,
+                  bool authenticated,
+                  QObject *parent,
+                  std::function<void(QNetworkReply *)> reply_cb,
+                  std::function<void(QNetworkReply *)> error_cb)
 {
     auto post_data = doc.toJson();
 
@@ -117,7 +122,7 @@ void Account::put(const QUrl &url, const QJsonDocument &doc, bool authenticated,
 
     QNetworkReply *reply = m_qnam->put(request, post_data);
     reply->setParent(parent);
-    handleReply(reply, reply_cb);
+    handleReply(reply, reply_cb, error_cb);
 }
 
 void Account::put(const QUrl &url, const QUrlQuery &formdata, bool authenticated, QObject *parent, std::function<void(QNetworkReply *)> reply_cb)

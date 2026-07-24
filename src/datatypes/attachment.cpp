@@ -77,12 +77,7 @@ QJsonObject Attachment::attributes() const
     QJsonObject attribs;
     attribs["id"_L1] = m_id;
     attribs["description"_L1] = description();
-
-    QJsonObject focus;
-    focus["x"_L1] = focusX();
-    focus["y"_L1] = focusY();
-
-    attribs["focus"_L1] = focus;
+    attribs["focus"_L1] = QStringLiteral("%1,%2").arg(focusX()).arg(focusY());
 
     return attribs;
 }

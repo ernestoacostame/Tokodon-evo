@@ -28,6 +28,7 @@ Components.ConvergentContextMenu {
     required property bool muted
     required property string content
     required property bool hasContent
+    property var timelineModel
 
     readonly property bool hasMultipleAccounts: AccountManager.rowCount() > 1
 
@@ -130,7 +131,7 @@ Components.ConvergentContextMenu {
         visible: root.isSelf
         enabled: visible
         text: root.pinned ? i18nc("@action:inmenu", "Unpin on Profile") : i18nc("@action:inmenu", "Pin on Profile")
-        onTriggered: timelineModel.actionPin(timelineModel.index(root.index, 0))
+        onTriggered: if (root.timelineModel) root.timelineModel.actionPin(root.timelineModel.index(root.index, 0))
     }
 
     Kirigami.Action {
@@ -142,7 +143,7 @@ Components.ConvergentContextMenu {
         visible: root.isSelf
         enabled: visible
         text: root.muted ? i18nc("@action:inmenu", "Unmute Conversation") : i18nc("@action:inmenu", "Mute Conversation")
-        onTriggered: timelineModel.actionMute(timelineModel.index(root.index, 0))
+        onTriggered: if (root.timelineModel) root.timelineModel.actionMute(root.timelineModel.index(root.index, 0))
     }
 
     Kirigami.Action {
@@ -202,7 +203,7 @@ Components.ConvergentContextMenu {
         visible: root.isSelf
         enabled: visible
         text: i18n("Edit")
-        onTriggered: timelineModel.actionRedraft(timelineModel.index(root.index, 0), true)
+        onTriggered: if (root.timelineModel) root.timelineModel.actionRedraft(root.timelineModel.index(root.index, 0), true)
     }
 
     Kirigami.Action {

@@ -100,12 +100,18 @@ QNetworkReply *MockAccount::post(const QUrl &url, QHttpMultiPart *message, bool 
     return nullptr;
 }
 
-void MockAccount::put(const QUrl &url, const QJsonDocument &doc, bool authenticated, QObject *parent, std::function<void(QNetworkReply *)> callback)
+void MockAccount::put(const QUrl &url,
+                      const QJsonDocument &doc,
+                      bool authenticated,
+                      QObject *parent,
+                      std::function<void(QNetworkReply *)> callback,
+                      std::function<void(QNetworkReply *)> errorCallback)
 {
     Q_UNUSED(url)
     Q_UNUSED(authenticated)
     Q_UNUSED(parent)
     Q_UNUSED(callback)
+    Q_UNUSED(errorCallback)
     Q_UNUSED(doc)
 }
 

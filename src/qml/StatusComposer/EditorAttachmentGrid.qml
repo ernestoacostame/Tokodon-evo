@@ -70,7 +70,7 @@ GridLayout {
                         focusY: img.focalY,
                     });
                     dialog.open();
-                    dialog.applied.connect(() => {
+                    dialog.accepted.connect(() => {
                         root.attachmentEditorModel.setDescription(img.index, dialog.text);
                         root.attachmentEditorModel.setFocusPoint(img.index, dialog.focusX, dialog.focusY);
                     });

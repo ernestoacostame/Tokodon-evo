@@ -77,6 +77,7 @@ DelegateChooser {
     DelegateChoice {
         roleValue: SearchModel.Status
         PostDelegate {
+            timelineModel: ListView.view.model
             x: Kirigami.Units.smallSpacing
             width: ListView.view.width - Kirigami.Units.smallSpacing * 2
             secondary: true

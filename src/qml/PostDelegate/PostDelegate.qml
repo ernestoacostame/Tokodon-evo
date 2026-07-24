@@ -266,6 +266,7 @@ QQC2.ItemDelegate {
             muted: root.muted
             content: root.content
             hasContent: root.hasContent
+            timelineModel: root.timelineModel
 
             onDeletePost: {
                 deleteDialog.active = true;

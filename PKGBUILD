@@ -2,7 +2,7 @@
 # Custom PKGBUILD for Tokodon (modified version) built from local source
 
 pkgname=tokodon-custom
-pkgver=26.08.10
+pkgver=26.08.13
 pkgrel=1
 pkgdesc='Mastodon client for Plasma (custom build with auto-refresh, sidebar customization, and notification badges)'
 arch=(x86_64)

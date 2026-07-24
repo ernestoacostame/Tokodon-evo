@@ -28,9 +28,9 @@ QQC2.Dialog {
 
     modal: true
 
-    standardButtons: QQC2.Dialog.Apply | QQC2.Dialog.Cancel
+    standardButtons: QQC2.Dialog.Ok | QQC2.Dialog.Cancel
 
-    onApplied: root.close()
+    onAccepted: root.close()
     onRejected: root.close()
 
     background: Components.DialogRoundedBackground {}
